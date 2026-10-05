@@ -1,0 +1,36 @@
+{
+  "name": "cs2-pro-map",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "CS2 现役职业选手全球分布交互可视化（3D 地球 / 2D 世界地图）",
+  "scripts": {
+    "start": "node scripts/serve.mjs",
+    "dev": "node scripts/serve.mjs",
+    "serve": "node scripts/serve.mjs",
+    "vendor": "node scripts/vendor.mjs",
+    "scrape": "node scripts/scrape-liquipedia.mjs",
+    "scrape:hltv": "node scripts/scrape-hltv.mjs",
+    "dataset": "node scripts/build-dataset.mjs",
+    "dataset:hltv": "node scripts/build-dataset.mjs hltv",
+    "dataset:liquipedia": "node scripts/build-dataset.mjs liquipedia",
+    "basemap": "node scripts/build-basemap.mjs",
+    "pipeline": "node scripts/vendor.mjs && npm run scrape && npm run dataset",
+    "pipeline:hltv": "node scripts/scrape-hltv.mjs && node scripts/build-dataset.mjs hltv",
+    "test": "node --import ./scripts/dev/register.mjs scripts/smoke-test.mjs",
+    "check:imports": "node scripts/dev/check-imports.mjs",
+    "check:boot": "node --import ./scripts/dev/register.mjs scripts/dev/boot-check.mjs",
+    "check:3d": "node --import ./scripts/dev/register-stub.mjs scripts/dev/globe3d-check.mjs",
+    "check:e2e": "node scripts/dev/e2e-check.mjs",
+    "shots": "node scripts/dev/e2e-check.mjs"
+  },
+  "dependencies": {
+    "d3-geo": "^3.1.1",
+    "three": "^0.169.0",
+    "topojson-client": "^3.1.0"
+  },
+  "devDependencies": {
+    "polygon-clipping": "^0.15.7",
+    "world-atlas": "^2.0.2"
+  }
+}

@@ -1,0 +1,6446 @@
+{
+  "source": "liquipedia",
+  "sourceUrl": "https://liquipedia.net/counterstrike/Portal:Teams",
+  "license": "Liquipedia content is available under CC-BY-SA 3.0",
+  "fetchedAt": "2026-10-05T15:22:26.642Z",
+  "sections": {
+    "Western Europe": [
+      "3DMAX",
+      "4Kings",
+      "Against_All_authority",
+      "ArmaTeam",
+      "BeGenius_Electronic_Sport_Club",
+      "Birmingham_Salvo",
+      "CAZ_eSports",
+      "CeX",
+      "Chetz_Esports",
+      "Clan-Mystik",
+      "Coalesce",
+      "Crack_Clan",
+      "DUSTY",
+      "DizLown",
+      "Double_Poney",
+      "EClub_Brugge",
+      "ENVY",
+      "EZskins.com",
+      "EmuLate!",
+      "Endpoint",
+      "Epsilon_Esports",
+      "ExceL_Esports",
+      "FMESPORTS",
+      "Fierce_Esports",
+      "Fisher_College",
+      "GenOne",
+      "Goodgame",
+      "HEET",
+      "KRC_Genk_Esports",
+      "London_Esports",
+      "London_Mint",
+      "Looking4Org_(French_team)",
+      "LowLandLions",
+      "Luminosity_Gaming",
+      "MCon_esports",
+      "MaxiSaucisse",
+      "Method",
+      "Millenium",
+      "NerdRage",
+      "OG",
+      "Phoenix",
+      "Platinium_eSport",
+      "RADIX",
+      "Raptors_Esports_Club",
+      "RedLine",
+      "Red_Instinct",
+      "Sector_One",
+      "Team_Heretics",
+      "Team_LDLC",
+      "Team_LDLC.com_Blue",
+      "Team_LDLC.com_White",
+      "Team_Vitality",
+      "Team_XENEX",
+      "The_Dice",
+      "The_Last_Resort",
+      "Titan",
+      "UMX_Gaming",
+      "Verdant",
+      "VeryGames",
+      "Vexed_Gaming",
+      "Vexed_Gaming.uk",
+      "Viperio",
+      "WE_GOT_GAME",
+      "Wind_and_Rain",
+      "Wizards_Esports_Club",
+      "WySix_Team"
+    ],
+    "Central Europe": [
+      "ALTERNATE_aTTaX",
+      "Ad_hoc_gaming",
+      "Advanced_Online_Losers",
+      "BIG",
+      "Berzerk",
+      "Cowana_Gaming",
+      "DIVIZON",
+      "DkH_Multigaming",
+      "DotpiXels_e.V.",
+      "ESport_Rhein-Neckar",
+      "EURONICS_Gaming",
+      "EYES_ON_U",
+      "Expert_eSport",
+      "KILLERFISH_eSport",
+      "KINGZZZ",
+      "MYinsanity",
+      "No_Limit_Gaming",
+      "ONYX",
+      "PANTHERS_Gaming",
+      "PENTA_Sports",
+      "Plan-B_esports",
+      "Planetkey_Dynamics",
+      "Playing_Ducks",
+      "SK.ger",
+      "SNOGARD_Dragons",
+      "Seed",
+      "Sissi_State_Punks",
+      "TKA_E-Sports",
+      "Team-ARROW",
+      "Team64",
+      "Team_LEISURE",
+      "TouchTheCrown",
+      "Unicorns_of_Love"
+    ],
+    "Northern Europe": [
+      "00_Nation",
+      "100_Thieves",
+      "69°N-28°E",
+      "777_Esports",
+      "?_(Danish_team)",
+      "AGF_Esport",
+      "AM_Gaming",
+      "AaB_esport",
+      "Adrenaline",
+      "Alchemists_Unleashed",
+      "Alliance",
+      "Allstars",
+      "Alpha_Gaming",
+      "Ambush",
+      "Apeks",
+      "ArchAngels",
+      "Astralis",
+      "Begrip_Gaming",
+      "Berlin_Allianz",
+      "CKRAS_Gaming",
+      "CheckSix.swe",
+      "Come_as_You_are",
+      "Conquer_Gaming",
+      "Copenhagen_Flames",
+      "Copenhagen_Wolves",
+      "Crowns_Esports_Club",
+      "DeadPixels",
+      "Defusekids",
+      "DenDD",
+      "Destination_Skyline",
+      "Dignitas",
+      "Duttdutt",
+      "ECSTATIC",
+      "ENCE",
+      "ENCORE",
+      "EPIC_DUDES",
+      "ESports_United_Sweden",
+      "EYEBALLERS",
+      "Entelechy_Gaming",
+      "Entropy_Gaming",
+      "EoLithic",
+      "Epiphany_Bolt",
+      "Escape_Gaming",
+      "Espionage_(Danish_team)",
+      "Esport_Academy_Copenhagen",
+      "Excello",
+      "Eyeballers_(Counter-Strike_team)",
+      "FOKUS",
+      "Fragsters",
+      "FunPlus_Phoenix",
+      "GODSENT",
+      "Galaxy_Racer",
+      "GameOnline",
+      "Gamers.nu",
+      "GoldenGitte",
+      "H2k_Gaming",
+      "HAVU",
+      "HEROIC",
+      "HREDS",
+      "Hoorai",
+      "IGame.com",
+      "INFURITY_Gaming",
+      "IQUE.gg",
+      "JANO_Esports",
+      "Japaleno",
+      "Johnny_Speeds",
+      "KOVA_Esports",
+      "Kappa_Bar",
+      "LGB_eSports",
+      "LGR",
+      "Lemondogs",
+      "Lilmix",
+      "London_Conspiracy",
+      "MANS_NOT_HOT",
+      "MASONIC",
+      "MTw",
+      "MenaceGG",
+      "Metizport",
+      "MyXMG",
+      "N!faculty",
+      "NYYRIKKI_Esports",
+      "Ninjas_in_Pyjamas",
+      "NoA",
+      "NoChance",
+      "No_Problem!",
+      "Nordavind",
+      "Nordic_Division",
+      "Norse",
+      "North",
+      "Oilers_Esport",
+      "OpTic_Gaming",
+      "Oslo_Lions",
+      "Playzone",
+      "Prestige_Esport",
+      "Property",
+      "Publiclir.se",
+      "Quantum_Bellator_Fire",
+      "ROYALS",
+      "Reason_Gaming.dk",
+      "Recursive_eSports",
+      "Red_Reserve",
+      "Roskilde_Ravens",
+      "SJ",
+      "SMASH_Esports",
+      "Sashi_Esport",
+      "SkitLite_Gaming",
+      "Skolpojkarna",
+      "SpeedLink",
+      "SpiXel",
+      "Spirit_of_Amiga",
+      "Sprout",
+      "Stockholm_Magnetik",
+      "TSM",
+      "Team9",
+      "Team_Ancient",
+      "Team_Catch-Gamer",
+      "Team_Finest",
+      "Team_Logitech.fi",
+      "Team_ROCCAT",
+      "Team_Secret",
+      "Team_WinFakt",
+      "Team_X_(Danish_team)",
+      "The_Gatekeepers",
+      "The_Titans",
+      "Torpedo",
+      "Tricked_Esport",
+      "VITALIS",
+      "Veto_Esports",
+      "WOPA_Esport",
+      "Western_Wolves",
+      "Wizard_esports_(Norwegian_team)",
+      "X6tence_Galaxy",
+      "XPerience.se"
+    ],
+    "Southern Europe": [
+      "Baecon_Gaming_Group",
+      "Dragons_Esports_Club",
+      "EXploit_Esports",
+      "For_The_Win_Esports",
+      "G2_Esports.es",
+      "GBots",
+      "GTZ.ESPORTS",
+      "Gentle_Mates",
+      "Giants_Gaming",
+      "Iberian_Soul",
+      "K1ck_eSports.es",
+      "Ledpc",
+      "Make_Your_Destiny",
+      "Movistar_Riders",
+      "OFFSET_Esports",
+      "OverGaming",
+      "Rebels_Gaming",
+      "Rhyno_Esports",
+      "SAW",
+      "Team_Alientech",
+      "Team_Queso",
+      "Team_eu4ia",
+      "X6tence"
+    ],
+    "Eastern Europe": [
+      "4glory_Esports",
+      "500",
+      "9INE",
+      "AGAiN",
+      "AGO_esports",
+      "ALGO_Esports",
+      "ARCY",
+      "AVEZ",
+      "Acend",
+      "Adwokacik",
+      "Anonymo_Esports",
+      "Aurora_Gaming",
+      "B8",
+      "BASEMENT_BOYS",
+      "BLEED_Esports",
+      "BLUEJAYS_International",
+      "BPro_Gaming",
+      "BRUTE",
+      "Bad_News_Eagles",
+      "Betclic_Apogee_Esports",
+      "Beşiktaş_Esports",
+      "Binary_Dragons",
+      "Boomerang",
+      "Budapest_Five",
+      "Bushido_Wildcats",
+      "Békéscsabai_E-Sport_Egyesület",
+      "C0ntact_Gaming",
+      "Codewise_Unicorns",
+      "Copenhagen_Wolves_(American_organization)",
+      "DRILLAS",
+      "Dark_Passage",
+      "Devils.one",
+      "Dobry&Gaming",
+      "Dynamo_Eclot",
+      "E-Frag.net_Esports_Club",
+      "EEriness",
+      "ENTERPRISE_esports",
+      "ESC_Gaming",
+      "ESuba",
+      "EXtatus",
+      "Entropiq",
+      "Entropiq_Prague",
+      "Eternal_Fire",
+      "FATE_Esports",
+      "FAVBET_Team",
+      "FUT_Esports",
+      "FaZe_Clan",
+      "Fire_Flux_Esports",
+      "Fnatic",
+      "Frag_eXecutors",
+      "Fraternitas",
+      "G2_Esports",
+      "GPlay.bg",
+      "GUNRUNNERS",
+      "GameAgents",
+      "GamerLegion",
+      "Guild_Eagles",
+      "HEADSHOTBG",
+      "HONORIS",
+      "HYPERSPIRIT",
+      "Honvéd_Esport",
+      "IC_Esports",
+      "IKLA",
+      "ILLYRIANS",
+      "INFINITE",
+      "INation",
+      "Illuminar_Gaming",
+      "Illwill",
+      "Into_The_Breach",
+      "Izako_Boars",
+      "Juggernauts",
+      "K1CK",
+      "KOI",
+      "KOLESIE",
+      "KONO.ECF",
+      "KPI_Gaming",
+      "Kubix_Esports",
+      "Lausanne-Sport_Esports",
+      "Lazer_Cats",
+      "Leo_Team",
+      "Level_Up_esports",
+      "Los_kogutos",
+      "Lounge_Gaming",
+      "M1_Gaming",
+      "MAD_Lions",
+      "MANA_eSports",
+      "MOUZ",
+      "Meet_Your_Makers",
+      "Misa_Esports",
+      "Monte",
+      "Mortal_Kombat",
+      "NEophyte",
+      "Natus_Vincere",
+      "Nexus_Gaming",
+      "OneTap_Gaming",
+      "Orbit",
+      "Orgless_(Hungarian_team)",
+      "Outlaws",
+      "PACT",
+      "PALOMA",
+      "PRIDE",
+      "Partizan_Esports",
+      "Passion_UA",
+      "Pera_Esports",
+      "Permitta_Esports",
+      "Phantom_Esports",
+      "Playing_Ducks_International",
+      "Pompa_Team",
+      "Prophecy",
+      "Reason_Gaming",
+      "Revenant_Esports",
+      "SC_e-Sports",
+      "SEAL_Esports",
+      "SINNERS_Esports",
+      "SKADE",
+      "SYnck",
+      "Sangal_Esports",
+      "Space_Soldiers",
+      "TEAM_NEXT_LEVEL",
+      "Team_AGG",
+      "Team_BLINK",
+      "Team_ESCA_Gaming",
+      "Team_Falcons",
+      "Team_Fiend",
+      "Team_Pentagram",
+      "Team_Refuse",
+      "Team_Sampi",
+      "Team_Singularity",
+      "Team_eBettle",
+      "Tempo_Storm",
+      "Tenerife_Titans",
+      "The_Imperial",
+      "The_Suspect",
+      "ThunderFlash",
+      "Tomorrow.gg",
+      "Turów_Zgorzelec_Esport",
+      "UNiTY_esports",
+      "Ungentium",
+      "Universal_Soldiers",
+      "VwS_Gaming",
+      "WASD_Sports",
+      "Walczaki",
+      "Wicked_eSports",
+      "Windigo_Gaming",
+      "Wisła_Kraków",
+      "Wolsung",
+      "X-kom_Team",
+      "XPC_Gaming",
+      "Zero_Tenacity"
+    ],
+    "CIS": [
+      "100PingGods",
+      "1shot",
+      "1w_Team",
+      "33",
+      "9Pandas",
+      "ALL-IN",
+      "ALLINNERS",
+      "AMKAL_ESPORTS",
+      "ARCRED",
+      "AVANGAR",
+      "AVE",
+      "Akuma",
+      "Amazing_Gaming",
+      "Astana_Dragons",
+      "BAKS_Esports",
+      "Begrip_Gaming.ru",
+      "BetBoom_Team",
+      "Betera_Esports",
+      "CMAX.gg",
+      "CR4ZY",
+      "CYBERSHOKE_Esports",
+      "Cloud9",
+      "DAT_Team",
+      "DEPO",
+      "DONSTU_Esports",
+      "DTS_Gaming",
+      "DreamEaters",
+      "EPG_Family",
+      "ESPADA",
+      "EXplosive",
+      "EYESports",
+      "Elements_Pro_Gaming",
+      "Ex-RUBY",
+      "FCDB_Esports",
+      "FLuffy_Gangsters",
+      "FORZE_Esports",
+      "FORZE_Reload",
+      "Flame_Sharks",
+      "FlipSid3_Tactics",
+      "GR_Gaming",
+      "GUN5_Esports",
+      "Gambit_Esports",
+      "HOTU",
+      "HYDRA",
+      "Hard_Legion_Esports",
+      "HellRaisers",
+      "INDE_IRAE",
+      "INOX_Division",
+      "Insilio",
+      "K23",
+      "K27",
+      "LF0",
+      "Lavked",
+      "M19",
+      "Magic",
+      "Moscow_Five",
+      "NOVAQ",
+      "Nemiga_Gaming",
+      "NokSuKao",
+      "Nuclear_TigeRES",
+      "OMEGA",
+      "Outsiders",
+      "PARIVISION",
+      "PiTER",
+      "Pro100",
+      "Project_X",
+      "QUAZAR",
+      "QWENTRY",
+      "Question_Mark_(Belarusian_team)",
+      "RUBY",
+      "RUSH_B",
+      "RUSTEC",
+      "Rebels",
+      "RuSh3D",
+      "Rune_Eaters_Esports",
+      "SPARTA_Esports",
+      "TDK",
+      "TRAFFIC_Tashkent_Team",
+      "Team_Empire",
+      "Team_Nemesis",
+      "Team_Spirit",
+      "Team_Unique",
+      "Tengri",
+      "Tp.uSports",
+      "Trasko_Esports",
+      "Trident_Clan",
+      "UNiTED",
+      "Ursa",
+      "Vega_Squadron",
+      "Virtus.pro",
+      "WW_TEAM",
+      "Websterz",
+      "Winstrike_Team",
+      "X4team"
+    ],
+    "North America": [
+      "3sUP_Enterprises",
+      "ACE_Gaming",
+      "ATK",
+      "Akimbo_Esports",
+      "Area_51_Gaming",
+      "BHOP_Esports",
+      "BLUEJAYS",
+      "BOSS",
+      "Bad_News_Bears",
+      "Bee's_Money_Crew",
+      "Carolina_Core",
+      "Carpe_Diem",
+      "Chaos_Esports_Club",
+      "CheckSix_Gaming",
+      "Chicago_Chimera",
+      "Chicken_Coop_Esports",
+      "Complexity",
+      "Conquest",
+      "Counter_Logic_Gaming",
+      "DETONATE",
+      "Dallas_Venom",
+      "Davenport_University",
+      "EUnited",
+      "Echo_Fox",
+      "Enemy",
+      "Evil_Geniuses",
+      "Extra_Salt",
+      "FLUFFY_AIMERS",
+      "FRENCH_CANADIANS",
+      "Forsaken_(American_team)",
+      "GGPR_esports",
+      "GX",
+      "GamerCompany",
+      "Gorilla_Gang",
+      "High_Coast_Esports",
+      "InControl",
+      "Iron_Blood_Gaming",
+      "JaX_Money_Crew",
+      "Lazarus_Esports",
+      "LiViD_Gaming",
+      "Life's_A_Game",
+      "Limitless",
+      "LunatiK_eSports",
+      "M80",
+      "Marsborne",
+      "Maximum_Effort",
+      "Mexico_City_Furia",
+      "Misfits_Gaming",
+      "MouseSpaz",
+      "Mythic",
+      "NRG",
+      "New_England_Whalers",
+      "New_Identity",
+      "Nihilum_Gaming",
+      "Nouns_Esports",
+      "Orgless_(Canadian_team)",
+      "Party_Astronauts",
+      "RBG_Esports",
+      "Rebirth_Esports_(American_team)",
+      "Recon_5",
+      "Regain",
+      "Riot_Squad_Esports",
+      "Rise_Nation",
+      "Rogue",
+      "Rugratz",
+      "Rush_(Team)",
+      "San_Francisco_Optx",
+      "Secret_Club",
+      "Selfless_Gaming",
+      "SkinRave_Esports",
+      "Spacestation_Gaming",
+      "Splyce",
+      "SportsBetExpert",
+      "Strife_Esports",
+      "SubtLe",
+      "Swole_Patrol",
+      "Take_Flyte",
+      "Team_3D",
+      "Team_Dynamic",
+      "Team_Kaliber",
+      "Team_Liquid",
+      "Team_Prospects",
+      "Team_Quetzal",
+      "Team_Voca",
+      "Team_iBUYPOWER",
+      "Third_Impact",
+      "Timbermen",
+      "Torqued",
+      "Triumph",
+      "Turmoil",
+      "Vendetta_(American_team)",
+      "Vireo.pro",
+      "Vision_Gaming",
+      "Wildcard",
+      "WinOut.net",
+      "Winterfox",
+      "Without_a_Roof",
+      "X13",
+      "X3O_Gaming",
+      "Ze_Pug_Godz",
+      "Zomblers"
+    ],
+    "South America": [
+      "2Game_Esports",
+      "9z_Team",
+      "Arctic_eSports",
+      "Avalanche_GG",
+      "BESTIA",
+      "BOOM_Esports",
+      "Big_Gods",
+      "Black_Dragons_e-Sports",
+      "Boca_Juniors_Gaming",
+      "Bounty_Hunters_Esports",
+      "Bravos_Gaming",
+      "CNB_e-Sports_Club",
+      "Case_Esports",
+      "Corinthians_Esports",
+      "DENDELE_CS",
+      "DETONA_Gaming",
+      "Denial_Esports",
+      "Dusty_Roots",
+      "Elevate",
+      "Evilvice_Esports",
+      "FURIA",
+      "Fake_do_Biru",
+      "Flamengo_Esports",
+      "Fluxo",
+      "Fluxo_W7M",
+      "Furious_Gaming",
+      "G3nerationX",
+      "Gaimin_Gladiators",
+      "Gale_Force_Esports",
+      "Galorys",
+      "Games_Academy",
+      "INTZ",
+      "Immortals",
+      "Imperial_Esports",
+      "InSanitY_Sports",
+      "Infinity_(Latin_American_team)",
+      "Isurus",
+      "KRÜ_Esports",
+      "Keyd_Stars",
+      "LOS",
+      "LargadosyPelados",
+      "Legacy",
+      "Leviatán",
+      "Liberty",
+      "MIBR",
+      "Malvinas_Gaming",
+      "Meta_Gaming",
+      "Mibr_(Counter-Strike_team)",
+      "Não_Tem_Como",
+      "ODDIK",
+      "PaiN_Gaming",
+      "Paquetá_Gaming",
+      "RED_Canids",
+      "Redemption_eSports_Porto_Alegre",
+      "River_Plate_Gaming",
+      "SK_Gaming",
+      "SWS_Gaming",
+      "Santos_e-Sports",
+      "ShindeN",
+      "Supremacy_Gaming",
+      "Team_Solid",
+      "Team_Wild",
+      "Team_oNe_eSports",
+      "The_Right_Stuff",
+      "The_Union",
+      "UNO_MILLE",
+      "VAULT",
+      "Virtue_Gaming",
+      "W7m_esports",
+      "Wild_Ineters",
+      "Yawara_E-Sports",
+      "Yeah_Gaming"
+    ],
+    "Oceania": [
+      "Athletico_Esports",
+      "Avant_Gaming",
+      "Chiefs_Esports_Club",
+      "Corvidae",
+      "Dark_Sided",
+      "Dire_Wolves",
+      "EXTREMUM",
+      "FlyQuest",
+      "Genuine_Gaming",
+      "Grayhound_Gaming",
+      "Ground_Zero_Gaming",
+      "ICON_Esports",
+      "Kings_Gaming_Club",
+      "Legacy_Esports",
+      "LookingForOrg_(Australian_team)",
+      "Mindfreak_(Australian_team)",
+      "ORDER",
+      "Paradox_Esports",
+      "Parallax",
+      "Renegades",
+      "Rooster",
+      "SYF_Gaming",
+      "SemperFi_Esports",
+      "Sydney_Underground",
+      "THUNDERdOWNUNDER",
+      "Team_Immunity",
+      "VERTEX_Esports_Club",
+      "Vox_Eminor"
+    ],
+    "China": [
+      "5Power_Gaming",
+      "5yclone",
+      "After_Gaming",
+      "All_Gamers",
+      "B.O.O.T.cn",
+      "BORING_PLAYER",
+      "Big_Time_Regal_Gaming",
+      "Born_of_Fire",
+      "CatEvil",
+      "Change_The_Game",
+      "CyberZen",
+      "E9esports",
+      "EDward_Gaming",
+      "EFuture",
+      "EHOME",
+      "Eclipse",
+      "FIVE_eSports_Club",
+      "FengDa_Gaming",
+      "Flash_Gaming",
+      "Gen.G_Esports",
+      "Invictus_Gaming",
+      "Kaleido_Gaming",
+      "LGD_Gaming",
+      "Lynn_Vision_Gaming",
+      "Morningstar",
+      "NEW4",
+      "NewHappy",
+      "Panda_Gaming",
+      "Rare_Atom",
+      "Recall_THE_END",
+      "Rising-Stars",
+      "Steel_Helmet",
+      "TYLOO",
+      "TYLOO.raw",
+      "Team_Aster",
+      "Team_MAX",
+      "Triumphant_Song_Gaming",
+      "UYA",
+      "VG.CyberZen",
+      "VG.FlashGaming",
+      "ViCi_Gaming",
+      "WDNMD",
+      "WNv.cn",
+      "WNv_Teamwork",
+      "Wings_Up_Gaming",
+      "Xi'anTaiChangGui"
+    ],
+    "Asia": [
+      "5star_eSports",
+      "ALPHA_Red",
+      "ATOX_Esports",
+      "AUGUST",
+      "Absolute",
+      "Alter_Ego",
+      "B.O.O.T-dreamScape",
+      "BC.Game_Esports",
+      "BL4ZE_Esports",
+      "Beyond_Esports",
+      "Bren_Esports",
+      "Checkmate",
+      "Chinggis_Warriors",
+      "D13",
+      "Divine_Vendetta",
+      "DreamScape",
+      "E-STRO",
+      "EXECUTIONERS",
+      "Entity_Gaming",
+      "Eruption",
+      "Fire_Dragoon_Esports",
+      "FrostFire",
+      "GOSU",
+      "Global_Esports",
+      "Gods_Reign",
+      "Huat_Zai",
+      "IHC_Esports",
+      "JiJieHao",
+      "Lucid_Dream",
+      "Lunatic-hai",
+      "MVP_Karnal",
+      "MVP_PK",
+      "MVP_Project",
+      "Made_in_Thailand",
+      "Marcos_Gaming",
+      "Mazaalai",
+      "Mineski",
+      "NASR_Esports",
+      "NEXVOID",
+      "NSPR_Gaming",
+      "Orange_Esports.Chymera",
+      "Portal_Esports",
+      "Rebellion",
+      "Recca_Esports",
+      "Revolution",
+      "Risky_Gaming",
+      "SCARZ_Absolute",
+      "Seoul_Jinhwa",
+      "Signature_Gaming",
+      "Singapore_Sword",
+      "TIGER",
+      "Team_Brutality",
+      "Team_NKT",
+      "Team_Renewal",
+      "Team_SHIFT",
+      "Team_Spotnet",
+      "Team_iNvictus",
+      "Team_nxl",
+      "The_Huns_Esports",
+      "The_MongolZ",
+      "True_Rippers_Esports",
+      "WeMade_FOX",
+      "Wuhan_Dragon",
+      "YaLLa_Esports",
+      "ZIGMA"
+    ],
+    "Africa": [
+      "Aperture_Gaming",
+      "Big_5_Esports",
+      "Bravado_Gaming",
+      "DNMK_Esports",
+      "Damage_Control",
+      "Energy_Esports",
+      "Goliath_Gaming",
+      "Kitsune_Esports",
+      "Nixuh",
+      "Sinister5"
+    ]
+  },
+  "teams": [
+    {
+      "page": "100 Thieves",
+      "name": "100 Thieves",
+      "location": "United States",
+      "region": "Northern Europe",
+      "portalSection": "Northern Europe",
+      "logo": "100 Thieves full lightmode.png",
+      "players": [
+        {
+          "id": "rain",
+          "name": "Håvard Nygaard",
+          "flag": "no",
+          "role": "player",
+          "igl": false,
+          "joindate": "2025-11-13"
+        },
+        {
+          "id": "poiii",
+          "name": "Alex Sundgren",
+          "flag": "se",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-01-05"
+        },
+        {
+          "id": "sirah",
+          "name": "William Kjærsgaard",
+          "flag": "dk",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-01-05"
+        },
+        {
+          "id": "dev1ce",
+          "name": "Nicolai Reedtz",
+          "flag": "dk",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-01-06"
+        },
+        {
+          "id": "Gizmy",
+          "name": "Jack von Spreckelsen",
+          "flag": "uk",
+          "role": "player",
+          "igl": true,
+          "joindate": "2026-07-01"
+        }
+      ],
+      "infoboxRegion": "europe"
+    },
+    {
+      "page": "9INE",
+      "name": "9INE",
+      "location": "Sweden",
+      "region": "Eastern Europe",
+      "portalSection": "Eastern Europe",
+      "logo": "9INE 2025 lightmode.png",
+      "players": [
+        {
+          "id": "raalz",
+          "name": "Rasmus Steensborg",
+          "flag": "dk",
+          "role": "player",
+          "igl": true,
+          "joindate": "2024-05-22"
+        },
+        {
+          "id": "kraghen",
+          "name": "Tobias Jensen",
+          "flag": "dk",
+          "role": "player",
+          "igl": false,
+          "joindate": "2025-01-13"
+        },
+        {
+          "id": "Flayy",
+          "name": "Alan Krupa",
+          "flag": "pl",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-03-03"
+        },
+        {
+          "id": "rim3",
+          "name": "Emir Dönmez",
+          "flag": "tr",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-06-16"
+        },
+        {
+          "id": "b1elany",
+          "name": "Maciej Biliński",
+          "flag": "pl",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-07-03"
+        }
+      ],
+      "infoboxRegion": "eu"
+    },
+    {
+      "page": "9z Team",
+      "name": "9z Team",
+      "location": "Argentina",
+      "region": "South America",
+      "portalSection": "South America",
+      "logo": "9z Team 2024 lightmode.png",
+      "players": [
+        {
+          "id": "max",
+          "name": "Maximiliano Gonzalez",
+          "flag": "uy",
+          "role": "player",
+          "igl": true,
+          "joindate": "2020-02-26"
+        },
+        {
+          "id": "HUASOPEEK",
+          "name": "Matías Ibañez",
+          "flag": "cl",
+          "role": "player",
+          "igl": false,
+          "joindate": "2023-10-14"
+        },
+        {
+          "id": "luchov",
+          "name": "Luciano Herrera",
+          "flag": "ar",
+          "role": "player",
+          "igl": false,
+          "joindate": "2025-11-19"
+        },
+        {
+          "id": "meyern",
+          "name": "Ignacio Meyer",
+          "flag": "ar",
+          "role": "player",
+          "igl": false,
+          "joindate": "2025-11-19"
+        },
+        {
+          "id": "dgt",
+          "name": "Franco Garcia",
+          "flag": "uy",
+          "role": "loan",
+          "igl": false,
+          "joindate": "2026-01-15"
+        }
+      ],
+      "infoboxRegion": "sa"
+    },
+    {
+      "page": "1w Team",
+      "name": "1w Team",
+      "location": "Russia",
+      "region": "CIS",
+      "portalSection": "CIS",
+      "logo": "1win Team 2024 allmode.png",
+      "players": [
+        {
+          "id": "nafany",
+          "name": "Vladislav Gorshkov",
+          "flag": "ru",
+          "role": "player",
+          "igl": true,
+          "joindate": "2026-08-01"
+        },
+        {
+          "id": "Ax1Le",
+          "name": "Sergey Rykhtorov",
+          "flag": "ru",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-08-01"
+        },
+        {
+          "id": "ArtFr0st",
+          "name": "Artem Kharitonov",
+          "flag": "ru",
+          "role": "loan",
+          "igl": false,
+          "joindate": "2026-08-01"
+        },
+        {
+          "id": "fame",
+          "name": "Petr Bolyshev",
+          "flag": "ru",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-08-01"
+        },
+        {
+          "id": "BELCHONOKK",
+          "name": "Andrey Yasinskiy",
+          "flag": "ru",
+          "role": "loan",
+          "igl": false,
+          "joindate": "2026-08-01"
+        }
+      ],
+      "infoboxRegion": "cis"
+    },
+    {
+      "page": "AaB esport",
+      "name": "AaB esport",
+      "location": "Denmark",
+      "region": "Northern Europe",
+      "portalSection": "Northern Europe",
+      "logo": "AaB esport full lightmode.png",
+      "players": [
+        {
+          "id": "Few",
+          "name": "Frederik Pedersen",
+          "flag": "dk",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-07-31"
+        },
+        {
+          "id": "Beddy",
+          "name": "Frederik Hald",
+          "flag": "dk",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-07-31"
+        },
+        {
+          "id": "noike",
+          "name": "Donat Jaseneckij",
+          "flag": "dk",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-07-31"
+        },
+        {
+          "id": "Djdamecykel",
+          "name": "Emil Jørgensen",
+          "flag": "dk",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-07-31"
+        }
+      ],
+      "infoboxRegion": "europe"
+    },
+    {
+      "page": "ARCRED",
+      "name": "ARCRED",
+      "location": "Uzbekistan",
+      "region": "CIS",
+      "portalSection": "CIS",
+      "logo": "ARCRED 2025 allmode.png",
+      "players": [
+        {
+          "id": "DSSj",
+          "name": "Timur Abdullin",
+          "flag": "uz",
+          "role": "player",
+          "igl": false,
+          "joindate": "2020-02-06"
+        },
+        {
+          "id": "Ryujin",
+          "name": "Boris Kim",
+          "flag": "uz",
+          "role": "player",
+          "igl": true,
+          "joindate": "2025-01-17"
+        },
+        {
+          "id": "kumao",
+          "name": "Maksat Serik",
+          "flag": "kz",
+          "role": "loan",
+          "igl": false,
+          "joindate": "2026-09-18"
+        },
+        {
+          "id": "icyvlone",
+          "name": "Daniel Lee",
+          "flag": "uz",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-09-29"
+        },
+        {
+          "id": "ManticorE",
+          "name": "Artem Kim",
+          "flag": "uz",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-09-29"
+        },
+        {
+          "id": "ARSPOWER",
+          "name": "Arystan Toktar",
+          "flag": "kz",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-09-29"
+        }
+      ],
+      "infoboxRegion": "cis"
+    },
+    {
+      "page": "Astralis",
+      "name": "Astralis",
+      "location": "Denmark",
+      "region": "Northern Europe",
+      "portalSection": "Northern Europe",
+      "logo": "Astralis 2020 full allmode.png",
+      "players": [
+        {
+          "id": "Staehr",
+          "name": "Victor Staehr",
+          "flag": "dk",
+          "role": "player",
+          "igl": false,
+          "joindate": "2023-06-22"
+        },
+        {
+          "id": "jabbi",
+          "name": "Jakob Nygaard",
+          "flag": "dk",
+          "role": "player",
+          "igl": false,
+          "joindate": "2023-11-24"
+        },
+        {
+          "id": "HooXi",
+          "name": "Rasmus Nielsen",
+          "flag": "dk",
+          "role": "player",
+          "igl": true,
+          "joindate": "2025-06-18"
+        },
+        {
+          "id": "phzy",
+          "name": "Love Smidebrant",
+          "flag": "se",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-01-08"
+        },
+        {
+          "id": "ryu",
+          "name": "Gytis Glušauskas",
+          "flag": "lt",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-01-08"
+        }
+      ],
+      "infoboxRegion": "eu"
+    },
+    {
+      "page": "BIG",
+      "name": "BIG",
+      "location": "Germany",
+      "region": "Central Europe",
+      "portalSection": "Central Europe",
+      "logo": "BIG 2020 full lightmode.png",
+      "players": [
+        {
+          "id": "tabseN",
+          "name": "Johannes Wodarz",
+          "flag": "de",
+          "role": "player",
+          "igl": false,
+          "joindate": "2017-01-02"
+        },
+        {
+          "id": "JDC",
+          "name": "Jon de Castro",
+          "flag": "de",
+          "role": "player",
+          "igl": false,
+          "joindate": "2024-02-12"
+        },
+        {
+          "id": "gr1ks",
+          "name": "Gleb Gazin",
+          "flag": "by",
+          "role": "player",
+          "igl": false,
+          "joindate": "2025-10-10"
+        },
+        {
+          "id": "blameF",
+          "name": "Benjamin Bremer",
+          "flag": "dk",
+          "role": "player",
+          "igl": true,
+          "joindate": "2026-01-09"
+        },
+        {
+          "id": "faveN",
+          "name": "Josef Baumann",
+          "flag": "de",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-01-09"
+        }
+      ],
+      "infoboxRegion": "eu"
+    },
+    {
+      "page": "BRUTE",
+      "name": "BRUTE",
+      "location": "Czech Republic",
+      "region": "Eastern Europe",
+      "portalSection": "Eastern Europe",
+      "logo": "Team Brute 2020 lightmode.png",
+      "players": [
+        {
+          "id": "hfah",
+          "name": "Oskar Wroński",
+          "flag": "pl",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-02-16"
+        },
+        {
+          "id": "nbqq",
+          "name": "Vít Pohlot",
+          "flag": "cz",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-03-20"
+        },
+        {
+          "id": "aidKiT",
+          "name": "Jane Apostoloski",
+          "flag": "mk",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-05-28"
+        },
+        {
+          "id": "ZEDKO",
+          "name": "Jindřich Chyba",
+          "flag": "cz",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-07-16"
+        },
+        {
+          "id": "tAk",
+          "name": "Vilius Keserauskas",
+          "flag": "lt",
+          "role": "loan",
+          "igl": false,
+          "joindate": "2026-08-28"
+        }
+      ],
+      "infoboxRegion": "eu"
+    },
+    {
+      "page": "B8",
+      "name": "B8",
+      "location": "Ukraine",
+      "region": "Eastern Europe",
+      "portalSection": "Eastern Europe",
+      "logo": "B8 lightmode.png",
+      "players": [
+        {
+          "id": "npl",
+          "name": "Andrii Kukharskyi",
+          "flag": "ua",
+          "role": "player",
+          "igl": false,
+          "joindate": "2023-07-09"
+        },
+        {
+          "id": "esenthial",
+          "name": "Dmytro Tsvir",
+          "flag": "ua",
+          "role": "player",
+          "igl": false,
+          "joindate": "2024-01-22"
+        },
+        {
+          "id": "alex666",
+          "name": "Oleksii Yarmoshchuk",
+          "flag": "ua",
+          "role": "player",
+          "igl": true,
+          "joindate": "2024-04-30"
+        },
+        {
+          "id": "kensizor",
+          "name": "Artem Kapran",
+          "flag": "ua",
+          "role": "player",
+          "igl": false,
+          "joindate": "2024-12-28"
+        },
+        {
+          "id": "s1zzi",
+          "name": "Danylo Vinnyk",
+          "flag": "ua",
+          "role": "loan",
+          "igl": false,
+          "joindate": "2026-02-01"
+        }
+      ],
+      "infoboxRegion": "europe"
+    },
+    {
+      "page": "Aurora Gaming",
+      "name": "Aurora Gaming",
+      "location": "Serbia",
+      "region": "Eastern Europe",
+      "portalSection": "Eastern Europe",
+      "logo": "Aurora Gaming 2025 full allmode.png",
+      "players": [
+        {
+          "id": "XANTARES",
+          "name": "İsmailcan Dörtkardeş",
+          "flag": "tr",
+          "role": "player",
+          "igl": false,
+          "joindate": "2025-04-05"
+        },
+        {
+          "id": "Wicadia",
+          "name": "Ali Haydar Yalçın",
+          "flag": "tr",
+          "role": "player",
+          "igl": false,
+          "joindate": "2025-04-05"
+        },
+        {
+          "id": "woxic",
+          "name": "Özgür Eker",
+          "flag": "tr",
+          "role": "player",
+          "igl": false,
+          "joindate": "2025-04-05"
+        },
+        {
+          "id": "Jimpphat",
+          "name": "Jimi Salo",
+          "flag": "fi",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-07-03"
+        },
+        {
+          "id": "kyxsan",
+          "name": "Damjan Stoilkovski",
+          "flag": "mk",
+          "role": "player",
+          "igl": true,
+          "joindate": "2026-07-08"
+        }
+      ],
+      "infoboxRegion": "eu"
+    },
+    {
+      "page": "Alter Ego",
+      "name": "Alter Ego",
+      "location": "Indonesia",
+      "region": "Asia",
+      "portalSection": "Asia",
+      "logo": "Alter Ego 2022 allmode.png",
+      "players": [
+        {
+          "id": "BnTeT",
+          "name": "Hansel Ferdinand",
+          "flag": "id",
+          "role": "player",
+          "igl": false,
+          "joindate": "2025-07-31"
+        },
+        {
+          "id": "PokemoN",
+          "name": "Saad Ahmed",
+          "flag": "pk",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-08-28"
+        },
+        {
+          "id": "laxiee",
+          "name": "Maks Andryei",
+          "flag": "mn",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-08-28"
+        },
+        {
+          "id": "adeX",
+          "name": "Adelin Nica",
+          "flag": "ro",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-08-28"
+        },
+        {
+          "id": "shadiy",
+          "name": "Martins Gütmanis",
+          "flag": "lv",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-08-28"
+        }
+      ],
+      "infoboxRegion": "asia"
+    },
+    {
+      "page": "BAKS Esports",
+      "name": "BAKS Esports",
+      "location": "Russia",
+      "region": "CIS",
+      "portalSection": "CIS",
+      "logo": "BAKS Esports 2025 lightmode.png",
+      "players": [
+        {
+          "id": "xdENiSZERA",
+          "name": "Denis Sklenin",
+          "flag": "ru",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-03-03"
+        },
+        {
+          "id": "turbo",
+          "name": "Artyom Dobryshev",
+          "flag": "ru",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-03-06"
+        },
+        {
+          "id": "whisper",
+          "name": "Gadel Galimullin",
+          "flag": "ru",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-05-01"
+        },
+        {
+          "id": "danistzz",
+          "name": "Danil Roslyakov",
+          "flag": "ru",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-07-19"
+        },
+        {
+          "id": "Norwi",
+          "name": "Evgeniy Ermolin",
+          "flag": "ru",
+          "role": "player",
+          "igl": true,
+          "joindate": "2026-07-20"
+        }
+      ],
+      "infoboxRegion": "cis"
+    },
+    {
+      "page": "BORING PLAYER",
+      "name": "BORING PLAYER",
+      "location": "China",
+      "region": "China",
+      "portalSection": "China",
+      "logo": "BORING PLAYER 2024 full lightmode.png",
+      "players": [
+        {
+          "id": "zdr",
+          "name": "Dongrui Zhang",
+          "flag": "cn",
+          "role": "player",
+          "igl": false,
+          "joindate": "2024-06-01"
+        },
+        {
+          "id": "Jun7",
+          "name": "Cao Junqi<!---曹骏骐--->",
+          "flag": "cn",
+          "role": "player",
+          "igl": false,
+          "joindate": "2024-07-??"
+        },
+        {
+          "id": "Miszary",
+          "name": "Wang Chenyi",
+          "flag": "cn",
+          "role": "player",
+          "igl": false,
+          "joindate": "2025-06-??"
+        },
+        {
+          "id": "A1uCa",
+          "name": "Hao Zuoxu<!---郝祚旭--->",
+          "flag": "cn",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-06-26"
+        }
+      ],
+      "infoboxRegion": "china"
+    },
+    {
+      "page": "Békéscsabai E-Sport Egyesület",
+      "name": "Békéscsabai E-Sport Egyesület",
+      "location": "Hungary",
+      "region": "Eastern Europe",
+      "portalSection": "Eastern Europe",
+      "logo": "Békéscsabai E-sport Egyesület full lightmode.png",
+      "players": [
+        {
+          "id": "Kozmo",
+          "name": "Zoltán Hegyi",
+          "flag": "hu",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-06-17"
+        },
+        {
+          "id": "kr1stilio",
+          "name": "Krisztián Fejes",
+          "flag": "hu",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-06-17"
+        },
+        {
+          "id": "baiano",
+          "name": "Krisztián Juhász",
+          "flag": "sk",
+          "role": "player",
+          "igl": true,
+          "joindate": "2026-06-17"
+        },
+        {
+          "id": "vamosramos",
+          "name": "Zsombo Puskás",
+          "flag": "hu",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-06-17"
+        },
+        {
+          "id": "darkstarrr",
+          "name": "Zoltán Huber",
+          "flag": "hu",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-06-17"
+        }
+      ],
+      "infoboxRegion": "europe"
+    },
+    {
+      "page": "Bounty Hunters Esports",
+      "name": "Bounty Hunters Esports",
+      "location": "Brazil",
+      "region": "South America",
+      "portalSection": "South America",
+      "logo": "Bounty Hunters Esports full lightmode.png",
+      "players": [
+        {
+          "id": "KAISER",
+          "name": "Gianfranco Pantano",
+          "flag": "ar",
+          "role": "player",
+          "igl": true,
+          "joindate": "2024-03-28"
+        },
+        {
+          "id": "zock",
+          "name": "Mauro Da Silva",
+          "flag": "uy",
+          "role": "player",
+          "igl": false,
+          "joindate": "2025-01-03"
+        },
+        {
+          "id": "ponter",
+          "name": "Gabriel Amaral",
+          "flag": "br",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-01-09"
+        },
+        {
+          "id": "pepe",
+          "name": "Pedro Inácio",
+          "flag": "br",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-02-26"
+        },
+        {
+          "id": "urban0",
+          "name": "Lucas Urbano",
+          "flag": "br",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-07-31"
+        }
+      ],
+      "infoboxRegion": "south america"
+    },
+    {
+      "page": "DIVIZON",
+      "name": "DIVIZON",
+      "location": "Germany",
+      "region": "Central Europe",
+      "portalSection": "Central Europe",
+      "logo": "DIVIZON 2022 lightmode.png",
+      "players": [
+        {
+          "id": "Tunix",
+          "name": "Dennis Schmidt",
+          "flag": "de",
+          "role": "founder, {{abbr|ceo|chief executive officer}}",
+          "igl": false,
+          "joindate": "2016-10-10"
+        },
+        {
+          "id": "JNTS",
+          "name": "Tobias Jantos",
+          "flag": "de",
+          "role": "head of teams",
+          "igl": false,
+          "joindate": "2023-05-24"
+        },
+        {
+          "id": "Pulsmann",
+          "name": "Tobias Wagner",
+          "flag": "de",
+          "role": "cs:go coordinator",
+          "igl": false,
+          "joindate": "2023-01-12"
+        }
+      ],
+      "infoboxRegion": "eu"
+    },
+    {
+      "page": "DENDELE CS",
+      "name": "DENDELE CS",
+      "location": "Portugal",
+      "region": "South America",
+      "portalSection": "South America",
+      "logo": "DENDELE CS allmode.png",
+      "players": [
+        {
+          "id": "gafolo",
+          "name": "Victor Andrade",
+          "flag": "br",
+          "role": "player",
+          "igl": true,
+          "joindate": "2023-01-16"
+        },
+        {
+          "id": "rdnzao",
+          "name": "Daniel Monteiro",
+          "flag": "br",
+          "role": "player",
+          "igl": false,
+          "joindate": "2023-01-16"
+        },
+        {
+          "id": "doc",
+          "name": "Danilo Moraes",
+          "flag": "br",
+          "role": "player",
+          "igl": false,
+          "joindate": "2023-06-30"
+        },
+        {
+          "id": "koala",
+          "name": "João Pedro",
+          "flag": "br",
+          "role": "player",
+          "igl": false,
+          "joindate": "2024-05-21"
+        },
+        {
+          "id": "maxxkor",
+          "name": "Máximo Cortina",
+          "flag": "ar",
+          "role": "player",
+          "igl": false,
+          "joindate": "2025-08-26"
+        }
+      ],
+      "infoboxRegion": "south america"
+    },
+    {
+      "page": "DUSTY",
+      "name": "DUSTY",
+      "location": "Iceland",
+      "region": "Western Europe",
+      "portalSection": "Western Europe",
+      "logo": "Dusty full lightmode.png",
+      "players": [
+        {
+          "id": "StebbiC0C0",
+          "name": "Stefán Guðjónsson",
+          "flag": "is",
+          "role": "player",
+          "igl": false,
+          "joindate": "2022-09-12"
+        },
+        {
+          "id": "Midgard",
+          "name": "Heiðar Flóvent Friðriksson",
+          "flag": "is",
+          "role": "player",
+          "igl": false,
+          "joindate": "2024-05-13"
+        },
+        {
+          "id": "brnr",
+          "name": "Birnir Clausson",
+          "flag": "is",
+          "role": "player",
+          "igl": false,
+          "joindate": "2024-09-19"
+        }
+      ],
+      "infoboxRegion": "eu"
+    },
+    {
+      "page": "DETONATE",
+      "name": "DETONATE",
+      "location": "United States",
+      "region": "North America",
+      "portalSection": "North America",
+      "logo": "DETONATE 2024 full allmode.png",
+      "players": [
+        {
+          "id": "tatm",
+          "name": "Matthew Munro",
+          "flag": "us",
+          "role": "player",
+          "igl": true,
+          "joindate": "2026-01-19"
+        },
+        {
+          "id": "chante",
+          "name": "Austin Ganster",
+          "flag": "us",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-01-19"
+        },
+        {
+          "id": "carN",
+          "name": "Timothy Adams",
+          "flag": "us",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-04-28"
+        },
+        {
+          "id": "CrePoW",
+          "name": "Milan Libbrecht",
+          "flag": "be",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-08-26"
+        }
+      ],
+      "infoboxRegion": "north america"
+    },
+    {
+      "page": "ENCE",
+      "name": "ENCE",
+      "location": "Finland",
+      "region": "Northern Europe",
+      "portalSection": "Northern Europe",
+      "logo": "ENCE 2020 full lightmode.png",
+      "players": [
+        {
+          "id": "teme",
+          "name": "Teemu Korva",
+          "flag": "fi",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-04-01"
+        },
+        {
+          "id": "millert",
+          "name": "Aleksi Lehtopuu",
+          "flag": "fi",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-04-01"
+        },
+        {
+          "id": "Schwarz",
+          "name": "Giorgi Gakhokidze",
+          "flag": "ge",
+          "role": "player",
+          "igl": true,
+          "joindate": "2026-04-01"
+        },
+        {
+          "id": "HENU",
+          "name": "Henri Ylilehto",
+          "flag": "fi",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-04-01"
+        },
+        {
+          "id": "joeski",
+          "name": "Joe Holmes",
+          "flag": "fi",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-08-13"
+        }
+      ],
+      "infoboxRegion": "eu"
+    },
+    {
+      "page": "ENVY",
+      "name": "ENVY",
+      "location": "United States",
+      "region": "Western Europe",
+      "portalSection": "Western Europe",
+      "logo": "ENVY 2025 full lightmode.png",
+      "players": [
+        {
+          "id": "Lucky",
+          "name": "Lucas Chastang",
+          "flag": "fr",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-09-29"
+        },
+        {
+          "id": "Maka",
+          "name": "Bryan Canda",
+          "flag": "fr",
+          "role": "player",
+          "igl": true,
+          "joindate": "2026-09-29"
+        },
+        {
+          "id": "Graviti",
+          "name": "Filip Branković",
+          "flag": "fr",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-09-29"
+        },
+        {
+          "id": "misutaaa",
+          "name": "Kévin Rabier",
+          "flag": "fr",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-09-29"
+        },
+        {
+          "id": "Kursy",
+          "name": "Jeremy Gast",
+          "flag": "fr",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-09-29"
+        }
+      ],
+      "infoboxRegion": "eu"
+    },
+    {
+      "page": "ESuba",
+      "name": "eSuba",
+      "location": "Czech Republic",
+      "region": "Eastern Europe",
+      "portalSection": "Eastern Europe",
+      "logo": "ESuba 2021 full lightmode.png",
+      "players": [
+        {
+          "id": "Rentlax",
+          "name": "Martin Křepelka",
+          "flag": "cz",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-06-08"
+        },
+        {
+          "id": "Frigo",
+          "name": "Petr Havránek",
+          "flag": "cz",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-06-08"
+        },
+        {
+          "id": "Shark",
+          "name": "Filip Táborský",
+          "flag": "cz",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-06-08"
+        },
+        {
+          "id": "Crazyy",
+          "name": "Ondřej Švec",
+          "flag": "cz",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-06-08"
+        }
+      ],
+      "infoboxRegion": "eu"
+    },
+    {
+      "page": "Entropy Gaming",
+      "name": "Entropy Gaming",
+      "location": "Germany",
+      "region": "Northern Europe",
+      "portalSection": "Northern Europe",
+      "logo": "Entropy Gaming 2020 full lightmode.png",
+      "players": [
+        {
+          "id": "Teaser",
+          "name": "Michael Decker",
+          "flag": "de",
+          "role": "founder, {{abbr|ceo|chief executive officer}}",
+          "igl": false,
+          "joindate": "2016-05-31"
+        },
+        {
+          "id": "D3nnIs",
+          "name": "Dennis Hartweg-Schulz",
+          "flag": "de",
+          "role": "{{abbr|coo|chief operating officer}}",
+          "igl": false,
+          "joindate": "2023-??-??"
+        },
+        {
+          "id": "PhnX",
+          "name": "Dominik Rommel",
+          "flag": "de",
+          "role": "head of cs",
+          "igl": false,
+          "joindate": "2026-04-17"
+        }
+      ],
+      "infoboxRegion": "eu"
+    },
+    {
+      "page": "ECSTATIC",
+      "name": "ECSTATIC",
+      "location": "Denmark",
+      "region": "Northern Europe",
+      "portalSection": "Northern Europe",
+      "logo": "ECSTATIC 2023 allmode.png",
+      "players": [
+        {
+          "id": "Skejs",
+          "name": "Rasmus Gleerup",
+          "flag": "dk",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-09-11"
+        },
+        {
+          "id": "Z1noz",
+          "name": "Luca Jensen",
+          "flag": "dk",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-09-11"
+        },
+        {
+          "id": "Inspire",
+          "name": "David Rasmussen",
+          "flag": "dk",
+          "role": "player",
+          "igl": true,
+          "joindate": "2026-09-11"
+        },
+        {
+          "id": "Thom",
+          "name": "Thomas Hedemann",
+          "flag": "dk",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-09-11"
+        }
+      ],
+      "infoboxRegion": "eu"
+    },
+    {
+      "page": "Eternal Fire",
+      "name": "Eternal Fire",
+      "location": "Hungary",
+      "region": "Eastern Europe",
+      "portalSection": "Eastern Europe",
+      "logo": "Eternal Fire 2023 allmode.png",
+      "players": [
+        {
+          "id": "jottAAA",
+          "name": "Samet Köklü",
+          "flag": "tr",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-02-02"
+        },
+        {
+          "id": "regali",
+          "name": "Iulian Harjău",
+          "flag": "ro",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-04-14"
+        },
+        {
+          "id": "MisteM",
+          "name": "Gareth Ries",
+          "flag": "za",
+          "role": "player",
+          "igl": true,
+          "joindate": "2026-04-15"
+        },
+        {
+          "id": "Kvem",
+          "name": "Vladyslav Korol",
+          "flag": "ua",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-07-03"
+        },
+        {
+          "id": "soulfly",
+          "name": "Caner Kesici",
+          "flag": "tr",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-08-23"
+        }
+      ],
+      "infoboxRegion": "eu"
+    },
+    {
+      "page": "EYEBALLERS",
+      "name": "EYEBALLERS",
+      "location": "Sweden",
+      "region": "Northern Europe",
+      "portalSection": "Northern Europe",
+      "logo": "EYEBALLERS 2023 full allmode.png",
+      "players": [
+        {
+          "id": "JW",
+          "name": "Jesper Wecksell",
+          "flag": "se",
+          "role": "player",
+          "igl": true,
+          "joindate": "2022-06-09"
+        },
+        {
+          "id": "dex",
+          "name": "Sebastian Samuelsson",
+          "flag": "se",
+          "role": "player",
+          "igl": false,
+          "joindate": "2024-10-22"
+        },
+        {
+          "id": "Ro1f",
+          "name": "Kalle Johansson",
+          "flag": "se",
+          "role": "player",
+          "igl": false,
+          "joindate": "2025-05-19"
+        },
+        {
+          "id": "maxster",
+          "name": "Max Jansson",
+          "flag": "se",
+          "role": "player",
+          "igl": false,
+          "joindate": "2025-07-01"
+        },
+        {
+          "id": "KRIMZ",
+          "name": "Freddy Johansson",
+          "flag": "se",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-06-22"
+        }
+      ],
+      "infoboxRegion": "europe"
+    },
+    {
+      "page": "Esport Academy Copenhagen",
+      "name": "Esport Academy Copenhagen",
+      "location": "Denmark",
+      "region": "Northern Europe",
+      "portalSection": "Northern Europe",
+      "logo": "Esport Academy Copenhagen allmode.png",
+      "players": [
+        {
+          "id": "bekker",
+          "name": "Tobias Bekker",
+          "flag": "dk",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-05-14"
+        },
+        {
+          "id": "n1Xen",
+          "name": "Mikkel Borlund",
+          "flag": "dk",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-05-14"
+        },
+        {
+          "id": "sSen",
+          "name": "Simon Iversen",
+          "flag": "dk",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-05-14"
+        },
+        {
+          "id": "anber",
+          "name": "Andreas Brandt",
+          "flag": "dk",
+          "role": "player",
+          "igl": true,
+          "joindate": "2026-05-14"
+        },
+        {
+          "id": "Fessor",
+          "name": "Frederik Sørensen",
+          "flag": "dk",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-07-18"
+        }
+      ],
+      "infoboxRegion": "eu"
+    },
+    {
+      "page": "G2 Esports",
+      "name": "G2 Esports",
+      "location": "Germany",
+      "region": "Eastern Europe",
+      "portalSection": "Eastern Europe",
+      "logo": "G2 Esports 2020 full lightmode.png",
+      "players": [
+        {
+          "id": "huNter-",
+          "name": "Nemanja Kovač",
+          "flag": "ba",
+          "role": "player",
+          "igl": true,
+          "joindate": "2019-09-30"
+        },
+        {
+          "id": "HeavyGod",
+          "name": "Nikita Martynenko",
+          "flag": "il",
+          "role": "player",
+          "igl": false,
+          "joindate": "2025-01-11"
+        },
+        {
+          "id": "matys",
+          "name": "Matúš Šimko",
+          "flag": "sk",
+          "role": "player",
+          "igl": false,
+          "joindate": "2025-07-18"
+        },
+        {
+          "id": "NertZ",
+          "name": "Guy Iluz",
+          "flag": "il",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-03-13"
+        },
+        {
+          "id": "r1nkle",
+          "name": "Artem Moroz",
+          "flag": "ua",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-06-25"
+        }
+      ],
+      "infoboxRegion": "europe"
+    },
+    {
+      "page": "FaZe Clan",
+      "name": "FaZe Clan",
+      "location": "United States",
+      "region": "Eastern Europe",
+      "portalSection": "Eastern Europe",
+      "logo": "FaZe Esports 2026 full lightmode.png",
+      "players": [
+        {
+          "id": "frozen",
+          "name": "David Čerňanský",
+          "flag": "sk",
+          "role": "player",
+          "igl": false,
+          "joindate": "2023-12-04"
+        },
+        {
+          "id": "jcobbb",
+          "name": "Jakub Pietruszewski",
+          "flag": "pl",
+          "role": "player",
+          "igl": false,
+          "joindate": "2025-08-22"
+        },
+        {
+          "id": "Twistzz",
+          "name": "Russel Van Dulken",
+          "flag": "ca",
+          "role": "player",
+          "igl": true,
+          "joindate": "2025-09-20"
+        },
+        {
+          "id": "JBOEN",
+          "name": "Jason Nielsen",
+          "flag": "dk",
+          "role": "loan",
+          "igl": false,
+          "joindate": "2026-06-25"
+        },
+        {
+          "id": "Neityu",
+          "name": "Ryan Aubry",
+          "flag": "fr",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-08-11"
+        }
+      ],
+      "infoboxRegion": "eu"
+    },
+    {
+      "page": "Fnatic",
+      "name": "Fnatic",
+      "location": "United Kingdom",
+      "region": "Eastern Europe",
+      "portalSection": "Eastern Europe",
+      "logo": "Fnatic 2020 full lightmode.png",
+      "players": [
+        {
+          "id": "fear",
+          "name": "Rodion Smyk",
+          "flag": "ua",
+          "role": "player",
+          "igl": true,
+          "joindate": "2025-01-10"
+        },
+        {
+          "id": "jambo",
+          "name": "Dmytro Semera",
+          "flag": "ua",
+          "role": "player",
+          "igl": false,
+          "joindate": "2025-03-21"
+        },
+        {
+          "id": "jackasmo",
+          "name": "Mykyta Skyba",
+          "flag": "ua",
+          "role": "player",
+          "igl": false,
+          "joindate": "2025-10-10"
+        },
+        {
+          "id": "cairne",
+          "name": "Artem Mushynskyi",
+          "flag": "ua",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-07-01"
+        },
+        {
+          "id": "mazay",
+          "name": "Volodymyr Iorhachov",
+          "flag": "ua",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-07-09"
+        }
+      ],
+      "infoboxRegion": "eu"
+    },
+    {
+      "page": "FURIA",
+      "name": "FURIA",
+      "location": "Brazil",
+      "region": "South America",
+      "portalSection": "South America",
+      "logo": "FURIA Esports full lightmode.png",
+      "players": [
+        {
+          "id": "yuurih",
+          "name": "Yuri Boian",
+          "flag": "br",
+          "role": "player",
+          "igl": false,
+          "joindate": "2017-11-08"
+        },
+        {
+          "id": "KSCERATO",
+          "name": "Kaike Cerato",
+          "flag": "br",
+          "role": "player",
+          "igl": false,
+          "joindate": "2018-02-06"
+        },
+        {
+          "id": "FalleN",
+          "name": "Gabriel Toledo",
+          "flag": "br",
+          "role": "player",
+          "igl": true,
+          "joindate": "2023-07-03"
+        },
+        {
+          "id": "molodoy",
+          "name": "Danil Golubenko",
+          "flag": "kz",
+          "role": "player",
+          "igl": false,
+          "joindate": "2025-04-11"
+        },
+        {
+          "id": "YEKINDAR",
+          "name": "Mareks Gaļinskis",
+          "flag": "lv",
+          "role": "player",
+          "igl": false,
+          "joindate": "2025-04-22"
+        }
+      ],
+      "infoboxRegion": "south america"
+    },
+    {
+      "page": "Evilvice Esports",
+      "name": "Evilvice Esports",
+      "location": "Chile",
+      "region": "South America",
+      "portalSection": "South America",
+      "logo": "Evilvice Esports logo Apr2018.png",
+      "players": [
+        {
+          "id": "nicoUP",
+          "name": "Nicolas Pérez Galaz",
+          "flag": "cl",
+          "role": "co-owner & ceo",
+          "igl": false,
+          "joindate": ""
+        },
+        {
+          "id": "Jiren",
+          "name": "Benjamín Sarras",
+          "flag": "cl",
+          "role": "co-owner & chief financial officer",
+          "igl": false,
+          "joindate": ""
+        },
+        {
+          "id": "Domingoo",
+          "name": "Domingo Undurraga",
+          "flag": "cl",
+          "role": "co-owner",
+          "igl": false,
+          "joindate": ""
+        }
+      ],
+      "infoboxRegion": "south america"
+    },
+    {
+      "page": "GameAgents",
+      "name": "GameAgents",
+      "location": "Serbia",
+      "region": "Eastern Europe",
+      "portalSection": "Eastern Europe",
+      "logo": "GameAgents 2024 full lightmode.png",
+      "players": [
+        {
+          "id": "socanx",
+          "name": "Veljko Kostić",
+          "flag": "rs",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-09-29"
+        },
+        {
+          "id": "kalu",
+          "name": "Luka Rikanović",
+          "flag": "rs",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-09-29"
+        },
+        {
+          "id": "stole",
+          "name": "Stefan Stošić",
+          "flag": "rs",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-09-29"
+        },
+        {
+          "id": "daveiid",
+          "name": "David Lešić",
+          "flag": "hr",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-09-29"
+        },
+        {
+          "id": "Palfi",
+          "name": "Ljubomir Stefanovski",
+          "flag": "mk",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-09-29"
+        }
+      ],
+      "infoboxRegion": "europe"
+    },
+    {
+      "page": "HEROIC",
+      "name": "HEROIC",
+      "location": "Norway",
+      "region": "Northern Europe",
+      "portalSection": "Northern Europe",
+      "logo": "HEROIC 2024 full lightmode.png",
+      "players": [
+        {
+          "id": "nilo",
+          "name": "Linus Bergman",
+          "flag": "se",
+          "role": "player",
+          "igl": false,
+          "joindate": "2025-01-10"
+        },
+        {
+          "id": "Chr1zN",
+          "name": "Christoffer Storgaard",
+          "flag": "dk",
+          "role": "player",
+          "igl": true,
+          "joindate": "2025-11-28"
+        },
+        {
+          "id": "susp",
+          "name": "Tim Ångström",
+          "flag": "se",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-01-07"
+        },
+        {
+          "id": "Martinez",
+          "name": "Antonio Martínez",
+          "flag": "es",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-07-07"
+        },
+        {
+          "id": "Brollan",
+          "name": "Ludvig Brolin",
+          "flag": "se",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-07-07"
+        }
+      ],
+      "infoboxRegion": "europe"
+    },
+    {
+      "page": "HAVU",
+      "name": "HAVU",
+      "location": "Finland",
+      "region": "Northern Europe",
+      "portalSection": "Northern Europe",
+      "logo": "HAVU 2025 full allmode.png",
+      "players": [
+        {
+          "id": "uli",
+          "name": "Samu Leirilaakso",
+          "flag": "fi",
+          "role": "player",
+          "igl": false,
+          "joindate": "2023-08-31"
+        },
+        {
+          "id": "ottob",
+          "name": "Otto Virtanen",
+          "flag": "fi",
+          "role": "player",
+          "igl": false,
+          "joindate": "2025-01-13"
+        },
+        {
+          "id": "p3kko",
+          "name": "Pekko Korkalainen",
+          "flag": "fi",
+          "role": "player",
+          "igl": true,
+          "joindate": "2025-01-13"
+        },
+        {
+          "id": "Alxc",
+          "name": "Aleksi Lähevirta",
+          "flag": "fi",
+          "role": "player",
+          "igl": false,
+          "joindate": "2025-01-13"
+        },
+        {
+          "id": "8Juho8",
+          "name": "Juho Kankaanpää",
+          "flag": "fi",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-06-29"
+        }
+      ],
+      "infoboxRegion": "eu"
+    },
+    {
+      "page": "GamerLegion",
+      "name": "GamerLegion",
+      "location": "Germany",
+      "region": "Eastern Europe",
+      "portalSection": "Eastern Europe",
+      "logo": "GamerLegion 2026 allmode.png",
+      "players": [
+        {
+          "id": "Tauson",
+          "name": "Sebastian Lindelof",
+          "flag": "dk",
+          "role": "player",
+          "igl": false,
+          "joindate": "2024-09-24"
+        },
+        {
+          "id": "REZ",
+          "name": "Fredrik Sterner",
+          "flag": "se",
+          "role": "player",
+          "igl": false,
+          "joindate": "2025-01-09"
+        },
+        {
+          "id": "hypex",
+          "name": "Milan Polowiec",
+          "flag": "pl",
+          "role": "player",
+          "igl": false,
+          "joindate": "2025-09-17"
+        },
+        {
+          "id": "Snax",
+          "name": "Janusz Pogorzelski",
+          "flag": "pl",
+          "role": "player",
+          "igl": true,
+          "joindate": "2025-12-13"
+        },
+        {
+          "id": "FL4MUS",
+          "name": "Timur Maryev",
+          "flag": "ru",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-07-17"
+        }
+      ],
+      "infoboxRegion": "eu"
+    },
+    {
+      "page": "Ground Zero Gaming",
+      "name": "Ground Zero Gaming",
+      "location": "Australia",
+      "region": "Oceania",
+      "portalSection": "Oceania",
+      "logo": "Ground Zero Gaming 2019.png",
+      "players": [
+        {
+          "id": "apocdud",
+          "name": "Tom Henry",
+          "flag": "au",
+          "role": "player",
+          "igl": true,
+          "joindate": "2025-07-31"
+        },
+        {
+          "id": "vision",
+          "name": "Ethan Holst",
+          "flag": "au",
+          "role": "player",
+          "igl": false,
+          "joindate": "2025-07-31"
+        },
+        {
+          "id": "Omichella",
+          "name": "Jack McLoughlin",
+          "flag": "au",
+          "role": "player",
+          "igl": false,
+          "joindate": "2025-08-16"
+        },
+        {
+          "id": "HaZR",
+          "name": "Jared O'Bree",
+          "flag": "au",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-06-10"
+        },
+        {
+          "id": "sliimey",
+          "name": "Kalan Lorenzo",
+          "flag": "au",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-06-10"
+        }
+      ],
+      "infoboxRegion": "oceania"
+    },
+    {
+      "page": "GenOne",
+      "name": "GenOne",
+      "location": "France",
+      "region": "Western Europe",
+      "portalSection": "Western Europe",
+      "logo": "GenOne full lightmode.png",
+      "players": [
+        {
+          "id": "Brooxsy",
+          "name": "Hugo Di Bono",
+          "flag": "fr",
+          "role": "player",
+          "igl": false,
+          "joindate": "2025-05-06"
+        },
+        {
+          "id": "Djoko",
+          "name": "Thomas Pavoni",
+          "flag": "fr",
+          "role": "player",
+          "igl": false,
+          "joindate": "2025-09-23"
+        },
+        {
+          "id": "Keoz",
+          "name": "Nicolas Dgus",
+          "flag": "be",
+          "role": "player",
+          "igl": true,
+          "joindate": "2026-07-22"
+        },
+        {
+          "id": "bL4SEZ",
+          "name": "Elyas Amiar",
+          "flag": "fr",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-07-22"
+        }
+      ],
+      "infoboxRegion": "eu"
+    },
+    {
+      "page": "HOTU",
+      "name": "HOTU",
+      "location": "Russia",
+      "region": "CIS",
+      "portalSection": "CIS",
+      "logo": "HOTU 2022 full lightmode.png",
+      "players": [
+        {
+          "id": "mizu",
+          "name": "Dmitriy Kondratev",
+          "flag": "ru",
+          "role": "player",
+          "igl": false,
+          "joindate": "2022-02-01"
+        },
+        {
+          "id": "lampada",
+          "name": "Mark Ivanov",
+          "flag": "ru",
+          "role": "player",
+          "igl": false,
+          "joindate": "2024-04-15"
+        },
+        {
+          "id": "kade0",
+          "name": "Aidos Hairjan",
+          "flag": "kz",
+          "role": "player",
+          "igl": true,
+          "joindate": "2024-11-13"
+        },
+        {
+          "id": "frontales",
+          "name": "Kim Argunov",
+          "flag": "ru",
+          "role": "player",
+          "igl": false,
+          "joindate": "2025-08-11"
+        },
+        {
+          "id": "n0rb3r7",
+          "name": "David Danielyan",
+          "flag": "ru",
+          "role": "player",
+          "igl": false,
+          "joindate": "2025-08-31"
+        },
+        {
+          "id": "dwushka",
+          "name": "Aleksandr Pakhnevich",
+          "flag": "ru",
+          "role": "loan",
+          "igl": false,
+          "joindate": "2026-06-05"
+        }
+      ],
+      "infoboxRegion": "cis"
+    },
+    {
+      "page": "Honvéd Esport",
+      "name": "Honvéd Esport",
+      "location": "Hungary",
+      "region": "Eastern Europe",
+      "portalSection": "Eastern Europe",
+      "logo": "Honvéd Esport allmode.png",
+      "players": [
+        {
+          "id": "noleN",
+          "name": "Nolen Vida",
+          "flag": "hu",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-04-??"
+        },
+        {
+          "id": "esor",
+          "name": "Alexander Tóth",
+          "flag": "hu",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-04-??"
+        },
+        {
+          "id": "iBALLY",
+          "name": "Balázs Török",
+          "flag": "hu",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-04-??"
+        },
+        {
+          "id": "1NSERT2",
+          "name": "Dominik Gerencsér",
+          "flag": "hu",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-04-??"
+        },
+        {
+          "id": "marTineZ",
+          "name": "Martin Vers",
+          "flag": "hu",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-04-??"
+        }
+      ],
+      "infoboxRegion": "europe"
+    },
+    {
+      "page": "Isurus",
+      "name": "Isurus",
+      "location": "Argentina",
+      "region": "South America",
+      "portalSection": "South America",
+      "logo": "Isurus 2025 allmode.png",
+      "players": [
+        {
+          "id": "deco",
+          "name": "Marcos Amato",
+          "flag": "ar",
+          "role": "player",
+          "igl": true,
+          "joindate": "2026-01-27"
+        },
+        {
+          "id": "atarax1a",
+          "name": "Joaquin Biglieri",
+          "flag": "ar",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-01-27"
+        },
+        {
+          "id": "Hezz",
+          "name": "Leandro Barrios",
+          "flag": "ar",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-01-27"
+        },
+        {
+          "id": "dott1",
+          "name": "Matteo Dotti",
+          "flag": "ar",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-01-27"
+        }
+      ],
+      "infoboxRegion": "sa"
+    },
+    {
+      "page": "Imperial Esports",
+      "name": "Imperial Esports",
+      "location": "Brazil",
+      "region": "South America",
+      "portalSection": "South America",
+      "logo": "Imperial Esports 2025 allmode.png",
+      "players": [
+        {
+          "id": "VINI",
+          "name": "Vinicius Figueiredo",
+          "flag": "br",
+          "role": "player",
+          "igl": true,
+          "joindate": "2022-02-18"
+        },
+        {
+          "id": "noway",
+          "name": "Kaiky Santos",
+          "flag": "br",
+          "role": "player",
+          "igl": false,
+          "joindate": "2023-10-08"
+        },
+        {
+          "id": "chelo",
+          "name": "Marcelo Cespedes",
+          "flag": "br",
+          "role": "player",
+          "igl": false,
+          "joindate": "2025-07-01"
+        },
+        {
+          "id": "decenty",
+          "name": "Lucas Bacelar",
+          "flag": "br",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-02-24"
+        },
+        {
+          "id": "saadzin",
+          "name": "Guilherme Pacheco",
+          "flag": "br",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-07-10"
+        }
+      ],
+      "infoboxRegion": "south america"
+    },
+    {
+      "page": "JANO Esports",
+      "name": "JANO Esports",
+      "location": "Finland",
+      "region": "Northern Europe",
+      "portalSection": "Northern Europe",
+      "logo": "JANO Esports 2024 allmode.png",
+      "players": [
+        {
+          "id": "Moroara",
+          "name": "Arttu Leikas",
+          "flag": "fi",
+          "role": "player",
+          "igl": false,
+          "joindate": "2025-09-27"
+        },
+        {
+          "id": "S4MI",
+          "name": "Mikael Danska",
+          "flag": "fi",
+          "role": "player",
+          "igl": true,
+          "joindate": "2025-09-27"
+        },
+        {
+          "id": "Tumpsukka",
+          "name": "Tuomas Hirvelä",
+          "flag": "fi",
+          "role": "player",
+          "igl": false,
+          "joindate": "2025-09-27"
+        },
+        {
+          "id": "daNbee",
+          "name": "Daniel Strömberg",
+          "flag": "fi",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-07-12"
+        },
+        {
+          "id": "Kossu",
+          "name": "Reino Hyövälti",
+          "flag": "fi",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-09-22"
+        }
+      ],
+      "infoboxRegion": "europe"
+    },
+    {
+      "page": "JiJieHao",
+      "name": "JiJieHao",
+      "location": "China",
+      "region": "Asia",
+      "portalSection": "Asia",
+      "logo": "JiJieHao International allmode.png",
+      "players": [
+        {
+          "id": "m1N1",
+          "name": "Hussein Hijazi",
+          "flag": "lb",
+          "role": "player",
+          "igl": false,
+          "joindate": "2023-11-07"
+        },
+        {
+          "id": "bibu",
+          "name": "Bebu Aadil",
+          "flag": "iq",
+          "role": "player",
+          "igl": false,
+          "joindate": "2024-10-17"
+        },
+        {
+          "id": "0SAMAS",
+          "name": "Osama Orabi",
+          "flag": "ps",
+          "role": "player",
+          "igl": false,
+          "joindate": "2025-04-03"
+        },
+        {
+          "id": "sinnopsyy",
+          "name": "Dionis Budeci",
+          "flag": "xk",
+          "role": "player",
+          "igl": false,
+          "joindate": "2025-11-??"
+        },
+        {
+          "id": "CacaNito",
+          "name": "Aleksandar Kjulukoski",
+          "flag": "mk",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-04-??"
+        }
+      ],
+      "infoboxRegion": "asia"
+    },
+    {
+      "page": "Kitsune Esports",
+      "name": "Kitsune Esports",
+      "location": "South Africa",
+      "region": "Africa",
+      "portalSection": "Africa",
+      "logo": "Kitsune Esports 2023 lightmode.png",
+      "players": [
+        {
+          "id": "Doru",
+          "name": "Johnathan Fox",
+          "flag": "za",
+          "role": "player",
+          "igl": true,
+          "joindate": "2026-02-17"
+        },
+        {
+          "id": "wilj",
+          "name": "Wiljahne Smith",
+          "flag": "za",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-02-17"
+        },
+        {
+          "id": "Triton",
+          "name": "Kian Gibson",
+          "flag": "za",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-02-17"
+        },
+        {
+          "id": "March",
+          "name": "Marchahn Smith",
+          "flag": "za",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-02-17"
+        },
+        {
+          "id": "FROZ3N",
+          "name": "Michael Van Der Walt",
+          "flag": "za",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-02-17"
+        }
+      ],
+      "infoboxRegion": "africa"
+    },
+    {
+      "page": "INFINITE",
+      "name": "INFINITE",
+      "location": "Romania",
+      "region": "Eastern Europe",
+      "portalSection": "Eastern Europe",
+      "logo": "Infinite Gaming allmode.png",
+      "players": [
+        {
+          "id": "kreaz",
+          "name": "Rasmus Johansson",
+          "flag": "se",
+          "role": "player",
+          "igl": true,
+          "joindate": "2026-03-18"
+        },
+        {
+          "id": "sl3nd",
+          "name": "Henrich Hevesi",
+          "flag": "hu",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-03-18"
+        },
+        {
+          "id": "Blytz",
+          "name": "Raul Gligor",
+          "flag": "ro",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-04-07"
+        },
+        {
+          "id": "volt",
+          "name": "Sebastian Maloș",
+          "flag": "ro",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-07-16"
+        }
+      ],
+      "infoboxRegion": "europe"
+    },
+    {
+      "page": "ILLYRIANS",
+      "name": "ILLYRIANS",
+      "location": "Kosovo",
+      "region": "Eastern Europe",
+      "portalSection": "Eastern Europe",
+      "logo": "ILLYRIANS 2023 allmode.png",
+      "players": [
+        {
+          "id": "ammar",
+          "name": "Ammar Grashtica",
+          "flag": "xk",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-08-??"
+        },
+        {
+          "id": "BledarD",
+          "name": "Bledar Dula",
+          "flag": "xk",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-08-??"
+        },
+        {
+          "id": "cerber",
+          "name": "Serdar Mahmuti",
+          "flag": "xk",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-08-??"
+        },
+        {
+          "id": "xonn1k",
+          "name": "Egzon Behluli",
+          "flag": "xk",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-08-??"
+        },
+        {
+          "id": "vAloN",
+          "name": "Valon Etemi",
+          "flag": "mk",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-08-??"
+        }
+      ],
+      "infoboxRegion": "europe"
+    },
+    {
+      "page": "INFURITY Gaming",
+      "name": "INFURITY Gaming",
+      "location": "Norway",
+      "region": "Northern Europe",
+      "portalSection": "Northern Europe",
+      "logo": "INFURITY Gaming 2025 lightmode.png",
+      "players": [
+        {
+          "id": "sirius",
+          "name": "Emil Standal",
+          "flag": "no",
+          "role": "player",
+          "igl": false,
+          "joindate": "2025-08-06"
+        },
+        {
+          "id": "oontoma",
+          "name": "Tuomas Karsikas",
+          "flag": "fi",
+          "role": "player",
+          "igl": false,
+          "joindate": "2025-09-10"
+        },
+        {
+          "id": "shyyne",
+          "name": "Tobias Sæther",
+          "flag": "no",
+          "role": "player",
+          "igl": false,
+          "joindate": "2025-12-18"
+        },
+        {
+          "id": "AwaykeN",
+          "name": "Slaven Lyubenov",
+          "flag": "bg",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-05-28"
+        },
+        {
+          "id": "CHANKY",
+          "name": "Bogdan Șerban",
+          "flag": "ro",
+          "role": "player",
+          "igl": true,
+          "joindate": "2026-05-28"
+        }
+      ],
+      "infoboxRegion": "europe"
+    },
+    {
+      "page": "Luminosity Gaming",
+      "name": "Luminosity Gaming",
+      "location": "Canada",
+      "region": "Western Europe",
+      "portalSection": "Western Europe",
+      "logo": "Luminosity Gaming 2018 full lightmode.png",
+      "players": [
+        {
+          "id": "afro",
+          "name": "Aurélien Drapier",
+          "flag": "fr",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-07-01"
+        },
+        {
+          "id": "AZUWU",
+          "name": "Oscar Bell",
+          "flag": "uk",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-07-01"
+        },
+        {
+          "id": "Rainwaker",
+          "name": "Aleks Petrov",
+          "flag": "bg",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-07-01"
+        },
+        {
+          "id": "lux",
+          "name": "Lucas Meneghini",
+          "flag": "br",
+          "role": "player",
+          "igl": true,
+          "joindate": "2026-07-01"
+        },
+        {
+          "id": "yxngstxr",
+          "name": "Simon Boije",
+          "flag": "se",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-08-25"
+        }
+      ],
+      "infoboxRegion": "eu"
+    },
+    {
+      "page": "MOUZ",
+      "name": "MOUZ",
+      "location": "Germany",
+      "region": "Eastern Europe",
+      "portalSection": "Eastern Europe",
+      "logo": "MOUZ full allmode.png",
+      "players": [
+        {
+          "id": "torzsi",
+          "name": "Ádám Torzsás",
+          "flag": "hu",
+          "role": "player",
+          "igl": false,
+          "joindate": "2022-01-03"
+        },
+        {
+          "id": "xertioN",
+          "name": "Dorian Berman",
+          "flag": "il",
+          "role": "player",
+          "igl": true,
+          "joindate": "2022-08-26"
+        },
+        {
+          "id": "Spinx",
+          "name": "Lotan Giladi",
+          "flag": "il",
+          "role": "player",
+          "igl": false,
+          "joindate": "2025-01-23"
+        },
+        {
+          "id": "xelex",
+          "name": "Adrian Vincze",
+          "flag": "hu",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-04-18"
+        },
+        {
+          "id": "PR",
+          "name": "Oldřich Nový",
+          "flag": "cz",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-07-14"
+        }
+      ],
+      "infoboxRegion": "europe"
+    },
+    {
+      "page": "MIBR",
+      "name": "MIBR",
+      "location": "Brazil",
+      "region": "South America",
+      "portalSection": "South America",
+      "logo": "MIBR 2018 lightmode.png",
+      "players": [
+        {
+          "id": "insani",
+          "name": "Felipe Yuji",
+          "flag": "br",
+          "role": "player",
+          "igl": false,
+          "joindate": "2023-01-17"
+        },
+        {
+          "id": "LNZ",
+          "name": "Linus Holtäng",
+          "flag": "se",
+          "role": "player",
+          "igl": true,
+          "joindate": "2026-01-12"
+        },
+        {
+          "id": "venomzera",
+          "name": "Carlos Eduardo",
+          "flag": "br",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-01-12"
+        },
+        {
+          "id": "nqz",
+          "name": "Lucas Soares",
+          "flag": "br",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-06-26"
+        },
+        {
+          "id": "tomaszin",
+          "name": "Martín Corna",
+          "flag": "ar",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-08-28"
+        }
+      ],
+      "infoboxRegion": "sa"
+    },
+    {
+      "page": "Lilmix",
+      "name": "Lilmix",
+      "location": "Sweden",
+      "region": "Northern Europe",
+      "portalSection": "Northern Europe",
+      "logo": "Lilmix lightmode.png",
+      "players": [
+        {
+          "id": "Wonder",
+          "name": "Leo Wänlund",
+          "flag": "se",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-04-??"
+        },
+        {
+          "id": "p1ke",
+          "name": "Alfred Mellergårdh",
+          "flag": "se",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-09-15"
+        },
+        {
+          "id": "chucker",
+          "name": "Mateo Löfberg",
+          "flag": "se",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-09-15"
+        },
+        {
+          "id": "macke",
+          "name": "Marcus Hermundstad",
+          "flag": "se",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-09-15"
+        },
+        {
+          "id": "tqezo",
+          "name": "Eddie Thorstensson",
+          "flag": "se",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-09-16"
+        }
+      ],
+      "infoboxRegion": "eu"
+    },
+    {
+      "page": "Lynn Vision Gaming",
+      "name": "Lynn Vision Gaming",
+      "location": "China",
+      "region": "China",
+      "portalSection": "China",
+      "logo": "Lynn Vision Gaming 2024 full allmode.png",
+      "players": [
+        {
+          "id": "westmelon",
+          "name": "Niu Zhe",
+          "flag": "cn",
+          "role": "player",
+          "igl": true,
+          "joindate": "2017-05-24"
+        },
+        {
+          "id": "z4kr",
+          "name": "Zhang Sike",
+          "flag": "cn",
+          "role": "player",
+          "igl": false,
+          "joindate": "2019-08-09"
+        },
+        {
+          "id": "EmiliaQAQ",
+          "name": "Tang Junjie",
+          "flag": "cn",
+          "role": "player",
+          "igl": false,
+          "joindate": "2023-01-22"
+        },
+        {
+          "id": "Starry",
+          "name": "Ye Lizhi",
+          "flag": "cn",
+          "role": "player",
+          "igl": false,
+          "joindate": "2024-12-26"
+        },
+        {
+          "id": "C4LLM3SU3",
+          "name": "Su Qihao",
+          "flag": "cn",
+          "role": "player",
+          "igl": false,
+          "joindate": "2025-02-21"
+        }
+      ],
+      "infoboxRegion": "china"
+    },
+    {
+      "page": "London Esports",
+      "name": "London Esports",
+      "location": "United Kingdom",
+      "region": "Western Europe",
+      "portalSection": "Western Europe",
+      "logo": "London Esports 2019 lightmode.png",
+      "players": [
+        {
+          "id": "Alfie",
+          "name": "Alfie Wright",
+          "flag": "uk",
+          "role": "founder & director",
+          "igl": false,
+          "joindate": "2017-10-18"
+        }
+      ],
+      "infoboxRegion": "europe"
+    },
+    {
+      "page": "MASONIC",
+      "name": "MASONIC",
+      "location": "Denmark",
+      "region": "Northern Europe",
+      "portalSection": "Northern Europe",
+      "logo": "MASONIC 2022 full lightmode.png",
+      "players": [
+        {
+          "id": "Botman",
+          "name": "Niklas Vestergaard",
+          "flag": "dk",
+          "role": "player",
+          "igl": false,
+          "joindate": "2024-03-18"
+        },
+        {
+          "id": "KralleJ",
+          "name": "Kristian Jensen",
+          "flag": "dk",
+          "role": "player",
+          "igl": false,
+          "joindate": "2025-07-04"
+        },
+        {
+          "id": "b0RUP",
+          "name": "Johannes Borup",
+          "flag": "dk",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-04-21"
+        },
+        {
+          "id": "slexa",
+          "name": "Alexander Marrup",
+          "flag": "dk",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-07-29"
+        },
+        {
+          "id": "Bukhavez",
+          "name": "Jonas Vestergaard",
+          "flag": "dk",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-09-28"
+        }
+      ],
+      "infoboxRegion": "europe"
+    },
+    {
+      "page": "Legacy",
+      "name": "Legacy",
+      "location": "Brazil",
+      "region": "South America",
+      "portalSection": "South America",
+      "logo": "Legacy full lightmode.png",
+      "players": [
+        {
+          "id": "latto",
+          "name": "Bruno Rebelatto",
+          "flag": "br",
+          "role": "player",
+          "igl": false,
+          "joindate": "2023-08-15"
+        },
+        {
+          "id": "dumau",
+          "name": "Eduardo Wolkmer",
+          "flag": "br",
+          "role": "player",
+          "igl": false,
+          "joindate": "2023-08-15"
+        },
+        {
+          "id": "n1ssim",
+          "name": "Vinicius Pereira",
+          "flag": "br",
+          "role": "player",
+          "igl": false,
+          "joindate": "2025-01-02"
+        },
+        {
+          "id": "arT",
+          "name": "Andrei Piovezan",
+          "flag": "br",
+          "role": "player",
+          "igl": true,
+          "joindate": "2026-02-03"
+        },
+        {
+          "id": "try",
+          "name": "Santino Rigal",
+          "flag": "ar",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-07-11"
+        }
+      ],
+      "infoboxRegion": "south america"
+    },
+    {
+      "page": "Leo Team",
+      "name": "Leo Team",
+      "location": "Ukraine",
+      "region": "Eastern Europe",
+      "portalSection": "Eastern Europe",
+      "logo": "L&G 2023 allmode.png",
+      "players": [
+        {
+          "id": "leen",
+          "name": "Vladyslav Stepanov",
+          "flag": "ua",
+          "role": "player",
+          "igl": true,
+          "joindate": "2026-03-15"
+        },
+        {
+          "id": "next1me",
+          "name": "Kacper Parakowski",
+          "flag": "pl",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-06-23"
+        },
+        {
+          "id": "aimy",
+          "name": "Jakub Kleczkowski",
+          "flag": "pl",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-06-24"
+        },
+        {
+          "id": "Tarkky",
+          "name": "Julien Buzogany",
+          "flag": "fr",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-08-03"
+        },
+        {
+          "id": "drac",
+          "name": "Etienne Salaün",
+          "flag": "fr",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-08-03"
+        }
+      ],
+      "infoboxRegion": "europe"
+    },
+    {
+      "page": "Lazer Cats",
+      "name": "Lazer Cats",
+      "location": "Ukraine",
+      "region": "Eastern Europe",
+      "portalSection": "Eastern Europe",
+      "logo": "Lazer Cats allmode.png",
+      "players": [
+        {
+          "id": "Magic",
+          "name": "Maksym Melnychuk",
+          "flag": "ua",
+          "role": "player",
+          "igl": false,
+          "joindate": "2024-07-21"
+        },
+        {
+          "id": "nikitea",
+          "name": "Nikita Chakhovskiy",
+          "flag": "ua",
+          "role": "player",
+          "igl": false,
+          "joindate": "2024-08-04"
+        },
+        {
+          "id": "Kiy0o",
+          "name": "Serhii Savitskyi",
+          "flag": "ua",
+          "role": "player",
+          "igl": false,
+          "joindate": "2025-11-13"
+        },
+        {
+          "id": "tripex17",
+          "name": "Denys Haponov",
+          "flag": "ua",
+          "role": "player",
+          "igl": true,
+          "joindate": "2026-09-18"
+        }
+      ],
+      "infoboxRegion": "europe"
+    },
+    {
+      "page": "Life's A Game",
+      "name": "Life's A Game",
+      "location": "United States",
+      "region": "North America",
+      "portalSection": "North America",
+      "logo": "LAG Gaming US lightmode.png",
+      "players": [
+        {
+          "id": "Sandman",
+          "name": "Justin Saulle",
+          "flag": "us",
+          "role": "player",
+          "igl": false,
+          "joindate": "2025-06-06"
+        },
+        {
+          "id": "djay",
+          "name": "Jonathan Dallal",
+          "flag": "ca",
+          "role": "player",
+          "igl": true,
+          "joindate": "2025-08-19"
+        },
+        {
+          "id": "Cryptic",
+          "name": "Matthew Whitmore",
+          "flag": "us",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-03-13"
+        },
+        {
+          "id": "Bwills",
+          "name": "Brendan Williams",
+          "flag": "us",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-06-26"
+        },
+        {
+          "id": "SLIGHT",
+          "name": "Keller Nilan",
+          "flag": "us",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-06-26"
+        }
+      ],
+      "infoboxRegion": "north america"
+    },
+    {
+      "page": "MYinsanity",
+      "name": "mYinsanity",
+      "location": "Switzerland",
+      "region": "Central Europe",
+      "portalSection": "Central Europe",
+      "logo": "mYinsanity allmode.png",
+      "players": [
+        {
+          "id": "LyNeX",
+          "name": "Shane Emmett",
+          "flag": "ch",
+          "role": "player",
+          "igl": true,
+          "joindate": "2026-01-19"
+        },
+        {
+          "id": "Firelegends",
+          "name": "Dominik Burri",
+          "flag": "ch",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-01-19"
+        },
+        {
+          "id": "NNirmo",
+          "name": "Lukas Süess",
+          "flag": "ch",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-01-19"
+        },
+        {
+          "id": "SIXAER",
+          "name": "Pedro Monteiro",
+          "flag": "pt",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-01-19"
+        },
+        {
+          "id": "ferox",
+          "name": "Ives Brunner",
+          "flag": "ch",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-01-19"
+        }
+      ],
+      "infoboxRegion": "europe"
+    },
+    {
+      "page": "LargadosyPelados",
+      "name": "LargadosyPelados",
+      "location": "Brazil",
+      "region": "South America",
+      "portalSection": "South America",
+      "logo": "LargadosyPelados allmode.png",
+      "players": [
+        {
+          "id": "happ",
+          "name": "Guilherme Bento",
+          "flag": "br",
+          "role": "player",
+          "igl": false,
+          "joindate": "2025-08-30"
+        },
+        {
+          "id": "zmb",
+          "name": "Leonardo Toledo",
+          "flag": "br",
+          "role": "player",
+          "igl": true,
+          "joindate": "2025-08-30"
+        },
+        {
+          "id": "divine",
+          "name": "Gustavo Altapini",
+          "flag": "br",
+          "role": "player",
+          "igl": false,
+          "joindate": "2025-08-30"
+        },
+        {
+          "id": "Alisson",
+          "name": "Alisson Farias",
+          "flag": "br",
+          "role": "player",
+          "igl": false,
+          "joindate": "2025-08-30"
+        }
+      ],
+      "infoboxRegion": "south america"
+    },
+    {
+      "page": "Ninjas in Pyjamas",
+      "name": "Ninjas in Pyjamas",
+      "location": "Sweden",
+      "region": "Northern Europe",
+      "portalSection": "Northern Europe",
+      "logo": "Ninjas in Pyjamas 2021 full lightmode.png",
+      "players": [
+        {
+          "id": "sjuush",
+          "name": "Rasmus Beck",
+          "flag": "dk",
+          "role": "player",
+          "igl": false,
+          "joindate": "2025-01-15"
+        },
+        {
+          "id": "xKacpersky",
+          "name": "Kacper Gabara",
+          "flag": "pl",
+          "role": "player",
+          "igl": false,
+          "joindate": "2025-07-10"
+        },
+        {
+          "id": "stavn",
+          "name": "Martin Lund",
+          "flag": "dk",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-04-15"
+        },
+        {
+          "id": "Krimbo",
+          "name": "Karim Moussa",
+          "flag": "de",
+          "role": "loan",
+          "igl": true,
+          "joindate": "2026-09-02"
+        },
+        {
+          "id": "adamb",
+          "name": "Adam Ångström",
+          "flag": "se",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-09-14"
+        }
+      ],
+      "infoboxRegion": "europe"
+    },
+    {
+      "page": "Natus Vincere",
+      "name": "Natus Vincere",
+      "location": "Ukraine",
+      "region": "Eastern Europe",
+      "portalSection": "Eastern Europe",
+      "logo": "Natus Vincere 2021 lightmode.png",
+      "players": [
+        {
+          "id": "b1t",
+          "name": "Valerii Vakhovskyi",
+          "flag": "ua",
+          "role": "player",
+          "igl": false,
+          "joindate": "2020-12-20"
+        },
+        {
+          "id": "Aleksib",
+          "name": "Aleksi Virolainen",
+          "flag": "fi",
+          "role": "player",
+          "igl": true,
+          "joindate": "2023-06-30"
+        },
+        {
+          "id": "iM",
+          "name": "Mihai Ivan",
+          "flag": "ro",
+          "role": "player",
+          "igl": false,
+          "joindate": "2023-06-30"
+        },
+        {
+          "id": "w0nderful",
+          "name": "Ihor Zhdanov",
+          "flag": "ua",
+          "role": "player",
+          "igl": false,
+          "joindate": "2023-10-31"
+        },
+        {
+          "id": "makazze",
+          "name": "Drin Shaqiri",
+          "flag": "xk",
+          "role": "player",
+          "igl": false,
+          "joindate": "2025-07-08"
+        }
+      ],
+      "infoboxRegion": "eu"
+    },
+    {
+      "page": "NRG",
+      "name": "NRG",
+      "location": "United States",
+      "region": "North America",
+      "portalSection": "North America",
+      "logo": "NRG 2024 lightmode.png",
+      "players": [
+        {
+          "id": "nitr0",
+          "name": "Nicholas Cannella",
+          "flag": "us",
+          "role": "player",
+          "igl": true,
+          "joindate": "2024-07-04"
+        },
+        {
+          "id": "Sonic",
+          "name": "Aran Groesbeek",
+          "flag": "za",
+          "role": "player",
+          "igl": false,
+          "joindate": "2025-09-04"
+        },
+        {
+          "id": "Grim",
+          "name": "Michael Wince",
+          "flag": "us",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-02-28"
+        },
+        {
+          "id": "Jeorge",
+          "name": "Jeorge Endicott",
+          "flag": "us",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-07-09"
+        },
+        {
+          "id": "hallzerk",
+          "name": "Håkon Fjærli",
+          "flag": "no",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-07-09"
+        }
+      ],
+      "infoboxRegion": "na"
+    },
+    {
+      "page": "Nexus Gaming",
+      "name": "Nexus Gaming",
+      "location": "Romania",
+      "region": "Eastern Europe",
+      "portalSection": "Eastern Europe",
+      "logo": "Nexus Gaming 2020 allmode.png",
+      "players": [
+        {
+          "id": "s0und",
+          "name": "Alexandru Ștefan",
+          "flag": "ro",
+          "role": "player",
+          "igl": false,
+          "joindate": "2025-01-10"
+        },
+        {
+          "id": "fNk",
+          "name": "Mihai Costache",
+          "flag": "ro",
+          "role": "player",
+          "igl": true,
+          "joindate": "2026-01-26"
+        },
+        {
+          "id": "Nexius",
+          "name": "Bram Campana",
+          "flag": "be",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-05-12"
+        },
+        {
+          "id": "shield",
+          "name": "Roberts Tipsis",
+          "flag": "lv",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-05-12"
+        },
+        {
+          "id": "HOLY",
+          "name": "Radu Vrânceanu",
+          "flag": "ro",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-09-10"
+        }
+      ],
+      "infoboxRegion": "europe"
+    },
+    {
+      "page": "Nemiga Gaming",
+      "name": "Nemiga Gaming",
+      "location": "Cyprus",
+      "region": "CIS",
+      "portalSection": "CIS",
+      "logo": "Nemiga Gaming 2020 red full allmode.png",
+      "players": [
+        {
+          "id": "khaN",
+          "name": "Beksūltan Ospan",
+          "flag": "kz",
+          "role": "player",
+          "igl": false,
+          "joindate": "2023-09-30"
+        },
+        {
+          "id": "SYPH0",
+          "name": "Daniel Ageyev",
+          "flag": "kz",
+          "role": "loan",
+          "igl": false,
+          "joindate": "2026-01-06"
+        },
+        {
+          "id": "KaiR0N-",
+          "name": "Aleksandr Anashkin",
+          "flag": "ru",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-01-06"
+        },
+        {
+          "id": "robo",
+          "name": "Nikita Dushin",
+          "flag": "ru",
+          "role": "trial",
+          "igl": true,
+          "joindate": "2026-07-17"
+        },
+        {
+          "id": "Xant3r",
+          "name": "Kirill Kononov",
+          "flag": "ru",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-08-15"
+        }
+      ],
+      "infoboxRegion": "cis"
+    },
+    {
+      "page": "Malvinas Gaming",
+      "name": "Malvinas Gaming",
+      "location": "Argentina",
+      "region": "South America",
+      "portalSection": "South America",
+      "logo": "Malvinas Gaming 2019 lightmode.png",
+      "players": [
+        {
+          "id": "Alexze",
+          "name": "Alejandro Marinelli",
+          "flag": "ar",
+          "role": "streamer",
+          "igl": false,
+          "joindate": "2018-11-08"
+        }
+      ],
+      "infoboxRegion": "south america"
+    },
+    {
+      "page": "Metizport",
+      "name": "Metizport",
+      "location": "Estonia",
+      "region": "Northern Europe",
+      "portalSection": "Northern Europe",
+      "logo": "Metizport 2025 allmode.png",
+      "players": [
+        {
+          "id": "Plopski",
+          "name": "Nicolas Gonzalez",
+          "flag": "se",
+          "role": "player",
+          "igl": false,
+          "joindate": "2024-05-18"
+        },
+        {
+          "id": "MaiL09",
+          "name": "Liam Tügel",
+          "flag": "se",
+          "role": "player",
+          "igl": false,
+          "joindate": "2025-07-09"
+        },
+        {
+          "id": "forsyy",
+          "name": "David Bílý",
+          "flag": "cz",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-01-01"
+        },
+        {
+          "id": "stanislaw",
+          "name": "Peter Jarguz",
+          "flag": "ca",
+          "role": "player",
+          "igl": true,
+          "joindate": "2026-04-06"
+        },
+        {
+          "id": "F1KU",
+          "name": "Maciej Miklas",
+          "flag": "pl",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-05-07"
+        }
+      ],
+      "infoboxRegion": "europe"
+    },
+    {
+      "page": "Mindfreak (Australian team)",
+      "name": "Mindfreak",
+      "location": "Australia",
+      "region": "Oceania",
+      "portalSection": "Oceania",
+      "logo": "Mindfreak full lightmode.png",
+      "players": [
+        {
+          "id": "kairo",
+          "name": "Kai Brooks",
+          "flag": "au",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-04-19"
+        },
+        {
+          "id": "phoebe",
+          "name": "Phoebe Winter",
+          "flag": "au",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-04-19"
+        },
+        {
+          "id": "void",
+          "name": "Cooper Farrell",
+          "flag": "au",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-04-19"
+        },
+        {
+          "id": "lawlkay",
+          "name": "Ethan Mistica",
+          "flag": "au",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-07-28"
+        },
+        {
+          "id": "Bay",
+          "name": "Tyler Dellaca",
+          "flag": "au",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-09-06"
+        }
+      ],
+      "infoboxRegion": "oceania"
+    },
+    {
+      "page": "Playing Ducks",
+      "name": "Playing Ducks",
+      "location": "Germany",
+      "region": "Central Europe",
+      "portalSection": "Central Europe",
+      "logo": "Playing Ducks 2014 allmode full.png",
+      "players": [
+        {
+          "id": "OneLion",
+          "name": "Leon Deuchert",
+          "flag": "de",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-02-15"
+        },
+        {
+          "id": "MYS",
+          "name": "Marius Riedl",
+          "flag": "de",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-02-15"
+        },
+        {
+          "id": "frozeN",
+          "name": "Eros M.",
+          "flag": "de",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-02-15"
+        },
+        {
+          "id": "UN1TY",
+          "name": "Julien Finger",
+          "flag": "de",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-02-15"
+        },
+        {
+          "id": "Spidergum",
+          "name": "Fabian Salomon",
+          "flag": "de",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-08-13"
+        },
+        {
+          "id": "MardeN",
+          "name": "Martin Mikkelsen",
+          "flag": "dk",
+          "role": "substitute",
+          "igl": false,
+          "joindate": "2026-02-15"
+        }
+      ],
+      "infoboxRegion": "eu"
+    },
+    {
+      "page": "PaiN Gaming",
+      "name": "paiN Gaming",
+      "location": "Brazil",
+      "region": "South America",
+      "portalSection": "South America",
+      "logo": "PaiN Gaming 2023 lightmode.png",
+      "players": [
+        {
+          "id": "biguzera",
+          "name": "Rodrigo Bittencourt",
+          "flag": "br",
+          "role": "player",
+          "igl": false,
+          "joindate": "2019-02-02"
+        },
+        {
+          "id": "snow",
+          "name": "João Vinicius",
+          "flag": "br",
+          "role": "player",
+          "igl": false,
+          "joindate": "2024-05-04"
+        },
+        {
+          "id": "saffee",
+          "name": "Rafael Costa",
+          "flag": "br",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-04-22"
+        },
+        {
+          "id": "Rkzinho",
+          "name": "Rickson Dias",
+          "flag": "br",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-09-04"
+        },
+        {
+          "id": "Tatu",
+          "name": "Lucas Santana",
+          "flag": "br",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-09-14"
+        }
+      ],
+      "infoboxRegion": "sa"
+    },
+    {
+      "page": "OG",
+      "name": "OG",
+      "location": "Denmark",
+      "region": "Western Europe",
+      "portalSection": "Western Europe",
+      "logo": null,
+      "players": [
+        {
+          "id": "spooke",
+          "name": "Olle Grundström",
+          "flag": "se",
+          "role": "player",
+          "igl": false,
+          "joindate": "2025-01-04"
+        },
+        {
+          "id": "bodyy",
+          "name": "Alexandre Pianaro",
+          "flag": "fr",
+          "role": "loan",
+          "igl": true,
+          "joindate": "2026-03-07"
+        },
+        {
+          "id": "Ex3rcice",
+          "name": "Pierre Bulinge",
+          "flag": "fr",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-10-04"
+        },
+        {
+          "id": "Chuckyy",
+          "name": "Jordan Molnar",
+          "flag": "be",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-10-04"
+        },
+        {
+          "id": "nut nut",
+          "name": "Martin Vestergaard",
+          "flag": "dk",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-10-04"
+        }
+      ],
+      "infoboxRegion": "europe"
+    },
+    {
+      "page": "Plan-B esports",
+      "name": "plan-B esports",
+      "location": "Austria",
+      "region": "Central Europe",
+      "portalSection": "Central Europe",
+      "logo": "Plan-B Esports full lightmode.png",
+      "players": [
+        {
+          "id": "sIKK.",
+          "name": "Niklas Welk",
+          "flag": "de",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-09-21"
+        },
+        {
+          "id": "aimyo",
+          "name": "",
+          "flag": "de",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-09-21"
+        },
+        {
+          "id": "WYSH",
+          "name": "",
+          "flag": "de",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-09-21"
+        },
+        {
+          "id": "BokajKami",
+          "name": "Jakob H.",
+          "flag": "at",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-09-21"
+        },
+        {
+          "id": "shukketxu",
+          "name": "",
+          "flag": "de",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-09-21"
+        }
+      ],
+      "infoboxRegion": "eu"
+    },
+    {
+      "page": "Partizan Esports",
+      "name": "Partizan Esports",
+      "location": "Serbia",
+      "region": "Eastern Europe",
+      "portalSection": "Eastern Europe",
+      "logo": "Partizan Esports 2024 lightmode.png",
+      "players": [
+        {
+          "id": "DotlA",
+          "name": "Miloš Dotlić",
+          "flag": "rs",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-03-26"
+        }
+      ],
+      "infoboxRegion": "europe"
+    },
+    {
+      "page": "Rare Atom",
+      "name": "Rare Atom",
+      "location": "China",
+      "region": "China",
+      "portalSection": "China",
+      "logo": "Rare Atom full allmode.png",
+      "players": [
+        {
+          "id": "Summer",
+          "name": "Cai Yulun",
+          "flag": "cn",
+          "role": "player",
+          "igl": true,
+          "joindate": "2023-10-10"
+        },
+        {
+          "id": "L1haNg",
+          "name": "Li Yihang",
+          "flag": "cn",
+          "role": "player",
+          "igl": false,
+          "joindate": "2024-04-08"
+        },
+        {
+          "id": "ChildKing",
+          "name": "Peng Junhao",
+          "flag": "cn",
+          "role": "player",
+          "igl": false,
+          "joindate": "2024-04-08"
+        },
+        {
+          "id": "chengking",
+          "name": "Zu Shengxuan",
+          "flag": "cn",
+          "role": "player",
+          "igl": false,
+          "joindate": "2025-12-11"
+        },
+        {
+          "id": "3gl",
+          "name": "Wang Guoliang",
+          "flag": "cn",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-05-09"
+        },
+        {
+          "id": "Trash",
+          "name": "Tian Aojie",
+          "flag": "cn",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-05-09"
+        }
+      ],
+      "infoboxRegion": "china"
+    },
+    {
+      "page": "Rooster",
+      "name": "Rooster",
+      "location": "Australia",
+      "region": "Oceania",
+      "portalSection": "Oceania",
+      "logo": "Rooster logo.png",
+      "players": [
+        {
+          "id": "chelleos",
+          "name": "Michael Hawkins",
+          "flag": "nz",
+          "role": "player",
+          "igl": false,
+          "joindate": "2022-10-23"
+        },
+        {
+          "id": "rekonz",
+          "name": "Daniel Mort",
+          "flag": "au",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-01-??"
+        },
+        {
+          "id": "SkulL",
+          "name": "Jordan Newland",
+          "flag": "au",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-01-??"
+        },
+        {
+          "id": "damyo",
+          "name": "Damon Portelli",
+          "flag": "au",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-08-12"
+        },
+        {
+          "id": "foggers",
+          "name": "Jayden Graham",
+          "flag": "au",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-09-??"
+        }
+      ],
+      "infoboxRegion": "oceania"
+    },
+    {
+      "page": "QUAZAR",
+      "name": "QUAZAR",
+      "location": "Russia",
+      "region": "CIS",
+      "portalSection": "CIS",
+      "logo": "QUAZAR.GG allmode.png",
+      "players": [
+        {
+          "id": "gehji",
+          "name": "Dmitriy Popov",
+          "flag": "ru",
+          "role": "player",
+          "igl": true,
+          "joindate": "2024-07-24"
+        },
+        {
+          "id": "kaiori",
+          "name": "Egor Torzhkov",
+          "flag": "ru",
+          "role": "player",
+          "igl": false,
+          "joindate": "2025-05-27"
+        },
+        {
+          "id": "newt",
+          "name": "Ilya Voronov",
+          "flag": "ru",
+          "role": "player",
+          "igl": false,
+          "joindate": "2025-10-13"
+        },
+        {
+          "id": "Ne1XXX",
+          "name": "Artyom Borisov",
+          "flag": "ru",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-01-11"
+        },
+        {
+          "id": "Porya",
+          "name": "Danil Poryadin",
+          "flag": "ru",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-05-07"
+        }
+      ],
+      "infoboxRegion": "cis"
+    },
+    {
+      "page": "Regain",
+      "name": "regain",
+      "location": "USA",
+      "region": "North America",
+      "portalSection": "North America",
+      "logo": "Regain 2025 lightmode.png",
+      "players": [
+        {
+          "id": "Zucar",
+          "name": "Eric Zuccaro",
+          "flag": "us",
+          "role": "player",
+          "igl": false,
+          "joindate": "2025-08-29"
+        },
+        {
+          "id": "sasha",
+          "name": "Alexander Burke",
+          "flag": "us",
+          "role": "player",
+          "igl": true,
+          "joindate": "2025-08-29"
+        },
+        {
+          "id": "grape",
+          "name": "Brennan Greer",
+          "flag": "us",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-04-26"
+        },
+        {
+          "id": "fuzenko",
+          "name": "Kyryl Kotov",
+          "flag": "ua",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-09-23"
+        },
+        {
+          "id": "z0mb1e",
+          "name": "Noah Velez",
+          "flag": "us",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-09-23"
+        }
+      ],
+      "infoboxRegion": "north america"
+    },
+    {
+      "page": "SAW",
+      "name": "SAW",
+      "location": "Portugal",
+      "region": "Southern Europe",
+      "portalSection": "Southern Europe",
+      "logo": "SAW 2021 full lightmode.png",
+      "players": [
+        {
+          "id": "ewjerkz",
+          "name": "Michel Magalhães",
+          "flag": "pt",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-07-03"
+        },
+        {
+          "id": "NOPEEj",
+          "name": "Filipe Dias",
+          "flag": "pt",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-07-03"
+        },
+        {
+          "id": "MUTiRiS",
+          "name": "Christopher Fernandes",
+          "flag": "pt",
+          "role": "player",
+          "igl": true,
+          "joindate": "2026-07-03"
+        },
+        {
+          "id": "krazy",
+          "name": "Adones Nobre",
+          "flag": "pt",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-07-03"
+        },
+        {
+          "id": "story",
+          "name": "João Vieira",
+          "flag": "pt",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-07-03"
+        }
+      ],
+      "infoboxRegion": "eu"
+    },
+    {
+      "page": "SINNERS Esports",
+      "name": "SINNERS Esports",
+      "location": "Czech Republic",
+      "region": "Eastern Europe",
+      "portalSection": "Eastern Europe",
+      "logo": "SINNERS Esports full allmode.png",
+      "players": [
+        {
+          "id": "beastik",
+          "name": "Sebastian Daňo",
+          "flag": "cz",
+          "role": "player",
+          "igl": true,
+          "joindate": "2020-01-27"
+        },
+        {
+          "id": "SHOCK",
+          "name": "Max Kvapil",
+          "flag": "cz",
+          "role": "player",
+          "igl": false,
+          "joindate": "2020-01-27"
+        },
+        {
+          "id": "kisserek",
+          "name": "Kamil Banak",
+          "flag": "pl",
+          "role": "player",
+          "igl": false,
+          "joindate": "2025-07-21"
+        },
+        {
+          "id": "stressarN",
+          "name": "Jordan Manevski",
+          "flag": "mk",
+          "role": "player",
+          "igl": false,
+          "joindate": "2025-07-21"
+        },
+        {
+          "id": "MoDo",
+          "name": "Mădălin-Andrei Mirea",
+          "flag": "ro",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-01-02"
+        }
+      ],
+      "infoboxRegion": "eu"
+    },
+    {
+      "page": "Sissi State Punks",
+      "name": "Sissi State Punks",
+      "location": "Austria",
+      "region": "Central Europe",
+      "portalSection": "Central Europe",
+      "logo": "Sissi State Punks 2024 allmode.png",
+      "players": [
+        {
+          "id": "farmaG",
+          "name": "Georg Bauer",
+          "flag": "at",
+          "role": "player",
+          "igl": false,
+          "joindate": "2022-07-01"
+        },
+        {
+          "id": "Cl34v3rs",
+          "name": "Marcel Klos",
+          "flag": "de",
+          "role": "player",
+          "igl": false,
+          "joindate": "2025-08-16"
+        },
+        {
+          "id": "fADE",
+          "name": "Philipp Zwenke",
+          "flag": "de",
+          "role": "player",
+          "igl": false,
+          "joindate": "2025-10-01"
+        },
+        {
+          "id": "giM",
+          "name": "Mergim Kuc",
+          "flag": "de",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-04-15"
+        }
+      ],
+      "infoboxRegion": "eu"
+    },
+    {
+      "page": "Sangal Esports",
+      "name": "Sangal Esports",
+      "location": "Netherlands",
+      "region": "Eastern Europe",
+      "portalSection": "Eastern Europe",
+      "logo": "Sangal Esports 2020 allmode.png",
+      "players": [
+        {
+          "id": "R4DYX",
+          "name": "Selman Ozan",
+          "flag": "tr",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-01-11"
+        },
+        {
+          "id": "Joey",
+          "name": "Yeray Perez",
+          "flag": "es",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-06-02"
+        },
+        {
+          "id": "puuha",
+          "name": "Luka Eklund",
+          "flag": "fi",
+          "role": "player",
+          "igl": true,
+          "joindate": "2026-06-02"
+        },
+        {
+          "id": "adamS",
+          "name": "Adam Marian",
+          "flag": "ro",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-06-02"
+        },
+        {
+          "id": "bnox",
+          "name": "Bartosz Niebisz",
+          "flag": "pl",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-07-08"
+        }
+      ],
+      "infoboxRegion": "europe"
+    },
+    {
+      "page": "Sashi Esport",
+      "name": "Sashi Esport",
+      "location": "Denmark",
+      "region": "Northern Europe",
+      "portalSection": "Northern Europe",
+      "logo": "Sashi Esport 2023 allmode.png",
+      "players": [
+        {
+          "id": "Zyphon",
+          "name": "Rasmus Nordfoss",
+          "flag": "dk",
+          "role": "player",
+          "igl": false,
+          "joindate": "2025-01-03"
+        },
+        {
+          "id": "acoR",
+          "name": "Frederik Gyldstrand",
+          "flag": "dk",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-02-05"
+        },
+        {
+          "id": "Anlelele",
+          "name": "Anton Huynh",
+          "flag": "dk",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-07-20"
+        },
+        {
+          "id": "TjP",
+          "name": "Tynan Purtell",
+          "flag": "au",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-10-05"
+        },
+        {
+          "id": "Hatz",
+          "name": "Jordan Bajic",
+          "flag": "au",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-10-05"
+        }
+      ],
+      "infoboxRegion": "eu"
+    },
+    {
+      "page": "Rune Eaters Esports",
+      "name": "Rune Eaters Esports",
+      "location": "Kazakhstan",
+      "region": "CIS",
+      "portalSection": "CIS",
+      "logo": "Rune Eaters Esports lightmode.png",
+      "players": [
+        {
+          "id": "forkyz",
+          "name": "Mūstafa Mäulenkūl",
+          "flag": "kz",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-02-23"
+        },
+        {
+          "id": "her1tage",
+          "name": "Asanali Serikkali",
+          "flag": "kz",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-02-23"
+        },
+        {
+          "id": "noni",
+          "name": "Nursultan Nyshanbek",
+          "flag": "kz",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-03-04"
+        },
+        {
+          "id": "demente",
+          "name": "Danial Ismailov",
+          "flag": "kz",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-04-07"
+        },
+        {
+          "id": "dukefissura",
+          "name": "Sūleimen Orazaly",
+          "flag": "kz",
+          "role": "player",
+          "igl": true,
+          "joindate": "2026-08-22"
+        }
+      ],
+      "infoboxRegion": "cis"
+    },
+    {
+      "page": "Team LEISURE",
+      "name": "Team LEISURE",
+      "location": "Germany",
+      "region": "Central Europe",
+      "portalSection": "Central Europe",
+      "logo": "Team LEISURE aug 2024 full lightmode.png",
+      "players": [
+        {
+          "id": "julz",
+          "name": "Julian Pollag",
+          "flag": "de",
+          "role": "player",
+          "igl": false,
+          "joindate": "2025-01-16"
+        },
+        {
+          "id": "DREAd",
+          "name": "Edward Dering",
+          "flag": "de",
+          "role": "player",
+          "igl": false,
+          "joindate": "2025-01-21"
+        },
+        {
+          "id": "KaSmA",
+          "name": "Mykola Nemeriuk",
+          "flag": "ua",
+          "role": "player",
+          "igl": true,
+          "joindate": "2026-07-14"
+        },
+        {
+          "id": "Naraz1",
+          "name": "Nazarii Holovatyi",
+          "flag": "ua",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-07-14"
+        },
+        {
+          "id": "sanju",
+          "name": "Tahar Aznay",
+          "flag": "nl",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-09-10"
+        }
+      ],
+      "infoboxRegion": "eu"
+    },
+    {
+      "page": "Team Liquid",
+      "name": "Team Liquid",
+      "location": "Netherlands",
+      "region": "North America",
+      "portalSection": "North America",
+      "logo": "Team Liquid 2024 full lightmode.png",
+      "players": [
+        {
+          "id": "NAF",
+          "name": "Keith Markovic",
+          "flag": "ca",
+          "role": "player",
+          "igl": false,
+          "joindate": "2018-02-05"
+        },
+        {
+          "id": "EliGE",
+          "name": "Jonathan Jablonowski",
+          "flag": "us",
+          "role": "player",
+          "igl": false,
+          "joindate": "2025-09-25"
+        },
+        {
+          "id": "malbsMd",
+          "name": "Mario Samayoa",
+          "flag": "gt",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-03-13"
+        },
+        {
+          "id": "Jorko",
+          "name": "Georgi Mitev",
+          "flag": "bg",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-07-09"
+        },
+        {
+          "id": "JT",
+          "name": "Johnny Theodosiou",
+          "flag": "za",
+          "role": "player",
+          "igl": true,
+          "joindate": "2026-07-22"
+        }
+      ],
+      "infoboxRegion": "north america"
+    },
+    {
+      "page": "TYLOO",
+      "name": "TYLOO",
+      "location": "China",
+      "region": "China",
+      "portalSection": "China",
+      "logo": "TyLoo 2016 allmode.png",
+      "players": [
+        {
+          "id": "JamYoung",
+          "name": "Yang Yi",
+          "flag": "cn",
+          "role": "player",
+          "igl": false,
+          "joindate": "2023-10-02"
+        },
+        {
+          "id": "Moseyuh",
+          "name": "Chen Qianhao",
+          "flag": "cn",
+          "role": "player",
+          "igl": false,
+          "joindate": "2023-10-02"
+        },
+        {
+          "id": "Mercury",
+          "name": "Wang Jingxiang",
+          "flag": "cn",
+          "role": "player",
+          "igl": true,
+          "joindate": "2023-10-02"
+        },
+        {
+          "id": "Jee",
+          "name": "Ji Dongkai",
+          "flag": "cn",
+          "role": "player",
+          "igl": false,
+          "joindate": "2024-06-13"
+        },
+        {
+          "id": "Zero",
+          "name": "Su Jingshen",
+          "flag": "cn",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-01-09"
+        }
+      ],
+      "infoboxRegion": "asia"
+    },
+    {
+      "page": "Team Falcons",
+      "name": "Team Falcons",
+      "location": "Saudi Arabia",
+      "region": "Eastern Europe",
+      "portalSection": "Eastern Europe",
+      "logo": "Team Falcons 2022 full lightmode.png",
+      "players": [
+        {
+          "id": "NiKo",
+          "name": "Nikola Kovač",
+          "flag": "ba",
+          "role": "player",
+          "igl": false,
+          "joindate": "2025-01-03"
+        },
+        {
+          "id": "TeSeS",
+          "name": "René Madsen",
+          "flag": "dk",
+          "role": "player",
+          "igl": false,
+          "joindate": "2025-01-04"
+        },
+        {
+          "id": "m0NESY",
+          "name": "Ilya Osipov",
+          "flag": "ru",
+          "role": "player",
+          "igl": false,
+          "joindate": "2025-04-14"
+        },
+        {
+          "id": "kyousuke",
+          "name": "Maksim Lukin",
+          "flag": "ru",
+          "role": "player",
+          "igl": false,
+          "joindate": "2025-06-23"
+        },
+        {
+          "id": "karrigan",
+          "name": "Finn Andersen",
+          "flag": "dk",
+          "role": "player",
+          "igl": true,
+          "joindate": "2026-04-20"
+        }
+      ],
+      "infoboxRegion": "europe"
+    },
+    {
+      "page": "Torqued",
+      "name": "Torqued",
+      "location": "United States",
+      "region": "North America",
+      "portalSection": "North America",
+      "logo": "Torqued 2017.png",
+      "players": [
+        {
+          "id": "frozt",
+          "name": "Carey Kertenian",
+          "flag": "us",
+          "role": "founder",
+          "igl": false,
+          "joindate": "2011"
+        },
+        {
+          "id": "tck",
+          "name": "Trey Martin",
+          "flag": "us",
+          "role": "co-founder",
+          "igl": false,
+          "joindate": "2011"
+        }
+      ],
+      "infoboxRegion": "na"
+    },
+    {
+      "page": "The MongolZ",
+      "name": "The MongolZ",
+      "location": "Mongolia",
+      "region": "Asia",
+      "portalSection": "Asia",
+      "logo": "The MongolZ 2024 03 allmode.png",
+      "players": [
+        {
+          "id": "bLitz",
+          "name": "Garidmagnai Byambasuren",
+          "flag": "mn",
+          "role": "player",
+          "igl": true,
+          "joindate": "2023-04-03"
+        },
+        {
+          "id": "Techno4K",
+          "name": "Sodbayar Munkhbold",
+          "flag": "mn",
+          "role": "player",
+          "igl": false,
+          "joindate": "2023-04-03"
+        },
+        {
+          "id": "910",
+          "name": "Usukhbayar Banzragch",
+          "flag": "mn",
+          "role": "player",
+          "igl": false,
+          "joindate": "2023-05-31"
+        },
+        {
+          "id": "cobrazera",
+          "name": "Anarbileg Uuganbayar",
+          "flag": "mn",
+          "role": "player",
+          "igl": false,
+          "joindate": "2025-12-31"
+        },
+        {
+          "id": "nin9",
+          "name": "Yesuntumur Gantulga",
+          "flag": "mn",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-10-05"
+        }
+      ],
+      "infoboxRegion": "asia"
+    },
+    {
+      "page": "Team Spirit",
+      "name": "Team Spirit",
+      "location": "Serbia",
+      "region": "CIS",
+      "portalSection": "CIS",
+      "logo": "Team Spirit 2022 full lightmode.png",
+      "players": [
+        {
+          "id": "magixx",
+          "name": "Boris Vorobyev",
+          "flag": "ru",
+          "role": "player",
+          "igl": true,
+          "joindate": "2019-09-26"
+        },
+        {
+          "id": "zont1x",
+          "name": "Myroslav Plakhotia",
+          "flag": "ua",
+          "role": "player",
+          "igl": false,
+          "joindate": "2023-07-05"
+        },
+        {
+          "id": "donk",
+          "name": "Danil Kryshkovets",
+          "flag": "ru",
+          "role": "player",
+          "igl": false,
+          "joindate": "2023-07-05"
+        },
+        {
+          "id": "sh1ro",
+          "name": "Dmitriy Sokolov",
+          "flag": "ru",
+          "role": "player",
+          "igl": false,
+          "joindate": "2023-12-17"
+        },
+        {
+          "id": "tN1R",
+          "name": "Andrey Tatarinovich",
+          "flag": "by",
+          "role": "player",
+          "igl": false,
+          "joindate": "2025-09-08"
+        }
+      ],
+      "infoboxRegion": "cis"
+    },
+    {
+      "page": "Team Vitality",
+      "name": "Team Vitality",
+      "location": "France",
+      "region": "Western Europe",
+      "portalSection": "Western Europe",
+      "logo": "Team Vitality 2026 full lightmode.png",
+      "players": [
+        {
+          "id": "apEX",
+          "name": "Dan Madesclaire",
+          "flag": "fr",
+          "role": "player",
+          "igl": true,
+          "joindate": "2018-10-08"
+        },
+        {
+          "id": "ZywOo",
+          "name": "Mathieu Herbaut",
+          "flag": "fr",
+          "role": "player",
+          "igl": false,
+          "joindate": "2018-10-08"
+        },
+        {
+          "id": "flameZ",
+          "name": "Shahar Shushan",
+          "flag": "il",
+          "role": "player",
+          "igl": false,
+          "joindate": "2023-06-22"
+        },
+        {
+          "id": "mezii",
+          "name": "William Merriman",
+          "flag": "uk",
+          "role": "player",
+          "igl": false,
+          "joindate": "2023-11-08"
+        },
+        {
+          "id": "ropz",
+          "name": "Robin Kool",
+          "flag": "ee",
+          "role": "player",
+          "igl": false,
+          "joindate": "2025-01-10"
+        }
+      ],
+      "infoboxRegion": "eu"
+    },
+    {
+      "page": "The Last Resort",
+      "name": "The Last Resort",
+      "location": "United Kingdom",
+      "region": "Western Europe",
+      "portalSection": "Western Europe",
+      "logo": "The Last Resort full lightmode.png",
+      "players": [
+        {
+          "id": "arTisT",
+          "name": "Tom Clarke",
+          "flag": "ie",
+          "role": "player",
+          "igl": true,
+          "joindate": "2026-02-09"
+        },
+        {
+          "id": "Extinct",
+          "name": "Matas Strumila",
+          "flag": "ie",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-02-09"
+        },
+        {
+          "id": "Vacancy",
+          "name": "Mason Haines",
+          "flag": "gb",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-02-09"
+        },
+        {
+          "id": "bevve",
+          "name": "James Slinn",
+          "flag": "gb",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-02-09"
+        },
+        {
+          "id": "Girafffe",
+          "name": "Callum Jones",
+          "flag": "gb",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-02-09"
+        }
+      ],
+      "infoboxRegion": "europe"
+    },
+    {
+      "page": "Virtus.pro",
+      "name": "Virtus.pro",
+      "location": "Armenia",
+      "region": "CIS",
+      "portalSection": "CIS",
+      "logo": "Virtus.pro 2019 allmode.png",
+      "players": [
+        {
+          "id": "tO0RO",
+          "name": "Vadim Arkov",
+          "flag": "ru",
+          "role": "player",
+          "igl": false,
+          "joindate": "2025-09-01"
+        },
+        {
+          "id": "b1st",
+          "name": "Vladimir Krasikov",
+          "flag": "ru",
+          "role": "player",
+          "igl": false,
+          "joindate": "2025-10-20"
+        },
+        {
+          "id": "mir",
+          "name": "Nikolay Bityukov",
+          "flag": "ru",
+          "role": "player",
+          "igl": true,
+          "joindate": "2026-02-20"
+        },
+        {
+          "id": "AquaRS",
+          "name": "Aleksandr Kovalev",
+          "flag": "ru",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-03-12"
+        },
+        {
+          "id": "F0R3VER",
+          "name": "Dias Kutubay",
+          "flag": "kz",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-03-12"
+        }
+      ],
+      "infoboxRegion": "cis"
+    },
+    {
+      "page": "VeryGames",
+      "name": "VeryGames",
+      "location": "France",
+      "region": "Western Europe",
+      "portalSection": "Western Europe",
+      "logo": "VeryGames-logo.png",
+      "players": [
+        {
+          "id": "Ace",
+          "name": "Antoine Dutour",
+          "flag": "fr",
+          "role": "?",
+          "igl": false,
+          "joindate": "2011-08-10"
+        },
+        {
+          "id": "Rekoill",
+          "name": "Kieron Davies",
+          "flag": "uk",
+          "role": "?",
+          "igl": false,
+          "joindate": "2013-02-01"
+        }
+      ],
+      "infoboxRegion": "europe"
+    },
+    {
+      "page": "Without a Roof",
+      "name": "Without a Roof",
+      "location": "United States",
+      "region": "North America",
+      "portalSection": "North America",
+      "logo": "Without a Roof lightmode.png",
+      "players": [
+        {
+          "id": "Stewie2K",
+          "name": "Jake Yip",
+          "flag": "us",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-08-11"
+        },
+        {
+          "id": "Brehze",
+          "name": "Vincent Cayonte",
+          "flag": "us",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-08-11"
+        },
+        {
+          "id": "autimatic",
+          "name": "Timothy Ta",
+          "flag": "us",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-08-11"
+        },
+        {
+          "id": "FaNg",
+          "name": "Justin Coakley",
+          "flag": "ca",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-08-11"
+        },
+        {
+          "id": "CeRq",
+          "name": "Tsvetelin Dimitrov",
+          "flag": "bg",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-08-11"
+        }
+      ],
+      "infoboxRegion": "north america"
+    },
+    {
+      "page": "UNiTY esports",
+      "name": "UNiTY esports",
+      "location": "Slovakia",
+      "region": "Eastern Europe",
+      "portalSection": "Eastern Europe",
+      "logo": "UNiTY esports allmode.png",
+      "players": [
+        {
+          "id": "M1key",
+          "name": "Jakub Krausko",
+          "flag": "sk",
+          "role": "player",
+          "igl": false,
+          "joindate": "2025-10-08"
+        },
+        {
+          "id": "KWERTZZ",
+          "name": "Simon Horák",
+          "flag": "cz",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-04-09"
+        },
+        {
+          "id": "2high",
+          "name": "Ahmet Baftijari",
+          "flag": "mk",
+          "role": "player",
+          "igl": true,
+          "joindate": "2026-05-11"
+        },
+        {
+          "id": "Sn0w",
+          "name": "Timmy Brun",
+          "flag": "se",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-07-02"
+        },
+        {
+          "id": "Dytor",
+          "name": "Martin Handl",
+          "flag": "cz",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-09-21"
+        }
+      ],
+      "infoboxRegion": "eu"
+    },
+    {
+      "page": "Wildcard",
+      "name": "Wildcard",
+      "location": "United States",
+      "region": "North America",
+      "portalSection": "North America",
+      "logo": "Wildcard 2024 full lightmode.png",
+      "players": [
+        {
+          "id": "reck",
+          "name": "Ethan Serrano",
+          "flag": "us",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-01-01"
+        },
+        {
+          "id": "HexT",
+          "name": "Jadan Postma",
+          "flag": "ca",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-01-23"
+        },
+        {
+          "id": "nEMANHA",
+          "name": "Nemanja Đukić",
+          "flag": "rs",
+          "role": "player",
+          "igl": true,
+          "joindate": "2026-03-06"
+        },
+        {
+          "id": "Cxzi",
+          "name": "Danny Strzelczyk",
+          "flag": "us",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-04-15"
+        },
+        {
+          "id": "fr3nd",
+          "name": "Sebastian Kuśmier",
+          "flag": "pl",
+          "role": "loan",
+          "igl": false,
+          "joindate": "2026-09-18"
+        }
+      ],
+      "infoboxRegion": "north america"
+    },
+    {
+      "page": "Zomblers",
+      "name": "Zomblers",
+      "location": "USA",
+      "region": "North America",
+      "portalSection": "North America",
+      "logo": "Zomblers_allmode.png",
+      "players": [
+        {
+          "id": "CoolComs",
+          "name": "Connor Barnes",
+          "flag": "gb",
+          "role": "player",
+          "igl": false,
+          "joindate": "2025-09-22"
+        },
+        {
+          "id": "CAJUN",
+          "name": "Andrew Guidroz",
+          "flag": "us",
+          "role": "player",
+          "igl": true,
+          "joindate": "2025-09-22"
+        },
+        {
+          "id": "Pose1doNN",
+          "name": "Nikolaos Antoniou",
+          "flag": "us",
+          "role": "player",
+          "igl": false,
+          "joindate": "2025-09-22"
+        },
+        {
+          "id": "twigs",
+          "name": "Cole Morad",
+          "flag": "us",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-09-14"
+        }
+      ],
+      "infoboxRegion": "north america"
+    },
+    {
+      "page": "Yawara E-Sports",
+      "name": "Yawara E-Sports",
+      "location": "Brazil",
+      "region": "South America",
+      "portalSection": "South America",
+      "logo": "Yawara_Esports_lightmode.png",
+      "players": [
+        {
+          "id": "j0w",
+          "name": "Jonatan Sperotto",
+          "flag": "br",
+          "role": "player",
+          "igl": true,
+          "joindate": "2023-05-29"
+        },
+        {
+          "id": "tele",
+          "name": "Vinicius Morozini",
+          "flag": "br",
+          "role": "player",
+          "igl": false,
+          "joindate": "2024-10-16"
+        },
+        {
+          "id": "deemO",
+          "name": "Iago Henrique",
+          "flag": "br",
+          "role": "player",
+          "igl": false,
+          "joindate": "2025-10-29"
+        },
+        {
+          "id": "brn$",
+          "name": "Bruno de Araújo",
+          "flag": "br",
+          "role": "player",
+          "igl": false,
+          "joindate": "2026-09-15"
+        }
+      ],
+      "infoboxRegion": "south america"
+    }
+  ],
+  "emptyTeams": [
+    "Advanced Online Losers",
+    "Adrenaline",
+    "ALTERNATE aTTaX",
+    "Against All authority",
+    "AGAiN",
+    "3DMAX",
+    "ACE Gaming",
+    "3sUP Enterprises",
+    "4Kings",
+    "? (Danish team)",
+    "69°N-28°E",
+    "Ad hoc gaming",
+    "5Power Gaming",
+    "ALL-IN",
+    "AGO esports",
+    "AVANGAR",
+    "ALPHA Red",
+    "ATK",
+    "ARCY",
+    "AVEZ",
+    "AUGUST",
+    "Absolute",
+    "Adwokacik",
+    "AGF Esport",
+    "After Gaming",
+    "777 Esports",
+    "100PingGods",
+    "4glory Esports",
+    "00 Nation",
+    "AVE",
+    "1shot",
+    "500",
+    "9Pandas",
+    "ATOX Esports",
+    "5yclone",
+    "AMKAL ESPORTS",
+    "ALLINNERS",
+    "2Game Esports",
+    "Akimbo Esports",
+    "33",
+    "AM Gaming",
+    "Acend",
+    "ALGO Esports",
+    "5star eSports",
+    "ArchAngels",
+    "Begrip Gaming",
+    "Athletico Esports",
+    "Apeks",
+    "Astana Dragons",
+    "Area51 Gaming",
+    "BLUEJAYS",
+    "All Gamers",
+    "Berlin Allianz",
+    "BeGenius Electronic Sport Club",
+    "Alpha Gaming",
+    "Allstars",
+    "Aperture Gaming",
+    "Amazing Gaming",
+    "B.O.O.T.cn",
+    "BPro Gaming",
+    "Bee's Money Crew",
+    "ArmaTeam",
+    "Berzerk",
+    "B.O.O.T-dreamScape",
+    "Avalanche GG",
+    "Alchemists Unleashed",
+    "Ambush",
+    "Bad News Bears",
+    "BLUEJAYS International",
+    "Baecon Gaming Group",
+    "BOOM Esports",
+    "Begrip Gaming.ru",
+    "BL4ZE Esports",
+    "Anonymo Esports",
+    "Avant Gaming",
+    "Akuma",
+    "Bad News Eagles",
+    "Arctic eSports",
+    "BHOP Esports",
+    "BESTIA",
+    "BetBoom Team",
+    "Alliance",
+    "BLEED Esports",
+    "BOSS",
+    "BC.Game Esports",
+    "BASEMENT BOYS",
+    "Bravado Gaming",
+    "Complexity",
+    "CAZ eSports",
+    "Clan-Mystik",
+    "Cloud9",
+    "CNB e-Sports Club",
+    "Conquest",
+    "Chiefs Esports Club",
+    "CheckSix Gaming",
+    "CheckSix.swe",
+    "Carolina Core",
+    "Chicago Chimera",
+    "Birmingham Salvo",
+    "CeX",
+    "Binary Dragons",
+    "CKRAS Gaming",
+    "Big Gods",
+    "CMAX.gg",
+    "Born of Fire",
+    "Black Dragons e-Sports",
+    "Conquer Gaming",
+    "CR4ZY",
+    "Beyond Esports",
+    "Chaos Esports Club",
+    "Beşiktaş Esports",
+    "Big Time Regal Gaming",
+    "Codewise Unicorns",
+    "Come as You are",
+    "Big 5 Esports",
+    "Bren Esports",
+    "C0ntact Gaming",
+    "Budapest Five",
+    "Case Esports",
+    "Bravos Gaming",
+    "Chetz Esports",
+    "Checkmate",
+    "Coalesce",
+    "Boca Juniors Gaming",
+    "CatEvil",
+    "Carpe Diem",
+    "Betera Esports",
+    "CYBERSHOKE Esports",
+    "Betclic Apogee Esports",
+    "Chinggis Warriors",
+    "Change The Game",
+    "Bushido Wildcats",
+    "Boomerang",
+    "Chicken Coop Esports",
+    "Denial Esports",
+    "Dobry&Gaming",
+    "DotpiXels e.V.",
+    "E-STRO",
+    "Dire Wolves",
+    "DAT Team",
+    "Copenhagen Wolves",
+    "Counter Logic Gaming",
+    "Dignitas",
+    "E-Frag.net Esports Club",
+    "DenDD",
+    "Dallas Venom",
+    "CyberZen",
+    "Destination Skyline",
+    "DeadPixels",
+    "DTS Gaming",
+    "Crack Clan",
+    "DreamScape",
+    "Dark Passage",
+    "Damage Control",
+    "Crowns Esports Club",
+    "Copenhagen Flames",
+    "Dark Sided",
+    "Defusekids",
+    "DizLown",
+    "Duttdutt",
+    "Corvidae",
+    "Dragons Esports Club",
+    "DETONA Gaming",
+    "DreamEaters",
+    "Devils.one",
+    "D13",
+    "Dynamo Eclot",
+    "Divine Vendetta",
+    "Cowana Gaming",
+    "Double Poney",
+    "DNMK Esports",
+    "Davenport University",
+    "Corinthians Esports",
+    "DRILLAS",
+    "E9esports",
+    "Copenhagen Wolves (American organization)",
+    "DEPO",
+    "Dusty Roots",
+    "DkH Multigaming",
+    "DONSTU Esports",
+    "EoLithic",
+    "ESports United Sweden",
+    "Evil Geniuses",
+    "Energy Esports",
+    "EYES ON U",
+    "ENCORE",
+    "Epsilon Esports",
+    "Elevate",
+    "ESC Gaming",
+    "Epiphany Bolt",
+    "EURONICS Gaming",
+    "EZskins.com",
+    "Enemy",
+    "EmuLate!",
+    "EXplosive",
+    "Echo Fox",
+    "EDward Gaming",
+    "EXtatus",
+    "Escape Gaming",
+    "EHOME",
+    "EFuture",
+    "EUnited",
+    "Endpoint",
+    "EYESports",
+    "Entity Gaming",
+    "Elements Pro Gaming",
+    "EEriness",
+    "Eclipse",
+    "EXECUTIONERS",
+    "Entelechy Gaming",
+    "ESport Rhein-Neckar",
+    "ESPADA",
+    "EXploit Esports",
+    "ENTERPRISE esports",
+    "Entropiq",
+    "EPIC DUDES",
+    "EXTREMUM",
+    "EPG Family",
+    "Entropiq Prague",
+    "EClub Brugge",
+    "Eruption",
+    "Espionage (Danish team)",
+    "Frag eXecutors",
+    "Eyeballers (Counter-Strike team)",
+    "FMESPORTS",
+    "FlipSid3 Tactics",
+    "Fraternitas",
+    "G3nerationX",
+    "GBots eSports Club",
+    "Excello",
+    "FLuffy Gangsters",
+    "GODSENT",
+    "FORZE Esports",
+    "FIVE eSports Club",
+    "Fire Dragoon Esports",
+    "Fragsters",
+    "Flash Gaming",
+    "G2 Esports.es",
+    "ExceL Esports",
+    "FCDB Esports",
+    "FRENCH CANADIANS",
+    "FATE Esports",
+    "Furious Gaming",
+    "GOSU",
+    "Expert eSport",
+    "FrostFire",
+    "Fierce Esports",
+    "FunPlus Phoenix",
+    "For The Win Esports",
+    "Extra Salt",
+    "GGPR esports",
+    "Fluxo",
+    "Flamengo Esports",
+    "Forsaken (American team)",
+    "FLUFFY AIMERS",
+    "FlyQuest",
+    "FAVBET Team",
+    "FORZE Reload",
+    "Fisher College",
+    "FUT Esports",
+    "FengDa Gaming",
+    "Fire Flux Esports",
+    "Flame Sharks",
+    "Fluxo W7M",
+    "FOKUS",
+    "Fake do Biru",
+    "Ex-RUBY",
+    "GameOnline",
+    "Gamers.nu",
+    "HellRaisers",
+    "GPlay.bg",
+    "H2k Gaming",
+    "GX",
+    "Goodgame",
+    "Games Academy",
+    "Gambit Esports",
+    "Hoorai",
+    "HEADSHOTBG",
+    "IGame.com",
+    "ICON Esports",
+    "Giants Gaming",
+    "Grayhound Gaming",
+    "Gale Force Esports",
+    "Gorilla Gang",
+    "GUNRUNNERS",
+    "GoldenGitte",
+    "HREDS",
+    "GTZ.ESPORTS",
+    "Goliath Gaming",
+    "Genuine Gaming",
+    "Hard Legion Esports",
+    "Global Esports",
+    "GamerCompany",
+    "Gen.G Esports",
+    "High Coast Esports",
+    "Galaxy Racer",
+    "Huat Zai",
+    "HONORIS",
+    "GR Gaming",
+    "HEET",
+    "Gaimin Gladiators",
+    "HYDRA",
+    "Gods Reign",
+    "Guild Eagles",
+    "Galorys",
+    "GUN5 Esports",
+    "Gentle Mates",
+    "HYPERSPIRIT",
+    "IC Esports",
+    "INation",
+    "K1CK",
+    "KILLERFISH eSport",
+    "Keyd Stars",
+    "JaX Money Crew",
+    "INTZ",
+    "K1ck eSports Club.es",
+    "Immortals",
+    "KPI Gaming",
+    "Invictus Gaming",
+    "Kings Gaming Club",
+    "Izako Boars",
+    "Japaleno",
+    "Illuminar Gaming",
+    "K23",
+    "Infinity (Latin American team)",
+    "Juggernauts",
+    "KOVA Esports",
+    "IKLA",
+    "IQUE.gg",
+    "Into The Breach",
+    "INDE IRAE",
+    "IHC Esports",
+    "Kappa Bar",
+    "KRC Genk Esports",
+    "Iron Blood Gaming",
+    "Insilio",
+    "KOI",
+    "KRÜ Esports",
+    "Johnny Speeds",
+    "InSanitY Sports",
+    "KONO.ECF",
+    "InControl",
+    "Kubix Esports",
+    "Iberian Soul",
+    "K27",
+    "Kaleido Gaming",
+    "KINGZZZ",
+    "Illwill",
+    "KOLESIE",
+    "LF0",
+    "INOX Division",
+    "London Conspiracy",
+    "LunatiK eSports",
+    "LowLandLions",
+    "LGB eSports",
+    "MVP Karnal",
+    "Lemondogs",
+    "MTw",
+    "Lounge Gaming",
+    "Legacy Esports",
+    "MVP Project",
+    "London Mint",
+    "LGD Gaming",
+    "Made in Thailand",
+    "Lunatic-hai",
+    "LGR",
+    "MVP PK",
+    "M19",
+    "MANS NOT HOT",
+    "Lucid Dream",
+    "MAD Lions",
+    "MCon esports",
+    "Ledpc",
+    "Lazarus Esports",
+    "LiViD Gaming",
+    "Level Up esports",
+    "Liberty",
+    "Leviatán",
+    "LookingForOrg (Australian team)",
+    "Los kogutos",
+    "M1 Gaming",
+    "LOS",
+    "Limitless",
+    "M80",
+    "Looking4Org (French team)",
+    "Lausanne-Sport Esports",
+    "MANA eSports",
+    "Lavked",
+    "Meet Your Makers",
+    "NoA",
+    "MenaceGG",
+    "Millenium",
+    "Mythic",
+    "MouseSpaz",
+    "NEophyte",
+    "Nihilum Gaming",
+    "Moscow Five",
+    "MyXMG",
+    "N!faculty",
+    "NerdRage",
+    "Maximum Effort",
+    "Method",
+    "Mexico City Furia",
+    "Mineski",
+    "Mortal Kombat",
+    "NEW4",
+    "Mibr (Counter-Strike team)",
+    "Misfits Gaming",
+    "Movistar Riders",
+    "MaxiSaucisse",
+    "NSPR Gaming",
+    "NASR Esports",
+    "NYYRIKKI Esports",
+    "NoChance",
+    "New Identity",
+    "No Limit Gaming",
+    "Mazaalai",
+    "New England Whalers",
+    "Meta Gaming",
+    "Nixuh",
+    "Monte",
+    "NewHappy",
+    "Make Your Destiny",
+    "Marcos Gaming",
+    "Marsborne",
+    "NOVAQ",
+    "Misa Esports",
+    "Magic",
+    "Morningstar",
+    "NEXVOID",
+    "Nordic Division",
+    "OverGaming",
+    "PiTER",
+    "Planetkey Dynamics",
+    "Orbit",
+    "PENTA Sports",
+    "Platinium eSport",
+    "Orange Esports.Chymera",
+    "Nordavind",
+    "No Problem!",
+    "Orgless (Hungarian team)",
+    "OpTic Gaming",
+    "PANTHERS Gaming",
+    "PRIDE",
+    "NokSuKao",
+    "Oslo Lions",
+    "Não Tem Como",
+    "Parallax",
+    "Norse",
+    "Outlaws",
+    "Playing Ducks International",
+    "North",
+    "PACT",
+    "ORDER",
+    "OFFSET Esports",
+    "Panda Gaming",
+    "Paradox Esports",
+    "Phoenix",
+    "Orgless (Canadian team)",
+    "Paquetá Gaming",
+    "Party Astronauts",
+    "ONYX",
+    "OneTap Gaming",
+    "Outsiders",
+    "PALOMA",
+    "ODDIK",
+    "Nouns Esports",
+    "Permitta Esports",
+    "PARIVISION",
+    "Pera Esports",
+    "Passion UA",
+    "Nuclear TigeRES",
+    "Phantom Esports",
+    "OMEGA",
+    "Oilers Esport",
+    "Playzone",
+    "Roskilde Ravens",
+    "Property",
+    "RuSh3D",
+    "Publiclir.se",
+    "Reason Gaming",
+    "Recursive eSports",
+    "Renegades",
+    "Reason Gaming.dk",
+    "Rebels",
+    "Risky Gaming",
+    "Red Instinct",
+    "RED Canids",
+    "Rogue",
+    "Pro100",
+    "Quantum Bellator Fire",
+    "Recca Esports",
+    "Recall THE END",
+    "Red Reserve",
+    "RADIX",
+    "Prophecy",
+    "Rebellion",
+    "Rise Nation",
+    "Pompa Team",
+    "RedLine",
+    "Portal Esports",
+    "Revolution",
+    "Riot Squad Esports",
+    "Rising-Stars",
+    "Redemption eSports Porto Alegre",
+    "River Plate Gaming",
+    "RBG Esports",
+    "Rhyno Esports",
+    "Rebirth Esports (American team)",
+    "Recon 5",
+    "Project X",
+    "ROYALS",
+    "Question Mark (Belarusian team)",
+    "Revenant Esports",
+    "Raptors Esports Club",
+    "Rebels Gaming",
+    "RUBY",
+    "RUSH B",
+    "QWENTRY",
+    "RUSTEC",
+    "Prestige Esport",
+    "Spirit of Amiga",
+    "SpeedLink",
+    "SpiXel",
+    "SK Gaming",
+    "Space Soldiers",
+    "Splyce",
+    "SYF Gaming",
+    "San Francisco Optx",
+    "Stockholm Magnetik",
+    "Singapore Sword",
+    "Seoul Jinhwa",
+    "Selfless Gaming",
+    "SkitLite",
+    "Signature Gaming",
+    "Rush (Team)",
+    "SubtLe",
+    "Skolpojkarna",
+    "SCARZ Absolute",
+    "SEAL Esports",
+    "SJ",
+    "Seed",
+    "Sprout",
+    "Swole Patrol",
+    "Santos e-Sports",
+    "Spacestation Gaming",
+    "SK.ger",
+    "Supremacy Gaming",
+    "SMASH Esports",
+    "SKADE",
+    "Rugratz",
+    "Sinister5",
+    "SWS Gaming",
+    "Secret Club",
+    "Steel Helmet",
+    "Strife Esports",
+    "SNOGARD Dragons",
+    "SYnck",
+    "ShindeN",
+    "SemperFi Esports",
+    "SkinRave Esports",
+    "SC e-Sports",
+    "SPARTA Esports",
+    "Sector One",
+    "SportsBetExpert",
+    "Team Pentagram",
+    "Team ROCCAT",
+    "TSM",
+    "Team Immunity",
+    "Team Dynamic",
+    "Team LDLC.com White",
+    "Team Refuse",
+    "Team LDLC",
+    "Team LDLC.com Blue",
+    "Team Alientech",
+    "Team9",
+    "Team Catch-Gamer",
+    "Team 3D",
+    "Team Ancient",
+    "Team Empire",
+    "Team AGG",
+    "Sydney Underground",
+    "Team Quetzal",
+    "Team Logitech.fi",
+    "TYLOO.raw",
+    "Team Secret",
+    "Team Kaliber",
+    "Team Prospects",
+    "Team Brutality",
+    "Team MAX",
+    "Team Heretics",
+    "Team Queso",
+    "Team64",
+    "Team Aster",
+    "Team SHIFT",
+    "TIGER",
+    "TKA E-Sports",
+    "Team Sampi",
+    "Team BLINK",
+    "Team Fiend",
+    "Team Renewal",
+    "Team Finest",
+    "Team NKT",
+    "Team ESCA Gaming",
+    "Take Flyte",
+    "TRAFFIC Tashkent Team",
+    "Team-ARROW",
+    "TEAM NEXT LEVEL",
+    "Team Nemesis",
+    "THUNDERdOWNUNDER",
+    "TDK",
+    "IBUYPOWER",
+    "Team WinFakt",
+    "Team nxl",
+    "Titan",
+    "Tempo Storm",
+    "Team eBettle",
+    "Torpedo",
+    "UNiTED",
+    "Tricked Esport",
+    "Team eu4ia",
+    "The Titans",
+    "Team XENEX",
+    "The Imperial",
+    "Team X (Danish team)",
+    "Team oNe eSports",
+    "Tengri",
+    "Team iNvictus",
+    "Team Singularity",
+    "Team Spotnet",
+    "The Gatekeepers",
+    "Tp.uSports",
+    "Tomorrow.gg",
+    "The Right Stuff",
+    "Team Wild",
+    "Turmoil",
+    "Team Unique",
+    "The Dice",
+    "Triumph",
+    "Tenerife Titans",
+    "Third Impact",
+    "TouchTheCrown",
+    "Triumphant Song Gaming",
+    "UMX Gaming",
+    "Trident Clan",
+    "Trasko Esports",
+    "Timbermen",
+    "The Union",
+    "Team Solid",
+    "ThunderFlash",
+    "Turów Zgorzelec Esport",
+    "True Rippers Esports",
+    "The Suspect",
+    "The Huns Esports",
+    "Team Voca",
+    "UNO MILLE",
+    "Universal Soldiers",
+    "WeMade FOX",
+    "Western Wolves",
+    "Vox Eminor",
+    "Vega Squadron",
+    "VAULT",
+    "WNv Teamwork",
+    "Vexed Gaming",
+    "Winterfox",
+    "WinOut.net",
+    "WE GOT GAME",
+    "VG.CyberZen",
+    "VwS Gaming",
+    "Wicked eSports",
+    "WNv.cn",
+    "WASD Sports",
+    "UYA",
+    "Vexed Gaming.uk",
+    "VITALIS",
+    "Windigo Gaming",
+    "W7m esports",
+    "Virtue Gaming",
+    "Wind and Rain",
+    "VG.FlashGaming",
+    "Wild Ineters",
+    "Winstrike Team",
+    "Vision Gaming",
+    "Vireo.pro",
+    "Unicorns of Love",
+    "Wings Up Gaming",
+    "Wisła Kraków",
+    "Veto Esports",
+    "VERTEX Esports Club",
+    "Ungentium",
+    "ViCi Gaming",
+    "WDNMD",
+    "Vendetta (American team)",
+    "Viperio",
+    "Websterz",
+    "Wizard esports (Norwegian team)",
+    "Verdant",
+    "WOPA Esport",
+    "WW TEAM",
+    "Ursa",
+    "Walczaki",
+    "XPerience.se",
+    "Wizards Esports Club",
+    "X6tence",
+    "XPC Gaming",
+    "Wuhan Dragon",
+    "Ze Pug Godz",
+    "X-kom Team",
+    "X4team",
+    "WySix Team",
+    "X3O Gaming",
+    "Yeah Gaming",
+    "X6tence Galaxy",
+    "ZIGMA",
+    "Wolsung",
+    "YaLLa Esports",
+    "Xi'anTaiChangGui",
+    "X13",
+    "Zero Tenacity"
+  ]
+}

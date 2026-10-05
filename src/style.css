@@ -1,0 +1,313 @@
+:root {
+  --bg: #05070f;
+  --bg-2: #0b1122;
+  --panel: #0e1426;
+  --panel-2: #131b33;
+  --line: rgba(120, 160, 220, 0.18);
+  --line-soft: rgba(120, 160, 220, 0.1);
+  --text: #e8eefc;
+  --muted: #8ba0c4;
+  --accent: #ffd166;
+  --accent-2: #3fa7a0;
+  --radius: 14px;
+  --font: 'Segoe UI', 'Microsoft YaHei', system-ui, -apple-system, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+/*
+ * 兜底：让 hidden 属性永远生效。
+ * 浏览器 UA 样式表里是 `[hidden] { display: none }`，特异性 (0,1,0)；
+ * 而作者样式表里的 `.crash { display: grid }` 也是 (0,1,0)，但作者样式优先级更高，
+ * 于是「带 hidden 属性的 .crash」照样会显示出来——曾经就靠这一条把整个页面盖住了。
+ * 这条规则特异性 (0,1,0) 但带 !important，能压过任何作者声明。
+ */
+[hidden] { display: none !important; }
+
+html, body { height: 100%; margin: 0; }
+
+body {
+  background:
+    radial-gradient(1200px 700px at 70% -10%, #16234a 0%, transparent 60%),
+    radial-gradient(900px 600px at 10% 110%, #10283a 0%, transparent 55%),
+    var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 统一滚动条，免得系统默认样式打断深色主题 */
+* { scrollbar-width: thin; scrollbar-color: rgba(120, 160, 220, 0.32) transparent; }
+*::-webkit-scrollbar { width: 9px; height: 9px; }
+*::-webkit-scrollbar-thumb {
+  background: rgba(120, 160, 220, 0.28);
+  border-radius: 9px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+*::-webkit-scrollbar-thumb:hover { background: rgba(120, 160, 220, 0.5); background-clip: content-box; }
+*::-webkit-scrollbar-track { background: transparent; }
+
+#app { display: flex; flex-direction: column; height: 100%; }
+
+/* ---------------- 顶栏 ---------------- */
+/* 注意：这里刻意不用 backdrop-filter —— 它压在 WebGL canvas 之上时，
+   每帧都要重新做一次模糊合成，是界面卡顿的主要原因。 */
+.topbar {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 12px 20px;
+  border-bottom: 1px solid var(--line);
+  background: #0a1020;
+  z-index: 20;
+}
+
+.brand { display: flex; align-items: center; gap: 10px; min-width: 0; }
+.brand h1 { font-size: 16px; font-weight: 650; margin: 0; white-space: nowrap; letter-spacing: 0.3px; }
+.dot {
+  width: 10px; height: 10px; border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 12px var(--accent);
+}
+.badge {
+  font-size: 11px; color: var(--muted);
+  border: 1px solid var(--line); border-radius: 999px;
+  padding: 2px 9px; white-space: nowrap;
+}
+
+.search-wrap { position: relative; flex: 1; max-width: 520px; margin-left: auto; }
+#search {
+  width: 100%; padding: 9px 14px; border-radius: 999px;
+  border: 1px solid var(--line); background: rgba(4, 8, 18, 0.75);
+  color: var(--text); font-size: 13px; outline: none;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+#search:focus { border-color: rgba(255, 209, 102, 0.55); box-shadow: 0 0 0 3px rgba(255, 209, 102, 0.1); }
+#search::placeholder { color: #5d7096; }
+
+.suggest {
+  position: absolute; top: calc(100% + 6px); left: 0; right: 0;
+  background: #0d1428;
+  border: 1px solid var(--line); border-radius: var(--radius);
+  max-height: 340px; overflow-y: auto; z-index: 40;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.6);
+}
+.suggest button {
+  display: flex; align-items: center; gap: 10px; width: 100%;
+  padding: 9px 14px; background: none; border: 0; cursor: pointer;
+  color: var(--text); font-size: 13px; text-align: left; font-family: inherit;
+}
+.suggest button:hover, .suggest button.active { background: rgba(63, 167, 160, 0.16); }
+.suggest .s-kind {
+  font-size: 10px; color: var(--muted); border: 1px solid var(--line);
+  border-radius: 999px; padding: 1px 7px; margin-left: auto; white-space: nowrap;
+}
+
+.modes { display: flex; gap: 6px; padding: 3px; border: 1px solid var(--line); border-radius: 999px; }
+.mode {
+  padding: 6px 14px; border-radius: 999px; border: 0; cursor: pointer;
+  background: transparent; color: var(--muted); font-size: 12px; font-family: inherit;
+  transition: background 0.15s, color 0.15s;
+}
+.mode:hover:not(.active):not(:disabled) { color: var(--text); background: rgba(120, 160, 220, 0.12); }
+.mode.active { background: rgba(255, 209, 102, 0.16); color: var(--accent); }
+.mode:disabled { opacity: 0.4; cursor: not-allowed; text-decoration: line-through; }
+
+/* ---------------- 舞台 ---------------- */
+.stage { flex: 1; display: flex; min-height: 0; }
+
+.panel {
+  width: 292px; flex: 0 0 292px;
+  background: var(--panel);
+  border-right: 1px solid var(--line);
+  display: flex; flex-direction: column; min-height: 0;
+}
+.panel-right { width: 372px; flex-basis: 372px; border-right: 0; border-left: 1px solid var(--line); overflow-y: auto; }
+
+.panel-head {
+  display: flex; align-items: baseline; justify-content: space-between;
+  padding: 14px 16px 8px;
+}
+.panel-head h2 { font-size: 13px; margin: 0; letter-spacing: 0.4px; }
+.panel-head .count { font-size: 11px; color: var(--muted); }
+
+.legend {
+  display: flex; align-items: center; gap: 4px;
+  padding: 0 16px 10px; font-size: 10px; color: var(--muted);
+}
+.legend i { width: 18px; height: 7px; background: var(--c); border-radius: 2px; display: block; }
+.legend span:last-child { margin-left: auto; }
+
+.list { overflow-y: auto; padding: 0 10px 16px; overscroll-behavior: contain; }
+
+.row {
+  display: flex; align-items: center; gap: 9px;
+  padding: 8px 10px; border-radius: 10px; cursor: pointer;
+  border: 1px solid transparent;
+  transition: background 0.12s, border-color 0.12s;
+}
+.row:hover { background: rgba(63, 167, 160, 0.12); }
+.row.selected { background: rgba(255, 209, 102, 0.14); border-color: rgba(255, 209, 102, 0.4); }
+.row .flag { font-size: 17px; line-height: 1; }
+.row .label { flex: 1; min-width: 0; font-size: 13px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.row .sub { font-size: 10px; color: var(--muted); }
+.row .num {
+  font-size: 12px; font-variant-numeric: tabular-nums; color: var(--accent);
+  background: rgba(255, 209, 102, 0.1); border-radius: 6px; padding: 1px 7px;
+}
+
+/* ---------------- 视口 ---------------- */
+.viewport { position: relative; flex: 1; min-width: 0; contain: paint; }
+.view { position: absolute; inset: 0; }
+.view svg, .view canvas { display: block; width: 100%; height: 100%; }
+.view canvas { outline: none; }
+
+.hint {
+  position: absolute; left: 50%; bottom: 14px; transform: translateX(-50%);
+  font-size: 11px; color: var(--muted);
+  background: rgba(6, 10, 22, 0.7); border: 1px solid var(--line);
+  padding: 5px 14px; border-radius: 999px; pointer-events: none; white-space: nowrap;
+}
+.viewloading {
+  position: absolute; inset: 0; display: grid; place-items: center;
+  color: var(--muted); font-size: 13px; pointer-events: none;
+}
+
+.tooltip {
+  position: absolute; pointer-events: none; z-index: 30;
+  background: rgba(8, 13, 27, 0.95); border: 1px solid var(--line);
+  border-radius: 10px; padding: 7px 11px; font-size: 12px;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.55); white-space: nowrap;
+}
+.tooltip b { color: var(--accent); }
+
+/* ---------------- 2D 地图 ---------------- */
+.view-2d svg { cursor: default; touch-action: none; }
+.view-2d svg.grabbing { cursor: grabbing; }
+.view-2d .sphere { fill: url(#ocean); stroke: rgba(120, 170, 230, 0.25); stroke-width: 1; }
+.view-2d .graticule { fill: none; stroke: rgba(120, 170, 220, 0.09); stroke-width: 0.6; }
+
+/* 注意：SVG 表现属性（fill="..."）优先级低于任何 CSS 规则，
+   所以「有数据」国家的颜色只能用属性给，CSS 里只允许用 :not(.has-data) 或 hover/selected 覆盖。 */
+.view-2d .country { stroke: rgba(150, 190, 240, 0.14); stroke-width: 0.7; stroke-linejoin: round; }
+.view-2d .country:not(.has-data) { fill: #1b2a44; }
+.view-2d .country.has-data { stroke: rgba(255, 255, 255, 0.28); stroke-width: 0.9; }
+.view-2d .country.has-data:hover,
+.view-2d .country.hover { filter: brightness(1.45); }
+.view-2d .country.selected {
+  stroke: var(--accent); stroke-width: 1.8;
+  filter: brightness(1.5) drop-shadow(0 0 6px rgba(255, 209, 102, 0.75));
+}
+
+/* 南海诸岛九段线。数据来自自然资源部口径的 DataV GeoAtlas，是 9 段细长的多边形，
+   所以填充 + 描边一起用，保证在任何缩放级别都看得见。不参与单击选国家。 */
+.view-2d .nine-dash-line {
+  fill: #c9d6e8; stroke: #c9d6e8; stroke-width: 0.4;
+  stroke-linejoin: round; pointer-events: none; opacity: 0.85;
+}
+
+.view-2d .bubble {
+  stroke: rgba(255, 255, 255, 0.55); stroke-width: 0.8;
+  opacity: 0.9; transition: opacity 0.12s;
+}
+.view-2d .bubble:hover { opacity: 1; }
+.view-2d .bubble.selected {
+  stroke: #fff; stroke-width: 2;
+  filter: drop-shadow(0 0 8px rgba(255, 209, 102, 0.9));
+}
+.view-2d .bubble-label {
+  fill: #f2f6ff; paint-order: stroke;
+  stroke: rgba(4, 8, 18, 0.85); stroke-width: 3px; stroke-linejoin: round;
+  font-weight: 600; pointer-events: none; user-select: none;
+}
+
+/* ---------------- 详情面板 ---------------- */
+.empty-state { padding: 26px 20px; color: var(--muted); }
+.empty-state h2 { font-size: 15px; color: var(--text); margin: 0 0 10px; }
+.empty-state p { font-size: 12px; line-height: 1.7; margin: 4px 0; }
+.empty-state .tiny { font-size: 11px; opacity: 0.75; margin-top: 14px; }
+
+.detail-head { padding: 16px 18px 12px; border-bottom: 1px solid var(--line); }
+.detail-head .title { display: flex; align-items: center; gap: 10px; }
+.detail-head .title .flag { font-size: 26px; line-height: 1; }
+.detail-head h2 { font-size: 17px; margin: 0; }
+.detail-head .en { font-size: 11px; color: var(--muted); }
+.stats { display: flex; gap: 18px; margin-top: 12px; }
+.stat .v { font-size: 19px; font-weight: 650; color: var(--accent); font-variant-numeric: tabular-nums; }
+.stat .k { font-size: 10px; color: var(--muted); letter-spacing: 0.4px; }
+
+.detail-body { padding: 6px 12px 28px; }
+.group { margin-top: 14px; }
+.group > h3 {
+  font-size: 11px; color: var(--muted); letter-spacing: 0.6px;
+  text-transform: uppercase; margin: 0 0 6px; padding: 0 6px;
+}
+
+.player {
+  display: flex; align-items: center; gap: 9px;
+  padding: 7px 8px; border-radius: 10px;
+  transition: background 0.12s;
+}
+.player:hover { background: rgba(63, 167, 160, 0.1); }
+.player .flag { font-size: 16px; }
+.player .pid { font-size: 13px; font-weight: 600; }
+.player .pname { font-size: 10px; color: var(--muted); }
+.player .team {
+  margin-left: auto; font-size: 11px; color: var(--accent-2);
+  cursor: pointer; text-align: right; max-width: 130px;
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+.player .team:hover { text-decoration: underline; }
+.tag {
+  font-size: 9px; border-radius: 4px; padding: 0 4px; margin-left: 5px;
+  background: rgba(255, 209, 102, 0.18); color: var(--accent); vertical-align: middle;
+}
+
+.team-card { border: 1px solid var(--line); border-radius: 12px; margin: 8px 6px; overflow: hidden; }
+.team-card > header {
+  display: flex; align-items: center; gap: 8px;
+  padding: 9px 12px; background: rgba(30, 44, 80, 0.5); cursor: pointer;
+}
+.team-card > header:hover { background: rgba(30, 44, 80, 0.75); }
+.team-card > header .tname { font-size: 13px; font-weight: 600; }
+.team-card > header .tsec { font-size: 10px; color: var(--muted); margin-left: auto; }
+.back {
+  display: inline-flex; align-items: center; gap: 6px; cursor: pointer;
+  font-size: 12px; color: var(--muted); padding: 10px 18px 0;
+  background: none; border: 0; font-family: inherit;
+}
+.back:hover { color: var(--accent); }
+
+/* ---------------- 错误提示 ---------------- */
+.crash {
+  position: fixed; inset: 0; z-index: 100;
+  display: grid; place-items: center; padding: 24px;
+  background: rgba(3, 5, 12, 0.86);
+}
+.crash-box {
+  max-width: 720px; width: 100%;
+  background: #0d1428; border: 1px solid rgba(255, 120, 120, 0.4);
+  border-radius: 16px; padding: 22px 24px;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.7);
+}
+.crash-box h2 { margin: 0 0 10px; font-size: 16px; color: #ff9a9a; }
+.crash-box p { font-size: 13px; line-height: 1.75; color: var(--text); margin: 0 0 12px; white-space: pre-wrap; }
+.crash-box pre {
+  font-size: 11px; line-height: 1.6; color: var(--muted); max-height: 240px; overflow: auto;
+  background: rgba(0, 0, 0, 0.35); border: 1px solid var(--line-soft);
+  border-radius: 10px; padding: 10px 12px; margin: 0 0 14px; white-space: pre-wrap;
+}
+.crash-actions { display: flex; gap: 10px; }
+.crash-actions button {
+  padding: 8px 16px; border-radius: 999px; cursor: pointer; font-family: inherit;
+  font-size: 12px; border: 1px solid var(--line); background: rgba(63, 167, 160, 0.18); color: var(--text);
+}
+.crash-actions button:hover { background: rgba(63, 167, 160, 0.32); }
+
+@media (max-width: 1180px) {
+  .panel { width: 240px; flex-basis: 240px; }
+  .panel-right { width: 312px; flex-basis: 312px; }
+  .brand h1 { font-size: 14px; }
+}

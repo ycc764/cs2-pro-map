@@ -1,0 +1,23 @@
+# 依赖
+node_modules/
+
+# npm 缓存（本项目把它重定向进了目录里，避免沙箱写系统缓存的权限问题）
+.npm-cache/
+
+# 自检脚本产生的临时产物：
+#   .tmp-profile/  check:e2e 与 scrape-hltv 用的 Chromium 用户目录
+#   .tmp-shots/    check:e2e 的截图
+#   .tmp-geo/      build-basemap.mjs 下载的 DataV 底图缓存
+#
+# 注意：.gitignore 不支持行尾注释，说明必须单独占行，
+# 否则「.tmp-profile/  # 注释」会被当成一个整体模式而匹配不上。
+.tmp-profile/
+.tmp-shots/
+.tmp-geo/
+
+# 杂项
+.server-url
+*.log
+npm-debug.log*
+.DS_Store
+Thumbs.db

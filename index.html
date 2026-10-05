@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark" />
+    <title>CS2 现役职业选手全球分布</title>
+    <!-- 依赖用 import map 直接指向 public/vendor/ 的 ESM 源码，无需打包器 -->
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "/vendor/three.module.js",
+          "d3-geo": "/vendor/d3-geo/index.js",
+          "d3-array": "/vendor/d3-array/index.js",
+          "internmap": "/vendor/internmap/index.js",
+          "topojson-client": "/vendor/topojson-client/index.js"
+        }
+      }
+    </script>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <header class="topbar">
+        <div class="brand">
+          <span class="dot"></span>
+          <h1>CS2 现役职业选手全球分布</h1>
+          <span class="badge" id="meta-badge">加载中…</span>
+        </div>
+
+        <div class="search-wrap">
+          <input
+            id="search"
+            type="search"
+            autocomplete="off"
+            placeholder="搜索战队 / 选手 / 国家地区（如 Vitality、ZywOo、丹麦）"
+          />
+          <div id="suggest" class="suggest" hidden></div>
+        </div>
+
+        <div class="modes" role="tablist" aria-label="视图模式">
+          <button class="mode" data-mode="3d" role="tab">3D 地球</button>
+          <button class="mode" data-mode="2d" role="tab">2D 地图</button>
+        </div>
+      </header>
+
+      <main class="stage">
+        <aside class="panel panel-left">
+          <div class="panel-head">
+            <h2 id="left-title">国家 / 地区</h2>
+            <span class="count" id="left-count"></span>
+          </div>
+          <div class="legend">
+            <span>选手数</span>
+            <i style="--c: #1d2b53"></i>
+            <i style="--c: #2f6f9f"></i>
+            <i style="--c: #3fa7a0"></i>
+            <i style="--c: #8fd07a"></i>
+            <i style="--c: #ffd166"></i>
+            <span>多</span>
+          </div>
+          <div id="left-list" class="list"></div>
+        </aside>
+
+        <section class="viewport" id="viewport">
+          <div id="view3d" class="view view-3d"></div>
+          <div id="view2d" class="view view-2d" hidden></div>
+          <div class="hint" id="hint">拖动旋转 · 滚轮缩放 · 点击国家或地区查看选手</div>
+          <div class="tooltip" id="tooltip" hidden></div>
+          <div class="viewloading" id="view-loading">正在构建地球…</div>
+        </section>
+
+        <aside class="panel panel-right" id="detail">
+          <div class="empty-state">
+            <h2>👆 点击地球上的国家</h2>
+            <p>或在上方搜索战队名 / 选手 ID / 国家名。</p>
+            <p class="tiny">数据来源：Liquipedia（CC-BY-SA 3.0），可切换为 HLTV 抓取结果。</p>
+          </div>
+        </aside>
+      </main>
+    </div>
+
+    <!-- 出问题时把真实原因直接显示出来，而不是白屏 -->
+    <div id="crash" class="crash" hidden>
+      <div class="crash-box">
+        <h2 id="crash-title">页面出错了</h2>
+        <p id="crash-msg"></p>
+        <pre id="crash-detail"></pre>
+        <div class="crash-actions">
+          <button id="crash-reload" type="button">重新加载</button>
+          <button id="crash-copy" type="button">复制错误信息</button>
+        </div>
+      </div>
+    </div>
+
+    <noscript>
+      <div class="crash"><div class="crash-box">
+        <h2>需要开启 JavaScript</h2>
+        <p>本页用 ES Module 渲染地球，请允许 JavaScript 后刷新。</p>
+      </div></div>
+    </noscript>
+
+    <script type="module" src="/src/main.js" onerror="window.__cs2ModuleFailed && window.__cs2ModuleFailed()"></script>
+
+    <!--
+      ⚠ 下面这段必须保持「普通内联脚本」，绝对不能改成 type="module"。
+
+      file:// 直接双击打开时，浏览器会以同源策略拒绝加载 src/main.js ——
+      所以 src/main.js 里那句 file:// 提示永远不会执行（它自己就没被加载），
+      页面只会永远停在「正在构建地球…」，而且报错遮罩也不会出现。
+      唯一的求救机会就是这段内联脚本：它在解析期同步执行，不依赖任何外部文件。
+    -->
+    <script>
+      (function () {
+        function showCrash(title, msg) {
+          var crash = document.getElementById('crash');
+          var t = document.getElementById('crash-title');
+          var m = document.getElementById('crash-msg');
+          if (!crash || !m) return;
+          if (t && title) t.textContent = title;
+          m.textContent = msg;
+          crash.hidden = false;
+          // main.js 没跑起来时，遮罩里的按钮没人绑事件，这里补上
+          var reload = document.getElementById('crash-reload');
+          if (reload) reload.onclick = function () { location.reload(); };
+          var copy = document.getElementById('crash-copy');
+          if (copy) {
+            copy.textContent = '关闭提示';
+            copy.onclick = function () { crash.hidden = true; };
+          }
+        }
+        window.__cs2ModuleFailed = function () {
+          showCrash('脚本没能加载', 'src/main.js 加载失败（通常是 404 或路径不对）。'
+            + '请确认地址是 http://127.0.0.1:5173/ 而不是 file://，然后 Ctrl+F5 强刷。');
+        };
+
+        // 情况一：双击 index.html —— 样式表会指向 C:/src/style.css、模块被拒、fetch 读不到数据，
+        // 所以这里连样式都不能指望，全部用内联样式写清楚正确用法。
+        if (location.protocol === 'file:') {
+          document.body.setAttribute('style', 'margin:0;background:#0b1220;color:#e6edf6');
+          document.body.innerHTML =
+            '<div style="max-width:720px;margin:11vh auto;padding:0 24px;'
+            + 'font:16px/1.75 system-ui,\'Microsoft YaHei\',sans-serif">'
+            + '<h1 style="font-size:26px;margin:0 0 8px">打开方式不对</h1>'
+            + '<p style="color:#8fa6c4;margin:0 0 26px">'
+            + '不要直接双击 index.html —— 这个页面需要一个小型本地服务器。</p>'
+            + '<div style="background:#131b2c;border:1px solid #22314d;border-radius:12px;padding:20px 22px">'
+            + '<p style="margin:0 0 10px"><b>正确做法</b></p>'
+            + '<ol style="margin:0;padding-left:22px">'
+            + '<li>回到项目文件夹，双击 <b style="color:#ffd166">启动.bat</b></li>'
+            + '<li>浏览器会自动打开 <b style="color:#7ee0d4">http://127.0.0.1:5173/</b></li>'
+            + '</ol></div>'
+            + '<p style="margin:22px 0 8px;color:#8fa6c4">或者在本文件夹里用命令行启动：</p>'
+            + '<pre style="background:#0d1420;border:1px solid #22314d;border-radius:8px;'
+            + 'padding:12px 14px;color:#9fe8c0;overflow:auto">node scripts/serve.mjs</pre>'
+            + '<p style="margin:22px 0 0;color:#8fa6c4;font-size:14px">'
+            + '原因：file:// 下浏览器拒绝加载 ES 模块，而且根路径 <code>/src/style.css</code> '
+            + '会被解析成 <code>C:/src/style.css</code>，所以样式、脚本、数据全都读不到。</p>'
+            + '</div>';
+          return;
+        }
+
+        // 情况二：走的是 HTTP，但迟迟没启动完（模块 404、服务器起错目录等）——
+        // 别让用户对着「正在构建地球…」干等。
+        setTimeout(function () {
+          if (window.__CS2_BOOTED__) return;
+          var badge = document.getElementById('meta-badge');
+          if (badge && badge.textContent.indexOf('加载中') === -1) return;   // 已经在跑了
+          showCrash('页面没能启动',
+            '等了 15 秒还没启动完成，通常是脚本没加载到。请依次确认：'
+            + '① 地址栏是 http://127.0.0.1:5173/（不是 file://）；'
+            + '② 启动窗口里没有红色的 404 报错；'
+            + '③ 按 Ctrl+F5 强制刷新一次。');
+        }, 15000);
+      })();
+    </script>
+  </body>
+</html>

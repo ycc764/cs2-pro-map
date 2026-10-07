@@ -3,7 +3,8 @@
 一个可交互的 CS2 现役职业选手分布可视化：3D 地球 / 2D 世界地图双视图，
 可以按战队、选手 ID、国家名搜索，也可以直接点地图上的国家查看该地区全部现役选手。
 
-**当前数据：49 支战队 · 245 名现役选手 · 41 个国家和地区**（来源：HLTV.org 世界排名前 50）
+**当前数据：99 支战队 · 485 名现役选手 · 48 个国家和地区**（来源：HLTV.org 世界排名前 100；
+其中 473 人有头像、115 人共 777 条冠军记录）
 
 ---
 
@@ -42,6 +43,7 @@ node scripts/serve.mjs
 | 2D 下双击 | 在 1× 和 2.6× 之间来回切换 |
 | 点击某个国家或气泡 | 右侧列出该地区的全部现役选手（按战队分组），并列出驻在该地区的战队；地图会平滑飞到那个国家 |
 | 点击右侧战队名 | 展开该队完整阵容 |
+| 点击任意一名选手 | 打开选手卡片：大头像、国籍、现役战队，以及**冠军荣誉**列表（每条可点进 HLTV 赛事页）。列表里带 🏆N 角标的就是拿过 N 个冠军的人 |
 | 顶部搜索框 | 输 `Vitality` / `ZywOo` / `丹麦` / `TYLOO` 都能命中，回车选第一条，↑↓ 可以在候选之间移动 |
 | 左侧排行榜 | 国家和地区按选手数排序，点击即定位 |
 | `Esc` | 先收起搜索候选，再取消当前选中 |
@@ -60,22 +62,54 @@ node scripts/serve.mjs
 ### 当前数据源：HLTV（已抓好，可直接用）
 
 ```
-data/hltv.json                   # 抓取原始结果（世界排名前 50 → 49 支有现役阵容）
+data/hltv.json                   # 抓取原始结果（世界排名前 100 → 有现役阵容的队伍）
+data/players.json                # 选手头像与冠军荣誉（由 scrape:players 补）
 public/data/dataset.json         # 前端实际读的数据（构建产物）
-public/data/countries-110m.json  # 世界地图 TopoJSON
+public/data/countries-110m.json  # 世界底图（GeoJSON，含中国标准口径与九段线）
+public/avatars/<数字id>.webp      # 选手头像，120×120，约 4 KB 一张
 ```
 
-重新抓取（会**弹出一个浏览器窗口**，约 8–10 分钟）：
+重新抓取（会**弹出一个浏览器窗口**）：
 
 ```bash
-npm run scrape:hltv              # 抓 HLTV 世界排名前 30 队（--limit 50 抓前 50）
-npm run dataset:hltv             # 加工成前端数据
-npm run test                     # 冒烟测试：验证 数据 → 地图 这条链路
+npm run scrape:hltv -- --limit 100   # 抓 HLTV 世界排名前 100 队（默认只抓前 30）
+npm run scrape:players               # 补每个选手的头像 + 冠军荣誉（可中断，重跑自动续）
+npm run dataset:hltv                 # 加工成前端数据
+npm run test                         # 冒烟测试：验证 数据 → 地图 这条链路
 ```
 
-当前这一份：**49 支战队 / 245 名现役选手 / 41 个地区**。
-国家分布前 15：俄罗斯 37、乌克兰 22、瑞典 21、巴西 20、丹麦 18、波兰 11、
-蒙古 10、中国 10、美国 9、哈萨克斯坦 7、土耳其 6、德国 6、以色列 5、阿根廷 5、白俄罗斯 4。
+`--limit 100` 大约 30–35 分钟，`scrape:players` 再 30 分钟左右，都建议放着跑。
+
+> **为什么是 100 而不是 50**：排名页一页就列出 250 支队。早先只抓前 50，
+> 结果澳洲的 FlyQuest（第 75）怎么搜都搜不到 —— 数据集里根本没抓它。
+> 用 `--limit 100` 就覆盖到了。
+
+#### 选手头像与冠军荣誉
+
+这两样由 `scripts/scrape-players.mjs` 单独补（在 `scrape:hltv` 之后跑）。
+过程中踩到的坑比想象的深，都写在脚本头部注释里，这里只记结论：
+
+- **头像图片也在 Cloudflare 后面**：`img-cdn.hltv.org` 对普通 fetch 返回 403；
+  在 hltv.org 页面里 `fetch()` 也会因缺 CORS 头报 `TypeError: Failed to fetch`。
+  唯一走得通的是 **CDP 的 `Network.getResponseBody`** —— 先让页面把图加载出来，
+  再按 `requestId` 取原始字节，这是浏览器自己的网络栈，不受 CORS 约束。
+- **CDN 的 `s=` 签名绑定 `w=` 参数**：把 `w=400` 改成 `w=120` 直接 403，要不到小图。
+  原图 400×417 约 88 KB，500 人就是 40+ MB，不能直接入库。
+  解法是把原图当 **data: URL** 塞回页面（data URL 同源，**不会污染 canvas**），
+  用 canvas 缩到 120×120 再 `toDataURL('image/webp', 0.88)` —— 约 4 KB 一张，
+  透明背景也保得住。500 人合计约 2 MB。
+  ⚠ 直接用 CDN 地址画 canvas 会因跨域污染画布，`toDataURL` 抛 `SecurityError`。
+- **不逐个 `Page.navigate`**：停在 hltv.org 上用**同源 fetch** 把选手页 HTML 拉下来，
+  在页面里 `DOMParser` 解析出需要的那点字段再传回 Node，省掉整页渲染的开销。
+- **"冠军"的判据**：只认 `.trophySection a.trophy[href^="/events/"]`。
+  同一排里的 MVP 次数、`#N best player in YY`、Player/AWPer of the Year、
+  `Winner of ESL Grand Slam`（href 是 `/news/`）、`Faceit winner of: FPL` 全部剔除。
+  实测 ZywOo 页面上 44 个奖杯块里只有 28 个是真正的赛事冠军。
+- **去重要按 `href` 而不是赛事名**：HLTV 的 `title` 大多带年份（"IEM Katowice 2025"），
+  但偶尔不带。年年都办的比赛按名字去重会把 IEM Katowice 2021/2024/2025 压成一条，
+  冠军数直接少算。每个 `/events/<id>` 才是一次独立的夺冠。
+- **少数选手没有头像**：485 人里有 12 人拿不到（HLTV 上就没有可用的大图，
+  或 CDN 请求失败）。这些人在页面上会退化成首字母圆片，不是 bug。
 
 #### 为什么抓 HLTV 必须开窗口（踩过的坑）
 
@@ -118,33 +152,19 @@ Liquipedia 内容按 **CC-BY-SA 3.0** 授权。限速与 User-Agent 都写在
 
 ---
 
-### 底图：为什么中国地图要单独修
+### 底图
 
-`public/data/countries-110m.json` 不是直接从 world-atlas 拷来的，而是由
-`scripts/build-basemap.mjs` 重新生成的，因为原始数据的口径不对：
-
-- Natural Earth 110m 把**藏南整块画在印度身上**（印度图元的经度一直延伸到 97.4°E），
-  台湾是**一个独立的图元**，南海诸岛和九段线**完全没有**；
-- 新版改用中国标准地图口径的 [DataV GeoAtlas](https://geo.datav.aliyun.com/)：
-  以 `100000.json`（全国，含南海诸岛）替换中国疆域，从 `100000_full.json` 里取出九段线，
-  再用 `polygon-clipping` 把中国疆域从**印度、不丹、尼泊尔、巴基斯坦、蒙古、俄罗斯**
-  等 14 个邻国的图元里**布尔减掉**。
-
-之所以非做布尔减不可，是因为 3D 视图的国家拾取是
-`features.find((ft) => geoContains(ft, [lng, lat]))` —— **顺序查找、第一个命中就返回**；
-而 2D 视图里没有数据的国家又是半透明填充，只靠"把中国画在最后一层"是盖不住的。
+`public/data/countries-110m.json` 由 `scripts/build-basemap.mjs` 生成，采用**中国标准地图口径**
+（含台湾、藏南与南海诸岛九段线），不是直接从 world-atlas 拷来的：
 
 ```bash
-npm run basemap     # 重新生成底图（会联网拉 DataV，缓存到 .tmp-geo/）
+npm run basemap     # 重新生成底图（会联网拉 DataV GeoAtlas，缓存到 .tmp-geo/）
 ```
 
-脚本自带绕向自检，因为有两个坑：d3-geo 的绕向约定与 GeoJSON RFC 7946 **相反**
-（d3 要求外环顺时针），而且 `polygon-clipping` 是纯平面算法、跨 ±180° 会算出一块
-横跨全图的假多边形，所以俄罗斯那一块要先搬到 0..360 坐标系算完再搬回来。
-跑通时的输出大致是：中国 9,526,309 km²、俄罗斯 16,916,168 km²、印度 3,077,982 km²。
+脚本自带绕向、面积与跨 ±180° 的自检，跑通时会打印各国面积（中国约 9,526,309 km²）供比对。
+实现细节与踩过的坑都写在 `scripts/build-basemap.mjs` 的头部注释里。
 
-> 另外注意：`npm run dataset` **不会**再覆盖底图了。旧版本里那句
-> `copyFileSync('node_modules/world-atlas/...')` 已经删掉，改成了"文件不存在就提示你先跑 `npm run basemap`"。
+> `npm run dataset` **不会**覆盖底图；文件不存在时会提示你先跑 `npm run basemap`。
 
 ---
 
@@ -163,6 +183,7 @@ scripts/
   serve.mjs                 零依赖静态服务器（替代 vite dev）
   vendor.mjs                把 node_modules 里的 ESM 入口复制到 public/vendor/
   scrape-hltv.mjs           HLTV 抓取器（当前数据源，会弹窗口过 Cloudflare）
+  scrape-players.mjs        补每个选手的头像 + 冠军荣誉（头像走 CDP 取字节，见「三」）
   scrape-liquipedia.mjs     Liquipedia 抓取器（备选数据源）
   build-dataset.mjs         抓取结果 → dataset.json
   build-basemap.mjs         世界底图 → countries-110m.json（含中国标准地图口径修正）
@@ -173,10 +194,12 @@ scripts/
   dev/                      开发用检查（check:imports / check:boot / check:3d / check:e2e）
 public/
   data/                     dataset.json + 底图 countries-110m.json
+  avatars/                  选手头像，120×120 WebP，约 4 KB 一张
   vendor/                   预先放好的前端依赖（three / d3-geo / d3-array / internmap；
                             topojson-client 现在只有构建脚本用，前端不再加载）
 data/
   hltv.json                 当前默认数据源的抓取原始结果
+  players.json              选手头像文件名与冠军荣誉列表
   liquipedia.json           备选数据源的抓取原始结果
   countries.raw.json        国家元数据缓存（world-countries）
 ```
@@ -211,7 +234,7 @@ GeoJSON 要素对上、每个国家的气泡坐标确实落在本国境内、
 搜索能命中战队/选手/国家、**地图口径**（藏南/台湾/钓鱼岛属于中国，且布尔减没有
 误伤邻国），以及前端模块解析（相对 import 是否存在、
 裸模块名是否都在 import map 里、`public/vendor/` 是否齐备）。
-当前 **27 项全部通过**。
+当前 **32 项全部通过**。
 
 `scripts/dev/` 下还有四个开发用检查，前三个**不用开浏览器**：
 
@@ -229,7 +252,7 @@ npm install linkedom --no-save --ignore-scripts
 ```
 
 **没装也不会报错**——这两项会打印一行「跳过」并正常退出，因为它们只是开发期辅助，
-真正必需的是 `npm test`（27 项）。
+真正必需的是 `npm test`（32 项）。
 
 它会打印启动后各视图的元素数量、点击左侧首行和搜索的结果，以及任何未捕获异常。
 `check:3d` 还会遍历假渲染器收到的场景，报告气泡/星空/贴图是否真的建出来，
@@ -290,6 +313,9 @@ npm run check:e2e -- http://127.0.0.1:5180/
 | 端口 5173 被占用 | 服务器会自动 +1；**以终端里打印的地址为准**，别照抄 5173。 |
 | 整张地图被一个空白「页面出错了」遮罩盖住 | 已修（2026-10）。`.crash` 的 `display: grid` 会盖过浏览器对 `hidden` 属性的默认样式，现在 `src/style.css` 顶部有 `[hidden] { display: none !important }` 兜底。**这类纯 CSS 的坑只有 `npm run check:e2e` 能发现。** |
 | 详情标题或搜索里出现 `[object Object]` | 已修（2026-10）。`world-countries` 的 `name` 字段是 `{ common, official, native }` 对象而不是字符串，构建数据集时现在取 `name.common`；前端另有 `enName()` 兼容两种形态。 |
+| 选手头像显示成首字母圆片 | 这是**有意的降级**，不是破图：说明该选手没有头像数据。跑一次 `npm run scrape:players` 再 `npm run dataset:hltv` 即可。 |
+| 选手卡片里「暂无冠军记录」 | 两种情况：要么确实没抓过（同上），要么这名选手真的没拿过冠军。HLTV 上的 MVP 次数、`#N best player`、年度最佳、ESL Grand Slam、FPL 都不算冠军，会被主动滤掉。 |
+| 抓取脚本卡在 `Just a moment...` | Cloudflare 又拦住了。确认**没有加 `--headless`**、也没有手动传 `--user-agent`（详见「三 → 为什么抓 HLTV 必须开窗口」）。 |
 
 > **一条教训**：`.crash` 那个坑之所以能活下来，是因为三个无浏览器检查全绿。
 > 假 DOM 把 `getBoundingClientRect()` 写死、也没有真实 CSS 级联，
@@ -309,9 +335,13 @@ npm run check:e2e -- http://127.0.0.1:5180/
 
 ### HLTV（当前默认数据源）
 
-- 抓的是 HLTV.org 的公开页面：世界排名页 + 各战队页面的现役阵容。
+- 抓的是 HLTV.org 的公开页面：世界排名页 + 各战队页面的现役阵容 + 各选手页面的
+  头像与冠军荣誉。
 - **仅供个人学习与研究使用，请勿再分发、勿用于商业用途。** 这条声明同时写在
   `data/hltv.json` 的 `license` 字段里，页面上也会照原样展示。
+- `public/avatars/` 里的选手头像下载自 `img-cdn.hltv.org`，版权归 HLTV.org 与
+  摄影师所有，同样**只在本仓库内作演示用途**。不想要这些图可以整个目录删掉，
+  前端会自动退化成首字母圆片。
 - `scripts/scrape-hltv.mjs` 默认串行执行、每次请求间隔 2.6 秒。请不要把它调快，
   也不要高频重复抓取。
 - 本项目与 HLTV.org 没有任何隶属关系。若你是权利方并希望删除相关内容，开个 issue 即可。

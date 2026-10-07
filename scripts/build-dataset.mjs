@@ -167,6 +167,40 @@ for (const c of Object.values(countries)) {
 }
 if (snapped.length) console.log('气泡位置已吸附到国土内:', snapped.join('; '));
 
+/* ------------------------------------------------------------------
+ * 合并选手头像与冠军荣誉（由 `npm run scrape:players` 单独产出，可有可无）
+ * 键是选手昵称，与 data/hltv.json 里 teams[].players[].id 完全一致。
+ * ------------------------------------------------------------------ */
+const EXTRA_FILE = 'data/players.json';
+const extra = { players: {} };
+if (fs.existsSync(EXTRA_FILE)) {
+  try {
+    Object.assign(extra, JSON.parse(fs.readFileSync(EXTRA_FILE, 'utf8')));
+  } catch (e) {
+    console.warn(`⚠ ${EXTRA_FILE} 解析失败，本次跳过头像与荣誉：${e.message}`);
+  }
+} else {
+  console.log(`（没有 ${EXTRA_FILE}，本次数据不带头像与冠军；想补就跑 npm run scrape:players）`);
+}
+const extraOf = (id) => extra.players?.[id] ?? null;
+let withAvatar = 0;
+let trophyTotal = 0;
+for (const p of players) {
+  const e = extraOf(p.id);
+  if (!e) continue;
+  if (e.avatar) {
+    p.avatar = e.avatar; // 形如 avatars/11893.webp，前端加前导 / 直接当 img.src
+    withAvatar++;
+  }
+  if (Array.isArray(e.trophies) && e.trophies.length) {
+    p.trophies = e.trophies.map((t) => ({ name: t.name, href: t.href || '' }));
+    trophyTotal += p.trophies.length;
+  }
+}
+if (Object.keys(extra.players ?? {}).length) {
+  console.log(`选手资料：头像 ${withAvatar}/${players.length} 张，冠军荣誉共 ${trophyTotal} 条`);
+}
+
 const dataset = {
   meta: {
     source: raw.source,
@@ -178,6 +212,8 @@ const dataset = {
     playerCount: players.length,
     countryCount: Object.keys(countries).length,
     emptyTeamCount: raw.emptyTeams.length,
+    avatarCount: withAvatar,
+    trophyCount: trophyTotal,
     maxCountry: Math.max(...Object.values(countries).map((c) => c.count)),
   },
   sections: Object.fromEntries(
@@ -201,6 +237,7 @@ const dataset = {
       role: p.role,
       igl: !!p.igl,
       joindate: p.joindate || '',
+      avatar: extraOf(p.id)?.avatar || '',
     })),
   })),
   players,

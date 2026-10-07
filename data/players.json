@@ -1,0 +1,6625 @@
+{
+  "source": "hltv",
+  "sourceUrl": "https://www.hltv.org/",
+  "fetchedAt": "2026-10-07T07:49:15.397Z",
+  "players": {
+    "910": {
+      "id": "910",
+      "nick": "910",
+      "team": "The MongolZ",
+      "avatar": "avatars/21809.webp",
+      "trophies": [
+        {
+          "name": "Esports World Cup 2025",
+          "href": "/events/8039/esports-world-cup-2025"
+        },
+        {
+          "name": "YaLLa Compass 2024",
+          "href": "/events/7475/yalla-compass-2024"
+        }
+      ]
+    },
+    "sh1ro": {
+      "id": "sh1ro",
+      "nick": "sh1ro",
+      "team": "Spirit",
+      "avatar": "avatars/16920.webp",
+      "trophies": [
+        {
+          "name": "BLAST Open Porto 2026",
+          "href": "/events/8249/blast-open-porto-2026"
+        },
+        {
+          "name": "Esports World Cup 2026",
+          "href": "/events/8261/esports-world-cup-2026"
+        },
+        {
+          "name": "PGL Astana 2026",
+          "href": "/events/8049/pgl-astana-2026"
+        },
+        {
+          "name": "BLAST Bounty 2025 Season 2 Finals",
+          "href": "/events/7910/blast-bounty-2025-season-2-finals"
+        },
+        {
+          "name": "IEM Cologne 2025",
+          "href": "/events/8038/iem-cologne-2025"
+        },
+        {
+          "name": "PGL Astana 2025",
+          "href": "/events/8045/pgl-astana-2025"
+        },
+        {
+          "name": "BLAST Bounty 2025 Season 1 Finals",
+          "href": "/events/7909/blast-bounty-2025-season-1-finals"
+        },
+        {
+          "name": "Perfect World Shanghai Major 2024",
+          "href": "/events/7524/perfect-world-shanghai-major-2024"
+        },
+        {
+          "name": "BetBoom Dacha Belgrade Season 2",
+          "href": "/events/7993/betboom-dacha-belgrade-season-2"
+        },
+        {
+          "name": "BLAST Premier Spring Final 2024",
+          "href": "/events/7485/blast-premier-spring-final-2024"
+        },
+        {
+          "name": "IEM Katowice 2024",
+          "href": "/events/7435/iem-katowice-2024"
+        },
+        {
+          "name": "IEM Dallas 2022",
+          "href": "/events/6138/iem-dallas-2022"
+        },
+        {
+          "name": "Funspark ULTI 2021 Finals",
+          "href": "/events/6334/funspark-ulti-2021-finals"
+        },
+        {
+          "name": "V4 Future Sports Festival 2021",
+          "href": "/events/6018/v4-future-sports-festival-2021"
+        },
+        {
+          "name": "IEM Fall 2021 CIS",
+          "href": "/events/6070/iem-fall-2021-cis"
+        },
+        {
+          "name": "BLAST Premier Spring Final 2021",
+          "href": "/events/5604/blast-premier-spring-final-2021"
+        },
+        {
+          "name": "IEM Summer 2021",
+          "href": "/events/5219/iem-summer-2021"
+        },
+        {
+          "name": "EPIC League CIS 2021",
+          "href": "/events/5901/epic-league-cis-2021"
+        },
+        {
+          "name": "IEM Katowice 2021",
+          "href": "/events/5552/iem-katowice-2021"
+        }
+      ]
+    },
+    "magixx": {
+      "id": "magixx",
+      "nick": "magixx",
+      "team": "Spirit",
+      "avatar": "avatars/18317.webp",
+      "trophies": [
+        {
+          "name": "BLAST Open Porto 2026",
+          "href": "/events/8249/blast-open-porto-2026"
+        },
+        {
+          "name": "Esports World Cup 2026",
+          "href": "/events/8261/esports-world-cup-2026"
+        },
+        {
+          "name": "PGL Astana 2026",
+          "href": "/events/8049/pgl-astana-2026"
+        },
+        {
+          "name": "PGL Astana 2025",
+          "href": "/events/8045/pgl-astana-2025"
+        },
+        {
+          "name": "BLAST Bounty 2025 Season 1 Finals",
+          "href": "/events/7909/blast-bounty-2025-season-1-finals"
+        },
+        {
+          "name": "Perfect World Shanghai Major 2024",
+          "href": "/events/7524/perfect-world-shanghai-major-2024"
+        },
+        {
+          "name": "BetBoom Dacha Belgrade Season 2",
+          "href": "/events/7993/betboom-dacha-belgrade-season-2"
+        },
+        {
+          "name": "BLAST Premier Spring Final 2024",
+          "href": "/events/7485/blast-premier-spring-final-2024"
+        },
+        {
+          "name": "IEM Katowice 2024",
+          "href": "/events/7435/iem-katowice-2024"
+        },
+        {
+          "name": "BetBoom Dacha 2023",
+          "href": "/events/7499/betboom-dacha-2023"
+        }
+      ]
+    },
+    "tN1R": {
+      "id": "tN1R",
+      "nick": "tN1R",
+      "team": "Spirit",
+      "avatar": "avatars/19808.webp",
+      "trophies": [
+        {
+          "name": "BLAST Open Porto 2026",
+          "href": "/events/8249/blast-open-porto-2026"
+        },
+        {
+          "name": "Esports World Cup 2026",
+          "href": "/events/8261/esports-world-cup-2026"
+        },
+        {
+          "name": "PGL Astana 2026",
+          "href": "/events/8049/pgl-astana-2026"
+        }
+      ]
+    },
+    "zont1x": {
+      "id": "zont1x",
+      "nick": "zont1x",
+      "team": "Spirit",
+      "avatar": "avatars/20423.webp",
+      "trophies": [
+        {
+          "name": "BLAST Open Porto 2026",
+          "href": "/events/8249/blast-open-porto-2026"
+        },
+        {
+          "name": "Esports World Cup 2026",
+          "href": "/events/8261/esports-world-cup-2026"
+        },
+        {
+          "name": "PGL Astana 2026",
+          "href": "/events/8049/pgl-astana-2026"
+        },
+        {
+          "name": "BLAST Bounty 2025 Season 2 Finals",
+          "href": "/events/7910/blast-bounty-2025-season-2-finals"
+        },
+        {
+          "name": "IEM Cologne 2025",
+          "href": "/events/8038/iem-cologne-2025"
+        },
+        {
+          "name": "PGL Astana 2025",
+          "href": "/events/8045/pgl-astana-2025"
+        },
+        {
+          "name": "BLAST Bounty 2025 Season 1 Finals",
+          "href": "/events/7909/blast-bounty-2025-season-1-finals"
+        },
+        {
+          "name": "Perfect World Shanghai Major 2024",
+          "href": "/events/7524/perfect-world-shanghai-major-2024"
+        },
+        {
+          "name": "BetBoom Dacha Belgrade Season 2",
+          "href": "/events/7993/betboom-dacha-belgrade-season-2"
+        },
+        {
+          "name": "BLAST Premier Spring Final 2024",
+          "href": "/events/7485/blast-premier-spring-final-2024"
+        },
+        {
+          "name": "IEM Katowice 2024",
+          "href": "/events/7435/iem-katowice-2024"
+        },
+        {
+          "name": "BetBoom Dacha 2023",
+          "href": "/events/7499/betboom-dacha-2023"
+        }
+      ]
+    },
+    "donk": {
+      "id": "donk",
+      "nick": "donk",
+      "team": "Spirit",
+      "avatar": "avatars/21167.webp",
+      "trophies": [
+        {
+          "name": "BLAST Open Porto 2026",
+          "href": "/events/8249/blast-open-porto-2026"
+        },
+        {
+          "name": "Esports World Cup 2026",
+          "href": "/events/8261/esports-world-cup-2026"
+        },
+        {
+          "name": "PGL Astana 2026",
+          "href": "/events/8049/pgl-astana-2026"
+        },
+        {
+          "name": "BLAST Bounty 2025 Season 2 Finals",
+          "href": "/events/7910/blast-bounty-2025-season-2-finals"
+        },
+        {
+          "name": "IEM Cologne 2025",
+          "href": "/events/8038/iem-cologne-2025"
+        },
+        {
+          "name": "PGL Astana 2025",
+          "href": "/events/8045/pgl-astana-2025"
+        },
+        {
+          "name": "BLAST Bounty 2025 Season 1 Finals",
+          "href": "/events/7909/blast-bounty-2025-season-1-finals"
+        },
+        {
+          "name": "Perfect World Shanghai Major 2024",
+          "href": "/events/7524/perfect-world-shanghai-major-2024"
+        },
+        {
+          "name": "BetBoom Dacha Belgrade Season 2",
+          "href": "/events/7993/betboom-dacha-belgrade-season-2"
+        },
+        {
+          "name": "BLAST Premier Spring Final 2024",
+          "href": "/events/7485/blast-premier-spring-final-2024"
+        },
+        {
+          "name": "IEM Katowice 2024",
+          "href": "/events/7435/iem-katowice-2024"
+        },
+        {
+          "name": "BetBoom Dacha 2023",
+          "href": "/events/7499/betboom-dacha-2023"
+        }
+      ]
+    },
+    "apEX": {
+      "id": "apEX",
+      "nick": "apEX",
+      "team": "Vitality",
+      "avatar": "avatars/7322.webp",
+      "trophies": [
+        {
+          "name": "StarLadder StarSeries Fall 2026",
+          "href": "/events/8057/starladder-starseries-fall-2026"
+        },
+        {
+          "name": "BLAST Rivals 2026 Season 1",
+          "href": "/events/8250/blast-rivals-2026-season-1"
+        },
+        {
+          "name": "IEM Rio 2026",
+          "href": "/events/8242/iem-rio-2026"
+        },
+        {
+          "name": "BLAST Open Rotterdam 2026",
+          "href": "/events/8248/blast-open-rotterdam-2026"
+        },
+        {
+          "name": "PGL Cluj-Napoca 2026",
+          "href": "/events/8047/pgl-cluj-napoca-2026"
+        },
+        {
+          "name": "IEM Kraków 2026",
+          "href": "/events/8240/iem-krakw-2026"
+        },
+        {
+          "name": "StarLadder Budapest Major 2025",
+          "href": "/events/8042/starladder-budapest-major-2025"
+        },
+        {
+          "name": "ESL Pro League Season 22",
+          "href": "/events/8040/esl-pro-league-season-22"
+        },
+        {
+          "name": "BLAST.tv Austin Major 2025",
+          "href": "/events/7902/blasttv-austin-major-2025"
+        },
+        {
+          "name": "IEM Dallas 2025",
+          "href": "/events/8037/iem-dallas-2025"
+        },
+        {
+          "name": "BLAST Rivals 2025 Season 1",
+          "href": "/events/7905/blast-rivals-2025-season-1"
+        },
+        {
+          "name": "IEM Melbourne 2025",
+          "href": "/events/8036/iem-melbourne-2025"
+        },
+        {
+          "name": "BLAST Open Lisbon 2025",
+          "href": "/events/7904/blast-open-lisbon-2025"
+        },
+        {
+          "name": "ESL Pro League Season 21",
+          "href": "/events/8292/esl-pro-league-season-21"
+        },
+        {
+          "name": "IEM Katowice 2025",
+          "href": "/events/8034/iem-katowice-2025"
+        },
+        {
+          "name": "IEM Cologne 2024",
+          "href": "/events/7436/iem-cologne-2024"
+        },
+        {
+          "name": "BLAST Premier World Final 2023",
+          "href": "/events/6976/blast-premier-world-final-2023"
+        },
+        {
+          "name": "BLAST Premier Fall Final 2023",
+          "href": "/events/6975/blast-premier-fall-final-2023"
+        },
+        {
+          "name": "Gamers8 2023",
+          "href": "/events/7128/gamers8-2023"
+        },
+        {
+          "name": "BLAST.tv Paris Major 2023",
+          "href": "/events/6793/blasttv-paris-major-2023"
+        },
+        {
+          "name": "IEM Rio 2023",
+          "href": "/events/6864/iem-rio-2023"
+        },
+        {
+          "name": "ESL Pro League Season 16",
+          "href": "/events/6141/esl-pro-league-season-16"
+        },
+        {
+          "name": "IEM Winter 2021",
+          "href": "/events/5730/iem-winter-2021"
+        },
+        {
+          "name": "BLAST Premier Fall 2020 Finals",
+          "href": "/events/5209/blast-premier-fall-2020-finals"
+        },
+        {
+          "name": "IEM Beijing-Haidian 2020 Europe",
+          "href": "/events/5524/iem-beijing-haidian-2020-europe"
+        },
+        {
+          "name": "EPICENTER 2019",
+          "href": "/events/4979/epicenter-2019"
+        },
+        {
+          "name": "ECS Season 7 Finals",
+          "href": "/events/4411/ecs-season-7-finals"
+        },
+        {
+          "name": "cs_summit 4",
+          "href": "/events/4566/cs-summit-4"
+        },
+        {
+          "name": "DreamHack Masters Malmö 2017",
+          "href": "/events/2684/dreamhack-masters-malm-2017"
+        },
+        {
+          "name": "ESL Pro League Season 5 Finals",
+          "href": "/events/2557/esl-pro-league-season-5-finals"
+        },
+        {
+          "name": "DreamHack Open Tours 2017",
+          "href": "/events/2568/dreamhack-open-tours-2017"
+        },
+        {
+          "name": "WESG 2016 World Finals",
+          "href": "/events/2564/wesg-2016-world-finals"
+        },
+        {
+          "name": "Game Show Global eSports Cup 2016 Finals",
+          "href": "/events/2013/game-show-global-esports-cup-2016-finals"
+        },
+        {
+          "name": "DreamHack Open Cluj-Napoca 2015",
+          "href": "/events/1617/dreamhack-open-cluj-napoca-2015"
+        },
+        {
+          "name": "Gfinity 2015 Champion of Champions",
+          "href": "/events/1621/gfinity-2015-champion-of-champions"
+        },
+        {
+          "name": "DreamHack Open London 2015",
+          "href": "/events/1763/dreamhack-open-london-2015"
+        },
+        {
+          "name": "IEM Gamescom 2015",
+          "href": "/events/1861/iem-gamescom-2015"
+        },
+        {
+          "name": "DreamHack Stockholm CS:GO Invitational 2014",
+          "href": "/events/1490/dreamhack-stockholm-csgo-invitational-2014"
+        },
+        {
+          "name": "DreamHack Valencia 2014",
+          "href": "/events/1424/dreamhack-valencia-2014"
+        },
+        {
+          "name": "ESWC 2013",
+          "href": "/events/1249/eswc-2013"
+        }
+      ]
+    },
+    "ropz": {
+      "id": "ropz",
+      "nick": "ropz",
+      "team": "Vitality",
+      "avatar": "avatars/11816.webp",
+      "trophies": [
+        {
+          "name": "StarLadder StarSeries Fall 2026",
+          "href": "/events/8057/starladder-starseries-fall-2026"
+        },
+        {
+          "name": "BLAST Rivals 2026 Season 1",
+          "href": "/events/8250/blast-rivals-2026-season-1"
+        },
+        {
+          "name": "IEM Rio 2026",
+          "href": "/events/8242/iem-rio-2026"
+        },
+        {
+          "name": "BLAST Open Rotterdam 2026",
+          "href": "/events/8248/blast-open-rotterdam-2026"
+        },
+        {
+          "name": "PGL Cluj-Napoca 2026",
+          "href": "/events/8047/pgl-cluj-napoca-2026"
+        },
+        {
+          "name": "IEM Kraków 2026",
+          "href": "/events/8240/iem-krakw-2026"
+        },
+        {
+          "name": "StarLadder Budapest Major 2025",
+          "href": "/events/8042/starladder-budapest-major-2025"
+        },
+        {
+          "name": "ESL Pro League Season 22",
+          "href": "/events/8040/esl-pro-league-season-22"
+        },
+        {
+          "name": "BLAST.tv Austin Major 2025",
+          "href": "/events/7902/blasttv-austin-major-2025"
+        },
+        {
+          "name": "IEM Dallas 2025",
+          "href": "/events/8037/iem-dallas-2025"
+        },
+        {
+          "name": "BLAST Rivals 2025 Season 1",
+          "href": "/events/7905/blast-rivals-2025-season-1"
+        },
+        {
+          "name": "IEM Melbourne 2025",
+          "href": "/events/8036/iem-melbourne-2025"
+        },
+        {
+          "name": "BLAST Open Lisbon 2025",
+          "href": "/events/7904/blast-open-lisbon-2025"
+        },
+        {
+          "name": "ESL Pro League Season 21",
+          "href": "/events/8292/esl-pro-league-season-21"
+        },
+        {
+          "name": "IEM Katowice 2025",
+          "href": "/events/8034/iem-katowice-2025"
+        },
+        {
+          "name": "IEM Chengdu 2024",
+          "href": "/events/7437/iem-chengdu-2024"
+        },
+        {
+          "name": "CS Asia Championships 2023",
+          "href": "/events/7365/cs-asia-championships-2023"
+        },
+        {
+          "name": "Thunderpick World Championship 2023",
+          "href": "/events/7289/thunderpick-world-championship-2023"
+        },
+        {
+          "name": "IEM Sydney 2023",
+          "href": "/events/6865/iem-sydney-2023"
+        },
+        {
+          "name": "ESL Pro League Season 17",
+          "href": "/events/6862/esl-pro-league-season-17"
+        },
+        {
+          "name": "IEM Cologne 2022",
+          "href": "/events/6140/iem-cologne-2022"
+        },
+        {
+          "name": "PGL Major Antwerp 2022",
+          "href": "/events/6372/pgl-major-antwerp-2022"
+        },
+        {
+          "name": "ESL Pro League Season 15",
+          "href": "/events/6137/esl-pro-league-season-15"
+        },
+        {
+          "name": "IEM Katowice 2022",
+          "href": "/events/6136/iem-katowice-2022"
+        },
+        {
+          "name": "Flashpoint 3",
+          "href": "/events/5864/flashpoint-3"
+        },
+        {
+          "name": "ICE Challenge 2020",
+          "href": "/events/5147/ice-challenge-2020"
+        },
+        {
+          "name": "cs_summit 5",
+          "href": "/events/4998/cs-summit-5"
+        },
+        {
+          "name": "ESL Pro League Season 10 Finals",
+          "href": "/events/4697/esl-pro-league-season-10-finals"
+        },
+        {
+          "name": "CS:GO Asia Championships 2019",
+          "href": "/events/4680/csgo-asia-championships-2019"
+        },
+        {
+          "name": "ESL One New York 2018",
+          "href": "/events/3703/esl-one-new-york-2018"
+        },
+        {
+          "name": "V4 Future Sports Festival 2018",
+          "href": "/events/3494/v4-future-sports-festival-2018"
+        },
+        {
+          "name": "StarSeries i-League Season 4",
+          "href": "/events/3486/starseries-i-league-season-4"
+        },
+        {
+          "name": "ESG Tour Mykonos 2017",
+          "href": "/events/3061/esg-tour-mykonos-2017"
+        }
+      ]
+    },
+    "ZywOo": {
+      "id": "ZywOo",
+      "nick": "ZywOo",
+      "team": "Vitality",
+      "avatar": "avatars/11893.webp",
+      "trophies": [
+        {
+          "name": "StarLadder StarSeries Fall 2026",
+          "href": "/events/8057/starladder-starseries-fall-2026"
+        },
+        {
+          "name": "BLAST Rivals 2026 Season 1",
+          "href": "/events/8250/blast-rivals-2026-season-1"
+        },
+        {
+          "name": "IEM Rio 2026",
+          "href": "/events/8242/iem-rio-2026"
+        },
+        {
+          "name": "BLAST Open Rotterdam 2026",
+          "href": "/events/8248/blast-open-rotterdam-2026"
+        },
+        {
+          "name": "PGL Cluj-Napoca 2026",
+          "href": "/events/8047/pgl-cluj-napoca-2026"
+        },
+        {
+          "name": "IEM Kraków 2026",
+          "href": "/events/8240/iem-krakw-2026"
+        },
+        {
+          "name": "StarLadder Budapest Major 2025",
+          "href": "/events/8042/starladder-budapest-major-2025"
+        },
+        {
+          "name": "ESL Pro League Season 22",
+          "href": "/events/8040/esl-pro-league-season-22"
+        },
+        {
+          "name": "BLAST.tv Austin Major 2025",
+          "href": "/events/7902/blasttv-austin-major-2025"
+        },
+        {
+          "name": "IEM Dallas 2025",
+          "href": "/events/8037/iem-dallas-2025"
+        },
+        {
+          "name": "BLAST Rivals 2025 Season 1",
+          "href": "/events/7905/blast-rivals-2025-season-1"
+        },
+        {
+          "name": "IEM Melbourne 2025",
+          "href": "/events/8036/iem-melbourne-2025"
+        },
+        {
+          "name": "BLAST Open Lisbon 2025",
+          "href": "/events/7904/blast-open-lisbon-2025"
+        },
+        {
+          "name": "ESL Pro League Season 21",
+          "href": "/events/8292/esl-pro-league-season-21"
+        },
+        {
+          "name": "IEM Katowice 2025",
+          "href": "/events/8034/iem-katowice-2025"
+        },
+        {
+          "name": "IEM Cologne 2024",
+          "href": "/events/7436/iem-cologne-2024"
+        },
+        {
+          "name": "BLAST Premier World Final 2023",
+          "href": "/events/6976/blast-premier-world-final-2023"
+        },
+        {
+          "name": "BLAST Premier Fall Final 2023",
+          "href": "/events/6975/blast-premier-fall-final-2023"
+        },
+        {
+          "name": "Gamers8 2023",
+          "href": "/events/7128/gamers8-2023"
+        },
+        {
+          "name": "BLAST.tv Paris Major 2023",
+          "href": "/events/6793/blasttv-paris-major-2023"
+        },
+        {
+          "name": "IEM Rio 2023",
+          "href": "/events/6864/iem-rio-2023"
+        },
+        {
+          "name": "ESL Pro League Season 16",
+          "href": "/events/6141/esl-pro-league-season-16"
+        },
+        {
+          "name": "IEM Winter 2021",
+          "href": "/events/5730/iem-winter-2021"
+        },
+        {
+          "name": "BLAST Premier Fall 2020 Finals",
+          "href": "/events/5209/blast-premier-fall-2020-finals"
+        },
+        {
+          "name": "IEM Beijing-Haidian 2020 Europe",
+          "href": "/events/5524/iem-beijing-haidian-2020-europe"
+        },
+        {
+          "name": "EPICENTER 2019",
+          "href": "/events/4979/epicenter-2019"
+        },
+        {
+          "name": "ECS Season 7 Finals",
+          "href": "/events/4411/ecs-season-7-finals"
+        },
+        {
+          "name": "cs_summit 4",
+          "href": "/events/4566/cs-summit-4"
+        }
+      ]
+    },
+    "flameZ": {
+      "id": "flameZ",
+      "nick": "flameZ",
+      "team": "Vitality",
+      "avatar": "avatars/16693.webp",
+      "trophies": [
+        {
+          "name": "StarLadder StarSeries Fall 2026",
+          "href": "/events/8057/starladder-starseries-fall-2026"
+        },
+        {
+          "name": "BLAST Rivals 2026 Season 1",
+          "href": "/events/8250/blast-rivals-2026-season-1"
+        },
+        {
+          "name": "IEM Rio 2026",
+          "href": "/events/8242/iem-rio-2026"
+        },
+        {
+          "name": "BLAST Open Rotterdam 2026",
+          "href": "/events/8248/blast-open-rotterdam-2026"
+        },
+        {
+          "name": "PGL Cluj-Napoca 2026",
+          "href": "/events/8047/pgl-cluj-napoca-2026"
+        },
+        {
+          "name": "IEM Kraków 2026",
+          "href": "/events/8240/iem-krakw-2026"
+        },
+        {
+          "name": "StarLadder Budapest Major 2025",
+          "href": "/events/8042/starladder-budapest-major-2025"
+        },
+        {
+          "name": "ESL Pro League Season 22",
+          "href": "/events/8040/esl-pro-league-season-22"
+        },
+        {
+          "name": "BLAST.tv Austin Major 2025",
+          "href": "/events/7902/blasttv-austin-major-2025"
+        },
+        {
+          "name": "IEM Dallas 2025",
+          "href": "/events/8037/iem-dallas-2025"
+        },
+        {
+          "name": "BLAST Rivals 2025 Season 1",
+          "href": "/events/7905/blast-rivals-2025-season-1"
+        },
+        {
+          "name": "IEM Melbourne 2025",
+          "href": "/events/8036/iem-melbourne-2025"
+        },
+        {
+          "name": "BLAST Open Lisbon 2025",
+          "href": "/events/7904/blast-open-lisbon-2025"
+        },
+        {
+          "name": "ESL Pro League Season 21",
+          "href": "/events/8292/esl-pro-league-season-21"
+        },
+        {
+          "name": "IEM Katowice 2025",
+          "href": "/events/8034/iem-katowice-2025"
+        },
+        {
+          "name": "IEM Cologne 2024",
+          "href": "/events/7436/iem-cologne-2024"
+        },
+        {
+          "name": "BLAST Premier World Final 2023",
+          "href": "/events/6976/blast-premier-world-final-2023"
+        },
+        {
+          "name": "BLAST Premier Fall Final 2023",
+          "href": "/events/6975/blast-premier-fall-final-2023"
+        },
+        {
+          "name": "Gamers8 2023",
+          "href": "/events/7128/gamers8-2023"
+        }
+      ]
+    },
+    "mezii": {
+      "id": "mezii",
+      "nick": "mezii",
+      "team": "Vitality",
+      "avatar": "avatars/18462.webp",
+      "trophies": [
+        {
+          "name": "StarLadder StarSeries Fall 2026",
+          "href": "/events/8057/starladder-starseries-fall-2026"
+        },
+        {
+          "name": "BLAST Rivals 2026 Season 1",
+          "href": "/events/8250/blast-rivals-2026-season-1"
+        },
+        {
+          "name": "IEM Rio 2026",
+          "href": "/events/8242/iem-rio-2026"
+        },
+        {
+          "name": "BLAST Open Rotterdam 2026",
+          "href": "/events/8248/blast-open-rotterdam-2026"
+        },
+        {
+          "name": "PGL Cluj-Napoca 2026",
+          "href": "/events/8047/pgl-cluj-napoca-2026"
+        },
+        {
+          "name": "IEM Kraków 2026",
+          "href": "/events/8240/iem-krakw-2026"
+        },
+        {
+          "name": "StarLadder Budapest Major 2025",
+          "href": "/events/8042/starladder-budapest-major-2025"
+        },
+        {
+          "name": "ESL Pro League Season 22",
+          "href": "/events/8040/esl-pro-league-season-22"
+        },
+        {
+          "name": "BLAST.tv Austin Major 2025",
+          "href": "/events/7902/blasttv-austin-major-2025"
+        },
+        {
+          "name": "IEM Dallas 2025",
+          "href": "/events/8037/iem-dallas-2025"
+        },
+        {
+          "name": "BLAST Rivals 2025 Season 1",
+          "href": "/events/7905/blast-rivals-2025-season-1"
+        },
+        {
+          "name": "IEM Melbourne 2025",
+          "href": "/events/8036/iem-melbourne-2025"
+        },
+        {
+          "name": "BLAST Open Lisbon 2025",
+          "href": "/events/7904/blast-open-lisbon-2025"
+        },
+        {
+          "name": "ESL Pro League Season 21",
+          "href": "/events/8292/esl-pro-league-season-21"
+        },
+        {
+          "name": "IEM Katowice 2025",
+          "href": "/events/8034/iem-katowice-2025"
+        },
+        {
+          "name": "IEM Cologne 2024",
+          "href": "/events/7436/iem-cologne-2024"
+        },
+        {
+          "name": "BLAST Premier World Final 2023",
+          "href": "/events/6976/blast-premier-world-final-2023"
+        },
+        {
+          "name": "BLAST Premier Fall Final 2023",
+          "href": "/events/6975/blast-premier-fall-final-2023"
+        }
+      ]
+    },
+    "torzsi": {
+      "id": "torzsi",
+      "nick": "torzsi",
+      "team": "MOUZ",
+      "avatar": "avatars/18072.webp",
+      "trophies": [
+        {
+          "name": "BLAST Bounty 2026 Season 2 Finals",
+          "href": "/events/8247/blast-bounty-2026-season-2-finals"
+        },
+        {
+          "name": "PGL Cluj-Napoca 2025",
+          "href": "/events/8043/pgl-cluj-napoca-2025"
+        },
+        {
+          "name": "BetBoom Dacha Belgrade 2024",
+          "href": "/events/7755/betboom-dacha-belgrade-2024"
+        },
+        {
+          "name": "ESL Pro League Season 19",
+          "href": "/events/7440/esl-pro-league-season-19"
+        },
+        {
+          "name": "ESL Pro League Season 18",
+          "href": "/events/6863/esl-pro-league-season-18"
+        }
+      ]
+    },
+    "Spinx": {
+      "id": "Spinx",
+      "nick": "Spinx",
+      "team": "MOUZ",
+      "avatar": "avatars/18221.webp",
+      "trophies": [
+        {
+          "name": "BLAST Bounty 2026 Season 2 Finals",
+          "href": "/events/8247/blast-bounty-2026-season-2-finals"
+        },
+        {
+          "name": "PGL Cluj-Napoca 2025",
+          "href": "/events/8043/pgl-cluj-napoca-2025"
+        },
+        {
+          "name": "IEM Cologne 2024",
+          "href": "/events/7436/iem-cologne-2024"
+        },
+        {
+          "name": "BLAST Premier World Final 2023",
+          "href": "/events/6976/blast-premier-world-final-2023"
+        },
+        {
+          "name": "BLAST Premier Fall Final 2023",
+          "href": "/events/6975/blast-premier-fall-final-2023"
+        },
+        {
+          "name": "Gamers8 2023",
+          "href": "/events/7128/gamers8-2023"
+        },
+        {
+          "name": "BLAST.tv Paris Major 2023",
+          "href": "/events/6793/blasttv-paris-major-2023"
+        },
+        {
+          "name": "IEM Rio 2023",
+          "href": "/events/6864/iem-rio-2023"
+        },
+        {
+          "name": "ESL Pro League Season 16",
+          "href": "/events/6141/esl-pro-league-season-16"
+        }
+      ]
+    },
+    "xertioN": {
+      "id": "xertioN",
+      "nick": "xertioN",
+      "team": "MOUZ",
+      "avatar": "avatars/20312.webp",
+      "trophies": [
+        {
+          "name": "BLAST Bounty 2026 Season 2 Finals",
+          "href": "/events/8247/blast-bounty-2026-season-2-finals"
+        },
+        {
+          "name": "PGL Cluj-Napoca 2025",
+          "href": "/events/8043/pgl-cluj-napoca-2025"
+        },
+        {
+          "name": "BetBoom Dacha Belgrade 2024",
+          "href": "/events/7755/betboom-dacha-belgrade-2024"
+        },
+        {
+          "name": "ESL Pro League Season 19",
+          "href": "/events/7440/esl-pro-league-season-19"
+        },
+        {
+          "name": "ESL Pro League Season 18",
+          "href": "/events/6863/esl-pro-league-season-18"
+        }
+      ]
+    },
+    "PR": {
+      "id": "PR",
+      "nick": "PR",
+      "team": "MOUZ",
+      "avatar": "avatars/22279.webp",
+      "trophies": [
+        {
+          "name": "BLAST Bounty 2026 Season 2 Finals",
+          "href": "/events/8247/blast-bounty-2026-season-2-finals"
+        }
+      ]
+    },
+    "xelex": {
+      "id": "xelex",
+      "nick": "xelex",
+      "team": "MOUZ",
+      "avatar": "avatars/24457.webp",
+      "trophies": [
+        {
+          "name": "BLAST Bounty 2026 Season 2 Finals",
+          "href": "/events/8247/blast-bounty-2026-season-2-finals"
+        }
+      ]
+    },
+    "FalleN": {
+      "id": "FalleN",
+      "nick": "FalleN",
+      "team": "FURIA",
+      "avatar": "avatars/2023.webp",
+      "trophies": [
+        {
+          "name": "BLAST Rivals 2025 Season 2",
+          "href": "/events/7908/blast-rivals-2025-season-2"
+        },
+        {
+          "name": "IEM Chengdu 2025",
+          "href": "/events/8041/iem-chengdu-2025"
+        },
+        {
+          "name": "Thunderpick World Championship 2025",
+          "href": "/events/8067/thunderpick-world-championship-2025"
+        },
+        {
+          "name": "FISSURE Playground 2",
+          "href": "/events/8064/fissure-playground-2"
+        },
+        {
+          "name": "Elisa Masters Espoo 2023",
+          "href": "/events/7250/elisa-masters-espoo-2023"
+        },
+        {
+          "name": "ZOTAC Cup Masters 2018 Grand Finals",
+          "href": "/events/3603/zotac-cup-masters-2018-grand-finals"
+        },
+        {
+          "name": "ESL Pro League Season 6 Finals",
+          "href": "/events/3072/esl-pro-league-season-6-finals"
+        },
+        {
+          "name": "BLAST Pro Series Copenhagen 2017",
+          "href": "/events/2998/blast-pro-series-copenhagen-2017"
+        },
+        {
+          "name": "EPICENTER 2017",
+          "href": "/events/3133/epicenter-2017"
+        },
+        {
+          "name": "ESL One Cologne 2017",
+          "href": "/events/2635/esl-one-cologne-2017"
+        },
+        {
+          "name": "ECS Season 3 Finals",
+          "href": "/events/2763/ecs-season-3-finals"
+        },
+        {
+          "name": "DreamHack Open Summer 2017",
+          "href": "/events/2569/dreamhack-open-summer-2017"
+        },
+        {
+          "name": "IEM Sydney 2017",
+          "href": "/events/2713/iem-sydney-2017"
+        },
+        {
+          "name": "cs_summit Spring 2017",
+          "href": "/events/2641/cs-summit-spring-2017"
+        },
+        {
+          "name": "ESL One Cologne 2016",
+          "href": "/events/2062/esl-one-cologne-2016"
+        },
+        {
+          "name": "ESL Pro League Season 3 Finals",
+          "href": "/events/2130/esl-pro-league-season-3-finals"
+        },
+        {
+          "name": "DreamHack Austin 2016",
+          "href": "/events/1954/dreamhack-austin-2016"
+        },
+        {
+          "name": "MLG Columbus 2016",
+          "href": "/events/2027/mlg-columbus-2016"
+        }
+      ]
+    },
+    "yuurih": {
+      "id": "yuurih",
+      "nick": "yuurih",
+      "team": "FURIA",
+      "avatar": "avatars/12553.webp",
+      "trophies": [
+        {
+          "name": "BLAST Rivals 2025 Season 2",
+          "href": "/events/7908/blast-rivals-2025-season-2"
+        },
+        {
+          "name": "IEM Chengdu 2025",
+          "href": "/events/8041/iem-chengdu-2025"
+        },
+        {
+          "name": "Thunderpick World Championship 2025",
+          "href": "/events/8067/thunderpick-world-championship-2025"
+        },
+        {
+          "name": "FISSURE Playground 2",
+          "href": "/events/8064/fissure-playground-2"
+        },
+        {
+          "name": "Elisa Masters Espoo 2023",
+          "href": "/events/7250/elisa-masters-espoo-2023"
+        },
+        {
+          "name": "IEM New York 2020 North America",
+          "href": "/events/5464/iem-new-york-2020-north-america"
+        },
+        {
+          "name": "ESL Pro League Season 12 North America",
+          "href": "/events/5495/esl-pro-league-season-12-north-america"
+        },
+        {
+          "name": "DreamHack Masters Spring 2020 - North America",
+          "href": "/events/5286/dreamhack-masters-spring-2020-north-america"
+        }
+      ]
+    },
+    "YEKINDAR": {
+      "id": "YEKINDAR",
+      "nick": "YEKINDAR",
+      "team": "FURIA",
+      "avatar": "avatars/13915.webp",
+      "trophies": [
+        {
+          "name": "BLAST Rivals 2025 Season 2",
+          "href": "/events/7908/blast-rivals-2025-season-2"
+        },
+        {
+          "name": "IEM Chengdu 2025",
+          "href": "/events/8041/iem-chengdu-2025"
+        },
+        {
+          "name": "Thunderpick World Championship 2025",
+          "href": "/events/8067/thunderpick-world-championship-2025"
+        },
+        {
+          "name": "FISSURE Playground 2",
+          "href": "/events/8064/fissure-playground-2"
+        },
+        {
+          "name": "cs_summit 7",
+          "href": "/events/5715/cs-summit-7"
+        },
+        {
+          "name": "Flashpoint 2",
+          "href": "/events/5577/flashpoint-2"
+        }
+      ]
+    },
+    "KSCERATO": {
+      "id": "KSCERATO",
+      "nick": "KSCERATO",
+      "team": "FURIA",
+      "avatar": "avatars/15631.webp",
+      "trophies": [
+        {
+          "name": "BLAST Rivals 2025 Season 2",
+          "href": "/events/7908/blast-rivals-2025-season-2"
+        },
+        {
+          "name": "IEM Chengdu 2025",
+          "href": "/events/8041/iem-chengdu-2025"
+        },
+        {
+          "name": "Thunderpick World Championship 2025",
+          "href": "/events/8067/thunderpick-world-championship-2025"
+        },
+        {
+          "name": "FISSURE Playground 2",
+          "href": "/events/8064/fissure-playground-2"
+        },
+        {
+          "name": "Elisa Masters Espoo 2023",
+          "href": "/events/7250/elisa-masters-espoo-2023"
+        },
+        {
+          "name": "IEM New York 2020 North America",
+          "href": "/events/5464/iem-new-york-2020-north-america"
+        },
+        {
+          "name": "ESL Pro League Season 12 North America",
+          "href": "/events/5495/esl-pro-league-season-12-north-america"
+        },
+        {
+          "name": "DreamHack Masters Spring 2020 - North America",
+          "href": "/events/5286/dreamhack-masters-spring-2020-north-america"
+        }
+      ]
+    },
+    "molodoy": {
+      "id": "molodoy",
+      "nick": "molodoy",
+      "team": "FURIA",
+      "avatar": "avatars/24144.webp",
+      "trophies": [
+        {
+          "name": "BLAST Rivals 2025 Season 2",
+          "href": "/events/7908/blast-rivals-2025-season-2"
+        },
+        {
+          "name": "IEM Chengdu 2025",
+          "href": "/events/8041/iem-chengdu-2025"
+        },
+        {
+          "name": "Thunderpick World Championship 2025",
+          "href": "/events/8067/thunderpick-world-championship-2025"
+        },
+        {
+          "name": "FISSURE Playground 2",
+          "href": "/events/8064/fissure-playground-2"
+        }
+      ]
+    },
+    "karrigan": {
+      "id": "karrigan",
+      "nick": "karrigan",
+      "team": "Falcons",
+      "avatar": "avatars/429.webp",
+      "trophies": [
+        {
+          "name": "IEM Cologne Major 2026",
+          "href": "/events/8301/iem-cologne-major-2026"
+        },
+        {
+          "name": "IEM Chengdu 2024",
+          "href": "/events/7437/iem-chengdu-2024"
+        },
+        {
+          "name": "CS Asia Championships 2023",
+          "href": "/events/7365/cs-asia-championships-2023"
+        },
+        {
+          "name": "Thunderpick World Championship 2023",
+          "href": "/events/7289/thunderpick-world-championship-2023"
+        },
+        {
+          "name": "IEM Sydney 2023",
+          "href": "/events/6865/iem-sydney-2023"
+        },
+        {
+          "name": "ESL Pro League Season 17",
+          "href": "/events/6862/esl-pro-league-season-17"
+        },
+        {
+          "name": "IEM Cologne 2022",
+          "href": "/events/6140/iem-cologne-2022"
+        },
+        {
+          "name": "PGL Major Antwerp 2022",
+          "href": "/events/6372/pgl-major-antwerp-2022"
+        },
+        {
+          "name": "ESL Pro League Season 15",
+          "href": "/events/6137/esl-pro-league-season-15"
+        },
+        {
+          "name": "IEM Katowice 2022",
+          "href": "/events/6136/iem-katowice-2022"
+        },
+        {
+          "name": "ICE Challenge 2020",
+          "href": "/events/5147/ice-challenge-2020"
+        },
+        {
+          "name": "cs_summit 5",
+          "href": "/events/4998/cs-summit-5"
+        },
+        {
+          "name": "ESL Pro League Season 10 Finals",
+          "href": "/events/4697/esl-pro-league-season-10-finals"
+        },
+        {
+          "name": "CS:GO Asia Championships 2019",
+          "href": "/events/4680/csgo-asia-championships-2019"
+        },
+        {
+          "name": "EPICENTER 2018",
+          "href": "/events/3985/epicenter-2018"
+        },
+        {
+          "name": "ESL One Belo Horizonte 2018",
+          "href": "/events/3649/esl-one-belo-horizonte-2018"
+        },
+        {
+          "name": "IEM Sydney 2018",
+          "href": "/events/3530/iem-sydney-2018"
+        },
+        {
+          "name": "ECS Season 4 Finals",
+          "href": "/events/3313/ecs-season-4-finals"
+        },
+        {
+          "name": "ELEAGUE CS:GO Premier 2017",
+          "href": "/events/3016/eleague-csgo-premier-2017"
+        },
+        {
+          "name": "ESL One New York 2017",
+          "href": "/events/2636/esl-one-new-york-2017"
+        },
+        {
+          "name": "SL i-League StarSeries Season 3 Finals",
+          "href": "/events/2683/sl-i-league-starseries-season-3-finals"
+        },
+        {
+          "name": "PGL Season 1 Finals",
+          "href": "/events/1886/pgl-season-1-finals"
+        },
+        {
+          "name": "FACEIT League 2015 Stage 2 Finals at DreamHack Valencia",
+          "href": "/events/1616/faceit-league-2015-stage-2-finals-at-dreamhack-valencia"
+        },
+        {
+          "name": "Fragbite Masters Season 4 Finals",
+          "href": "/events/1673/fragbite-masters-season-4-finals"
+        },
+        {
+          "name": "FACEIT League 2015 Stage 1 Finals",
+          "href": "/events/1606/faceit-league-2015-stage-1-finals"
+        },
+        {
+          "name": "CCS Kick-off Season Finals",
+          "href": "/events/1612/ccs-kick-off-season-finals"
+        }
+      ]
+    },
+    "NiKo": {
+      "id": "NiKo",
+      "nick": "NiKo",
+      "team": "Falcons",
+      "avatar": "avatars/3741.webp",
+      "trophies": [
+        {
+          "name": "IEM Cologne Major 2026",
+          "href": "/events/8301/iem-cologne-major-2026"
+        },
+        {
+          "name": "PGL Bucharest 2025",
+          "href": "/events/8044/pgl-bucharest-2025"
+        },
+        {
+          "name": "BLAST Premier World Final 2024",
+          "href": "/events/7557/blast-premier-world-final-2024"
+        },
+        {
+          "name": "BLAST Premier Fall Final 2024",
+          "href": "/events/7556/blast-premier-fall-final-2024"
+        },
+        {
+          "name": "IEM Dallas 2024",
+          "href": "/events/7438/iem-dallas-2024"
+        },
+        {
+          "name": "IEM Cologne 2023",
+          "href": "/events/6811/iem-cologne-2023"
+        },
+        {
+          "name": "IEM Katowice 2023",
+          "href": "/events/6809/iem-katowice-2023"
+        },
+        {
+          "name": "BLAST Premier World Final 2022",
+          "href": "/events/6349/blast-premier-world-final-2022"
+        },
+        {
+          "name": "IEM New York 2020 Europe",
+          "href": "/events/5463/iem-new-york-2020-europe"
+        },
+        {
+          "name": "BLAST Pro Series Copenhagen 2019",
+          "href": "/events/4702/blast-pro-series-copenhagen-2019"
+        },
+        {
+          "name": "BLAST Pro Series Miami 2019",
+          "href": "/events/4327/blast-pro-series-miami-2019"
+        },
+        {
+          "name": "ELEAGUE CS:GO Invitational 2019",
+          "href": "/events/4370/eleague-csgo-invitational-2019"
+        },
+        {
+          "name": "EPICENTER 2018",
+          "href": "/events/3985/epicenter-2018"
+        },
+        {
+          "name": "ESL One Belo Horizonte 2018",
+          "href": "/events/3649/esl-one-belo-horizonte-2018"
+        },
+        {
+          "name": "IEM Sydney 2018",
+          "href": "/events/3530/iem-sydney-2018"
+        },
+        {
+          "name": "ECS Season 4 Finals",
+          "href": "/events/3313/ecs-season-4-finals"
+        },
+        {
+          "name": "ELEAGUE CS:GO Premier 2017",
+          "href": "/events/3016/eleague-csgo-premier-2017"
+        },
+        {
+          "name": "ESL One New York 2017",
+          "href": "/events/2636/esl-one-new-york-2017"
+        },
+        {
+          "name": "SL i-League StarSeries Season 3 Finals",
+          "href": "/events/2683/sl-i-league-starseries-season-3-finals"
+        }
+      ]
+    },
+    "TeSeS": {
+      "id": "TeSeS",
+      "nick": "TeSeS",
+      "team": "Falcons",
+      "avatar": "avatars/12018.webp",
+      "trophies": [
+        {
+          "name": "IEM Cologne Major 2026",
+          "href": "/events/8301/iem-cologne-major-2026"
+        },
+        {
+          "name": "PGL Bucharest 2025",
+          "href": "/events/8044/pgl-bucharest-2025"
+        },
+        {
+          "name": "BLAST Premier Spring Final 2023",
+          "href": "/events/6972/blast-premier-spring-final-2023"
+        },
+        {
+          "name": "BLAST Premier Fall Final 2022",
+          "href": "/events/6348/blast-premier-fall-final-2022"
+        },
+        {
+          "name": "Pinnacle Cup Championship 2022",
+          "href": "/events/6477/pinnacle-cup-championship-2022"
+        },
+        {
+          "name": "ESL Pro League Season 13",
+          "href": "/events/5553/esl-pro-league-season-13"
+        },
+        {
+          "name": "DreamHack Open Fall 2020",
+          "href": "/events/5506/dreamhack-open-fall-2020"
+        },
+        {
+          "name": "ESL One Cologne 2020 Europe",
+          "href": "/events/4939/esl-one-cologne-2020-europe"
+        }
+      ]
+    },
+    "m0NESY": {
+      "id": "m0NESY",
+      "nick": "m0NESY",
+      "team": "Falcons",
+      "avatar": "avatars/19230.webp",
+      "trophies": [
+        {
+          "name": "IEM Cologne Major 2026",
+          "href": "/events/8301/iem-cologne-major-2026"
+        },
+        {
+          "name": "BLAST Premier World Final 2024",
+          "href": "/events/7557/blast-premier-world-final-2024"
+        },
+        {
+          "name": "BLAST Premier Fall Final 2024",
+          "href": "/events/7556/blast-premier-fall-final-2024"
+        },
+        {
+          "name": "IEM Dallas 2024",
+          "href": "/events/7438/iem-dallas-2024"
+        },
+        {
+          "name": "IEM Cologne 2023",
+          "href": "/events/6811/iem-cologne-2023"
+        },
+        {
+          "name": "IEM Katowice 2023",
+          "href": "/events/6809/iem-katowice-2023"
+        },
+        {
+          "name": "BLAST Premier World Final 2022",
+          "href": "/events/6349/blast-premier-world-final-2022"
+        }
+      ]
+    },
+    "kyousuke": {
+      "id": "kyousuke",
+      "nick": "kyousuke",
+      "team": "Falcons",
+      "avatar": "avatars/24177.webp",
+      "trophies": [
+        {
+          "name": "IEM Cologne Major 2026",
+          "href": "/events/8301/iem-cologne-major-2026"
+        }
+      ]
+    },
+    "arT": {
+      "id": "arT",
+      "nick": "arT",
+      "team": "Legacy",
+      "avatar": "avatars/12521.webp",
+      "trophies": [
+        {
+          "name": "FISSURE Playground 3",
+          "href": "/events/8266/fissure-playground-3"
+        },
+        {
+          "name": "CS Asia Championships 2026",
+          "href": "/events/8263/cs-asia-championships-2026"
+        },
+        {
+          "name": "Elisa Masters Espoo 2023",
+          "href": "/events/7250/elisa-masters-espoo-2023"
+        },
+        {
+          "name": "IEM New York 2020 North America",
+          "href": "/events/5464/iem-new-york-2020-north-america"
+        },
+        {
+          "name": "ESL Pro League Season 12 North America",
+          "href": "/events/5495/esl-pro-league-season-12-north-america"
+        },
+        {
+          "name": "DreamHack Masters Spring 2020 - North America",
+          "href": "/events/5286/dreamhack-masters-spring-2020-north-america"
+        }
+      ]
+    },
+    "dumau": {
+      "id": "dumau",
+      "nick": "dumau",
+      "team": "Legacy",
+      "avatar": "avatars/15698.webp",
+      "trophies": [
+        {
+          "name": "FISSURE Playground 3",
+          "href": "/events/8266/fissure-playground-3"
+        },
+        {
+          "name": "CS Asia Championships 2026",
+          "href": "/events/8263/cs-asia-championships-2026"
+        },
+        {
+          "name": "CS Asia Championships 2025",
+          "href": "/events/8027/cs-asia-championships-2025"
+        }
+      ]
+    },
+    "latto": {
+      "id": "latto",
+      "nick": "latto",
+      "team": "Legacy",
+      "avatar": "avatars/19045.webp",
+      "trophies": [
+        {
+          "name": "FISSURE Playground 3",
+          "href": "/events/8266/fissure-playground-3"
+        },
+        {
+          "name": "CS Asia Championships 2026",
+          "href": "/events/8263/cs-asia-championships-2026"
+        },
+        {
+          "name": "CS Asia Championships 2025",
+          "href": "/events/8027/cs-asia-championships-2025"
+        }
+      ]
+    },
+    "n1ssim": {
+      "id": "n1ssim",
+      "nick": "n1ssim",
+      "team": "Legacy",
+      "avatar": "avatars/19686.webp",
+      "trophies": [
+        {
+          "name": "FISSURE Playground 3",
+          "href": "/events/8266/fissure-playground-3"
+        },
+        {
+          "name": "CS Asia Championships 2026",
+          "href": "/events/8263/cs-asia-championships-2026"
+        },
+        {
+          "name": "CS Asia Championships 2025",
+          "href": "/events/8027/cs-asia-championships-2025"
+        }
+      ]
+    },
+    "try": {
+      "id": "try",
+      "nick": "try",
+      "team": "Legacy",
+      "avatar": "avatars/19869.webp",
+      "trophies": [
+        {
+          "name": "FISSURE Playground 3",
+          "href": "/events/8266/fissure-playground-3"
+        }
+      ]
+    },
+    "huNter-": {
+      "id": "huNter-",
+      "nick": "huNter-",
+      "team": "G2",
+      "avatar": "avatars/3972.webp",
+      "trophies": [
+        {
+          "name": "BLAST Open London 2025 Finals",
+          "href": "/events/7912/blast-open-london-2025-finals"
+        },
+        {
+          "name": "BLAST Premier World Final 2024",
+          "href": "/events/7557/blast-premier-world-final-2024"
+        },
+        {
+          "name": "BLAST Premier Fall Final 2024",
+          "href": "/events/7556/blast-premier-fall-final-2024"
+        },
+        {
+          "name": "IEM Dallas 2024",
+          "href": "/events/7438/iem-dallas-2024"
+        },
+        {
+          "name": "IEM Cologne 2023",
+          "href": "/events/6811/iem-cologne-2023"
+        },
+        {
+          "name": "IEM Katowice 2023",
+          "href": "/events/6809/iem-katowice-2023"
+        },
+        {
+          "name": "BLAST Premier World Final 2022",
+          "href": "/events/6349/blast-premier-world-final-2022"
+        }
+      ]
+    },
+    "NertZ": {
+      "id": "NertZ",
+      "nick": "NertZ",
+      "team": "G2",
+      "avatar": "avatars/9436.webp",
+      "trophies": [
+        {
+          "name": "IEM Dallas 2023",
+          "href": "/events/6861/iem-dallas-2023"
+        }
+      ]
+    },
+    "r1nkle": {
+      "id": "r1nkle",
+      "nick": "r1nkle",
+      "team": "G2",
+      "avatar": "avatars/20425.webp",
+      "trophies": []
+    },
+    "HeavyGod": {
+      "id": "HeavyGod",
+      "nick": "HeavyGod",
+      "team": "G2",
+      "avatar": "avatars/20447.webp",
+      "trophies": [
+        {
+          "name": "BLAST Open London 2025 Finals",
+          "href": "/events/7912/blast-open-london-2025-finals"
+        }
+      ]
+    },
+    "MATYS": {
+      "id": "MATYS",
+      "nick": "MATYS",
+      "team": "G2",
+      "avatar": "avatars/21062.webp",
+      "trophies": [
+        {
+          "name": "BLAST Open London 2025 Finals",
+          "href": "/events/7912/blast-open-london-2025-finals"
+        }
+      ]
+    },
+    "SunPayus": {
+      "id": "SunPayus",
+      "nick": "SunPayus",
+      "team": "FUT",
+      "avatar": "avatars/19164.webp",
+      "trophies": [
+        {
+          "name": "BLAST Open London 2025 Finals",
+          "href": "/events/7912/blast-open-london-2025-finals"
+        },
+        {
+          "name": "IEM Dallas 2023",
+          "href": "/events/6861/iem-dallas-2023"
+        }
+      ]
+    },
+    "xfl0ud": {
+      "id": "xfl0ud",
+      "nick": "xfl0ud",
+      "team": "FUT",
+      "avatar": "avatars/19187.webp",
+      "trophies": []
+    },
+    "dem0n": {
+      "id": "dem0n",
+      "nick": "dem0n",
+      "team": "FUT",
+      "avatar": "avatars/20584.webp",
+      "trophies": [
+        {
+          "name": "PGL Bucharest 2026",
+          "href": "/events/8048/pgl-bucharest-2026"
+        }
+      ]
+    },
+    "Krabeni": {
+      "id": "Krabeni",
+      "nick": "Krabeni",
+      "team": "FUT",
+      "avatar": "avatars/22203.webp",
+      "trophies": [
+        {
+          "name": "PGL Bucharest 2026",
+          "href": "/events/8048/pgl-bucharest-2026"
+        }
+      ]
+    },
+    "dziugss": {
+      "id": "dziugss",
+      "nick": "dziugss",
+      "team": "FUT",
+      "avatar": "avatars/23553.webp",
+      "trophies": [
+        {
+          "name": "PGL Bucharest 2026",
+          "href": "/events/8048/pgl-bucharest-2026"
+        }
+      ]
+    },
+    "XANTARES": {
+      "id": "XANTARES",
+      "nick": "XANTARES",
+      "team": "Aurora",
+      "avatar": "avatars/7938.webp",
+      "trophies": [
+        {
+          "name": "PGL Masters Bucharest 2025",
+          "href": "/events/8046/pgl-masters-bucharest-2025"
+        },
+        {
+          "name": "Funspark ULTI 2020 Europe Final",
+          "href": "/events/5454/funspark-ulti-2020-europe-final"
+        },
+        {
+          "name": "DreamHack Open Summer 2020 Europe",
+          "href": "/events/5257/dreamhack-open-summer-2020-europe"
+        },
+        {
+          "name": "cs_summit 6 Europe",
+          "href": "/events/5338/cs-summit-6-europe"
+        },
+        {
+          "name": "DreamHack Masters Spring 2020 - Europe",
+          "href": "/events/5285/dreamhack-masters-spring-2020-europe"
+        }
+      ]
+    },
+    "woxic": {
+      "id": "woxic",
+      "nick": "woxic",
+      "team": "Aurora",
+      "avatar": "avatars/8574.webp",
+      "trophies": [
+        {
+          "name": "PGL Masters Bucharest 2025",
+          "href": "/events/8046/pgl-masters-bucharest-2025"
+        },
+        {
+          "name": "ICE Challenge 2020",
+          "href": "/events/5147/ice-challenge-2020"
+        },
+        {
+          "name": "ESL Pro League Season 10 Finals",
+          "href": "/events/4697/esl-pro-league-season-10-finals"
+        },
+        {
+          "name": "CS:GO Asia Championships 2019",
+          "href": "/events/4680/csgo-asia-championships-2019"
+        }
+      ]
+    },
+    "Jimpphat": {
+      "id": "Jimpphat",
+      "nick": "Jimpphat",
+      "team": "Aurora",
+      "avatar": "avatars/18850.webp",
+      "trophies": [
+        {
+          "name": "PGL Cluj-Napoca 2025",
+          "href": "/events/8043/pgl-cluj-napoca-2025"
+        },
+        {
+          "name": "BetBoom Dacha Belgrade 2024",
+          "href": "/events/7755/betboom-dacha-belgrade-2024"
+        },
+        {
+          "name": "ESL Pro League Season 19",
+          "href": "/events/7440/esl-pro-league-season-19"
+        },
+        {
+          "name": "ESL Pro League Season 18",
+          "href": "/events/6863/esl-pro-league-season-18"
+        }
+      ]
+    },
+    "kyxsan": {
+      "id": "kyxsan",
+      "nick": "kyxsan",
+      "team": "Aurora",
+      "avatar": "avatars/19677.webp",
+      "trophies": [
+        {
+          "name": "PGL Bucharest 2025",
+          "href": "/events/8044/pgl-bucharest-2025"
+        }
+      ]
+    },
+    "Wicadia": {
+      "id": "Wicadia",
+      "nick": "Wicadia",
+      "team": "Aurora",
+      "avatar": "avatars/21243.webp",
+      "trophies": [
+        {
+          "name": "PGL Masters Bucharest 2025",
+          "href": "/events/8046/pgl-masters-bucharest-2025"
+        }
+      ]
+    },
+    "Aleksib": {
+      "id": "Aleksib",
+      "nick": "Aleksib",
+      "team": "Natus Vincere",
+      "avatar": "avatars/9816.webp",
+      "trophies": [
+        {
+          "name": "IEM Atlanta 2026",
+          "href": "/events/8243/iem-atlanta-2026"
+        },
+        {
+          "name": "ESL Pro League Season 23 Finals",
+          "href": "/events/8413/esl-pro-league-season-23-finals"
+        },
+        {
+          "name": "IEM Rio 2024",
+          "href": "/events/7439/iem-rio-2024"
+        },
+        {
+          "name": "ESL Pro League Season 20",
+          "href": "/events/7441/esl-pro-league-season-20"
+        },
+        {
+          "name": "Esports World Cup 2024",
+          "href": "/events/7732/esports-world-cup-2024"
+        },
+        {
+          "name": "PGL CS2 Major Copenhagen 2024",
+          "href": "/events/7148/pgl-cs2-major-copenhagen-2024"
+        },
+        {
+          "name": "BLAST Pro Series Madrid 2019",
+          "href": "/events/4328/blast-pro-series-madrid-2019"
+        },
+        {
+          "name": "StarSeries i-League Season 6",
+          "href": "/events/3891/starseries-i-league-season-6"
+        }
+      ]
+    },
+    "iM": {
+      "id": "iM",
+      "nick": "iM",
+      "team": "Natus Vincere",
+      "avatar": "avatars/14759.webp",
+      "trophies": [
+        {
+          "name": "IEM Atlanta 2026",
+          "href": "/events/8243/iem-atlanta-2026"
+        },
+        {
+          "name": "ESL Pro League Season 23 Finals",
+          "href": "/events/8413/esl-pro-league-season-23-finals"
+        },
+        {
+          "name": "IEM Rio 2024",
+          "href": "/events/7439/iem-rio-2024"
+        },
+        {
+          "name": "ESL Pro League Season 20",
+          "href": "/events/7441/esl-pro-league-season-20"
+        },
+        {
+          "name": "Esports World Cup 2024",
+          "href": "/events/7732/esports-world-cup-2024"
+        },
+        {
+          "name": "PGL CS2 Major Copenhagen 2024",
+          "href": "/events/7148/pgl-cs2-major-copenhagen-2024"
+        }
+      ]
+    },
+    "b1t": {
+      "id": "b1t",
+      "nick": "b1t",
+      "team": "Natus Vincere",
+      "avatar": "avatars/18987.webp",
+      "trophies": [
+        {
+          "name": "IEM Atlanta 2026",
+          "href": "/events/8243/iem-atlanta-2026"
+        },
+        {
+          "name": "ESL Pro League Season 23 Finals",
+          "href": "/events/8413/esl-pro-league-season-23-finals"
+        },
+        {
+          "name": "IEM Rio 2024",
+          "href": "/events/7439/iem-rio-2024"
+        },
+        {
+          "name": "ESL Pro League Season 20",
+          "href": "/events/7441/esl-pro-league-season-20"
+        },
+        {
+          "name": "Esports World Cup 2024",
+          "href": "/events/7732/esports-world-cup-2024"
+        },
+        {
+          "name": "PGL CS2 Major Copenhagen 2024",
+          "href": "/events/7148/pgl-cs2-major-copenhagen-2024"
+        },
+        {
+          "name": "BLAST Premier Spring Final 2022",
+          "href": "/events/6345/blast-premier-spring-final-2022"
+        },
+        {
+          "name": "BLAST Premier World Final 2021",
+          "href": "/events/5608/blast-premier-world-final-2021"
+        },
+        {
+          "name": "BLAST Premier Fall Final 2021",
+          "href": "/events/5607/blast-premier-fall-final-2021"
+        },
+        {
+          "name": "PGL Major Stockholm 2021",
+          "href": "/events/4866/pgl-major-stockholm-2021"
+        },
+        {
+          "name": "ESL Pro League Season 14",
+          "href": "/events/5554/esl-pro-league-season-14"
+        },
+        {
+          "name": "IEM Cologne 2021",
+          "href": "/events/5469/iem-cologne-2021"
+        },
+        {
+          "name": "StarLadder CIS RMR 2021",
+          "href": "/events/5937/starladder-cis-rmr-2021"
+        },
+        {
+          "name": "DreamHack Masters Spring 2021",
+          "href": "/events/5728/dreamhack-masters-spring-2021"
+        }
+      ]
+    },
+    "w0nderful": {
+      "id": "w0nderful",
+      "nick": "w0nderful",
+      "team": "Natus Vincere",
+      "avatar": "avatars/20127.webp",
+      "trophies": [
+        {
+          "name": "IEM Atlanta 2026",
+          "href": "/events/8243/iem-atlanta-2026"
+        },
+        {
+          "name": "ESL Pro League Season 23 Finals",
+          "href": "/events/8413/esl-pro-league-season-23-finals"
+        },
+        {
+          "name": "IEM Rio 2024",
+          "href": "/events/7439/iem-rio-2024"
+        },
+        {
+          "name": "ESL Pro League Season 20",
+          "href": "/events/7441/esl-pro-league-season-20"
+        },
+        {
+          "name": "Esports World Cup 2024",
+          "href": "/events/7732/esports-world-cup-2024"
+        },
+        {
+          "name": "PGL CS2 Major Copenhagen 2024",
+          "href": "/events/7148/pgl-cs2-major-copenhagen-2024"
+        }
+      ]
+    },
+    "makazze": {
+      "id": "makazze",
+      "nick": "makazze",
+      "team": "Natus Vincere",
+      "avatar": "avatars/22673.webp",
+      "trophies": [
+        {
+          "name": "IEM Atlanta 2026",
+          "href": "/events/8243/iem-atlanta-2026"
+        },
+        {
+          "name": "ESL Pro League Season 23 Finals",
+          "href": "/events/8413/esl-pro-league-season-23-finals"
+        }
+      ]
+    },
+    "HooXi": {
+      "id": "HooXi",
+      "nick": "HooXi",
+      "team": "Astralis",
+      "avatar": "avatars/10096.webp",
+      "trophies": [
+        {
+          "name": "IEM Cologne 2023",
+          "href": "/events/6811/iem-cologne-2023"
+        },
+        {
+          "name": "IEM Katowice 2023",
+          "href": "/events/6809/iem-katowice-2023"
+        },
+        {
+          "name": "BLAST Premier World Final 2022",
+          "href": "/events/6349/blast-premier-world-final-2022"
+        }
+      ]
+    },
+    "phzy": {
+      "id": "phzy",
+      "nick": "phzy",
+      "team": "Astralis",
+      "avatar": "avatars/16726.webp",
+      "trophies": []
+    },
+    "jabbi": {
+      "id": "jabbi",
+      "nick": "jabbi",
+      "team": "Astralis",
+      "avatar": "avatars/17956.webp",
+      "trophies": [
+        {
+          "name": "BLAST Premier Spring Final 2023",
+          "href": "/events/6972/blast-premier-spring-final-2023"
+        },
+        {
+          "name": "BLAST Premier Fall Final 2022",
+          "href": "/events/6348/blast-premier-fall-final-2022"
+        }
+      ]
+    },
+    "Staehr": {
+      "id": "Staehr",
+      "nick": "Staehr",
+      "team": "Astralis",
+      "avatar": "avatars/20304.webp",
+      "trophies": []
+    },
+    "ryu": {
+      "id": "ryu",
+      "nick": "ryu",
+      "team": "Astralis",
+      "avatar": "avatars/21217.webp",
+      "trophies": []
+    },
+    "LNZ": {
+      "id": "LNZ",
+      "nick": "LNZ",
+      "team": "MIBR",
+      "avatar": "avatars/19310.webp",
+      "trophies": [
+        {
+          "name": "IEM Fall 2021 Europe",
+          "href": "/events/5729/iem-fall-2021-europe"
+        }
+      ]
+    },
+    "nqz": {
+      "id": "nqz",
+      "nick": "nqz",
+      "team": "MIBR",
+      "avatar": "avatars/19694.webp",
+      "trophies": []
+    },
+    "insani": {
+      "id": "insani",
+      "nick": "insani",
+      "team": "MIBR",
+      "avatar": "avatars/21037.webp",
+      "trophies": []
+    },
+    "venomzera": {
+      "id": "venomzera",
+      "nick": "venomzera",
+      "team": "MIBR",
+      "avatar": "avatars/21288.webp",
+      "trophies": []
+    },
+    "tomaszin": {
+      "id": "tomaszin",
+      "nick": "tomaszin",
+      "team": "MIBR",
+      "avatar": "avatars/22570.webp",
+      "trophies": []
+    },
+    "Boombl4": {
+      "id": "Boombl4",
+      "nick": "Boombl4",
+      "team": "BETBOOM",
+      "avatar": "avatars/11840.webp",
+      "trophies": [
+        {
+          "name": "BLAST Premier World Final 2021",
+          "href": "/events/5608/blast-premier-world-final-2021"
+        },
+        {
+          "name": "BLAST Premier Fall Final 2021",
+          "href": "/events/5607/blast-premier-fall-final-2021"
+        },
+        {
+          "name": "PGL Major Stockholm 2021",
+          "href": "/events/4866/pgl-major-stockholm-2021"
+        },
+        {
+          "name": "ESL Pro League Season 14",
+          "href": "/events/5554/esl-pro-league-season-14"
+        },
+        {
+          "name": "IEM Cologne 2021",
+          "href": "/events/5469/iem-cologne-2021"
+        },
+        {
+          "name": "StarLadder CIS RMR 2021",
+          "href": "/events/5937/starladder-cis-rmr-2021"
+        },
+        {
+          "name": "DreamHack Masters Spring 2021",
+          "href": "/events/5728/dreamhack-masters-spring-2021"
+        },
+        {
+          "name": "BLAST Premier Global Final 2020",
+          "href": "/events/5206/blast-premier-global-final-2020"
+        },
+        {
+          "name": "IEM Katowice 2020",
+          "href": "/events/4901/iem-katowice-2020"
+        }
+      ]
+    },
+    "zorte": {
+      "id": "zorte",
+      "nick": "zorte",
+      "team": "BETBOOM",
+      "avatar": "avatars/15662.webp",
+      "trophies": []
+    },
+    "S1ren": {
+      "id": "S1ren",
+      "nick": "S1ren",
+      "team": "BETBOOM",
+      "avatar": "avatars/18506.webp",
+      "trophies": []
+    },
+    "d1Ledez": {
+      "id": "d1Ledez",
+      "nick": "d1Ledez",
+      "team": "BETBOOM",
+      "avatar": "avatars/20357.webp",
+      "trophies": []
+    },
+    "Magnojez": {
+      "id": "Magnojez",
+      "nick": "Magnojez",
+      "team": "BETBOOM",
+      "avatar": "avatars/21667.webp",
+      "trophies": []
+    },
+    "frozen": {
+      "id": "frozen",
+      "nick": "frozen",
+      "team": "FaZe",
+      "avatar": "avatars/9960.webp",
+      "trophies": [
+        {
+          "name": "IEM Chengdu 2024",
+          "href": "/events/7437/iem-chengdu-2024"
+        },
+        {
+          "name": "ESL Pro League Season 18",
+          "href": "/events/6863/esl-pro-league-season-18"
+        },
+        {
+          "name": "Flashpoint 3",
+          "href": "/events/5864/flashpoint-3"
+        },
+        {
+          "name": "ICE Challenge 2020",
+          "href": "/events/5147/ice-challenge-2020"
+        },
+        {
+          "name": "cs_summit 5",
+          "href": "/events/4998/cs-summit-5"
+        },
+        {
+          "name": "ESL Pro League Season 10 Finals",
+          "href": "/events/4697/esl-pro-league-season-10-finals"
+        },
+        {
+          "name": "CS:GO Asia Championships 2019",
+          "href": "/events/4680/csgo-asia-championships-2019"
+        }
+      ]
+    },
+    "Twistzz": {
+      "id": "Twistzz",
+      "nick": "Twistzz",
+      "team": "FaZe",
+      "avatar": "avatars/10394.webp",
+      "trophies": [
+        {
+          "name": "CS Asia Championships 2023",
+          "href": "/events/7365/cs-asia-championships-2023"
+        },
+        {
+          "name": "Thunderpick World Championship 2023",
+          "href": "/events/7289/thunderpick-world-championship-2023"
+        },
+        {
+          "name": "IEM Sydney 2023",
+          "href": "/events/6865/iem-sydney-2023"
+        },
+        {
+          "name": "ESL Pro League Season 17",
+          "href": "/events/6862/esl-pro-league-season-17"
+        },
+        {
+          "name": "IEM Cologne 2022",
+          "href": "/events/6140/iem-cologne-2022"
+        },
+        {
+          "name": "PGL Major Antwerp 2022",
+          "href": "/events/6372/pgl-major-antwerp-2022"
+        },
+        {
+          "name": "ESL Pro League Season 15",
+          "href": "/events/6137/esl-pro-league-season-15"
+        },
+        {
+          "name": "IEM Katowice 2022",
+          "href": "/events/6136/iem-katowice-2022"
+        },
+        {
+          "name": "ESL Pro League Season 11 North America",
+          "href": "/events/5246/esl-pro-league-season-11-north-america"
+        },
+        {
+          "name": "IEM Chicago 2019",
+          "href": "/events/4574/iem-chicago-2019"
+        },
+        {
+          "name": "BLAST Pro Series Los Angeles 2019",
+          "href": "/events/4500/blast-pro-series-los-angeles-2019"
+        },
+        {
+          "name": "ESL One Cologne 2019",
+          "href": "/events/4281/esl-one-cologne-2019"
+        },
+        {
+          "name": "ESL Pro League Season 9 Finals",
+          "href": "/events/4490/esl-pro-league-season-9-finals"
+        },
+        {
+          "name": "DreamHack Masters Dallas 2019",
+          "href": "/events/4177/dreamhack-masters-dallas-2019"
+        },
+        {
+          "name": "IEM Sydney 2019",
+          "href": "/events/4236/iem-sydney-2019"
+        },
+        {
+          "name": "iBUYPOWER Masters 2019",
+          "href": "/events/4290/ibuypower-masters-2019"
+        },
+        {
+          "name": "SuperNova CS:GO Malta",
+          "href": "/events/4081/supernova-csgo-malta"
+        },
+        {
+          "name": "cs_summit 2",
+          "href": "/events/3454/cs-summit-2"
+        }
+      ]
+    },
+    "Neityu": {
+      "id": "Neityu",
+      "nick": "Neityu",
+      "team": "FaZe",
+      "avatar": "avatars/21972.webp",
+      "trophies": []
+    },
+    "jcobbb": {
+      "id": "jcobbb",
+      "nick": "jcobbb",
+      "team": "FaZe",
+      "avatar": "avatars/22383.webp",
+      "trophies": []
+    },
+    "JBOEN": {
+      "id": "JBOEN",
+      "nick": "JBOEN",
+      "team": "FaZe",
+      "avatar": "avatars/22866.webp",
+      "trophies": []
+    },
+    "alex666": {
+      "id": "alex666",
+      "nick": "alex666",
+      "team": "B8",
+      "avatar": "avatars/20112.webp",
+      "trophies": []
+    },
+    "npl": {
+      "id": "npl",
+      "nick": "npl",
+      "team": "B8",
+      "avatar": "avatars/21708.webp",
+      "trophies": []
+    },
+    "kensizor": {
+      "id": "kensizor",
+      "nick": "kensizor",
+      "team": "B8",
+      "avatar": "avatars/22842.webp",
+      "trophies": []
+    },
+    "esenthial": {
+      "id": "esenthial",
+      "nick": "esenthial",
+      "team": "B8",
+      "avatar": "avatars/23643.webp",
+      "trophies": []
+    },
+    "s1zzi": {
+      "id": "s1zzi",
+      "nick": "s1zzi",
+      "team": "B8",
+      "avatar": "avatars/25619.webp",
+      "trophies": []
+    },
+    "max": {
+      "id": "max",
+      "nick": "max",
+      "team": "9z",
+      "avatar": "avatars/12092.webp",
+      "trophies": [
+        {
+          "name": "XSE Pro League Guangzhou 2026",
+          "href": "/events/8914/xse-pro-league-guangzhou-2026"
+        }
+      ]
+    },
+    "dgt": {
+      "id": "dgt",
+      "nick": "dgt",
+      "team": "9z",
+      "avatar": "avatars/14736.webp",
+      "trophies": [
+        {
+          "name": "XSE Pro League Guangzhou 2026",
+          "href": "/events/8914/xse-pro-league-guangzhou-2026"
+        }
+      ]
+    },
+    "meyern": {
+      "id": "meyern",
+      "nick": "meyern",
+      "team": "9z",
+      "avatar": "avatars/14737.webp",
+      "trophies": [
+        {
+          "name": "XSE Pro League Guangzhou 2026",
+          "href": "/events/8914/xse-pro-league-guangzhou-2026"
+        }
+      ]
+    },
+    "luchov": {
+      "id": "luchov",
+      "nick": "luchov",
+      "team": "9z",
+      "avatar": "avatars/20394.webp",
+      "trophies": [
+        {
+          "name": "XSE Pro League Guangzhou 2026",
+          "href": "/events/8914/xse-pro-league-guangzhou-2026"
+        }
+      ]
+    },
+    "HUASOPEEK": {
+      "id": "HUASOPEEK",
+      "nick": "HUASOPEEK",
+      "team": "9z",
+      "avatar": "avatars/22613.webp",
+      "trophies": [
+        {
+          "name": "XSE Pro League Guangzhou 2026",
+          "href": "/events/8914/xse-pro-league-guangzhou-2026"
+        }
+      ]
+    },
+    "nin9": {
+      "id": "nin9",
+      "nick": "nin9",
+      "team": "The MongolZ",
+      "avatar": "avatars/15072.webp",
+      "trophies": []
+    },
+    "bLitz": {
+      "id": "bLitz",
+      "nick": "bLitz",
+      "team": "The MongolZ",
+      "avatar": "avatars/20194.webp",
+      "trophies": [
+        {
+          "name": "Esports World Cup 2025",
+          "href": "/events/8039/esports-world-cup-2025"
+        },
+        {
+          "name": "YaLLa Compass 2024",
+          "href": "/events/7475/yalla-compass-2024"
+        }
+      ]
+    },
+    "Techno": {
+      "id": "Techno",
+      "nick": "Techno",
+      "team": "The MongolZ",
+      "avatar": "avatars/20275.webp",
+      "trophies": [
+        {
+          "name": "Esports World Cup 2025",
+          "href": "/events/8039/esports-world-cup-2025"
+        },
+        {
+          "name": "YaLLa Compass 2024",
+          "href": "/events/7475/yalla-compass-2024"
+        }
+      ]
+    },
+    "cobrazera": {
+      "id": "cobrazera",
+      "nick": "cobrazera",
+      "team": "The MongolZ",
+      "avatar": "avatars/23402.webp",
+      "trophies": []
+    },
+    "MaSvAl": {
+      "id": "MaSvAl",
+      "nick": "MaSvAl",
+      "team": "magic",
+      "avatar": "avatars/19874.webp",
+      "trophies": []
+    },
+    "lattykk": {
+      "id": "lattykk",
+      "nick": "lattykk",
+      "team": "magic",
+      "avatar": "avatars/20700.webp",
+      "trophies": []
+    },
+    "sFade8": {
+      "id": "sFade8",
+      "nick": "sFade8",
+      "team": "magic",
+      "avatar": "avatars/22075.webp",
+      "trophies": []
+    },
+    "AW": {
+      "id": "AW",
+      "nick": "AW",
+      "team": "magic",
+      "avatar": "avatars/22076.webp",
+      "trophies": []
+    },
+    "tenzy": {
+      "id": "tenzy",
+      "nick": "tenzy",
+      "team": "magic",
+      "avatar": "avatars/24173.webp",
+      "trophies": []
+    },
+    "Snax": {
+      "id": "Snax",
+      "nick": "Snax",
+      "team": "GamerLegion",
+      "avatar": "avatars/2553.webp",
+      "trophies": [
+        {
+          "name": "BLAST Premier World Final 2024",
+          "href": "/events/7557/blast-premier-world-final-2024"
+        },
+        {
+          "name": "BLAST Premier Fall Final 2024",
+          "href": "/events/7556/blast-premier-fall-final-2024"
+        },
+        {
+          "name": "ESL One New York 2018",
+          "href": "/events/3703/esl-one-new-york-2018"
+        },
+        {
+          "name": "DreamHack Masters Las Vegas 2017",
+          "href": "/events/2541/dreamhack-masters-las-vegas-2017"
+        },
+        {
+          "name": "DreamHack ZOWIE Open Bucharest 2016",
+          "href": "/events/2112/dreamhack-zowie-open-bucharest-2016"
+        },
+        {
+          "name": "ELEAGUE Season 1",
+          "href": "/events/2135/eleague-season-1"
+        },
+        {
+          "name": "SL i-League Invitational #1",
+          "href": "/events/2187/sl-i-league-invitational-1"
+        },
+        {
+          "name": "CEVO Professional Season 8 Finals",
+          "href": "/events/1853/cevo-professional-season-8-finals"
+        },
+        {
+          "name": "ESL ESEA Dubai Invitational 2015",
+          "href": "/events/1882/esl-esea-dubai-invitational-2015"
+        },
+        {
+          "name": "CEVO Professional Season 7 Finals",
+          "href": "/events/1715/cevo-professional-season-7-finals"
+        },
+        {
+          "name": "ESEA Invite Season 18 Global Finals",
+          "href": "/events/1651/esea-invite-season-18-global-finals"
+        },
+        {
+          "name": "Copenhagen Games 2015",
+          "href": "/events/1610/copenhagen-games-2015"
+        },
+        {
+          "name": "Gfinity 3",
+          "href": "/events/1437/gfinity-3"
+        },
+        {
+          "name": "EMS One Katowice 2014",
+          "href": "/events/1333/ems-one-katowice-2014"
+        },
+        {
+          "name": "SLTV StarSeries VIII Finals",
+          "href": "/events/1279/sltv-starseries-viii-finals"
+        }
+      ]
+    },
+    "REZ": {
+      "id": "REZ",
+      "nick": "REZ",
+      "team": "GamerLegion",
+      "avatar": "avatars/9278.webp",
+      "trophies": [
+        {
+          "name": "IEM Fall 2021 Europe",
+          "href": "/events/5729/iem-fall-2021-europe"
+        },
+        {
+          "name": "IEM Oakland 2017",
+          "href": "/events/2956/iem-oakland-2017"
+        }
+      ]
+    },
+    "Tauson": {
+      "id": "Tauson",
+      "nick": "Tauson",
+      "team": "GamerLegion",
+      "avatar": "avatars/20301.webp",
+      "trophies": []
+    },
+    "FL4MUS": {
+      "id": "FL4MUS",
+      "nick": "FL4MUS",
+      "team": "GamerLegion",
+      "avatar": "avatars/20994.webp",
+      "trophies": []
+    },
+    "hypex": {
+      "id": "hypex",
+      "nick": "hypex",
+      "team": "GamerLegion",
+      "avatar": "avatars/23766.webp",
+      "trophies": []
+    },
+    "HObbit": {
+      "id": "HObbit",
+      "nick": "HObbit",
+      "team": "PARIVISION",
+      "avatar": "avatars/8528.webp",
+      "trophies": [
+        {
+          "name": "IEM Dallas 2022",
+          "href": "/events/6138/iem-dallas-2022"
+        },
+        {
+          "name": "Funspark ULTI 2021 Finals",
+          "href": "/events/6334/funspark-ulti-2021-finals"
+        },
+        {
+          "name": "V4 Future Sports Festival 2021",
+          "href": "/events/6018/v4-future-sports-festival-2021"
+        },
+        {
+          "name": "IEM Fall 2021 CIS",
+          "href": "/events/6070/iem-fall-2021-cis"
+        },
+        {
+          "name": "BLAST Premier Spring Final 2021",
+          "href": "/events/5604/blast-premier-spring-final-2021"
+        },
+        {
+          "name": "IEM Summer 2021",
+          "href": "/events/5219/iem-summer-2021"
+        },
+        {
+          "name": "EPIC League CIS 2021",
+          "href": "/events/5901/epic-league-cis-2021"
+        },
+        {
+          "name": "IEM Katowice 2021",
+          "href": "/events/5552/iem-katowice-2021"
+        },
+        {
+          "name": "PGL Major Krakow 2017",
+          "href": "/events/2720/pgl-major-krakow-2017"
+        },
+        {
+          "name": "DreamHack Open Austin 2017",
+          "href": "/events/2567/dreamhack-open-austin-2017"
+        },
+        {
+          "name": "DreamHack ZOWIE Open Winter 2016",
+          "href": "/events/2110/dreamhack-zowie-open-winter-2016"
+        }
+      ]
+    },
+    "FL1T": {
+      "id": "FL1T",
+      "nick": "FL1T",
+      "team": "PARIVISION",
+      "avatar": "avatars/12732.webp",
+      "trophies": [
+        {
+          "name": "ESL Challenger Atlanta 2023",
+          "href": "/events/6869/esl-challenger-atlanta-2023"
+        },
+        {
+          "name": "IEM Rio Major 2022",
+          "href": "/events/6586/iem-rio-major-2022"
+        }
+      ]
+    },
+    "Jame": {
+      "id": "Jame",
+      "nick": "Jame",
+      "team": "PARIVISION",
+      "avatar": "avatars/13776.webp",
+      "trophies": [
+        {
+          "name": "BLAST Bounty 2026 Season 1 Finals",
+          "href": "/events/8246/blast-bounty-2026-season-1-finals"
+        },
+        {
+          "name": "ESL Challenger Atlanta 2023",
+          "href": "/events/6869/esl-challenger-atlanta-2023"
+        },
+        {
+          "name": "IEM Rio Major 2022",
+          "href": "/events/6586/iem-rio-major-2022"
+        },
+        {
+          "name": "cs_summit 7",
+          "href": "/events/5715/cs-summit-7"
+        },
+        {
+          "name": "Flashpoint 2",
+          "href": "/events/5577/flashpoint-2"
+        },
+        {
+          "name": "BLAST Pro Series Moscow 2019",
+          "href": "/events/4686/blast-pro-series-moscow-2019"
+        }
+      ]
+    },
+    "xiELO": {
+      "id": "xiELO",
+      "nick": "xiELO",
+      "team": "PARIVISION",
+      "avatar": "avatars/22471.webp",
+      "trophies": [
+        {
+          "name": "BLAST Bounty 2026 Season 1 Finals",
+          "href": "/events/8246/blast-bounty-2026-season-1-finals"
+        }
+      ]
+    },
+    "zweih": {
+      "id": "zweih",
+      "nick": "zweih",
+      "team": "PARIVISION",
+      "avatar": "avatars/23685.webp",
+      "trophies": [
+        {
+          "name": "BLAST Bounty 2026 Season 1 Finals",
+          "href": "/events/8246/blast-bounty-2026-season-1-finals"
+        },
+        {
+          "name": "BLAST Bounty 2025 Season 2 Finals",
+          "href": "/events/7910/blast-bounty-2025-season-2-finals"
+        },
+        {
+          "name": "IEM Cologne 2025",
+          "href": "/events/8038/iem-cologne-2025"
+        }
+      ]
+    },
+    "Maka": {
+      "id": "Maka",
+      "nick": "Maka",
+      "team": "Envy",
+      "avatar": "avatars/13138.webp",
+      "trophies": []
+    },
+    "Lucky": {
+      "id": "Lucky",
+      "nick": "Lucky",
+      "team": "Envy",
+      "avatar": "avatars/13497.webp",
+      "trophies": []
+    },
+    "misutaaa": {
+      "id": "misutaaa",
+      "nick": "misutaaa",
+      "team": "Envy",
+      "avatar": "avatars/14176.webp",
+      "trophies": [
+        {
+          "name": "IEM Winter 2021",
+          "href": "/events/5730/iem-winter-2021"
+        },
+        {
+          "name": "IEM Beijing-Haidian 2020 Europe",
+          "href": "/events/5524/iem-beijing-haidian-2020-europe"
+        }
+      ]
+    },
+    "Kursy": {
+      "id": "Kursy",
+      "nick": "Kursy",
+      "team": "Envy",
+      "avatar": "avatars/20482.webp",
+      "trophies": []
+    },
+    "Graviti": {
+      "id": "Graviti",
+      "nick": "Graviti",
+      "team": "Envy",
+      "avatar": "avatars/21969.webp",
+      "trophies": []
+    },
+    "KaiR0N-": {
+      "id": "KaiR0N-",
+      "nick": "KaiR0N-",
+      "team": "Nemiga",
+      "avatar": "avatars/19920.webp",
+      "trophies": []
+    },
+    "Xant3r": {
+      "id": "Xant3r",
+      "nick": "Xant3r",
+      "team": "Nemiga",
+      "avatar": "avatars/20387.webp",
+      "trophies": []
+    },
+    "robo": {
+      "id": "robo",
+      "nick": "robo",
+      "team": "Nemiga",
+      "avatar": "avatars/22864.webp",
+      "trophies": []
+    },
+    "khaN": {
+      "id": "khaN",
+      "nick": "khaN",
+      "team": "Nemiga",
+      "avatar": "avatars/23317.webp",
+      "trophies": []
+    },
+    "syph0": {
+      "id": "syph0",
+      "nick": "syph0",
+      "team": "Nemiga",
+      "avatar": "avatars/23319.webp",
+      "trophies": []
+    },
+    "twist": {
+      "id": "twist",
+      "nick": "twist",
+      "team": "Alliance",
+      "avatar": "avatars/7443.webp",
+      "trophies": []
+    },
+    "eraa": {
+      "id": "eraa",
+      "nick": "eraa",
+      "team": "Alliance",
+      "avatar": "avatars/16487.webp",
+      "trophies": []
+    },
+    "bobeksde": {
+      "id": "bobeksde",
+      "nick": "bobeksde",
+      "team": "Alliance",
+      "avatar": "avatars/21159.webp",
+      "trophies": []
+    },
+    "upE": {
+      "id": "upE",
+      "nick": "upE",
+      "team": "Alliance",
+      "avatar": "avatars/22760.webp",
+      "trophies": []
+    },
+    "avid": {
+      "id": "avid",
+      "nick": "avid",
+      "team": "Alliance",
+      "avatar": "avatars/22860.webp",
+      "trophies": []
+    },
+    "Rainwaker": {
+      "id": "Rainwaker",
+      "nick": "Rainwaker",
+      "team": "Luminosity",
+      "avatar": "avatars/17145.webp",
+      "trophies": []
+    },
+    "afro": {
+      "id": "afro",
+      "nick": "afro",
+      "team": "Luminosity",
+      "avatar": "avatars/19926.webp",
+      "trophies": []
+    },
+    "lux": {
+      "id": "lux",
+      "nick": "lux",
+      "team": "Luminosity",
+      "avatar": "avatars/20563.webp",
+      "trophies": [
+        {
+          "name": "CS Asia Championships 2025",
+          "href": "/events/8027/cs-asia-championships-2025"
+        }
+      ]
+    },
+    "yxngstxr": {
+      "id": "yxngstxr",
+      "nick": "yxngstxr",
+      "team": "Luminosity",
+      "avatar": "avatars/22047.webp",
+      "trophies": []
+    },
+    "AZUWU": {
+      "id": "AZUWU",
+      "nick": "AZUWU",
+      "team": "Luminosity",
+      "avatar": "avatars/22106.webp",
+      "trophies": []
+    },
+    "NAF": {
+      "id": "NAF",
+      "nick": "NAF",
+      "team": "Liquid",
+      "avatar": "avatars/8520.webp",
+      "trophies": [
+        {
+          "name": "ESL Pro League Season 11 North America",
+          "href": "/events/5246/esl-pro-league-season-11-north-america"
+        },
+        {
+          "name": "IEM Chicago 2019",
+          "href": "/events/4574/iem-chicago-2019"
+        },
+        {
+          "name": "BLAST Pro Series Los Angeles 2019",
+          "href": "/events/4500/blast-pro-series-los-angeles-2019"
+        },
+        {
+          "name": "ESL One Cologne 2019",
+          "href": "/events/4281/esl-one-cologne-2019"
+        },
+        {
+          "name": "ESL Pro League Season 9 Finals",
+          "href": "/events/4490/esl-pro-league-season-9-finals"
+        },
+        {
+          "name": "DreamHack Masters Dallas 2019",
+          "href": "/events/4177/dreamhack-masters-dallas-2019"
+        },
+        {
+          "name": "IEM Sydney 2019",
+          "href": "/events/4236/iem-sydney-2019"
+        },
+        {
+          "name": "iBUYPOWER Masters 2019",
+          "href": "/events/4290/ibuypower-masters-2019"
+        },
+        {
+          "name": "SuperNova CS:GO Malta",
+          "href": "/events/4081/supernova-csgo-malta"
+        },
+        {
+          "name": "cs_summit 2",
+          "href": "/events/3454/cs-summit-2"
+        },
+        {
+          "name": "SL i-League Invitational Shanghai 2017",
+          "href": "/events/3190/sl-i-league-invitational-shanghai-2017"
+        },
+        {
+          "name": "ELEAGUE Season 2",
+          "href": "/events/2407/eleague-season-2"
+        }
+      ]
+    },
+    "EliGE": {
+      "id": "EliGE",
+      "nick": "EliGE",
+      "team": "Liquid",
+      "avatar": "avatars/8738.webp",
+      "trophies": [
+        {
+          "name": "ESL Pro League Season 11 North America",
+          "href": "/events/5246/esl-pro-league-season-11-north-america"
+        },
+        {
+          "name": "IEM Chicago 2019",
+          "href": "/events/4574/iem-chicago-2019"
+        },
+        {
+          "name": "BLAST Pro Series Los Angeles 2019",
+          "href": "/events/4500/blast-pro-series-los-angeles-2019"
+        },
+        {
+          "name": "ESL One Cologne 2019",
+          "href": "/events/4281/esl-one-cologne-2019"
+        },
+        {
+          "name": "ESL Pro League Season 9 Finals",
+          "href": "/events/4490/esl-pro-league-season-9-finals"
+        },
+        {
+          "name": "DreamHack Masters Dallas 2019",
+          "href": "/events/4177/dreamhack-masters-dallas-2019"
+        },
+        {
+          "name": "IEM Sydney 2019",
+          "href": "/events/4236/iem-sydney-2019"
+        },
+        {
+          "name": "iBUYPOWER Masters 2019",
+          "href": "/events/4290/ibuypower-masters-2019"
+        },
+        {
+          "name": "SuperNova CS:GO Malta",
+          "href": "/events/4081/supernova-csgo-malta"
+        },
+        {
+          "name": "cs_summit 2",
+          "href": "/events/3454/cs-summit-2"
+        }
+      ]
+    },
+    "malbsMd": {
+      "id": "malbsMd",
+      "nick": "malbsMd",
+      "team": "Liquid",
+      "avatar": "avatars/11617.webp",
+      "trophies": [
+        {
+          "name": "BLAST Open London 2025 Finals",
+          "href": "/events/7912/blast-open-london-2025-finals"
+        },
+        {
+          "name": "BLAST Premier World Final 2024",
+          "href": "/events/7557/blast-premier-world-final-2024"
+        },
+        {
+          "name": "BLAST Premier Fall Final 2024",
+          "href": "/events/7556/blast-premier-fall-final-2024"
+        }
+      ]
+    },
+    "JT": {
+      "id": "JT",
+      "nick": "JT",
+      "team": "Liquid",
+      "avatar": "avatars/11630.webp",
+      "trophies": []
+    },
+    "Jorko": {
+      "id": "Jorko",
+      "nick": "Jorko",
+      "team": "Liquid",
+      "avatar": "avatars/24203.webp",
+      "trophies": []
+    },
+    "stavn": {
+      "id": "stavn",
+      "nick": "stavn",
+      "team": "Ninjas in Pyjamas",
+      "avatar": "avatars/10994.webp",
+      "trophies": [
+        {
+          "name": "BLAST Premier Spring Final 2023",
+          "href": "/events/6972/blast-premier-spring-final-2023"
+        },
+        {
+          "name": "BLAST Premier Fall Final 2022",
+          "href": "/events/6348/blast-premier-fall-final-2022"
+        },
+        {
+          "name": "Pinnacle Cup Championship 2022",
+          "href": "/events/6477/pinnacle-cup-championship-2022"
+        },
+        {
+          "name": "ESL Pro League Season 13",
+          "href": "/events/5553/esl-pro-league-season-13"
+        },
+        {
+          "name": "DreamHack Open Fall 2020",
+          "href": "/events/5506/dreamhack-open-fall-2020"
+        },
+        {
+          "name": "ESL One Cologne 2020 Europe",
+          "href": "/events/4939/esl-one-cologne-2020-europe"
+        }
+      ]
+    },
+    "sjuush": {
+      "id": "sjuush",
+      "nick": "sjuush",
+      "team": "Ninjas in Pyjamas",
+      "avatar": "avatars/14148.webp",
+      "trophies": [
+        {
+          "name": "BLAST Premier Spring Final 2023",
+          "href": "/events/6972/blast-premier-spring-final-2023"
+        },
+        {
+          "name": "BLAST Premier Fall Final 2022",
+          "href": "/events/6348/blast-premier-fall-final-2022"
+        },
+        {
+          "name": "Pinnacle Cup Championship 2022",
+          "href": "/events/6477/pinnacle-cup-championship-2022"
+        },
+        {
+          "name": "ESL Pro League Season 13",
+          "href": "/events/5553/esl-pro-league-season-13"
+        },
+        {
+          "name": "V4 Future Sports Festival 2019",
+          "href": "/events/4828/v4-future-sports-festival-2019"
+        }
+      ]
+    },
+    "Krimbo": {
+      "id": "Krimbo",
+      "nick": "Krimbo",
+      "team": "Ninjas in Pyjamas",
+      "avatar": "avatars/19899.webp",
+      "trophies": [
+        {
+          "name": "Roobet Cup 2022",
+          "href": "/events/6510/roobet-cup-2022"
+        }
+      ]
+    },
+    "adamb": {
+      "id": "adamb",
+      "nick": "adamb",
+      "team": "Ninjas in Pyjamas",
+      "avatar": "avatars/20878.webp",
+      "trophies": []
+    },
+    "xKacpersky": {
+      "id": "xKacpersky",
+      "nick": "xKacpersky",
+      "team": "Ninjas in Pyjamas",
+      "avatar": "avatars/23372.webp",
+      "trophies": []
+    },
+    "slaxz-": {
+      "id": "slaxz-",
+      "nick": "slaxz-",
+      "team": "M80",
+      "avatar": "avatars/15370.webp",
+      "trophies": []
+    },
+    "Swisher": {
+      "id": "Swisher",
+      "nick": "Swisher",
+      "team": "M80",
+      "avatar": "avatars/16599.webp",
+      "trophies": []
+    },
+    "s1n": {
+      "id": "s1n",
+      "nick": "s1n",
+      "team": "M80",
+      "avatar": "avatars/20104.webp",
+      "trophies": []
+    },
+    "JBa": {
+      "id": "JBa",
+      "nick": "JBa",
+      "team": "M80",
+      "avatar": "avatars/21665.webp",
+      "trophies": []
+    },
+    "Lake": {
+      "id": "Lake",
+      "nick": "Lake",
+      "team": "M80",
+      "avatar": "avatars/22921.webp",
+      "trophies": []
+    },
+    "cptkurtka023": {
+      "id": "cptkurtka023",
+      "nick": "cptkurtka023",
+      "team": "Inner Circle",
+      "avatar": "avatars/16147.webp",
+      "trophies": []
+    },
+    "headtr1ck": {
+      "id": "headtr1ck",
+      "nick": "headtr1ck",
+      "team": "Inner Circle",
+      "avatar": "avatars/19592.webp",
+      "trophies": []
+    },
+    "zeRRoFIX": {
+      "id": "zeRRoFIX",
+      "nick": "zeRRoFIX",
+      "team": "Inner Circle",
+      "avatar": "avatars/23415.webp",
+      "trophies": []
+    },
+    "onic": {
+      "id": "onic",
+      "nick": "onic",
+      "team": "Inner Circle",
+      "avatar": "avatars/24168.webp",
+      "trophies": []
+    },
+    "Dawy": {
+      "id": "Dawy",
+      "nick": "Dawy",
+      "team": "Inner Circle",
+      "avatar": "avatars/24282.webp",
+      "trophies": []
+    },
+    "Brollan": {
+      "id": "Brollan",
+      "nick": "Brollan",
+      "team": "HEROIC",
+      "avatar": "avatars/13666.webp",
+      "trophies": [
+        {
+          "name": "PGL Cluj-Napoca 2025",
+          "href": "/events/8043/pgl-cluj-napoca-2025"
+        },
+        {
+          "name": "BetBoom Dacha Belgrade 2024",
+          "href": "/events/7755/betboom-dacha-belgrade-2024"
+        },
+        {
+          "name": "ESL Pro League Season 19",
+          "href": "/events/7440/esl-pro-league-season-19"
+        },
+        {
+          "name": "ESL Pro League Season 11 Europe",
+          "href": "/events/5226/esl-pro-league-season-11-europe"
+        },
+        {
+          "name": "DreamHack Masters Malmö 2019",
+          "href": "/events/4553/dreamhack-masters-malm-2019"
+        }
+      ]
+    },
+    "nilo": {
+      "id": "nilo",
+      "nick": "nilo",
+      "team": "HEROIC",
+      "avatar": "avatars/20119.webp",
+      "trophies": []
+    },
+    "susp": {
+      "id": "susp",
+      "nick": "susp",
+      "team": "HEROIC",
+      "avatar": "avatars/21163.webp",
+      "trophies": []
+    },
+    "MartinezSa": {
+      "id": "MartinezSa",
+      "nick": "MartinezSa",
+      "team": "HEROIC",
+      "avatar": "avatars/21239.webp",
+      "trophies": []
+    },
+    "Chr1zN": {
+      "id": "Chr1zN",
+      "nick": "Chr1zN",
+      "team": "HEROIC",
+      "avatar": "avatars/21983.webp",
+      "trophies": []
+    },
+    "nitr0": {
+      "id": "nitr0",
+      "nick": "nitr0",
+      "team": "NRG",
+      "avatar": "avatars/7687.webp",
+      "trophies": [
+        {
+          "name": "ESL Pro League Season 11 North America",
+          "href": "/events/5246/esl-pro-league-season-11-north-america"
+        },
+        {
+          "name": "IEM Chicago 2019",
+          "href": "/events/4574/iem-chicago-2019"
+        },
+        {
+          "name": "BLAST Pro Series Los Angeles 2019",
+          "href": "/events/4500/blast-pro-series-los-angeles-2019"
+        },
+        {
+          "name": "ESL One Cologne 2019",
+          "href": "/events/4281/esl-one-cologne-2019"
+        },
+        {
+          "name": "ESL Pro League Season 9 Finals",
+          "href": "/events/4490/esl-pro-league-season-9-finals"
+        },
+        {
+          "name": "DreamHack Masters Dallas 2019",
+          "href": "/events/4177/dreamhack-masters-dallas-2019"
+        },
+        {
+          "name": "IEM Sydney 2019",
+          "href": "/events/4236/iem-sydney-2019"
+        },
+        {
+          "name": "iBUYPOWER Masters 2019",
+          "href": "/events/4290/ibuypower-masters-2019"
+        },
+        {
+          "name": "SuperNova CS:GO Malta",
+          "href": "/events/4081/supernova-csgo-malta"
+        },
+        {
+          "name": "cs_summit 2",
+          "href": "/events/3454/cs-summit-2"
+        }
+      ]
+    },
+    "Sonic": {
+      "id": "Sonic",
+      "nick": "Sonic",
+      "team": "NRG",
+      "avatar": "avatars/8711.webp",
+      "trophies": []
+    },
+    "hallzerk": {
+      "id": "hallzerk",
+      "nick": "hallzerk",
+      "team": "NRG",
+      "avatar": "avatars/12840.webp",
+      "trophies": []
+    },
+    "Grim": {
+      "id": "Grim",
+      "nick": "Grim",
+      "team": "NRG",
+      "avatar": "avatars/13578.webp",
+      "trophies": []
+    },
+    "Jeorge": {
+      "id": "Jeorge",
+      "nick": "Jeorge",
+      "team": "NRG",
+      "avatar": "avatars/20333.webp",
+      "trophies": []
+    },
+    "biguzera": {
+      "id": "biguzera",
+      "nick": "biguzera",
+      "team": "paiN",
+      "avatar": "avatars/18141.webp",
+      "trophies": []
+    },
+    "saffee": {
+      "id": "saffee",
+      "nick": "saffee",
+      "team": "paiN",
+      "avatar": "avatars/18835.webp",
+      "trophies": []
+    },
+    "snow": {
+      "id": "snow",
+      "nick": "snow",
+      "team": "paiN",
+      "avatar": "avatars/20171.webp",
+      "trophies": []
+    },
+    "Tatu": {
+      "id": "Tatu",
+      "nick": "Tatu",
+      "team": "paiN",
+      "avatar": "avatars/24089.webp",
+      "trophies": []
+    },
+    "Rkzinho": {
+      "id": "Rkzinho",
+      "nick": "Rkzinho",
+      "team": "paiN",
+      "avatar": "avatars/25087.webp",
+      "trophies": []
+    },
+    "tabseN": {
+      "id": "tabseN",
+      "nick": "tabseN",
+      "team": "BIG",
+      "avatar": "avatars/5794.webp",
+      "trophies": [
+        {
+          "name": "Roobet Cup 2022",
+          "href": "/events/6510/roobet-cup-2022"
+        },
+        {
+          "name": "Funspark ULTI 2020 Europe Final",
+          "href": "/events/5454/funspark-ulti-2020-europe-final"
+        },
+        {
+          "name": "DreamHack Open Summer 2020 Europe",
+          "href": "/events/5257/dreamhack-open-summer-2020-europe"
+        },
+        {
+          "name": "cs_summit 6 Europe",
+          "href": "/events/5338/cs-summit-6-europe"
+        },
+        {
+          "name": "DreamHack Masters Spring 2020 - Europe",
+          "href": "/events/5285/dreamhack-masters-spring-2020-europe"
+        }
+      ]
+    },
+    "JDC": {
+      "id": "JDC",
+      "nick": "JDC",
+      "team": "BIG",
+      "avatar": "avatars/14929.webp",
+      "trophies": []
+    },
+    "faveN": {
+      "id": "faveN",
+      "nick": "faveN",
+      "team": "BIG",
+      "avatar": "avatars/14932.webp",
+      "trophies": []
+    },
+    "blameF": {
+      "id": "blameF",
+      "nick": "blameF",
+      "team": "BIG",
+      "avatar": "avatars/15165.webp",
+      "trophies": [
+        {
+          "name": "BLAST Premier Spring 2020 Europe Finals",
+          "href": "/events/5202/blast-premier-spring-2020-europe-finals"
+        }
+      ]
+    },
+    "gr1ks": {
+      "id": "gr1ks",
+      "nick": "gr1ks",
+      "team": "BIG",
+      "avatar": "avatars/22884.webp",
+      "trophies": []
+    },
+    "Ax1Le": {
+      "id": "Ax1Le",
+      "nick": "Ax1Le",
+      "team": "1win",
+      "avatar": "avatars/16555.webp",
+      "trophies": [
+        {
+          "name": "IEM Dallas 2022",
+          "href": "/events/6138/iem-dallas-2022"
+        },
+        {
+          "name": "Funspark ULTI 2021 Finals",
+          "href": "/events/6334/funspark-ulti-2021-finals"
+        },
+        {
+          "name": "V4 Future Sports Festival 2021",
+          "href": "/events/6018/v4-future-sports-festival-2021"
+        },
+        {
+          "name": "IEM Fall 2021 CIS",
+          "href": "/events/6070/iem-fall-2021-cis"
+        },
+        {
+          "name": "BLAST Premier Spring Final 2021",
+          "href": "/events/5604/blast-premier-spring-final-2021"
+        },
+        {
+          "name": "IEM Summer 2021",
+          "href": "/events/5219/iem-summer-2021"
+        },
+        {
+          "name": "EPIC League CIS 2021",
+          "href": "/events/5901/epic-league-cis-2021"
+        },
+        {
+          "name": "IEM Katowice 2021",
+          "href": "/events/5552/iem-katowice-2021"
+        }
+      ]
+    },
+    "nafany": {
+      "id": "nafany",
+      "nick": "nafany",
+      "team": "1win",
+      "avatar": "avatars/16921.webp",
+      "trophies": [
+        {
+          "name": "IEM Dallas 2022",
+          "href": "/events/6138/iem-dallas-2022"
+        },
+        {
+          "name": "Funspark ULTI 2021 Finals",
+          "href": "/events/6334/funspark-ulti-2021-finals"
+        },
+        {
+          "name": "V4 Future Sports Festival 2021",
+          "href": "/events/6018/v4-future-sports-festival-2021"
+        },
+        {
+          "name": "IEM Fall 2021 CIS",
+          "href": "/events/6070/iem-fall-2021-cis"
+        },
+        {
+          "name": "BLAST Premier Spring Final 2021",
+          "href": "/events/5604/blast-premier-spring-final-2021"
+        },
+        {
+          "name": "IEM Summer 2021",
+          "href": "/events/5219/iem-summer-2021"
+        },
+        {
+          "name": "EPIC League CIS 2021",
+          "href": "/events/5901/epic-league-cis-2021"
+        },
+        {
+          "name": "IEM Katowice 2021",
+          "href": "/events/5552/iem-katowice-2021"
+        }
+      ]
+    },
+    "BELCHONOKK": {
+      "id": "BELCHONOKK",
+      "nick": "BELCHONOKK",
+      "team": "1win",
+      "avatar": "avatars/19235.webp",
+      "trophies": [
+        {
+          "name": "BLAST Bounty 2026 Season 1 Finals",
+          "href": "/events/8246/blast-bounty-2026-season-1-finals"
+        }
+      ]
+    },
+    "fame": {
+      "id": "fame",
+      "nick": "fame",
+      "team": "1win",
+      "avatar": "avatars/20101.webp",
+      "trophies": [
+        {
+          "name": "ESL Challenger Atlanta 2023",
+          "href": "/events/6869/esl-challenger-atlanta-2023"
+        },
+        {
+          "name": "IEM Rio Major 2022",
+          "href": "/events/6586/iem-rio-major-2022"
+        }
+      ]
+    },
+    "ArtFr0st": {
+      "id": "ArtFr0st",
+      "nick": "ArtFr0st",
+      "team": "1win",
+      "avatar": "avatars/21348.webp",
+      "trophies": [
+        {
+          "name": "BetBoom Dacha 2023",
+          "href": "/events/7499/betboom-dacha-2023"
+        }
+      ]
+    },
+    "JamYoung": {
+      "id": "JamYoung",
+      "nick": "JamYoung",
+      "team": "TYLOO",
+      "avatar": "avatars/19645.webp",
+      "trophies": [
+        {
+          "name": "FISSURE Playground 1",
+          "href": "/events/8063/fissure-playground-1"
+        }
+      ]
+    },
+    "Jee": {
+      "id": "Jee",
+      "nick": "Jee",
+      "team": "TYLOO",
+      "avatar": "avatars/20702.webp",
+      "trophies": [
+        {
+          "name": "FISSURE Playground 1",
+          "href": "/events/8063/fissure-playground-1"
+        }
+      ]
+    },
+    "Mercury": {
+      "id": "Mercury",
+      "nick": "Mercury",
+      "team": "TYLOO",
+      "avatar": "avatars/20895.webp",
+      "trophies": [
+        {
+          "name": "FISSURE Playground 1",
+          "href": "/events/8063/fissure-playground-1"
+        }
+      ]
+    },
+    "Moseyuh": {
+      "id": "Moseyuh",
+      "nick": "Moseyuh",
+      "team": "TYLOO",
+      "avatar": "avatars/21621.webp",
+      "trophies": [
+        {
+          "name": "FISSURE Playground 1",
+          "href": "/events/8063/fissure-playground-1"
+        }
+      ]
+    },
+    "Zero": {
+      "id": "Zero",
+      "nick": "Zero",
+      "team": "TYLOO",
+      "avatar": "avatars/24857.webp",
+      "trophies": []
+    },
+    "NEUZ": {
+      "id": "NEUZ",
+      "nick": "NEUZ",
+      "team": "5star",
+      "avatar": "avatars/15060.webp",
+      "trophies": []
+    },
+    "rate": {
+      "id": "rate",
+      "nick": "rate",
+      "team": "5star",
+      "avatar": "avatars/15861.webp",
+      "trophies": []
+    },
+    "clouden": {
+      "id": "clouden",
+      "nick": "clouden",
+      "team": "5star",
+      "avatar": "avatars/18150.webp",
+      "trophies": []
+    },
+    "ariucle": {
+      "id": "ariucle",
+      "nick": "ariucle",
+      "team": "5star",
+      "avatar": "avatars/21396.webp",
+      "trophies": []
+    },
+    "hoolig4n": {
+      "id": "hoolig4n",
+      "nick": "hoolig4n",
+      "team": "5star",
+      "avatar": "avatars/24303.webp",
+      "trophies": []
+    },
+    "Westmelon": {
+      "id": "Westmelon",
+      "nick": "Westmelon",
+      "team": "Lynn Vision",
+      "avatar": "avatars/16551.webp",
+      "trophies": []
+    },
+    "z4KR": {
+      "id": "z4KR",
+      "nick": "z4KR",
+      "team": "Lynn Vision",
+      "avatar": "avatars/18744.webp",
+      "trophies": []
+    },
+    "Starry": {
+      "id": "Starry",
+      "nick": "Starry",
+      "team": "Lynn Vision",
+      "avatar": "avatars/20254.webp",
+      "trophies": []
+    },
+    "EmiliaQAQ": {
+      "id": "EmiliaQAQ",
+      "nick": "EmiliaQAQ",
+      "team": "Lynn Vision",
+      "avatar": "avatars/22922.webp",
+      "trophies": []
+    },
+    "C4LLM3SU3": {
+      "id": "C4LLM3SU3",
+      "nick": "C4LLM3SU3",
+      "team": "Lynn Vision",
+      "avatar": "avatars/23100.webp",
+      "trophies": []
+    },
+    "m1N1": {
+      "id": "m1N1",
+      "nick": "m1N1",
+      "team": "JiJieHao",
+      "avatar": "avatars/17675.webp",
+      "trophies": []
+    },
+    "sinnopsyy": {
+      "id": "sinnopsyy",
+      "nick": "sinnopsyy",
+      "team": "JiJieHao",
+      "avatar": "avatars/18120.webp",
+      "trophies": []
+    },
+    "Bibu": {
+      "id": "Bibu",
+      "nick": "Bibu",
+      "team": "JiJieHao",
+      "avatar": "avatars/18163.webp",
+      "trophies": []
+    },
+    "CacaNito": {
+      "id": "CacaNito",
+      "nick": "CacaNito",
+      "team": "JiJieHao",
+      "avatar": "avatars/18790.webp",
+      "trophies": []
+    },
+    "0SAMAS": {
+      "id": "0SAMAS",
+      "nick": "0SAMAS",
+      "team": "JiJieHao",
+      "avatar": "avatars/22419.webp",
+      "trophies": []
+    },
+    "device": {
+      "id": "device",
+      "nick": "device",
+      "team": "100 Thieves",
+      "avatar": "avatars/7592.webp",
+      "trophies": [
+        {
+          "name": "IEM Fall 2021 Europe",
+          "href": "/events/5729/iem-fall-2021-europe"
+        },
+        {
+          "name": "IEM Global Challenge 2020",
+          "href": "/events/5528/iem-global-challenge-2020"
+        },
+        {
+          "name": "DreamHack Masters Winter 2020 Europe",
+          "href": "/events/5519/dreamhack-masters-winter-2020-europe"
+        },
+        {
+          "name": "ESL Pro League Season 12 Europe",
+          "href": "/events/5372/esl-pro-league-season-12-europe"
+        },
+        {
+          "name": "ESL One: Road to Rio - Europe",
+          "href": "/events/5277/esl-one-road-to-rio-europe"
+        },
+        {
+          "name": "BLAST Pro Series Global Final 2019",
+          "href": "/events/4889/blast-pro-series-global-final-2019"
+        },
+        {
+          "name": "ECS Season 8 Finals",
+          "href": "/events/4926/ecs-season-8-finals"
+        },
+        {
+          "name": "IEM Beijing 2019",
+          "href": "/events/4837/iem-beijing-2019"
+        },
+        {
+          "name": "StarLadder Major Berlin 2019",
+          "href": "/events/4443/starladder-major-berlin-2019"
+        },
+        {
+          "name": "BLAST Pro Series São Paulo 2019",
+          "href": "/events/4326/blast-pro-series-so-paulo-2019"
+        },
+        {
+          "name": "IEM Katowice 2019",
+          "href": "/events/3883/iem-katowice-2019"
+        },
+        {
+          "name": "BLAST Pro Series Lisbon 2018",
+          "href": "/events/4205/blast-pro-series-lisbon-2018"
+        },
+        {
+          "name": "ESL Pro League Season 8 Finals",
+          "href": "/events/3376/esl-pro-league-season-8-finals"
+        },
+        {
+          "name": "ECS Season 6 Finals",
+          "href": "/events/4083/ecs-season-6-finals"
+        },
+        {
+          "name": "IEM Chicago 2018",
+          "href": "/events/3954/iem-chicago-2018"
+        },
+        {
+          "name": "BLAST Pro Series Istanbul 2018",
+          "href": "/events/3647/blast-pro-series-istanbul-2018"
+        },
+        {
+          "name": "FACEIT Major 2018",
+          "href": "/events/3564/faceit-major-2018"
+        },
+        {
+          "name": "ELEAGUE CS:GO Premier 2018",
+          "href": "/events/3515/eleague-csgo-premier-2018"
+        },
+        {
+          "name": "ECS Season 5 Finals",
+          "href": "/events/3460/ecs-season-5-finals"
+        },
+        {
+          "name": "ESL Pro League Season 7 Finals",
+          "href": "/events/3373/esl-pro-league-season-7-finals"
+        },
+        {
+          "name": "DreamHack Masters Marseille 2018",
+          "href": "/events/3491/dreamhack-masters-marseille-2018"
+        },
+        {
+          "name": "IEM Katowice 2017",
+          "href": "/events/2637/iem-katowice-2017"
+        },
+        {
+          "name": "ELEAGUE Major 2017",
+          "href": "/events/2471/eleague-major-2017"
+        },
+        {
+          "name": "ECS Season 2 Finals",
+          "href": "/events/2367/ecs-season-2-finals"
+        },
+        {
+          "name": "PGL Season 1 Finals",
+          "href": "/events/1886/pgl-season-1-finals"
+        },
+        {
+          "name": "FACEIT League 2015 Stage 2 Finals at DreamHack Valencia",
+          "href": "/events/1616/faceit-league-2015-stage-2-finals-at-dreamhack-valencia"
+        },
+        {
+          "name": "Fragbite Masters Season 4 Finals",
+          "href": "/events/1673/fragbite-masters-season-4-finals"
+        },
+        {
+          "name": "FACEIT League 2015 Stage 1 Finals",
+          "href": "/events/1606/faceit-league-2015-stage-1-finals"
+        },
+        {
+          "name": "CCS Kick-off Season Finals",
+          "href": "/events/1612/ccs-kick-off-season-finals"
+        }
+      ]
+    },
+    "rain": {
+      "id": "rain",
+      "nick": "rain",
+      "team": "100 Thieves",
+      "avatar": "avatars/8183.webp",
+      "trophies": [
+        {
+          "name": "IEM Chengdu 2024",
+          "href": "/events/7437/iem-chengdu-2024"
+        },
+        {
+          "name": "CS Asia Championships 2023",
+          "href": "/events/7365/cs-asia-championships-2023"
+        },
+        {
+          "name": "Thunderpick World Championship 2023",
+          "href": "/events/7289/thunderpick-world-championship-2023"
+        },
+        {
+          "name": "IEM Sydney 2023",
+          "href": "/events/6865/iem-sydney-2023"
+        },
+        {
+          "name": "ESL Pro League Season 17",
+          "href": "/events/6862/esl-pro-league-season-17"
+        },
+        {
+          "name": "IEM Cologne 2022",
+          "href": "/events/6140/iem-cologne-2022"
+        },
+        {
+          "name": "PGL Major Antwerp 2022",
+          "href": "/events/6372/pgl-major-antwerp-2022"
+        },
+        {
+          "name": "ESL Pro League Season 15",
+          "href": "/events/6137/esl-pro-league-season-15"
+        },
+        {
+          "name": "IEM New York 2020 Europe",
+          "href": "/events/5463/iem-new-york-2020-europe"
+        },
+        {
+          "name": "BLAST Pro Series Copenhagen 2019",
+          "href": "/events/4702/blast-pro-series-copenhagen-2019"
+        },
+        {
+          "name": "BLAST Pro Series Miami 2019",
+          "href": "/events/4327/blast-pro-series-miami-2019"
+        },
+        {
+          "name": "ELEAGUE CS:GO Invitational 2019",
+          "href": "/events/4370/eleague-csgo-invitational-2019"
+        },
+        {
+          "name": "EPICENTER 2018",
+          "href": "/events/3985/epicenter-2018"
+        },
+        {
+          "name": "ESL One Belo Horizonte 2018",
+          "href": "/events/3649/esl-one-belo-horizonte-2018"
+        },
+        {
+          "name": "IEM Sydney 2018",
+          "href": "/events/3530/iem-sydney-2018"
+        },
+        {
+          "name": "ECS Season 4 Finals",
+          "href": "/events/3313/ecs-season-4-finals"
+        },
+        {
+          "name": "ELEAGUE CS:GO Premier 2017",
+          "href": "/events/3016/eleague-csgo-premier-2017"
+        },
+        {
+          "name": "ESL One New York 2017",
+          "href": "/events/2636/esl-one-new-york-2017"
+        },
+        {
+          "name": "SL i-League StarSeries Season 3 Finals",
+          "href": "/events/2683/sl-i-league-starseries-season-3-finals"
+        }
+      ]
+    },
+    "Gizmy": {
+      "id": "Gizmy",
+      "nick": "Gizmy",
+      "team": "100 Thieves",
+      "avatar": "avatars/21816.webp",
+      "trophies": []
+    },
+    "sirah": {
+      "id": "sirah",
+      "nick": "sirah",
+      "team": "100 Thieves",
+      "avatar": "avatars/22695.webp",
+      "trophies": []
+    },
+    "poiii": {
+      "id": "poiii",
+      "nick": "poiii",
+      "team": "100 Thieves",
+      "avatar": "avatars/23397.webp",
+      "trophies": []
+    },
+    "MisteM": {
+      "id": "MisteM",
+      "nick": "MisteM",
+      "team": "Eternal Fire",
+      "avatar": "avatars/16811.webp",
+      "trophies": []
+    },
+    "regali": {
+      "id": "regali",
+      "nick": "regali",
+      "team": "Eternal Fire",
+      "avatar": "avatars/20123.webp",
+      "trophies": []
+    },
+    "soulfly": {
+      "id": "soulfly",
+      "nick": "soulfly",
+      "team": "Eternal Fire",
+      "avatar": "avatars/20968.webp",
+      "trophies": []
+    },
+    "Kvem": {
+      "id": "Kvem",
+      "nick": "Kvem",
+      "team": "Eternal Fire",
+      "avatar": "avatars/21452.webp",
+      "trophies": []
+    },
+    "jottAAA": {
+      "id": "jottAAA",
+      "nick": "jottAAA",
+      "team": "Eternal Fire",
+      "avatar": "avatars/22361.webp",
+      "trophies": [
+        {
+          "name": "PGL Masters Bucharest 2025",
+          "href": "/events/8046/pgl-masters-bucharest-2025"
+        }
+      ]
+    },
+    "fEAR": {
+      "id": "fEAR",
+      "nick": "fEAR",
+      "team": "fnatic",
+      "avatar": "avatars/17803.webp",
+      "trophies": []
+    },
+    "jambo": {
+      "id": "jambo",
+      "nick": "jambo",
+      "team": "fnatic",
+      "avatar": "avatars/23046.webp",
+      "trophies": []
+    },
+    "jackasmo": {
+      "id": "jackasmo",
+      "nick": "jackasmo",
+      "team": "fnatic",
+      "avatar": "avatars/23414.webp",
+      "trophies": []
+    },
+    "cairne": {
+      "id": "cairne",
+      "nick": "cairne",
+      "team": "fnatic",
+      "avatar": "avatars/24283.webp",
+      "trophies": []
+    },
+    "mazay": {
+      "id": "mazay",
+      "nick": "mazay",
+      "team": "fnatic",
+      "avatar": "avatars/25228.webp",
+      "trophies": []
+    },
+    "gafolo": {
+      "id": "gafolo",
+      "nick": "gafolo",
+      "team": "DENDELE",
+      "avatar": "avatars/20558.webp",
+      "trophies": []
+    },
+    "koala": {
+      "id": "koala",
+      "nick": "koala",
+      "team": "DENDELE",
+      "avatar": "avatars/21170.webp",
+      "trophies": []
+    },
+    "maxxkor": {
+      "id": "maxxkor",
+      "nick": "maxxkor",
+      "team": "DENDELE",
+      "avatar": "avatars/21221.webp",
+      "trophies": []
+    },
+    "rdnzao": {
+      "id": "rdnzao",
+      "nick": "rdnzao",
+      "team": "DENDELE",
+      "avatar": "avatars/21921.webp",
+      "trophies": []
+    },
+    "doc": {
+      "id": "doc",
+      "nick": "doc",
+      "team": "DENDELE",
+      "avatar": "avatars/22911.webp",
+      "trophies": []
+    },
+    "n0rb3r7": {
+      "id": "n0rb3r7",
+      "nick": "n0rb3r7",
+      "team": "HOTU",
+      "avatar": "avatars/16612.webp",
+      "trophies": [
+        {
+          "name": "ESL Challenger Atlanta 2023",
+          "href": "/events/6869/esl-challenger-atlanta-2023"
+        },
+        {
+          "name": "IEM Rio Major 2022",
+          "href": "/events/6586/iem-rio-major-2022"
+        }
+      ]
+    },
+    "kade0": {
+      "id": "kade0",
+      "nick": "kade0",
+      "team": "HOTU",
+      "avatar": "avatars/18752.webp",
+      "trophies": []
+    },
+    "mizu": {
+      "id": "mizu",
+      "nick": "mizu",
+      "team": "HOTU",
+      "avatar": "avatars/21385.webp",
+      "trophies": []
+    },
+    "dwushka": {
+      "id": "dwushka",
+      "nick": "dwushka",
+      "team": "HOTU",
+      "avatar": "avatars/22535.webp",
+      "trophies": []
+    },
+    "frontales": {
+      "id": "frontales",
+      "nick": "frontales",
+      "team": "HOTU",
+      "avatar": "avatars/24806.webp",
+      "trophies": []
+    },
+    "SELLTER": {
+      "id": "SELLTER",
+      "nick": "SELLTER",
+      "team": "Nemesis",
+      "avatar": "avatars/18670.webp",
+      "trophies": []
+    },
+    "r3salt": {
+      "id": "r3salt",
+      "nick": "r3salt",
+      "team": "Nemesis",
+      "avatar": "avatars/20709.webp",
+      "trophies": []
+    },
+    "mag1k3Y": {
+      "id": "mag1k3Y",
+      "nick": "mag1k3Y",
+      "team": "Nemesis",
+      "avatar": "avatars/22536.webp",
+      "trophies": []
+    },
+    "tex1y": {
+      "id": "tex1y",
+      "nick": "tex1y",
+      "team": "Nemesis",
+      "avatar": "avatars/22930.webp",
+      "trophies": []
+    },
+    "Sdaim": {
+      "id": "Sdaim",
+      "nick": "Sdaim",
+      "team": "Nemesis",
+      "avatar": "avatars/23047.webp",
+      "trophies": []
+    },
+    "clax": {
+      "id": "clax",
+      "nick": "clax",
+      "team": "K27",
+      "avatar": "avatars/12004.webp",
+      "trophies": []
+    },
+    "X5G7V": {
+      "id": "X5G7V",
+      "nick": "X5G7V",
+      "team": "K27",
+      "avatar": "avatars/19575.webp",
+      "trophies": []
+    },
+    "xeedo": {
+      "id": "xeedo",
+      "nick": "xeedo",
+      "team": "K27",
+      "avatar": "avatars/22886.webp",
+      "trophies": []
+    },
+    "kashl1d": {
+      "id": "kashl1d",
+      "nick": "kashl1d",
+      "team": "K27",
+      "avatar": "avatars/23686.webp",
+      "trophies": []
+    },
+    "qw1nk1": {
+      "id": "qw1nk1",
+      "nick": "qw1nk1",
+      "team": "K27",
+      "avatar": "avatars/24725.webp",
+      "trophies": []
+    },
+    "beastik": {
+      "id": "beastik",
+      "nick": "beastik",
+      "team": "SINNERS",
+      "avatar": "avatars/11199.webp",
+      "trophies": []
+    },
+    "SHOCK": {
+      "id": "SHOCK",
+      "nick": "SHOCK",
+      "team": "SINNERS",
+      "avatar": "avatars/12810.webp",
+      "trophies": []
+    },
+    "MoDo": {
+      "id": "MoDo",
+      "nick": "MoDo",
+      "team": "SINNERS",
+      "avatar": "avatars/21113.webp",
+      "trophies": []
+    },
+    "kisserek": {
+      "id": "kisserek",
+      "nick": "kisserek",
+      "team": "SINNERS",
+      "avatar": "avatars/23295.webp",
+      "trophies": []
+    },
+    "stressarN": {
+      "id": "stressarN",
+      "nick": "stressarN",
+      "team": "SINNERS",
+      "avatar": "avatars/23459.webp",
+      "trophies": []
+    },
+    "nEMANHA": {
+      "id": "nEMANHA",
+      "nick": "nEMANHA",
+      "team": "Wildcard",
+      "avatar": "avatars/8311.webp",
+      "trophies": []
+    },
+    "Cxzi": {
+      "id": "Cxzi",
+      "nick": "Cxzi",
+      "team": "Wildcard",
+      "avatar": "avatars/17353.webp",
+      "trophies": []
+    },
+    "reck": {
+      "id": "reck",
+      "nick": "reck",
+      "team": "Wildcard",
+      "avatar": "avatars/17378.webp",
+      "trophies": []
+    },
+    "HexT": {
+      "id": "HexT",
+      "nick": "HexT",
+      "team": "Wildcard",
+      "avatar": "avatars/18838.webp",
+      "trophies": []
+    },
+    "fr3nd": {
+      "id": "fr3nd",
+      "nick": "fr3nd",
+      "team": "Wildcard",
+      "avatar": "avatars/20018.webp",
+      "trophies": []
+    },
+    "IceBerg": {
+      "id": "IceBerg",
+      "nick": "IceBerg",
+      "team": "BBL",
+      "avatar": "avatars/16731.webp",
+      "trophies": []
+    },
+    "salazar": {
+      "id": "salazar",
+      "nick": "salazar",
+      "team": "BBL",
+      "avatar": "avatars/21379.webp",
+      "trophies": []
+    },
+    "leakz": {
+      "id": "leakz",
+      "nick": "leakz",
+      "team": "BBL",
+      "avatar": "avatars/21571.webp",
+      "trophies": []
+    },
+    "Boye": {
+      "id": "Boye",
+      "nick": "Boye",
+      "team": "BBL",
+      "avatar": "avatars/21574.webp",
+      "trophies": []
+    },
+    "NickyB": {
+      "id": "NickyB",
+      "nick": "NickyB",
+      "team": "BBL",
+      "avatar": "avatars/24104.webp",
+      "trophies": []
+    },
+    "adamS": {
+      "id": "adamS",
+      "nick": "adamS",
+      "team": "Sangal",
+      "avatar": "avatars/19698.webp",
+      "trophies": []
+    },
+    "bnox": {
+      "id": "bnox",
+      "nick": "bnox",
+      "team": "Sangal",
+      "avatar": "avatars/20309.webp",
+      "trophies": []
+    },
+    "puuha": {
+      "id": "puuha",
+      "nick": "puuha",
+      "team": "Sangal",
+      "avatar": "avatars/22144.webp",
+      "trophies": []
+    },
+    "R4DYX": {
+      "id": "R4DYX",
+      "nick": "R4DYX",
+      "team": "Sangal",
+      "avatar": "avatars/25110.webp",
+      "trophies": []
+    },
+    "Joey": {
+      "id": "Joey",
+      "nick": "Joey",
+      "team": "Sangal",
+      "avatar": "avatars/25253.webp",
+      "trophies": []
+    },
+    "ztr": {
+      "id": "ztr",
+      "nick": "ztr",
+      "team": "FOKUS",
+      "avatar": "avatars/16486.webp",
+      "trophies": []
+    },
+    "Banjo": {
+      "id": "Banjo",
+      "nick": "Banjo",
+      "team": "FOKUS",
+      "avatar": "avatars/20625.webp",
+      "trophies": []
+    },
+    "podi": {
+      "id": "podi",
+      "nick": "podi",
+      "team": "FOKUS",
+      "avatar": "avatars/21815.webp",
+      "trophies": []
+    },
+    "jocab": {
+      "id": "jocab",
+      "nick": "jocab",
+      "team": "FOKUS",
+      "avatar": "avatars/22759.webp",
+      "trophies": []
+    },
+    "Matheos": {
+      "id": "Matheos",
+      "nick": "Matheos",
+      "team": "FOKUS",
+      "avatar": "avatars/24332.webp",
+      "trophies": []
+    },
+    "JW": {
+      "id": "JW",
+      "nick": "JW",
+      "team": "EYEBALLERS",
+      "avatar": "avatars/3849.webp",
+      "trophies": [
+        {
+          "name": "ESL Pro League Season 11 Europe",
+          "href": "/events/5226/esl-pro-league-season-11-europe"
+        },
+        {
+          "name": "DreamHack Masters Malmö 2019",
+          "href": "/events/4553/dreamhack-masters-malm-2019"
+        },
+        {
+          "name": "WESG 2017 World Finals",
+          "href": "/events/3112/wesg-2017-world-finals"
+        },
+        {
+          "name": "IEM Katowice 2018",
+          "href": "/events/3309/iem-katowice-2018"
+        },
+        {
+          "name": "IEM Katowice 2016",
+          "href": "/events/2036/iem-katowice-2016"
+        },
+        {
+          "name": "ESL Barcelona CS:GO Invitational presented by Mobile World Congress",
+          "href": "/events/2100/esl-barcelona-csgo-invitational-presented-by-mobile-world-congress"
+        },
+        {
+          "name": "SL i-League StarSeries XIV Finals",
+          "href": "/events/1978/sl-i-league-starseries-xiv-finals"
+        },
+        {
+          "name": "ESL ESEA Pro League Season 2 Finals",
+          "href": "/events/1986/esl-esea-pro-league-season-2-finals"
+        },
+        {
+          "name": "Fragbite Masters Season 5 Finals",
+          "href": "/events/1608/fragbite-masters-season-5-finals"
+        },
+        {
+          "name": "FACEIT League 2015 Stage 3 Finals at DH Winter 2015",
+          "href": "/events/1615/faceit-league-2015-stage-3-finals-at-dh-winter-2015"
+        },
+        {
+          "name": "ESL One Cologne 2015",
+          "href": "/events/1666/esl-one-cologne-2015"
+        },
+        {
+          "name": "ESL ESEA Pro League Season 1 Finals",
+          "href": "/events/1753/esl-esea-pro-league-season-1-finals"
+        },
+        {
+          "name": "DreamHack Open Summer 2015",
+          "href": "/events/1614/dreamhack-open-summer-2015"
+        },
+        {
+          "name": "Gfinity 2015 Spring Masters 2",
+          "href": "/events/1619/gfinity-2015-spring-masters-2"
+        },
+        {
+          "name": "DreamHack Open Tours 2015",
+          "href": "/events/1613/dreamhack-open-tours-2015"
+        },
+        {
+          "name": "ESL One Katowice 2015",
+          "href": "/events/1611/esl-one-katowice-2015"
+        },
+        {
+          "name": "Inferno Online Pantamera Challenge",
+          "href": "/events/1622/inferno-online-pantamera-challenge"
+        },
+        {
+          "name": "ESEA Invite Season 17 Global Finals",
+          "href": "/events/1563/esea-invite-season-17-global-finals"
+        },
+        {
+          "name": "Fragbite Masters Season 3 Finals",
+          "href": "/events/1528/fragbite-masters-season-3-finals"
+        },
+        {
+          "name": "ESWC 2014",
+          "href": "/events/1526/eswc-2014"
+        },
+        {
+          "name": "FACEIT League Season 2 Finals",
+          "href": "/events/1521/faceit-league-season-2-finals"
+        },
+        {
+          "name": "SLTV StarSeries X Finals",
+          "href": "/events/1464/sltv-starseries-x-finals"
+        },
+        {
+          "name": "DreamHack Winter 2013",
+          "href": "/events/1270/dreamhack-winter-2013"
+        }
+      ]
+    },
+    "KRIMZ": {
+      "id": "KRIMZ",
+      "nick": "KRIMZ",
+      "team": "EYEBALLERS",
+      "avatar": "avatars/7528.webp",
+      "trophies": [
+        {
+          "name": "ESL Pro League Season 11 Europe",
+          "href": "/events/5226/esl-pro-league-season-11-europe"
+        },
+        {
+          "name": "DreamHack Masters Malmö 2019",
+          "href": "/events/4553/dreamhack-masters-malm-2019"
+        },
+        {
+          "name": "WESG 2017 World Finals",
+          "href": "/events/3112/wesg-2017-world-finals"
+        },
+        {
+          "name": "IEM Katowice 2018",
+          "href": "/events/3309/iem-katowice-2018"
+        },
+        {
+          "name": "IEM Katowice 2016",
+          "href": "/events/2036/iem-katowice-2016"
+        },
+        {
+          "name": "ESL Barcelona CS:GO Invitational presented by Mobile World Congress",
+          "href": "/events/2100/esl-barcelona-csgo-invitational-presented-by-mobile-world-congress"
+        },
+        {
+          "name": "SL i-League StarSeries XIV Finals",
+          "href": "/events/1978/sl-i-league-starseries-xiv-finals"
+        },
+        {
+          "name": "ESL ESEA Pro League Season 2 Finals",
+          "href": "/events/1986/esl-esea-pro-league-season-2-finals"
+        },
+        {
+          "name": "Fragbite Masters Season 5 Finals",
+          "href": "/events/1608/fragbite-masters-season-5-finals"
+        },
+        {
+          "name": "FACEIT League 2015 Stage 3 Finals at DH Winter 2015",
+          "href": "/events/1615/faceit-league-2015-stage-3-finals-at-dh-winter-2015"
+        },
+        {
+          "name": "ESL One Cologne 2015",
+          "href": "/events/1666/esl-one-cologne-2015"
+        },
+        {
+          "name": "ESL ESEA Pro League Season 1 Finals",
+          "href": "/events/1753/esl-esea-pro-league-season-1-finals"
+        },
+        {
+          "name": "DreamHack Open Summer 2015",
+          "href": "/events/1614/dreamhack-open-summer-2015"
+        },
+        {
+          "name": "Gfinity 2015 Spring Masters 2",
+          "href": "/events/1619/gfinity-2015-spring-masters-2"
+        },
+        {
+          "name": "DreamHack Open Tours 2015",
+          "href": "/events/1613/dreamhack-open-tours-2015"
+        },
+        {
+          "name": "ESL One Katowice 2015",
+          "href": "/events/1611/esl-one-katowice-2015"
+        },
+        {
+          "name": "Inferno Online Pantamera Challenge",
+          "href": "/events/1622/inferno-online-pantamera-challenge"
+        },
+        {
+          "name": "ESEA Invite Season 17 Global Finals",
+          "href": "/events/1563/esea-invite-season-17-global-finals"
+        },
+        {
+          "name": "Fragbite Masters Season 3 Finals",
+          "href": "/events/1528/fragbite-masters-season-3-finals"
+        },
+        {
+          "name": "ESWC 2014",
+          "href": "/events/1526/eswc-2014"
+        },
+        {
+          "name": "FACEIT League Season 2 Finals",
+          "href": "/events/1521/faceit-league-season-2-finals"
+        },
+        {
+          "name": "SLTV StarSeries X Finals",
+          "href": "/events/1464/sltv-starseries-x-finals"
+        }
+      ]
+    },
+    "maxster": {
+      "id": "maxster",
+      "nick": "maxster",
+      "team": "EYEBALLERS",
+      "avatar": "avatars/20879.webp",
+      "trophies": []
+    },
+    "Ro1f": {
+      "id": "Ro1f",
+      "nick": "Ro1f",
+      "team": "EYEBALLERS",
+      "avatar": "avatars/21012.webp",
+      "trophies": []
+    },
+    "dex": {
+      "id": "dex",
+      "nick": "dex",
+      "team": "EYEBALLERS",
+      "avatar": "avatars/22914.webp",
+      "trophies": []
+    },
+    "chelo": {
+      "id": "chelo",
+      "nick": "chelo",
+      "team": "Imperial",
+      "avatar": "avatars/10566.webp",
+      "trophies": [
+        {
+          "name": "Elisa Masters Espoo 2023",
+          "href": "/events/7250/elisa-masters-espoo-2023"
+        }
+      ]
+    },
+    "VINI": {
+      "id": "VINI",
+      "nick": "VINI",
+      "team": "Imperial",
+      "avatar": "avatars/12822.webp",
+      "trophies": [
+        {
+          "name": "IEM New York 2020 North America",
+          "href": "/events/5464/iem-new-york-2020-north-america"
+        },
+        {
+          "name": "ESL Pro League Season 12 North America",
+          "href": "/events/5495/esl-pro-league-season-12-north-america"
+        },
+        {
+          "name": "DreamHack Masters Spring 2020 - North America",
+          "href": "/events/5286/dreamhack-masters-spring-2020-north-america"
+        }
+      ]
+    },
+    "decenty": {
+      "id": "decenty",
+      "nick": "decenty",
+      "team": "Imperial",
+      "avatar": "avatars/20183.webp",
+      "trophies": []
+    },
+    "noway": {
+      "id": "noway",
+      "nick": "noway",
+      "team": "Imperial",
+      "avatar": "avatars/22564.webp",
+      "trophies": []
+    },
+    "saadzin": {
+      "id": "saadzin",
+      "nick": "saadzin",
+      "team": "Imperial",
+      "avatar": "avatars/22965.webp",
+      "trophies": [
+        {
+          "name": "CS Asia Championships 2026",
+          "href": "/events/8263/cs-asia-championships-2026"
+        },
+        {
+          "name": "CS Asia Championships 2025",
+          "href": "/events/8027/cs-asia-championships-2025"
+        }
+      ]
+    },
+    "stanislaw": {
+      "id": "stanislaw",
+      "nick": "stanislaw",
+      "team": "Metizport",
+      "avatar": "avatars/8507.webp",
+      "trophies": [
+        {
+          "name": "ESL One Cologne 2020 North America",
+          "href": "/events/5435/esl-one-cologne-2020-north-america"
+        },
+        {
+          "name": "cs_summit 6 North America",
+          "href": "/events/5339/cs-summit-6-north-america"
+        },
+        {
+          "name": "BLAST Premier Spring 2020 Americas Finals",
+          "href": "/events/5274/blast-premier-spring-2020-americas-finals"
+        },
+        {
+          "name": "StarSeries i-League Season 8",
+          "href": "/events/4932/starseries-i-league-season-8"
+        },
+        {
+          "name": "ESL One New York 2019",
+          "href": "/events/4597/esl-one-new-york-2019"
+        },
+        {
+          "name": "ELEAGUE Season 2",
+          "href": "/events/2407/eleague-season-2"
+        }
+      ]
+    },
+    "Plopski": {
+      "id": "Plopski",
+      "nick": "Plopski",
+      "team": "Metizport",
+      "avatar": "avatars/14218.webp",
+      "trophies": [
+        {
+          "name": "IEM Fall 2021 Europe",
+          "href": "/events/5729/iem-fall-2021-europe"
+        }
+      ]
+    },
+    "F1KU": {
+      "id": "F1KU",
+      "nick": "F1KU",
+      "team": "Metizport",
+      "avatar": "avatars/19044.webp",
+      "trophies": []
+    },
+    "forsyy": {
+      "id": "forsyy",
+      "nick": "forsyy",
+      "team": "Metizport",
+      "avatar": "avatars/19069.webp",
+      "trophies": []
+    },
+    "MaiL09": {
+      "id": "MaiL09",
+      "nick": "MaiL09",
+      "team": "Metizport",
+      "avatar": "avatars/24083.webp",
+      "trophies": []
+    },
+    "mir": {
+      "id": "mir",
+      "nick": "mir",
+      "team": "Virtus.pro",
+      "avatar": "avatars/8789.webp",
+      "trophies": [
+        {
+          "name": "ESL Challenger Atlanta 2023",
+          "href": "/events/6869/esl-challenger-atlanta-2023"
+        }
+      ]
+    },
+    "b1st": {
+      "id": "b1st",
+      "nick": "b1st",
+      "team": "Virtus.pro",
+      "avatar": "avatars/23637.webp",
+      "trophies": []
+    },
+    "F0R3VER": {
+      "id": "F0R3VER",
+      "nick": "F0R3VER",
+      "team": "Virtus.pro",
+      "avatar": "avatars/24292.webp",
+      "trophies": []
+    },
+    "AquaRS": {
+      "id": "AquaRS",
+      "nick": "AquaRS",
+      "team": "Virtus.pro",
+      "avatar": "avatars/24950.webp",
+      "trophies": []
+    },
+    "tO0RO": {
+      "id": "tO0RO",
+      "nick": "tO0RO",
+      "team": "Virtus.pro",
+      "avatar": "avatars/24952.webp",
+      "trophies": []
+    },
+    "senka": {
+      "id": "senka",
+      "nick": "senka",
+      "team": "Nuclear TigeRES",
+      "avatar": "avatars/22878.webp",
+      "trophies": []
+    },
+    "Djon8": {
+      "id": "Djon8",
+      "nick": "Djon8",
+      "team": "Nuclear TigeRES",
+      "avatar": "avatars/24171.webp",
+      "trophies": []
+    },
+    "flouzer": {
+      "id": "flouzer",
+      "nick": "flouzer",
+      "team": "Nuclear TigeRES",
+      "avatar": "avatars/24568.webp",
+      "trophies": []
+    },
+    "ayuki": {
+      "id": "ayuki",
+      "nick": "ayuki",
+      "team": "Nuclear TigeRES",
+      "avatar": "avatars/25807.webp",
+      "trophies": []
+    },
+    "tronic": {
+      "id": "tronic",
+      "nick": "tronic",
+      "team": "Nuclear TigeRES",
+      "avatar": null,
+      "trophies": []
+    },
+    "reyoz": {
+      "id": "reyoz",
+      "nick": "reyoz",
+      "team": "Color",
+      "avatar": "avatars/23477.webp",
+      "trophies": []
+    },
+    "cronuss": {
+      "id": "cronuss",
+      "nick": "cronuss",
+      "team": "Color",
+      "avatar": "avatars/23770.webp",
+      "trophies": []
+    },
+    "oz1k": {
+      "id": "oz1k",
+      "nick": "oz1k",
+      "team": "Color",
+      "avatar": "avatars/23771.webp",
+      "trophies": []
+    },
+    "Kind0": {
+      "id": "Kind0",
+      "nick": "Kind0",
+      "team": "ex-Zero Tenacity",
+      "avatar": "avatars/20252.webp",
+      "trophies": []
+    },
+    "Dragon": {
+      "id": "Dragon",
+      "nick": "Dragon",
+      "team": "ex-Zero Tenacity",
+      "avatar": "avatars/20253.webp",
+      "trophies": []
+    },
+    "VLDN": {
+      "id": "VLDN",
+      "nick": "VLDN",
+      "team": "ex-Zero Tenacity",
+      "avatar": "avatars/20813.webp",
+      "trophies": []
+    },
+    "Cjoffo": {
+      "id": "Cjoffo",
+      "nick": "Cjoffo",
+      "team": "ex-Zero Tenacity",
+      "avatar": "avatars/21302.webp",
+      "trophies": []
+    },
+    "brutmonster": {
+      "id": "brutmonster",
+      "nick": "brutmonster",
+      "team": "ex-Zero Tenacity",
+      "avatar": "avatars/21783.webp",
+      "trophies": []
+    },
+    "alex": {
+      "id": "alex",
+      "nick": "alex",
+      "team": "Iberian Soul",
+      "avatar": "avatars/8371.webp",
+      "trophies": []
+    },
+    "mopoz": {
+      "id": "mopoz",
+      "nick": "mopoz",
+      "team": "Iberian Soul",
+      "avatar": "avatars/9254.webp",
+      "trophies": []
+    },
+    "sausol": {
+      "id": "sausol",
+      "nick": "sausol",
+      "team": "Iberian Soul",
+      "avatar": "avatars/18749.webp",
+      "trophies": []
+    },
+    "dav1g": {
+      "id": "dav1g",
+      "nick": "dav1g",
+      "team": "Iberian Soul",
+      "avatar": "avatars/19509.webp",
+      "trophies": []
+    },
+    "MarKE": {
+      "id": "MarKE",
+      "nick": "MarKE",
+      "team": "Voca",
+      "avatar": "avatars/10892.webp",
+      "trophies": []
+    },
+    "junior": {
+      "id": "junior",
+      "nick": "junior",
+      "team": "Voca",
+      "avatar": "avatars/14494.webp",
+      "trophies": []
+    },
+    "nosraC": {
+      "id": "nosraC",
+      "nick": "nosraC",
+      "team": "Voca",
+      "avatar": "avatars/17918.webp",
+      "trophies": []
+    },
+    "dare": {
+      "id": "dare",
+      "nick": "dare",
+      "team": "Voca",
+      "avatar": "avatars/19710.webp",
+      "trophies": []
+    },
+    "snav": {
+      "id": "snav",
+      "nick": "snav",
+      "team": "Voca",
+      "avatar": "avatars/19711.webp",
+      "trophies": []
+    },
+    "exit": {
+      "id": "exit",
+      "nick": "exit",
+      "team": "Fluxo",
+      "avatar": "avatars/11154.webp",
+      "trophies": []
+    },
+    "dav1deuS": {
+      "id": "dav1deuS",
+      "nick": "dav1deuS",
+      "team": "Fluxo",
+      "avatar": "avatars/18865.webp",
+      "trophies": []
+    },
+    "zevy": {
+      "id": "zevy",
+      "nick": "zevy",
+      "team": "Fluxo",
+      "avatar": "avatars/19692.webp",
+      "trophies": []
+    },
+    "kye": {
+      "id": "kye",
+      "nick": "kye",
+      "team": "Fluxo",
+      "avatar": "avatars/20385.webp",
+      "trophies": []
+    },
+    "Ltz": {
+      "id": "Ltz",
+      "nick": "Ltz",
+      "team": "Fluxo",
+      "avatar": "avatars/23587.webp",
+      "trophies": []
+    },
+    "tom1jed": {
+      "id": "tom1jed",
+      "nick": "tom1jed",
+      "team": "ShindeN",
+      "avatar": "avatars/18554.webp",
+      "trophies": []
+    },
+    "abizz": {
+      "id": "abizz",
+      "nick": "abizz",
+      "team": "ShindeN",
+      "avatar": "avatars/20451.webp",
+      "trophies": []
+    },
+    "ivz": {
+      "id": "ivz",
+      "nick": "ivz",
+      "team": "ShindeN",
+      "avatar": "avatars/20992.webp",
+      "trophies": []
+    },
+    "naz": {
+      "id": "naz",
+      "nick": "naz",
+      "team": "ShindeN",
+      "avatar": "avatars/21155.webp",
+      "trophies": []
+    },
+    "guty": {
+      "id": "guty",
+      "nick": "guty",
+      "team": "ShindeN",
+      "avatar": "avatars/24749.webp",
+      "trophies": []
+    },
+    "MUTiRiS": {
+      "id": "MUTiRiS",
+      "nick": "MUTiRiS",
+      "team": "SAW",
+      "avatar": "avatars/630.webp",
+      "trophies": []
+    },
+    "NOPEEj": {
+      "id": "NOPEEj",
+      "nick": "NOPEEj",
+      "team": "SAW",
+      "avatar": "avatars/16102.webp",
+      "trophies": []
+    },
+    "story": {
+      "id": "story",
+      "nick": "story",
+      "team": "SAW",
+      "avatar": "avatars/20462.webp",
+      "trophies": []
+    },
+    "ewjerkz": {
+      "id": "ewjerkz",
+      "nick": "ewjerkz",
+      "team": "SAW",
+      "avatar": "avatars/20464.webp",
+      "trophies": []
+    },
+    "krazy": {
+      "id": "krazy",
+      "nick": "krazy",
+      "team": "SAW",
+      "avatar": "avatars/23140.webp",
+      "trophies": []
+    },
+    "Raijin": {
+      "id": "Raijin",
+      "nick": "Raijin",
+      "team": "BET-M",
+      "avatar": "avatars/20207.webp",
+      "trophies": []
+    },
+    "synyx": {
+      "id": "synyx",
+      "nick": "synyx",
+      "team": "BET-M",
+      "avatar": "avatars/20402.webp",
+      "trophies": []
+    },
+    "z1Nny": {
+      "id": "z1Nny",
+      "nick": "z1Nny",
+      "team": "BET-M",
+      "avatar": "avatars/22040.webp",
+      "trophies": []
+    },
+    "executor": {
+      "id": "executor",
+      "nick": "executor",
+      "team": "BET-M",
+      "avatar": "avatars/22927.webp",
+      "trophies": []
+    },
+    "bluewh1te": {
+      "id": "bluewh1te",
+      "nick": "bluewh1te",
+      "team": "BET-M",
+      "avatar": "avatars/23302.webp",
+      "trophies": []
+    },
+    "dezl3bio": {
+      "id": "dezl3bio",
+      "nick": "dezl3bio",
+      "team": "UPGRADE",
+      "avatar": "avatars/24920.webp",
+      "trophies": []
+    },
+    "SquEzxc": {
+      "id": "SquEzxc",
+      "nick": "SquEzxc",
+      "team": "UPGRADE",
+      "avatar": "avatars/24924.webp",
+      "trophies": []
+    },
+    "pleynnn": {
+      "id": "pleynnn",
+      "nick": "pleynnn",
+      "team": "UPGRADE",
+      "avatar": "avatars/25710.webp",
+      "trophies": []
+    },
+    "tw1sterzaza": {
+      "id": "tw1sterzaza",
+      "nick": "tw1sterzaza",
+      "team": "UPGRADE",
+      "avatar": "avatars/25712.webp",
+      "trophies": []
+    },
+    "DAN9ARMATURA": {
+      "id": "DAN9ARMATURA",
+      "nick": "DAN9ARMATURA",
+      "team": "UPGRADE",
+      "avatar": "avatars/26073.webp",
+      "trophies": []
+    },
+    "4X1s": {
+      "id": "4X1s",
+      "nick": "4X1s",
+      "team": "Black Phoenix",
+      "avatar": "avatars/21513.webp",
+      "trophies": []
+    },
+    "karnez": {
+      "id": "karnez",
+      "nick": "karnez",
+      "team": "Black Phoenix",
+      "avatar": "avatars/22676.webp",
+      "trophies": []
+    },
+    "topo": {
+      "id": "topo",
+      "nick": "topo",
+      "team": "Black Phoenix",
+      "avatar": "avatars/24326.webp",
+      "trophies": []
+    },
+    "MRcreed": {
+      "id": "MRcreed",
+      "nick": "MRcreed",
+      "team": "Black Phoenix",
+      "avatar": null,
+      "trophies": []
+    },
+    "Salazar": {
+      "id": "Salazar",
+      "nick": "Salazar",
+      "team": "Black Phoenix",
+      "avatar": "avatars/25349.webp",
+      "trophies": []
+    },
+    "Demho": {
+      "id": "Demho",
+      "nick": "Demho",
+      "team": "Betclic",
+      "avatar": "avatars/18070.webp",
+      "trophies": []
+    },
+    "Prism": {
+      "id": "Prism",
+      "nick": "Prism",
+      "team": "Betclic",
+      "avatar": "avatars/18979.webp",
+      "trophies": []
+    },
+    "ex1st": {
+      "id": "ex1st",
+      "nick": "ex1st",
+      "team": "Betclic",
+      "avatar": "avatars/20960.webp",
+      "trophies": []
+    },
+    "ultimate": {
+      "id": "ultimate",
+      "nick": "ultimate",
+      "team": "Betclic",
+      "avatar": "avatars/21763.webp",
+      "trophies": []
+    },
+    "Qlocuu": {
+      "id": "Qlocuu",
+      "nick": "Qlocuu",
+      "team": "Betclic",
+      "avatar": "avatars/22473.webp",
+      "trophies": []
+    },
+    "k0s": {
+      "id": "k0s",
+      "nick": "k0s",
+      "team": "INOX Division",
+      "avatar": "avatars/22430.webp",
+      "trophies": []
+    },
+    "k1slll": {
+      "id": "k1slll",
+      "nick": "k1slll",
+      "team": "INOX Division",
+      "avatar": null,
+      "trophies": []
+    },
+    "finW": {
+      "id": "finW",
+      "nick": "finW",
+      "team": "INOX Division",
+      "avatar": null,
+      "trophies": []
+    },
+    "gooddeph": {
+      "id": "gooddeph",
+      "nick": "gooddeph",
+      "team": "INOX Division",
+      "avatar": null,
+      "trophies": []
+    },
+    "PKL": {
+      "id": "PKL",
+      "nick": "PKL",
+      "team": "Galorys",
+      "avatar": "avatars/6593.webp",
+      "trophies": []
+    },
+    "destiny": {
+      "id": "destiny",
+      "nick": "destiny",
+      "team": "Galorys",
+      "avatar": "avatars/9483.webp",
+      "trophies": []
+    },
+    "detr0ittJ": {
+      "id": "detr0ittJ",
+      "nick": "detr0ittJ",
+      "team": "Galorys",
+      "avatar": "avatars/18610.webp",
+      "trophies": []
+    },
+    "gbb": {
+      "id": "gbb",
+      "nick": "gbb",
+      "team": "Galorys",
+      "avatar": "avatars/20522.webp",
+      "trophies": []
+    },
+    "tomate": {
+      "id": "tomate",
+      "nick": "tomate",
+      "team": "Galorys",
+      "avatar": "avatars/23551.webp",
+      "trophies": []
+    },
+    "s1mple": {
+      "id": "s1mple",
+      "nick": "s1mple",
+      "team": "BC.Game",
+      "avatar": "avatars/7998.webp",
+      "trophies": [
+        {
+          "name": "BLAST Premier Spring Final 2022",
+          "href": "/events/6345/blast-premier-spring-final-2022"
+        },
+        {
+          "name": "BLAST Premier World Final 2021",
+          "href": "/events/5608/blast-premier-world-final-2021"
+        },
+        {
+          "name": "BLAST Premier Fall Final 2021",
+          "href": "/events/5607/blast-premier-fall-final-2021"
+        },
+        {
+          "name": "PGL Major Stockholm 2021",
+          "href": "/events/4866/pgl-major-stockholm-2021"
+        },
+        {
+          "name": "ESL Pro League Season 14",
+          "href": "/events/5554/esl-pro-league-season-14"
+        },
+        {
+          "name": "IEM Cologne 2021",
+          "href": "/events/5469/iem-cologne-2021"
+        },
+        {
+          "name": "StarLadder CIS RMR 2021",
+          "href": "/events/5937/starladder-cis-rmr-2021"
+        },
+        {
+          "name": "DreamHack Masters Spring 2021",
+          "href": "/events/5728/dreamhack-masters-spring-2021"
+        },
+        {
+          "name": "BLAST Premier Global Final 2020",
+          "href": "/events/5206/blast-premier-global-final-2020"
+        },
+        {
+          "name": "IEM Katowice 2020",
+          "href": "/events/4901/iem-katowice-2020"
+        },
+        {
+          "name": "StarSeries i-League Season 7",
+          "href": "/events/4240/starseries-i-league-season-7"
+        },
+        {
+          "name": "BLAST Pro Series Copenhagen 2018",
+          "href": "/events/3701/blast-pro-series-copenhagen-2018"
+        },
+        {
+          "name": "ESL One Cologne 2018",
+          "href": "/events/3392/esl-one-cologne-2018"
+        },
+        {
+          "name": "CS:GO Asia Championships 2018",
+          "href": "/events/3714/csgo-asia-championships-2018"
+        },
+        {
+          "name": "StarSeries i-League Season 5",
+          "href": "/events/3666/starseries-i-league-season-5"
+        },
+        {
+          "name": "DreamHack Open Winter 2017",
+          "href": "/events/2574/dreamhack-open-winter-2017"
+        },
+        {
+          "name": "ESL One New York 2016",
+          "href": "/events/2239/esl-one-new-york-2016"
+        }
+      ]
+    },
+    "Magisk": {
+      "id": "Magisk",
+      "nick": "Magisk",
+      "team": "BC.Game",
+      "avatar": "avatars/9032.webp",
+      "trophies": [
+        {
+          "name": "PGL Bucharest 2025",
+          "href": "/events/8044/pgl-bucharest-2025"
+        },
+        {
+          "name": "Gamers8 2023",
+          "href": "/events/7128/gamers8-2023"
+        },
+        {
+          "name": "BLAST.tv Paris Major 2023",
+          "href": "/events/6793/blasttv-paris-major-2023"
+        },
+        {
+          "name": "IEM Rio 2023",
+          "href": "/events/6864/iem-rio-2023"
+        },
+        {
+          "name": "ESL Pro League Season 16",
+          "href": "/events/6141/esl-pro-league-season-16"
+        },
+        {
+          "name": "IEM Global Challenge 2020",
+          "href": "/events/5528/iem-global-challenge-2020"
+        },
+        {
+          "name": "DreamHack Masters Winter 2020 Europe",
+          "href": "/events/5519/dreamhack-masters-winter-2020-europe"
+        },
+        {
+          "name": "ESL Pro League Season 12 Europe",
+          "href": "/events/5372/esl-pro-league-season-12-europe"
+        },
+        {
+          "name": "ESL One: Road to Rio - Europe",
+          "href": "/events/5277/esl-one-road-to-rio-europe"
+        },
+        {
+          "name": "BLAST Pro Series Global Final 2019",
+          "href": "/events/4889/blast-pro-series-global-final-2019"
+        },
+        {
+          "name": "ECS Season 8 Finals",
+          "href": "/events/4926/ecs-season-8-finals"
+        },
+        {
+          "name": "IEM Beijing 2019",
+          "href": "/events/4837/iem-beijing-2019"
+        },
+        {
+          "name": "StarLadder Major Berlin 2019",
+          "href": "/events/4443/starladder-major-berlin-2019"
+        },
+        {
+          "name": "BLAST Pro Series São Paulo 2019",
+          "href": "/events/4326/blast-pro-series-so-paulo-2019"
+        },
+        {
+          "name": "IEM Katowice 2019",
+          "href": "/events/3883/iem-katowice-2019"
+        },
+        {
+          "name": "BLAST Pro Series Lisbon 2018",
+          "href": "/events/4205/blast-pro-series-lisbon-2018"
+        },
+        {
+          "name": "ESL Pro League Season 8 Finals",
+          "href": "/events/3376/esl-pro-league-season-8-finals"
+        },
+        {
+          "name": "ECS Season 6 Finals",
+          "href": "/events/4083/ecs-season-6-finals"
+        },
+        {
+          "name": "IEM Chicago 2018",
+          "href": "/events/3954/iem-chicago-2018"
+        },
+        {
+          "name": "BLAST Pro Series Istanbul 2018",
+          "href": "/events/3647/blast-pro-series-istanbul-2018"
+        },
+        {
+          "name": "FACEIT Major 2018",
+          "href": "/events/3564/faceit-major-2018"
+        },
+        {
+          "name": "ELEAGUE CS:GO Premier 2018",
+          "href": "/events/3515/eleague-csgo-premier-2018"
+        },
+        {
+          "name": "ECS Season 5 Finals",
+          "href": "/events/3460/ecs-season-5-finals"
+        },
+        {
+          "name": "ESL Pro League Season 7 Finals",
+          "href": "/events/3373/esl-pro-league-season-7-finals"
+        },
+        {
+          "name": "DreamHack Masters Marseille 2018",
+          "href": "/events/3491/dreamhack-masters-marseille-2018"
+        },
+        {
+          "name": "EPICENTER: Moscow",
+          "href": "/events/2410/epicenter-moscow"
+        }
+      ]
+    },
+    "asap": {
+      "id": "asap",
+      "nick": "asap",
+      "team": "BC.Game",
+      "avatar": "avatars/18545.webp",
+      "trophies": []
+    },
+    "Senzu": {
+      "id": "Senzu",
+      "nick": "Senzu",
+      "team": "BC.Game",
+      "avatar": "avatars/20903.webp",
+      "trophies": [
+        {
+          "name": "Esports World Cup 2025",
+          "href": "/events/8039/esports-world-cup-2025"
+        },
+        {
+          "name": "YaLLa Compass 2024",
+          "href": "/events/7475/yalla-compass-2024"
+        }
+      ]
+    },
+    "mzinho": {
+      "id": "mzinho",
+      "nick": "mzinho",
+      "team": "BC.Game",
+      "avatar": "avatars/21001.webp",
+      "trophies": [
+        {
+          "name": "Esports World Cup 2025",
+          "href": "/events/8039/esports-world-cup-2025"
+        },
+        {
+          "name": "YaLLa Compass 2024",
+          "href": "/events/7475/yalla-compass-2024"
+        }
+      ]
+    },
+    "motm": {
+      "id": "motm",
+      "nick": "motm",
+      "team": "SportsBetExpert",
+      "avatar": "avatars/13230.webp",
+      "trophies": []
+    },
+    "Infinite": {
+      "id": "Infinite",
+      "nick": "Infinite",
+      "team": "SportsBetExpert",
+      "avatar": "avatars/14619.webp",
+      "trophies": []
+    },
+    "consti": {
+      "id": "consti",
+      "nick": "consti",
+      "team": "SportsBetExpert",
+      "avatar": "avatars/19177.webp",
+      "trophies": []
+    },
+    "shane": {
+      "id": "shane",
+      "nick": "shane",
+      "team": "SportsBetExpert",
+      "avatar": "avatars/19709.webp",
+      "trophies": []
+    },
+    "Peeping": {
+      "id": "Peeping",
+      "nick": "Peeping",
+      "team": "SportsBetExpert",
+      "avatar": "avatars/22135.webp",
+      "trophies": []
+    },
+    "Lack1": {
+      "id": "Lack1",
+      "nick": "Lack1",
+      "team": "FORZE Reload",
+      "avatar": "avatars/13240.webp",
+      "trophies": []
+    },
+    "YumsaN": {
+      "id": "YumsaN",
+      "nick": "YumsaN",
+      "team": "FORZE Reload",
+      "avatar": "avatars/20504.webp",
+      "trophies": []
+    },
+    "Kaide": {
+      "id": "Kaide",
+      "nick": "Kaide",
+      "team": "FORZE Reload",
+      "avatar": "avatars/22326.webp",
+      "trophies": []
+    },
+    "KusMe": {
+      "id": "KusMe",
+      "nick": "KusMe",
+      "team": "FORZE Reload",
+      "avatar": "avatars/23628.webp",
+      "trophies": []
+    },
+    "HeCkBNk": {
+      "id": "HeCkBNk",
+      "nick": "HeCkBNk",
+      "team": "FORZE Reload",
+      "avatar": "avatars/25609.webp",
+      "trophies": []
+    },
+    "kreaz": {
+      "id": "kreaz",
+      "nick": "kreaz",
+      "team": "INFINITE",
+      "avatar": "avatars/9911.webp",
+      "trophies": []
+    },
+    "Blytz": {
+      "id": "Blytz",
+      "nick": "Blytz",
+      "team": "INFINITE",
+      "avatar": "avatars/12945.webp",
+      "trophies": []
+    },
+    "volt": {
+      "id": "volt",
+      "nick": "volt",
+      "team": "INFINITE",
+      "avatar": "avatars/20358.webp",
+      "trophies": []
+    },
+    "sl3nd": {
+      "id": "sl3nd",
+      "nick": "sl3nd",
+      "team": "INFINITE",
+      "avatar": "avatars/20870.webp",
+      "trophies": []
+    },
+    "drop": {
+      "id": "drop",
+      "nick": "drop",
+      "team": "BESTIA",
+      "avatar": "avatars/19750.webp",
+      "trophies": []
+    },
+    "kauez": {
+      "id": "kauez",
+      "nick": "kauez",
+      "team": "BESTIA",
+      "avatar": "avatars/20085.webp",
+      "trophies": []
+    },
+    "cass1n": {
+      "id": "cass1n",
+      "nick": "cass1n",
+      "team": "BESTIA",
+      "avatar": "avatars/20185.webp",
+      "trophies": []
+    },
+    "buda": {
+      "id": "buda",
+      "nick": "buda",
+      "team": "BESTIA",
+      "avatar": "avatars/20607.webp",
+      "trophies": []
+    },
+    "timo": {
+      "id": "timo",
+      "nick": "timo",
+      "team": "BESTIA",
+      "avatar": "avatars/24863.webp",
+      "trophies": []
+    },
+    "ponter": {
+      "id": "ponter",
+      "nick": "ponter",
+      "team": "Bounty Hunters",
+      "avatar": "avatars/16835.webp",
+      "trophies": []
+    },
+    "KAISER": {
+      "id": "KAISER",
+      "nick": "KAISER",
+      "team": "Bounty Hunters",
+      "avatar": "avatars/18322.webp",
+      "trophies": []
+    },
+    "zock": {
+      "id": "zock",
+      "nick": "zock",
+      "team": "Bounty Hunters",
+      "avatar": "avatars/20690.webp",
+      "trophies": []
+    },
+    "urban0": {
+      "id": "urban0",
+      "nick": "urban0",
+      "team": "Bounty Hunters",
+      "avatar": "avatars/22181.webp",
+      "trophies": []
+    },
+    "pepe": {
+      "id": "pepe",
+      "nick": "pepe",
+      "team": "Bounty Hunters",
+      "avatar": "avatars/23461.webp",
+      "trophies": []
+    },
+    "jks": {
+      "id": "jks",
+      "nick": "jks",
+      "team": "FlyQuest",
+      "avatar": "avatars/4679.webp",
+      "trophies": [
+        {
+          "name": "IEM Cologne 2023",
+          "href": "/events/6811/iem-cologne-2023"
+        },
+        {
+          "name": "IEM Katowice 2023",
+          "href": "/events/6809/iem-katowice-2023"
+        },
+        {
+          "name": "BLAST Premier World Final 2022",
+          "href": "/events/6349/blast-premier-world-final-2022"
+        },
+        {
+          "name": "IEM Katowice 2022",
+          "href": "/events/6136/iem-katowice-2022"
+        },
+        {
+          "name": "SL i-League Invitational Shanghai 2017",
+          "href": "/events/3190/sl-i-league-invitational-shanghai-2017"
+        }
+      ]
+    },
+    "aliStair": {
+      "id": "aliStair",
+      "nick": "aliStair",
+      "team": "FlyQuest",
+      "avatar": "avatars/11139.webp",
+      "trophies": []
+    },
+    "INS": {
+      "id": "INS",
+      "nick": "INS",
+      "team": "FlyQuest",
+      "avatar": "avatars/11140.webp",
+      "trophies": []
+    },
+    "Vexite": {
+      "id": "Vexite",
+      "nick": "Vexite",
+      "team": "FlyQuest",
+      "avatar": "avatars/17384.webp",
+      "trophies": []
+    },
+    "nettik": {
+      "id": "nettik",
+      "nick": "nettik",
+      "team": "FlyQuest",
+      "avatar": "avatars/18214.webp",
+      "trophies": []
+    },
+    "Fessor": {
+      "id": "Fessor",
+      "nick": "Fessor",
+      "team": "EAC",
+      "avatar": "avatars/16718.webp",
+      "trophies": []
+    },
+    "n1Xen": {
+      "id": "n1Xen",
+      "nick": "n1Xen",
+      "team": "EAC",
+      "avatar": "avatars/16753.webp",
+      "trophies": []
+    },
+    "anber": {
+      "id": "anber",
+      "nick": "anber",
+      "team": "EAC",
+      "avatar": "avatars/22948.webp",
+      "trophies": []
+    },
+    "sSen": {
+      "id": "sSen",
+      "nick": "sSen",
+      "team": "EAC",
+      "avatar": "avatars/24113.webp",
+      "trophies": []
+    },
+    "bekker": {
+      "id": "bekker",
+      "nick": "bekker",
+      "team": "EAC",
+      "avatar": "avatars/24425.webp",
+      "trophies": []
+    },
+    "shalfey": {
+      "id": "shalfey",
+      "nick": "shalfey",
+      "team": "ex-RUSTEC",
+      "avatar": "avatars/17011.webp",
+      "trophies": []
+    },
+    "Brilliance": {
+      "id": "Brilliance",
+      "nick": "Brilliance",
+      "team": "ex-RUSTEC",
+      "avatar": "avatars/19297.webp",
+      "trophies": []
+    },
+    "youka": {
+      "id": "youka",
+      "nick": "youka",
+      "team": "ex-RUSTEC",
+      "avatar": "avatars/24190.webp",
+      "trophies": []
+    },
+    "jakekeS": {
+      "id": "jakekeS",
+      "nick": "jakekeS",
+      "team": "ex-RUSTEC",
+      "avatar": null,
+      "trophies": []
+    },
+    "Dytor": {
+      "id": "Dytor",
+      "nick": "Dytor",
+      "team": "UNiTY",
+      "avatar": "avatars/19815.webp",
+      "trophies": []
+    },
+    "KWERTZZ": {
+      "id": "KWERTZZ",
+      "nick": "KWERTZZ",
+      "team": "UNiTY",
+      "avatar": "avatars/20345.webp",
+      "trophies": []
+    },
+    "2high": {
+      "id": "2high",
+      "nick": "2high",
+      "team": "UNiTY",
+      "avatar": "avatars/20677.webp",
+      "trophies": []
+    },
+    "M1key": {
+      "id": "M1key",
+      "nick": "M1key",
+      "team": "UNiTY",
+      "avatar": "avatars/21165.webp",
+      "trophies": []
+    },
+    "Sn0w": {
+      "id": "Sn0w",
+      "nick": "Sn0w",
+      "team": "UNiTY",
+      "avatar": "avatars/24584.webp",
+      "trophies": []
+    },
+    "draken": {
+      "id": "draken",
+      "nick": "draken",
+      "team": "Johnny Speeds",
+      "avatar": "avatars/9255.webp",
+      "trophies": [
+        {
+          "name": "IEM Oakland 2017",
+          "href": "/events/2956/iem-oakland-2017"
+        }
+      ]
+    },
+    "hampus": {
+      "id": "hampus",
+      "nick": "hampus",
+      "team": "Johnny Speeds",
+      "avatar": "avatars/9766.webp",
+      "trophies": [
+        {
+          "name": "IEM Fall 2021 Europe",
+          "href": "/events/5729/iem-fall-2021-europe"
+        }
+      ]
+    },
+    "Svedjehed": {
+      "id": "Svedjehed",
+      "nick": "Svedjehed",
+      "team": "Johnny Speeds",
+      "avatar": "avatars/20133.webp",
+      "trophies": []
+    },
+    "bsover": {
+      "id": "bsover",
+      "nick": "bsover",
+      "team": "Johnny Speeds",
+      "avatar": "avatars/22380.webp",
+      "trophies": []
+    },
+    "Rack": {
+      "id": "Rack",
+      "nick": "Rack",
+      "team": "Johnny Speeds",
+      "avatar": "avatars/22877.webp",
+      "trophies": []
+    },
+    "Flierax": {
+      "id": "Flierax",
+      "nick": "Flierax",
+      "team": "Inner Circle Academy",
+      "avatar": "avatars/23642.webp",
+      "trophies": []
+    },
+    "3ippoch": {
+      "id": "3ippoch",
+      "nick": "3ippoch",
+      "team": "Inner Circle Academy",
+      "avatar": "avatars/24245.webp",
+      "trophies": []
+    },
+    "NaYz": {
+      "id": "NaYz",
+      "nick": "NaYz",
+      "team": "Inner Circle Academy",
+      "avatar": "avatars/25129.webp",
+      "trophies": []
+    },
+    "L1seYoung": {
+      "id": "L1seYoung",
+      "nick": "L1seYoung",
+      "team": "Inner Circle Academy",
+      "avatar": "avatars/25503.webp",
+      "trophies": []
+    },
+    "Tamefear": {
+      "id": "Tamefear",
+      "nick": "Tamefear",
+      "team": "Inner Circle Academy",
+      "avatar": "avatars/26197.webp",
+      "trophies": []
+    },
+    "autimatic": {
+      "id": "autimatic",
+      "nick": "autimatic",
+      "team": "Without a Roof",
+      "avatar": "avatars/8735.webp",
+      "trophies": [
+        {
+          "name": "ESL One: Road to Rio - North America",
+          "href": "/events/5279/esl-one-road-to-rio-north-america"
+        },
+        {
+          "name": "ELEAGUE Major 2018",
+          "href": "/events/3247/eleague-major-2018"
+        },
+        {
+          "name": "iBUYPOWER Masters 2017",
+          "href": "/events/3165/ibuypower-masters-2017"
+        },
+        {
+          "name": "DreamHack Open Denver 2017",
+          "href": "/events/2573/dreamhack-open-denver-2017"
+        },
+        {
+          "name": "ESL Pro League Season 4 Finals",
+          "href": "/events/2306/esl-pro-league-season-4-finals"
+        }
+      ]
+    },
+    "Stewie2K": {
+      "id": "Stewie2K",
+      "nick": "Stewie2K",
+      "team": "Without a Roof",
+      "avatar": "avatars/8797.webp",
+      "trophies": [
+        {
+          "name": "IEM Dallas 2024",
+          "href": "/events/7438/iem-dallas-2024"
+        },
+        {
+          "name": "ESL Pro League Season 11 North America",
+          "href": "/events/5246/esl-pro-league-season-11-north-america"
+        },
+        {
+          "name": "IEM Chicago 2019",
+          "href": "/events/4574/iem-chicago-2019"
+        },
+        {
+          "name": "BLAST Pro Series Los Angeles 2019",
+          "href": "/events/4500/blast-pro-series-los-angeles-2019"
+        },
+        {
+          "name": "ESL One Cologne 2019",
+          "href": "/events/4281/esl-one-cologne-2019"
+        },
+        {
+          "name": "ESL Pro League Season 9 Finals",
+          "href": "/events/4490/esl-pro-league-season-9-finals"
+        },
+        {
+          "name": "DreamHack Masters Dallas 2019",
+          "href": "/events/4177/dreamhack-masters-dallas-2019"
+        },
+        {
+          "name": "IEM Sydney 2019",
+          "href": "/events/4236/iem-sydney-2019"
+        },
+        {
+          "name": "iBUYPOWER Masters 2019",
+          "href": "/events/4290/ibuypower-masters-2019"
+        },
+        {
+          "name": "ZOTAC Cup Masters 2018 Grand Finals",
+          "href": "/events/3603/zotac-cup-masters-2018-grand-finals"
+        },
+        {
+          "name": "ELEAGUE Major 2018",
+          "href": "/events/3247/eleague-major-2018"
+        },
+        {
+          "name": "iBUYPOWER Masters 2017",
+          "href": "/events/3165/ibuypower-masters-2017"
+        },
+        {
+          "name": "DreamHack Open Denver 2017",
+          "href": "/events/2573/dreamhack-open-denver-2017"
+        },
+        {
+          "name": "ESL Pro League Season 4 Finals",
+          "href": "/events/2306/esl-pro-league-season-4-finals"
+        }
+      ]
+    },
+    "Brehze": {
+      "id": "Brehze",
+      "nick": "Brehze",
+      "team": "Without a Roof",
+      "avatar": "avatars/9136.webp",
+      "trophies": [
+        {
+          "name": "ESL One Cologne 2020 North America",
+          "href": "/events/5435/esl-one-cologne-2020-north-america"
+        },
+        {
+          "name": "cs_summit 6 North America",
+          "href": "/events/5339/cs-summit-6-north-america"
+        },
+        {
+          "name": "BLAST Premier Spring 2020 Americas Finals",
+          "href": "/events/5274/blast-premier-spring-2020-americas-finals"
+        },
+        {
+          "name": "StarSeries i-League Season 8",
+          "href": "/events/4932/starseries-i-league-season-8"
+        },
+        {
+          "name": "ESL One New York 2019",
+          "href": "/events/4597/esl-one-new-york-2019"
+        },
+        {
+          "name": "cs_summit 3",
+          "href": "/events/4162/cs-summit-3"
+        },
+        {
+          "name": "IEM Shanghai 2018",
+          "href": "/events/3833/iem-shanghai-2018"
+        }
+      ]
+    },
+    "CeRq": {
+      "id": "CeRq",
+      "nick": "CeRq",
+      "team": "Without a Roof",
+      "avatar": "avatars/11219.webp",
+      "trophies": [
+        {
+          "name": "ESL One Cologne 2020 North America",
+          "href": "/events/5435/esl-one-cologne-2020-north-america"
+        },
+        {
+          "name": "cs_summit 6 North America",
+          "href": "/events/5339/cs-summit-6-north-america"
+        },
+        {
+          "name": "BLAST Premier Spring 2020 Americas Finals",
+          "href": "/events/5274/blast-premier-spring-2020-americas-finals"
+        },
+        {
+          "name": "StarSeries i-League Season 8",
+          "href": "/events/4932/starseries-i-league-season-8"
+        },
+        {
+          "name": "ESL One New York 2019",
+          "href": "/events/4597/esl-one-new-york-2019"
+        },
+        {
+          "name": "cs_summit 3",
+          "href": "/events/4162/cs-summit-3"
+        },
+        {
+          "name": "IEM Shanghai 2018",
+          "href": "/events/3833/iem-shanghai-2018"
+        }
+      ]
+    },
+    "FaNg": {
+      "id": "FaNg",
+      "nick": "FaNg",
+      "team": "Without a Roof",
+      "avatar": "avatars/17372.webp",
+      "trophies": []
+    },
+    "freshie": {
+      "id": "freshie",
+      "nick": "freshie",
+      "team": "Marsborne",
+      "avatar": "avatars/18706.webp",
+      "trophies": []
+    },
+    "nicx": {
+      "id": "nicx",
+      "nick": "nicx",
+      "team": "Marsborne",
+      "avatar": "avatars/21620.webp",
+      "trophies": []
+    },
+    "Grizz": {
+      "id": "Grizz",
+      "nick": "Grizz",
+      "team": "Marsborne",
+      "avatar": "avatars/22069.webp",
+      "trophies": []
+    },
+    "ogwizard": {
+      "id": "ogwizard",
+      "nick": "ogwizard",
+      "team": "Marsborne",
+      "avatar": "avatars/22967.webp",
+      "trophies": []
+    },
+    "WUMBO": {
+      "id": "WUMBO",
+      "nick": "WUMBO",
+      "team": "Marsborne",
+      "avatar": null,
+      "trophies": []
+    },
+    "1eeR": {
+      "id": "1eeR",
+      "nick": "1eeR",
+      "team": "PRIVATE",
+      "avatar": "avatars/21266.webp",
+      "trophies": []
+    },
+    "H4SAN4TOR": {
+      "id": "H4SAN4TOR",
+      "nick": "H4SAN4TOR",
+      "team": "PRIVATE",
+      "avatar": "avatars/22189.webp",
+      "trophies": []
+    },
+    "sowalio": {
+      "id": "sowalio",
+      "nick": "sowalio",
+      "team": "PRIVATE",
+      "avatar": "avatars/22325.webp",
+      "trophies": []
+    },
+    "sh1nejezzz": {
+      "id": "sh1nejezzz",
+      "nick": "sh1nejezzz",
+      "team": "PRIVATE",
+      "avatar": "avatars/22459.webp",
+      "trophies": []
+    },
+    "z1k4": {
+      "id": "z1k4",
+      "nick": "z1k4",
+      "team": "PRIVATE",
+      "avatar": "avatars/23762.webp",
+      "trophies": []
+    },
+    "kr1vda": {
+      "id": "kr1vda",
+      "nick": "kr1vda",
+      "team": "BASEMENT BOYS",
+      "avatar": "avatars/20421.webp",
+      "trophies": []
+    },
+    "OWNER": {
+      "id": "OWNER",
+      "nick": "OWNER",
+      "team": "BASEMENT BOYS",
+      "avatar": "avatars/20422.webp",
+      "trophies": []
+    },
+    "kAlash": {
+      "id": "kAlash",
+      "nick": "kAlash",
+      "team": "BASEMENT BOYS",
+      "avatar": "avatars/21692.webp",
+      "trophies": []
+    },
+    "Tr0ublE": {
+      "id": "Tr0ublE",
+      "nick": "Tr0ublE",
+      "team": "BASEMENT BOYS",
+      "avatar": "avatars/22945.webp",
+      "trophies": []
+    },
+    "maggent": {
+      "id": "maggent",
+      "nick": "maggent",
+      "team": "BASEMENT BOYS",
+      "avatar": "avatars/24246.webp",
+      "trophies": []
+    },
+    "zewts": {
+      "id": "zewts",
+      "nick": "zewts",
+      "team": "aimclub",
+      "avatar": "avatars/16971.webp",
+      "trophies": []
+    },
+    "ragga": {
+      "id": "ragga",
+      "nick": "ragga",
+      "team": "aimclub",
+      "avatar": "avatars/17116.webp",
+      "trophies": []
+    },
+    "mhN1": {
+      "id": "mhN1",
+      "nick": "mhN1",
+      "team": "aimclub",
+      "avatar": "avatars/19171.webp",
+      "trophies": []
+    },
+    "waZz": {
+      "id": "waZz",
+      "nick": "waZz",
+      "team": "aimclub",
+      "avatar": "avatars/21716.webp",
+      "trophies": []
+    },
+    "raalz": {
+      "id": "raalz",
+      "nick": "raalz",
+      "team": "9INE",
+      "avatar": "avatars/2898.webp",
+      "trophies": []
+    },
+    "kraghen": {
+      "id": "kraghen",
+      "nick": "kraghen",
+      "team": "9INE",
+      "avatar": "avatars/20300.webp",
+      "trophies": []
+    },
+    "b1elany": {
+      "id": "b1elany",
+      "nick": "b1elany",
+      "team": "9INE",
+      "avatar": "avatars/20637.webp",
+      "trophies": []
+    },
+    "flayy": {
+      "id": "flayy",
+      "nick": "flayy",
+      "team": "9INE",
+      "avatar": "avatars/21715.webp",
+      "trophies": []
+    },
+    "rim3": {
+      "id": "rim3",
+      "nick": "rim3",
+      "team": "9INE",
+      "avatar": "avatars/25076.webp",
+      "trophies": []
+    },
+    "TMB": {
+      "id": "TMB",
+      "nick": "TMB",
+      "team": "Phantom",
+      "avatar": "avatars/11995.webp",
+      "trophies": []
+    },
+    "nicoodoz": {
+      "id": "nicoodoz",
+      "nick": "nicoodoz",
+      "team": "Phantom",
+      "avatar": "avatars/13602.webp",
+      "trophies": []
+    },
+    "KEi": {
+      "id": "KEi",
+      "nick": "KEi",
+      "team": "Phantom",
+      "avatar": "avatars/17504.webp",
+      "trophies": []
+    },
+    "Kylar": {
+      "id": "Kylar",
+      "nick": "Kylar",
+      "team": "Phantom",
+      "avatar": "avatars/19114.webp",
+      "trophies": []
+    },
+    "cej0t": {
+      "id": "cej0t",
+      "nick": "cej0t",
+      "team": "Phantom",
+      "avatar": "avatars/22702.webp",
+      "trophies": []
+    },
+    "Woro2k": {
+      "id": "Woro2k",
+      "nick": "Woro2k",
+      "team": "NT",
+      "avatar": "avatars/16885.webp",
+      "trophies": [
+        {
+          "name": "ESL Challenger Jönköping 2023",
+          "href": "/events/6868/esl-challenger-jnkping-2023"
+        }
+      ]
+    },
+    "m4d4ra": {
+      "id": "m4d4ra",
+      "nick": "m4d4ra",
+      "team": "NT",
+      "avatar": null,
+      "trophies": []
+    },
+    "ta9z": {
+      "id": "ta9z",
+      "nick": "ta9z",
+      "team": "NT",
+      "avatar": "avatars/25955.webp",
+      "trophies": []
+    },
+    "La1roN": {
+      "id": "La1roN",
+      "nick": "La1roN",
+      "team": "NT",
+      "avatar": null,
+      "trophies": []
+    },
+    "Ryuzak1": {
+      "id": "Ryuzak1",
+      "nick": "Ryuzak1",
+      "team": "NT",
+      "avatar": null,
+      "trophies": []
+    },
+    "drac": {
+      "id": "drac",
+      "nick": "drac",
+      "team": "Leo",
+      "avatar": "avatars/19742.webp",
+      "trophies": []
+    },
+    "leen": {
+      "id": "leen",
+      "nick": "leen",
+      "team": "Leo",
+      "avatar": "avatars/20794.webp",
+      "trophies": []
+    },
+    "next1me": {
+      "id": "next1me",
+      "nick": "next1me",
+      "team": "Leo",
+      "avatar": "avatars/21780.webp",
+      "trophies": []
+    },
+    "Tarkky": {
+      "id": "Tarkky",
+      "nick": "Tarkky",
+      "team": "Leo",
+      "avatar": "avatars/21967.webp",
+      "trophies": []
+    },
+    "aimy": {
+      "id": "aimy",
+      "nick": "aimy",
+      "team": "Leo",
+      "avatar": null,
+      "trophies": []
+    },
+    "alpha": {
+      "id": "alpha",
+      "nick": "alpha",
+      "team": "CYBERSHOKE",
+      "avatar": "avatars/20430.webp",
+      "trophies": []
+    },
+    "nota": {
+      "id": "nota",
+      "nick": "nota",
+      "team": "CYBERSHOKE",
+      "avatar": "avatars/22929.webp",
+      "trophies": [
+        {
+          "name": "BLAST Bounty 2026 Season 1 Finals",
+          "href": "/events/8246/blast-bounty-2026-season-1-finals"
+        }
+      ]
+    },
+    "Alkaren": {
+      "id": "Alkaren",
+      "nick": "Alkaren",
+      "team": "CYBERSHOKE",
+      "avatar": "avatars/23600.webp",
+      "trophies": []
+    },
+    "Mokuj1n": {
+      "id": "Mokuj1n",
+      "nick": "Mokuj1n",
+      "team": "CYBERSHOKE",
+      "avatar": "avatars/24176.webp",
+      "trophies": []
+    },
+    "yiksrezo": {
+      "id": "yiksrezo",
+      "nick": "yiksrezo",
+      "team": "CYBERSHOKE",
+      "avatar": "avatars/24485.webp",
+      "trophies": []
+    },
+    "WOOD7": {
+      "id": "WOOD7",
+      "nick": "WOOD7",
+      "team": "Turma do Pagode",
+      "avatar": "avatars/14390.webp",
+      "trophies": []
+    },
+    "Tuurtle": {
+      "id": "Tuurtle",
+      "nick": "Tuurtle",
+      "team": "Turma do Pagode",
+      "avatar": "avatars/14394.webp",
+      "trophies": []
+    },
+    "naitte": {
+      "id": "naitte",
+      "nick": "naitte",
+      "team": "Turma do Pagode",
+      "avatar": "avatars/17181.webp",
+      "trophies": []
+    },
+    "djay": {
+      "id": "djay",
+      "nick": "djay",
+      "team": "LAG",
+      "avatar": "avatars/12102.webp",
+      "trophies": []
+    },
+    "Cryptic": {
+      "id": "Cryptic",
+      "nick": "Cryptic",
+      "team": "LAG",
+      "avatar": "avatars/15176.webp",
+      "trophies": []
+    },
+    "Bwills": {
+      "id": "Bwills",
+      "nick": "Bwills",
+      "team": "LAG",
+      "avatar": "avatars/16647.webp",
+      "trophies": []
+    },
+    "SLIGHT": {
+      "id": "SLIGHT",
+      "nick": "SLIGHT",
+      "team": "LAG",
+      "avatar": "avatars/19128.webp",
+      "trophies": []
+    },
+    "Sandman": {
+      "id": "Sandman",
+      "nick": "Sandman",
+      "team": "LAG",
+      "avatar": "avatars/22552.webp",
+      "trophies": []
+    },
+    "stadodo": {
+      "id": "stadodo",
+      "nick": "stadodo",
+      "team": "RBLS",
+      "avatar": "avatars/11205.webp",
+      "trophies": []
+    },
+    "arrozdoce": {
+      "id": "arrozdoce",
+      "nick": "arrozdoce",
+      "team": "RBLS",
+      "avatar": "avatars/20465.webp",
+      "trophies": []
+    },
+    "Icarus": {
+      "id": "Icarus",
+      "nick": "Icarus",
+      "team": "RBLS",
+      "avatar": "avatars/20683.webp",
+      "trophies": []
+    },
+    "Shr": {
+      "id": "Shr",
+      "nick": "Shr",
+      "team": "RBLS",
+      "avatar": "avatars/21136.webp",
+      "trophies": []
+    },
+    "aragornN": {
+      "id": "aragornN",
+      "nick": "aragornN",
+      "team": "RBLS",
+      "avatar": "avatars/22807.webp",
+      "trophies": []
+    },
+    "REL": {
+      "id": "REL",
+      "nick": "REL",
+      "team": "Four Magic",
+      "avatar": "avatars/23814.webp",
+      "trophies": []
+    },
+    "statikS": {
+      "id": "statikS",
+      "nick": "statikS",
+      "team": "Four Magic",
+      "avatar": "avatars/25068.webp",
+      "trophies": []
+    },
+    "XADE": {
+      "id": "XADE",
+      "nick": "XADE",
+      "team": "Four Magic",
+      "avatar": "avatars/25662.webp",
+      "trophies": []
+    },
+    "GeGo": {
+      "id": "GeGo",
+      "nick": "GeGo",
+      "team": "Four Magic",
+      "avatar": "avatars/26320.webp",
+      "trophies": []
+    },
+    "sensey": {
+      "id": "sensey",
+      "nick": "sensey",
+      "team": "Four Magic",
+      "avatar": "avatars/26812.webp",
+      "trophies": []
+    },
+    "amster": {
+      "id": "amster",
+      "nick": "amster",
+      "team": "6666",
+      "avatar": "avatars/19617.webp",
+      "trophies": []
+    },
+    "kL1o": {
+      "id": "kL1o",
+      "nick": "kL1o",
+      "team": "6666",
+      "avatar": "avatars/21651.webp",
+      "trophies": []
+    },
+    "rendysky": {
+      "id": "rendysky",
+      "nick": "rendysky",
+      "team": "6666",
+      "avatar": "avatars/22650.webp",
+      "trophies": []
+    },
+    "skcH": {
+      "id": "skcH",
+      "nick": "skcH",
+      "team": "6666",
+      "avatar": "avatars/24247.webp",
+      "trophies": []
+    },
+    "dENZY": {
+      "id": "dENZY",
+      "nick": "dENZY",
+      "team": "6666",
+      "avatar": "avatars/24269.webp",
+      "trophies": []
+    },
+    "Porya": {
+      "id": "Porya",
+      "nick": "Porya",
+      "team": "QUAZAR",
+      "avatar": "avatars/17293.webp",
+      "trophies": []
+    },
+    "gehji": {
+      "id": "gehji",
+      "nick": "gehji",
+      "team": "QUAZAR",
+      "avatar": "avatars/24319.webp",
+      "trophies": []
+    },
+    "Ne1XXX": {
+      "id": "Ne1XXX",
+      "nick": "Ne1XXX",
+      "team": "QUAZAR",
+      "avatar": "avatars/24406.webp",
+      "trophies": []
+    },
+    "newt": {
+      "id": "newt",
+      "nick": "newt",
+      "team": "QUAZAR",
+      "avatar": "avatars/24900.webp",
+      "trophies": []
+    },
+    "kaiori": {
+      "id": "kaiori",
+      "nick": "kaiori",
+      "team": "QUAZAR",
+      "avatar": "avatars/25077.webp",
+      "trophies": []
+    },
+    "gxx-": {
+      "id": "gxx-",
+      "nick": "gxx-",
+      "team": "ASTRAL",
+      "avatar": "avatars/19725.webp",
+      "trophies": []
+    },
+    "swiz": {
+      "id": "swiz",
+      "nick": "swiz",
+      "team": "ASTRAL",
+      "avatar": "avatars/22008.webp",
+      "trophies": []
+    },
+    "RaY5ive": {
+      "id": "RaY5ive",
+      "nick": "RaY5ive",
+      "team": "ASTRAL",
+      "avatar": "avatars/23545.webp",
+      "trophies": []
+    },
+    "Neqy": {
+      "id": "Neqy",
+      "nick": "Neqy",
+      "team": "ASTRAL",
+      "avatar": "avatars/24704.webp",
+      "trophies": []
+    },
+    "meowpop": {
+      "id": "meowpop",
+      "nick": "meowpop",
+      "team": "ASTRAL",
+      "avatar": "avatars/24997.webp",
+      "trophies": []
+    },
+    "Keoz": {
+      "id": "Keoz",
+      "nick": "Keoz",
+      "team": "GenOne",
+      "avatar": "avatars/15117.webp",
+      "trophies": []
+    },
+    "Djoko": {
+      "id": "Djoko",
+      "nick": "Djoko",
+      "team": "GenOne",
+      "avatar": "avatars/19738.webp",
+      "trophies": []
+    },
+    "Brooxsy": {
+      "id": "Brooxsy",
+      "nick": "Brooxsy",
+      "team": "GenOne",
+      "avatar": "avatars/21971.webp",
+      "trophies": []
+    },
+    "bL4SEZ": {
+      "id": "bL4SEZ",
+      "nick": "bL4SEZ",
+      "team": "GenOne",
+      "avatar": null,
+      "trophies": []
+    },
+    "szejn": {
+      "id": "szejn",
+      "nick": "szejn",
+      "team": "Glitch",
+      "avatar": "avatars/17113.webp",
+      "trophies": []
+    },
+    "smekk": {
+      "id": "smekk",
+      "nick": "smekk",
+      "team": "Glitch",
+      "avatar": "avatars/19167.webp",
+      "trophies": []
+    },
+    "shaiK": {
+      "id": "shaiK",
+      "nick": "shaiK",
+      "team": "Glitch",
+      "avatar": "avatars/20114.webp",
+      "trophies": []
+    },
+    "Brillo": {
+      "id": "Brillo",
+      "nick": "Brillo",
+      "team": "Glitch",
+      "avatar": "avatars/20437.webp",
+      "trophies": []
+    },
+    "rud": {
+      "id": "rud",
+      "nick": "rud",
+      "team": "Glitch",
+      "avatar": "avatars/21512.webp",
+      "trophies": []
+    },
+    "fejtZ": {
+      "id": "fejtZ",
+      "nick": "fejtZ",
+      "team": "Prestige",
+      "avatar": "avatars/7910.webp",
+      "trophies": []
+    },
+    "oopee": {
+      "id": "oopee",
+      "nick": "oopee",
+      "team": "Prestige",
+      "avatar": "avatars/14236.webp",
+      "trophies": []
+    },
+    "Jelo": {
+      "id": "Jelo",
+      "nick": "Jelo",
+      "team": "Prestige",
+      "avatar": "avatars/19996.webp",
+      "trophies": []
+    },
+    "N4XX1S": {
+      "id": "N4XX1S",
+      "nick": "N4XX1S",
+      "team": "Prestige",
+      "avatar": "avatars/24276.webp",
+      "trophies": []
+    },
+    "qx": {
+      "id": "qx",
+      "nick": "qx",
+      "team": "Prestige",
+      "avatar": "avatars/25066.webp",
+      "trophies": []
+    }
+  }
+}

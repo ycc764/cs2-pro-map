@@ -235,6 +235,9 @@ async function main() {
           role: p.role || '',
           igl: !!p.igl,
           joindate: p.joindate || '',
+          // 选手页相对路径（/player/11893/zywoo）。scrape-players.mjs 靠它去抓
+          // 头像和冠军荣誉，**不能丢**——丢了就得重新从排名页反查一遍。
+          page: p.page || '',
         }));
         teams.push({
           name: info?.name || t.name,

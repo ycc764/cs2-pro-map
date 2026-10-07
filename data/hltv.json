@@ -2,7 +2,7 @@
   "source": "hltv",
   "sourceUrl": "https://www.hltv.org/ranking/teams",
   "license": "个人学习研究用途，请勿再分发",
-  "fetchedAt": "2026-10-05T16:21:34.037Z",
+  "fetchedAt": "2026-10-07T07:29:08.194Z",
   "sections": {},
   "teams": [
     {
@@ -19,7 +19,8 @@
           "flag": "ru",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/16920/sh1ro"
         },
         {
           "id": "magixx",
@@ -27,7 +28,8 @@
           "flag": "ru",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/18317/magixx"
         },
         {
           "id": "tN1R",
@@ -35,7 +37,8 @@
           "flag": "by",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/19808/tn1r"
         },
         {
           "id": "zont1x",
@@ -43,7 +46,8 @@
           "flag": "ua",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/20423/zont1x"
         },
         {
           "id": "donk",
@@ -51,7 +55,8 @@
           "flag": "ru",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/21167/donk"
         }
       ]
     },
@@ -69,7 +74,8 @@
           "flag": "fr",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/7322/apex"
         },
         {
           "id": "ropz",
@@ -77,7 +83,8 @@
           "flag": "ee",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/11816/ropz"
         },
         {
           "id": "ZywOo",
@@ -85,7 +92,8 @@
           "flag": "fr",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/11893/zywoo"
         },
         {
           "id": "flameZ",
@@ -93,7 +101,8 @@
           "flag": "il",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/16693/flamez"
         },
         {
           "id": "mezii",
@@ -101,57 +110,8 @@
           "flag": "gb",
           "role": "",
           "igl": false,
-          "joindate": ""
-        }
-      ]
-    },
-    {
-      "name": "FURIA",
-      "page": "https://www.hltv.org/team/8297/furia",
-      "location": "Brazil",
-      "portalSection": "",
-      "infoboxRegion": "",
-      "logo": "https://img-cdn.hltv.org/teamlogo/mvNQc4csFGtxXk5guAh8m1.svg?ixlib=java-2.1.0&s=11e5056829ad5d6c06c5961bbe76d20c",
-      "players": [
-        {
-          "id": "FalleN",
-          "name": "",
-          "flag": "br",
-          "role": "",
-          "igl": false,
-          "joindate": ""
-        },
-        {
-          "id": "yuurih",
-          "name": "",
-          "flag": "br",
-          "role": "",
-          "igl": false,
-          "joindate": ""
-        },
-        {
-          "id": "YEKINDAR",
-          "name": "",
-          "flag": "lv",
-          "role": "",
-          "igl": false,
-          "joindate": ""
-        },
-        {
-          "id": "KSCERATO",
-          "name": "",
-          "flag": "br",
-          "role": "",
-          "igl": false,
-          "joindate": ""
-        },
-        {
-          "id": "molodoy",
-          "name": "",
-          "flag": "kz",
-          "role": "",
-          "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/18462/mezii"
         }
       ]
     },
@@ -169,7 +129,8 @@
           "flag": "hu",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/18072/torzsi"
         },
         {
           "id": "Spinx",
@@ -177,7 +138,8 @@
           "flag": "il",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/18221/spinx"
         },
         {
           "id": "xertioN",
@@ -185,7 +147,8 @@
           "flag": "il",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/20312/xertion"
         },
         {
           "id": "PR",
@@ -193,7 +156,8 @@
           "flag": "cz",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/22279/pr"
         },
         {
           "id": "xelex",
@@ -201,7 +165,63 @@
           "flag": "hu",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/24457/xelex"
+        }
+      ]
+    },
+    {
+      "name": "FURIA",
+      "page": "https://www.hltv.org/team/8297/furia",
+      "location": "Brazil",
+      "portalSection": "",
+      "infoboxRegion": "",
+      "logo": "https://img-cdn.hltv.org/teamlogo/mvNQc4csFGtxXk5guAh8m1.svg?ixlib=java-2.1.0&s=11e5056829ad5d6c06c5961bbe76d20c",
+      "players": [
+        {
+          "id": "FalleN",
+          "name": "",
+          "flag": "br",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/2023/fallen"
+        },
+        {
+          "id": "yuurih",
+          "name": "",
+          "flag": "br",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/12553/yuurih"
+        },
+        {
+          "id": "YEKINDAR",
+          "name": "",
+          "flag": "lv",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/13915/yekindar"
+        },
+        {
+          "id": "KSCERATO",
+          "name": "",
+          "flag": "br",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/15631/kscerato"
+        },
+        {
+          "id": "molodoy",
+          "name": "",
+          "flag": "kz",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/24144/molodoy"
         }
       ]
     },
@@ -219,7 +239,8 @@
           "flag": "dk",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/429/karrigan"
         },
         {
           "id": "NiKo",
@@ -227,7 +248,8 @@
           "flag": "ba",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/3741/niko"
         },
         {
           "id": "TeSeS",
@@ -235,7 +257,8 @@
           "flag": "dk",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/12018/teses"
         },
         {
           "id": "m0NESY",
@@ -243,7 +266,8 @@
           "flag": "ru",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/19230/m0nesy"
         },
         {
           "id": "kyousuke",
@@ -251,7 +275,8 @@
           "flag": "ru",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/24177/kyousuke"
         }
       ]
     },
@@ -269,7 +294,8 @@
           "flag": "br",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/12521/art"
         },
         {
           "id": "dumau",
@@ -277,7 +303,8 @@
           "flag": "br",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/15698/dumau"
         },
         {
           "id": "latto",
@@ -285,7 +312,8 @@
           "flag": "br",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/19045/latto"
         },
         {
           "id": "n1ssim",
@@ -293,7 +321,8 @@
           "flag": "br",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/19686/n1ssim"
         },
         {
           "id": "try",
@@ -301,57 +330,8 @@
           "flag": "ar",
           "role": "",
           "igl": false,
-          "joindate": ""
-        }
-      ]
-    },
-    {
-      "name": "FUT",
-      "page": "https://www.hltv.org/team/13286/fut",
-      "location": "Europe",
-      "portalSection": "",
-      "infoboxRegion": "",
-      "logo": "https://img-cdn.hltv.org/teamlogo/Os71GAOy8KDuQFc0M8HE6O.png?ixlib=java-2.1.0&w=50&s=86f2bded6bcb7c690a42a62250ed69e7",
-      "players": [
-        {
-          "id": "SunPayus",
-          "name": "",
-          "flag": "es",
-          "role": "",
-          "igl": false,
-          "joindate": ""
-        },
-        {
-          "id": "xfl0ud",
-          "name": "",
-          "flag": "tr",
-          "role": "",
-          "igl": false,
-          "joindate": ""
-        },
-        {
-          "id": "dem0n",
-          "name": "",
-          "flag": "ua",
-          "role": "",
-          "igl": false,
-          "joindate": ""
-        },
-        {
-          "id": "Krabeni",
-          "name": "",
-          "flag": "xk",
-          "role": "",
-          "igl": false,
-          "joindate": ""
-        },
-        {
-          "id": "dziugss",
-          "name": "",
-          "flag": "lt",
-          "role": "",
-          "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/19869/try"
         }
       ]
     },
@@ -369,7 +349,8 @@
           "flag": "ba",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/3972/hunter"
         },
         {
           "id": "NertZ",
@@ -377,7 +358,8 @@
           "flag": "il",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/9436/nertz"
         },
         {
           "id": "r1nkle",
@@ -385,7 +367,8 @@
           "flag": "ua",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/20425/r1nkle"
         },
         {
           "id": "HeavyGod",
@@ -393,7 +376,8 @@
           "flag": "il",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/20447/heavygod"
         },
         {
           "id": "MATYS",
@@ -401,7 +385,63 @@
           "flag": "sk",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/21062/matys"
+        }
+      ]
+    },
+    {
+      "name": "FUT",
+      "page": "https://www.hltv.org/team/13286/fut",
+      "location": "Europe",
+      "portalSection": "",
+      "infoboxRegion": "",
+      "logo": "https://img-cdn.hltv.org/teamlogo/Os71GAOy8KDuQFc0M8HE6O.png?ixlib=java-2.1.0&w=50&s=86f2bded6bcb7c690a42a62250ed69e7",
+      "players": [
+        {
+          "id": "SunPayus",
+          "name": "",
+          "flag": "es",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/19164/sunpayus"
+        },
+        {
+          "id": "xfl0ud",
+          "name": "",
+          "flag": "tr",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/19187/xfl0ud"
+        },
+        {
+          "id": "dem0n",
+          "name": "",
+          "flag": "ua",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/20584/dem0n"
+        },
+        {
+          "id": "Krabeni",
+          "name": "",
+          "flag": "xk",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/22203/krabeni"
+        },
+        {
+          "id": "dziugss",
+          "name": "",
+          "flag": "lt",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/23553/dziugss"
         }
       ]
     },
@@ -419,7 +459,8 @@
           "flag": "tr",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/7938/xantares"
         },
         {
           "id": "woxic",
@@ -427,7 +468,8 @@
           "flag": "tr",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/8574/woxic"
         },
         {
           "id": "Jimpphat",
@@ -435,7 +477,8 @@
           "flag": "fi",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/18850/jimpphat"
         },
         {
           "id": "kyxsan",
@@ -443,7 +486,8 @@
           "flag": "mk",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/19677/kyxsan"
         },
         {
           "id": "Wicadia",
@@ -451,7 +495,8 @@
           "flag": "tr",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/21243/wicadia"
         }
       ]
     },
@@ -469,7 +514,8 @@
           "flag": "fi",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/9816/aleksib"
         },
         {
           "id": "iM",
@@ -477,7 +523,8 @@
           "flag": "ro",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/14759/im"
         },
         {
           "id": "b1t",
@@ -485,7 +532,8 @@
           "flag": "ua",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/18987/b1t"
         },
         {
           "id": "w0nderful",
@@ -493,7 +541,8 @@
           "flag": "ua",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/20127/w0nderful"
         },
         {
           "id": "makazze",
@@ -501,7 +550,8 @@
           "flag": "xk",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/22673/makazze"
         }
       ]
     },
@@ -519,7 +569,8 @@
           "flag": "dk",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/10096/hooxi"
         },
         {
           "id": "phzy",
@@ -527,7 +578,8 @@
           "flag": "se",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/16726/phzy"
         },
         {
           "id": "jabbi",
@@ -535,7 +587,8 @@
           "flag": "dk",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/17956/jabbi"
         },
         {
           "id": "Staehr",
@@ -543,7 +596,8 @@
           "flag": "dk",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/20304/staehr"
         },
         {
           "id": "ryu",
@@ -551,7 +605,8 @@
           "flag": "lt",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/21217/ryu"
         }
       ]
     },
@@ -569,7 +624,8 @@
           "flag": "se",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/19310/lnz"
         },
         {
           "id": "nqz",
@@ -577,7 +633,8 @@
           "flag": "br",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/19694/nqz"
         },
         {
           "id": "insani",
@@ -585,7 +642,8 @@
           "flag": "br",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/21037/insani"
         },
         {
           "id": "venomzera",
@@ -593,7 +651,8 @@
           "flag": "br",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/21288/venomzera"
         },
         {
           "id": "tomaszin",
@@ -601,107 +660,8 @@
           "flag": "ar",
           "role": "",
           "igl": false,
-          "joindate": ""
-        }
-      ]
-    },
-    {
-      "name": "FaZe",
-      "page": "https://www.hltv.org/team/6667/faze",
-      "location": "Europe",
-      "portalSection": "",
-      "infoboxRegion": "",
-      "logo": "https://img-cdn.hltv.org/teamlogo/OKLwq88GXjl5GQ48Y5SrvW.png?ixlib=java-2.1.0&w=50&s=0a0d65eeb1b0e82ada20c42c038552fa",
-      "players": [
-        {
-          "id": "frozen",
-          "name": "",
-          "flag": "sk",
-          "role": "",
-          "igl": false,
-          "joindate": ""
-        },
-        {
-          "id": "Twistzz",
-          "name": "",
-          "flag": "ca",
-          "role": "",
-          "igl": false,
-          "joindate": ""
-        },
-        {
-          "id": "Neityu",
-          "name": "",
-          "flag": "fr",
-          "role": "",
-          "igl": false,
-          "joindate": ""
-        },
-        {
-          "id": "jcobbb",
-          "name": "",
-          "flag": "pl",
-          "role": "",
-          "igl": false,
-          "joindate": ""
-        },
-        {
-          "id": "JBOEN",
-          "name": "",
-          "flag": "dk",
-          "role": "",
-          "igl": false,
-          "joindate": ""
-        }
-      ]
-    },
-    {
-      "name": "B8",
-      "page": "https://www.hltv.org/team/11241/b8",
-      "location": "Ukraine",
-      "portalSection": "",
-      "infoboxRegion": "",
-      "logo": "https://img-cdn.hltv.org/teamlogo/O6nRWTCjUzBAR4pcOcrpSG.png?ixlib=java-2.1.0&w=50&s=305dde82e764725dab7e626800328137",
-      "players": [
-        {
-          "id": "alex666",
-          "name": "",
-          "flag": "ua",
-          "role": "",
-          "igl": false,
-          "joindate": ""
-        },
-        {
-          "id": "npl",
-          "name": "",
-          "flag": "ua",
-          "role": "",
-          "igl": false,
-          "joindate": ""
-        },
-        {
-          "id": "kensizor",
-          "name": "",
-          "flag": "ua",
-          "role": "",
-          "igl": false,
-          "joindate": ""
-        },
-        {
-          "id": "esenthial",
-          "name": "",
-          "flag": "ua",
-          "role": "",
-          "igl": false,
-          "joindate": ""
-        },
-        {
-          "id": "s1zzi",
-          "name": "",
-          "flag": "ua",
-          "role": "",
-          "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/22570/tomaszin"
         }
       ]
     },
@@ -719,7 +679,8 @@
           "flag": "ru",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/11840/boombl4"
         },
         {
           "id": "zorte",
@@ -727,7 +688,8 @@
           "flag": "ru",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/15662/zorte"
         },
         {
           "id": "S1ren",
@@ -735,7 +697,8 @@
           "flag": "ru",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/18506/s1ren"
         },
         {
           "id": "d1Ledez",
@@ -743,7 +706,8 @@
           "flag": "ru",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/20357/d1ledez"
         },
         {
           "id": "Magnojez",
@@ -751,57 +715,118 @@
           "flag": "ru",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/21667/magnojez"
         }
       ]
     },
     {
-      "name": "The MongolZ",
-      "page": "https://www.hltv.org/team/6248/the-mongolz",
-      "location": "Mongolia",
+      "name": "FaZe",
+      "page": "https://www.hltv.org/team/6667/faze",
+      "location": "Europe",
       "portalSection": "",
       "infoboxRegion": "",
-      "logo": "https://img-cdn.hltv.org/teamlogo/bRk2sh_tSTO6fq1GLhgcal.png?ixlib=java-2.1.0&w=50&s=8b08e53858eb817852ae74b30a30151d",
+      "logo": "https://img-cdn.hltv.org/teamlogo/OKLwq88GXjl5GQ48Y5SrvW.png?ixlib=java-2.1.0&w=50&s=0a0d65eeb1b0e82ada20c42c038552fa",
       "players": [
         {
-          "id": "nin9",
+          "id": "frozen",
           "name": "",
-          "flag": "mn",
+          "flag": "sk",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/9960/frozen"
         },
         {
-          "id": "bLitz",
+          "id": "Twistzz",
           "name": "",
-          "flag": "mn",
+          "flag": "ca",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/10394/twistzz"
         },
         {
-          "id": "Techno",
+          "id": "Neityu",
           "name": "",
-          "flag": "mn",
+          "flag": "fr",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/21972/neityu"
         },
         {
-          "id": "910",
+          "id": "jcobbb",
           "name": "",
-          "flag": "mn",
+          "flag": "pl",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/22383/jcobbb"
         },
         {
-          "id": "cobrazera",
+          "id": "JBOEN",
           "name": "",
-          "flag": "mn",
+          "flag": "dk",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/22866/jboen"
+        }
+      ]
+    },
+    {
+      "name": "B8",
+      "page": "https://www.hltv.org/team/11241/b8",
+      "location": "Ukraine",
+      "portalSection": "",
+      "infoboxRegion": "",
+      "logo": "https://img-cdn.hltv.org/teamlogo/O6nRWTCjUzBAR4pcOcrpSG.png?ixlib=java-2.1.0&w=50&s=305dde82e764725dab7e626800328137",
+      "players": [
+        {
+          "id": "alex666",
+          "name": "",
+          "flag": "ua",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/20112/alex666"
+        },
+        {
+          "id": "npl",
+          "name": "",
+          "flag": "ua",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/21708/npl"
+        },
+        {
+          "id": "kensizor",
+          "name": "",
+          "flag": "ua",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/22842/kensizor"
+        },
+        {
+          "id": "esenthial",
+          "name": "",
+          "flag": "ua",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/23643/esenthial"
+        },
+        {
+          "id": "s1zzi",
+          "name": "",
+          "flag": "ua",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/25619/s1zzi"
         }
       ]
     },
@@ -819,7 +844,8 @@
           "flag": "uy",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/12092/max"
         },
         {
           "id": "dgt",
@@ -827,7 +853,8 @@
           "flag": "uy",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/14736/dgt"
         },
         {
           "id": "meyern",
@@ -835,7 +862,8 @@
           "flag": "ar",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/14737/meyern"
         },
         {
           "id": "luchov",
@@ -843,7 +871,8 @@
           "flag": "ar",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/20394/luchov"
         },
         {
           "id": "HUASOPEEK",
@@ -851,14 +880,70 @@
           "flag": "cl",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/22613/huasopeek"
+        }
+      ]
+    },
+    {
+      "name": "The MongolZ",
+      "page": "https://www.hltv.org/team/6248/the-mongolz",
+      "location": "Mongolia",
+      "portalSection": "",
+      "infoboxRegion": "",
+      "logo": "https://img-cdn.hltv.org/teamlogo/bRk2sh_tSTO6fq1GLhgcal.png?ixlib=java-2.1.0&w=50&s=8b08e53858eb817852ae74b30a30151d",
+      "players": [
+        {
+          "id": "nin9",
+          "name": "",
+          "flag": "mn",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/15072/nin9"
+        },
+        {
+          "id": "bLitz",
+          "name": "",
+          "flag": "mn",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/20194/blitz"
+        },
+        {
+          "id": "Techno",
+          "name": "",
+          "flag": "mn",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/20275/techno"
+        },
+        {
+          "id": "910",
+          "name": "",
+          "flag": "mn",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/21809/910"
+        },
+        {
+          "id": "cobrazera",
+          "name": "",
+          "flag": "mn",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/23402/cobrazera"
         }
       ]
     },
     {
       "name": "magic",
       "page": "https://www.hltv.org/team/13592/magic",
-      "location": "Europe",
+      "location": "Russia",
       "portalSection": "",
       "infoboxRegion": "",
       "logo": "https://img-cdn.hltv.org/teamlogo/KYi27Dm-DVyEUj0WIG5Bdx.png?ixlib=java-2.1.0&w=50&s=d490c0b14e24cbc6ddd70f0534ff3651",
@@ -869,7 +954,17 @@
           "flag": "by",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/19874/masval"
+        },
+        {
+          "id": "lattykk",
+          "name": "",
+          "flag": "ru",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/20700/lattykk"
         },
         {
           "id": "sFade8",
@@ -877,7 +972,8 @@
           "flag": "ua",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/22075/sfade8"
         },
         {
           "id": "AW",
@@ -885,15 +981,8 @@
           "flag": "ru",
           "role": "",
           "igl": false,
-          "joindate": ""
-        },
-        {
-          "id": "mo0N",
-          "name": "",
-          "flag": "kz",
-          "role": "",
-          "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/22076/aw"
         },
         {
           "id": "tenzy",
@@ -901,7 +990,8 @@
           "flag": "ru",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/24173/tenzy"
         }
       ]
     },
@@ -919,7 +1009,8 @@
           "flag": "pl",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/2553/snax"
         },
         {
           "id": "REZ",
@@ -927,7 +1018,8 @@
           "flag": "se",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/9278/rez"
         },
         {
           "id": "Tauson",
@@ -935,7 +1027,8 @@
           "flag": "dk",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/20301/tauson"
         },
         {
           "id": "FL4MUS",
@@ -943,7 +1036,8 @@
           "flag": "ru",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/20994/fl4mus"
         },
         {
           "id": "hypex",
@@ -951,7 +1045,8 @@
           "flag": "pl",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/23766/hypex"
         }
       ]
     },
@@ -969,7 +1064,8 @@
           "flag": "kz",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/8528/hobbit"
         },
         {
           "id": "FL1T",
@@ -977,7 +1073,8 @@
           "flag": "ru",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/12732/fl1t"
         },
         {
           "id": "Jame",
@@ -985,7 +1082,8 @@
           "flag": "ru",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/13776/jame"
         },
         {
           "id": "xiELO",
@@ -993,7 +1091,8 @@
           "flag": "ru",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/22471/xielo"
         },
         {
           "id": "zweih",
@@ -1001,807 +1100,63 @@
           "flag": "ru",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/23685/zweih"
         }
       ]
     },
     {
-      "name": "Alliance",
-      "page": "https://www.hltv.org/team/12474/alliance",
-      "location": "Sweden",
+      "name": "Envy",
+      "page": "https://www.hltv.org/team/5991/envy",
+      "location": "France",
       "portalSection": "",
       "infoboxRegion": "",
-      "logo": "https://img-cdn.hltv.org/teamlogo/xsWK0BtR26rN776qdnWFC1.png?ixlib=java-2.1.0&w=50&s=4aaf659c3855ebf08c78c157a0653352",
+      "logo": "https://img-cdn.hltv.org/teamlogo/caSZsIlWR3MQuSWMCJDj8V.svg?ixlib=java-2.1.0&s=52dab8f2955522087be3c5d43013bea8",
       "players": [
         {
-          "id": "twist",
-          "name": "",
-          "flag": "se",
-          "role": "",
-          "igl": false,
-          "joindate": ""
-        },
-        {
-          "id": "eraa",
-          "name": "",
-          "flag": "se",
-          "role": "",
-          "igl": false,
-          "joindate": ""
-        },
-        {
-          "id": "bobeksde",
-          "name": "",
-          "flag": "se",
-          "role": "",
-          "igl": false,
-          "joindate": ""
-        },
-        {
-          "id": "upE",
-          "name": "",
-          "flag": "se",
-          "role": "",
-          "igl": false,
-          "joindate": ""
-        },
-        {
-          "id": "avid",
-          "name": "",
-          "flag": "se",
-          "role": "",
-          "igl": false,
-          "joindate": ""
-        }
-      ]
-    },
-    {
-      "name": "Inner Circle",
-      "page": "https://www.hltv.org/team/13117/inner-circle",
-      "location": "Ukraine",
-      "portalSection": "",
-      "infoboxRegion": "",
-      "logo": "https://img-cdn.hltv.org/teamlogo/nzJhoae6HI3i1UORM-DBFD.png?ixlib=java-2.1.0&w=50&s=35faf966127b13f4cc4b7250a5aed454",
-      "players": [
-        {
-          "id": "cptkurtka023",
-          "name": "",
-          "flag": "ua",
-          "role": "",
-          "igl": false,
-          "joindate": ""
-        },
-        {
-          "id": "headtr1ck",
-          "name": "",
-          "flag": "ua",
-          "role": "",
-          "igl": false,
-          "joindate": ""
-        },
-        {
-          "id": "zeRRoFIX",
-          "name": "",
-          "flag": "ua",
-          "role": "",
-          "igl": false,
-          "joindate": ""
-        },
-        {
-          "id": "onic",
-          "name": "",
-          "flag": "ua",
-          "role": "",
-          "igl": false,
-          "joindate": ""
-        },
-        {
-          "id": "Dawy",
-          "name": "",
-          "flag": "ua",
-          "role": "",
-          "igl": false,
-          "joindate": ""
-        }
-      ]
-    },
-    {
-      "name": "Liquid",
-      "page": "https://www.hltv.org/team/5973/liquid",
-      "location": "North America",
-      "portalSection": "",
-      "infoboxRegion": "",
-      "logo": "https://img-cdn.hltv.org/teamlogo/JMeLLbWKCIEJrmfPaqOz4O.svg?ixlib=java-2.1.0&s=c02caf90234d3a3ebac074c84ba1ea62",
-      "players": [
-        {
-          "id": "NAF",
-          "name": "",
-          "flag": "ca",
-          "role": "",
-          "igl": false,
-          "joindate": ""
-        },
-        {
-          "id": "EliGE",
-          "name": "",
-          "flag": "us",
-          "role": "",
-          "igl": false,
-          "joindate": ""
-        },
-        {
-          "id": "malbsMd",
-          "name": "",
-          "flag": "gt",
-          "role": "",
-          "igl": false,
-          "joindate": ""
-        },
-        {
-          "id": "JT",
-          "name": "",
-          "flag": "za",
-          "role": "",
-          "igl": false,
-          "joindate": ""
-        },
-        {
-          "id": "Jorko",
-          "name": "",
-          "flag": "bg",
-          "role": "",
-          "igl": false,
-          "joindate": ""
-        }
-      ]
-    },
-    {
-      "name": "M80",
-      "page": "https://www.hltv.org/team/12376/m80",
-      "location": "United States",
-      "portalSection": "",
-      "infoboxRegion": "",
-      "logo": "https://img-cdn.hltv.org/teamlogo/YsaWwP_VrkbHzuhszuANEK.png?ixlib=java-2.1.0&w=50&s=47a8cff375da8242af9137a2a592b97d",
-      "players": [
-        {
-          "id": "slaxz-",
-          "name": "",
-          "flag": "de",
-          "role": "",
-          "igl": false,
-          "joindate": ""
-        },
-        {
-          "id": "Swisher",
-          "name": "",
-          "flag": "us",
-          "role": "",
-          "igl": false,
-          "joindate": ""
-        },
-        {
-          "id": "s1n",
-          "name": "",
-          "flag": "de",
-          "role": "",
-          "igl": false,
-          "joindate": ""
-        },
-        {
-          "id": "JBa",
-          "name": "",
-          "flag": "us",
-          "role": "",
-          "igl": false,
-          "joindate": ""
-        },
-        {
-          "id": "Lake",
-          "name": "",
-          "flag": "us",
-          "role": "",
-          "igl": false,
-          "joindate": ""
-        }
-      ]
-    },
-    {
-      "name": "HEROIC",
-      "page": "https://www.hltv.org/team/7175/heroic",
-      "location": "Sweden",
-      "portalSection": "",
-      "infoboxRegion": "",
-      "logo": "https://img-cdn.hltv.org/teamlogo/4S22uk_gnZTiQiI-hhH4yp.png?ixlib=java-2.1.0&w=50&s=3619ddf1d490573ab3dc261b8c2f3f6f",
-      "players": [
-        {
-          "id": "Brollan",
-          "name": "",
-          "flag": "se",
-          "role": "",
-          "igl": false,
-          "joindate": ""
-        },
-        {
-          "id": "nilo",
-          "name": "",
-          "flag": "se",
-          "role": "",
-          "igl": false,
-          "joindate": ""
-        },
-        {
-          "id": "susp",
-          "name": "",
-          "flag": "se",
-          "role": "",
-          "igl": false,
-          "joindate": ""
-        },
-        {
-          "id": "MartinezSa",
-          "name": "",
-          "flag": "es",
-          "role": "",
-          "igl": false,
-          "joindate": ""
-        },
-        {
-          "id": "Chr1zN",
-          "name": "",
-          "flag": "dk",
-          "role": "",
-          "igl": false,
-          "joindate": ""
-        }
-      ]
-    },
-    {
-      "name": "BIG",
-      "page": "https://www.hltv.org/team/7532/big",
-      "location": "Germany",
-      "portalSection": "",
-      "infoboxRegion": "",
-      "logo": "https://img-cdn.hltv.org/teamlogo/OgMRQA35hopXA8kDwMFHIY.svg?ixlib=java-2.1.0&s=ec7bc44165c7acf4224a22a1338ab7d7",
-      "players": [
-        {
-          "id": "tabseN",
-          "name": "",
-          "flag": "de",
-          "role": "",
-          "igl": false,
-          "joindate": ""
-        },
-        {
-          "id": "JDC",
-          "name": "",
-          "flag": "de",
-          "role": "",
-          "igl": false,
-          "joindate": ""
-        },
-        {
-          "id": "faveN",
-          "name": "",
-          "flag": "de",
-          "role": "",
-          "igl": false,
-          "joindate": ""
-        },
-        {
-          "id": "blameF",
-          "name": "",
-          "flag": "dk",
-          "role": "",
-          "igl": false,
-          "joindate": ""
-        },
-        {
-          "id": "gr1ks",
-          "name": "",
-          "flag": "by",
-          "role": "",
-          "igl": false,
-          "joindate": ""
-        }
-      ]
-    },
-    {
-      "name": "NRG",
-      "page": "https://www.hltv.org/team/6673/nrg",
-      "location": "United States",
-      "portalSection": "",
-      "infoboxRegion": "",
-      "logo": "https://img-cdn.hltv.org/teamlogo/SJZaPBCyZssru-pUDS3aZe.png?ixlib=java-2.1.0&w=50&s=5f4ca255d90b4ea7092882834bbf1bdc",
-      "players": [
-        {
-          "id": "nitr0",
-          "name": "",
-          "flag": "us",
-          "role": "",
-          "igl": false,
-          "joindate": ""
-        },
-        {
-          "id": "Sonic",
-          "name": "",
-          "flag": "za",
-          "role": "",
-          "igl": false,
-          "joindate": ""
-        },
-        {
-          "id": "hallzerk",
-          "name": "",
-          "flag": "no",
-          "role": "",
-          "igl": false,
-          "joindate": ""
-        },
-        {
-          "id": "Grim",
-          "name": "",
-          "flag": "us",
-          "role": "",
-          "igl": false,
-          "joindate": ""
-        },
-        {
-          "id": "Jeorge",
-          "name": "",
-          "flag": "us",
-          "role": "",
-          "igl": false,
-          "joindate": ""
-        }
-      ]
-    },
-    {
-      "name": "paiN",
-      "page": "https://www.hltv.org/team/4773/pain",
-      "location": "Brazil",
-      "portalSection": "",
-      "infoboxRegion": "",
-      "logo": "https://img-cdn.hltv.org/teamlogo/iUUCFwCOFmOrwhB8q8smMg.svg?ixlib=java-2.1.0&s=1446e1cf3d02deb8190fe6efd14e4ce4",
-      "players": [
-        {
-          "id": "biguzera",
-          "name": "",
-          "flag": "br",
-          "role": "",
-          "igl": false,
-          "joindate": ""
-        },
-        {
-          "id": "saffee",
-          "name": "",
-          "flag": "br",
-          "role": "",
-          "igl": false,
-          "joindate": ""
-        },
-        {
-          "id": "snow",
-          "name": "",
-          "flag": "br",
-          "role": "",
-          "igl": false,
-          "joindate": ""
-        },
-        {
-          "id": "Tatu",
-          "name": "",
-          "flag": "br",
-          "role": "",
-          "igl": false,
-          "joindate": ""
-        },
-        {
-          "id": "Rkzinho",
-          "name": "",
-          "flag": "br",
-          "role": "",
-          "igl": false,
-          "joindate": ""
-        }
-      ]
-    },
-    {
-      "name": "Luminosity",
-      "page": "https://www.hltv.org/team/6290/luminosity",
-      "location": "Europe",
-      "portalSection": "",
-      "infoboxRegion": "",
-      "logo": "https://img-cdn.hltv.org/teamlogo/HRSwDY9X42P2TiJqy1oeEJ.png?ixlib=java-2.1.0&w=50&s=987bcf053f274f928cf18f57f50076a6",
-      "players": [
-        {
-          "id": "Rainwaker",
-          "name": "",
-          "flag": "bg",
-          "role": "",
-          "igl": false,
-          "joindate": ""
-        },
-        {
-          "id": "afro",
+          "id": "Maka",
           "name": "",
           "flag": "fr",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/13138/maka"
         },
         {
-          "id": "lux",
+          "id": "Lucky",
           "name": "",
-          "flag": "br",
+          "flag": "fr",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/13497/lucky"
         },
         {
-          "id": "yxngstxr",
+          "id": "misutaaa",
           "name": "",
-          "flag": "se",
+          "flag": "fr",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/14176/misutaaa"
         },
         {
-          "id": "AZUWU",
+          "id": "Kursy",
           "name": "",
-          "flag": "gb",
+          "flag": "fr",
           "role": "",
           "igl": false,
-          "joindate": ""
-        }
-      ]
-    },
-    {
-      "name": "JiJieHao",
-      "page": "https://www.hltv.org/team/10245/jijiehao",
-      "location": "Asia",
-      "portalSection": "",
-      "infoboxRegion": "",
-      "logo": "https://img-cdn.hltv.org/teamlogo/OmcJcjX0obWnKkP7ChpuFA.png?ixlib=java-2.1.0&w=50&s=8e3bd16625d6f62c95285c98080ded66",
-      "players": [
-        {
-          "id": "m1N1",
-          "name": "",
-          "flag": "lb",
-          "role": "",
-          "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/20482/kursy"
         },
         {
-          "id": "sinnopsyy",
+          "id": "Graviti",
           "name": "",
-          "flag": "xk",
+          "flag": "fr",
           "role": "",
           "igl": false,
-          "joindate": ""
-        },
-        {
-          "id": "Bibu",
-          "name": "",
-          "flag": "iq",
-          "role": "",
-          "igl": false,
-          "joindate": ""
-        },
-        {
-          "id": "CacaNito",
-          "name": "",
-          "flag": "mk",
-          "role": "",
-          "igl": false,
-          "joindate": ""
-        },
-        {
-          "id": "0SAMAS",
-          "name": "",
-          "flag": "ps",
-          "role": "",
-          "igl": false,
-          "joindate": ""
-        }
-      ]
-    },
-    {
-      "name": "100 Thieves",
-      "page": "https://www.hltv.org/team/8474/100-thieves",
-      "location": "Europe",
-      "portalSection": "",
-      "infoboxRegion": "",
-      "logo": "https://img-cdn.hltv.org/teamlogo/QdpX-_6C2wHMgv98VAE6il.png?ixlib=java-2.1.0&w=50&s=5f34e763e5f7c7d0408a8814f42d7a87",
-      "players": [
-        {
-          "id": "device",
-          "name": "",
-          "flag": "dk",
-          "role": "",
-          "igl": false,
-          "joindate": ""
-        },
-        {
-          "id": "rain",
-          "name": "",
-          "flag": "no",
-          "role": "",
-          "igl": false,
-          "joindate": ""
-        },
-        {
-          "id": "Gizmy",
-          "name": "",
-          "flag": "gb",
-          "role": "",
-          "igl": false,
-          "joindate": ""
-        },
-        {
-          "id": "sirah",
-          "name": "",
-          "flag": "dk",
-          "role": "",
-          "igl": false,
-          "joindate": ""
-        },
-        {
-          "id": "poiii",
-          "name": "",
-          "flag": "se",
-          "role": "",
-          "igl": false,
-          "joindate": ""
-        }
-      ]
-    },
-    {
-      "name": "TYLOO",
-      "page": "https://www.hltv.org/team/4863/tyloo",
-      "location": "China",
-      "portalSection": "",
-      "infoboxRegion": "",
-      "logo": "https://img-cdn.hltv.org/teamlogo/hMPKtNMDxp07n3lrBEHCuq.svg?ixlib=java-2.1.0&s=6d22fc4af07d0cd9d31fcd7f3023af9a",
-      "players": [
-        {
-          "id": "JamYoung",
-          "name": "",
-          "flag": "cn",
-          "role": "",
-          "igl": false,
-          "joindate": ""
-        },
-        {
-          "id": "Jee",
-          "name": "",
-          "flag": "cn",
-          "role": "",
-          "igl": false,
-          "joindate": ""
-        },
-        {
-          "id": "Mercury",
-          "name": "",
-          "flag": "cn",
-          "role": "",
-          "igl": false,
-          "joindate": ""
-        },
-        {
-          "id": "Moseyuh",
-          "name": "",
-          "flag": "cn",
-          "role": "",
-          "igl": false,
-          "joindate": ""
-        },
-        {
-          "id": "Zero",
-          "name": "",
-          "flag": "cn",
-          "role": "",
-          "igl": false,
-          "joindate": ""
-        }
-      ]
-    },
-    {
-      "name": "Lynn Vision",
-      "page": "https://www.hltv.org/team/8840/lynn-vision",
-      "location": "China",
-      "portalSection": "",
-      "infoboxRegion": "",
-      "logo": "https://img-cdn.hltv.org/teamlogo/DPcHT21uWwK1hDD_3txlL9.png?ixlib=java-2.1.0&w=50&s=4b5d5a187f00caf9bbae2d0fcbca6ff6",
-      "players": [
-        {
-          "id": "Westmelon",
-          "name": "",
-          "flag": "cn",
-          "role": "",
-          "igl": false,
-          "joindate": ""
-        },
-        {
-          "id": "z4KR",
-          "name": "",
-          "flag": "cn",
-          "role": "",
-          "igl": false,
-          "joindate": ""
-        },
-        {
-          "id": "Starry",
-          "name": "",
-          "flag": "cn",
-          "role": "",
-          "igl": false,
-          "joindate": ""
-        },
-        {
-          "id": "EmiliaQAQ",
-          "name": "",
-          "flag": "cn",
-          "role": "",
-          "igl": false,
-          "joindate": ""
-        },
-        {
-          "id": "C4LLM3SU3",
-          "name": "",
-          "flag": "cn",
-          "role": "",
-          "igl": false,
-          "joindate": ""
-        }
-      ]
-    },
-    {
-      "name": "HOTU",
-      "page": "https://www.hltv.org/team/11581/hotu",
-      "location": "Russia",
-      "portalSection": "",
-      "infoboxRegion": "",
-      "logo": "https://img-cdn.hltv.org/teamlogo/UH5TD1Lyutr_JwKu2ldl-A.png?ixlib=java-2.1.0&w=50&s=6ff0544743996e6f3b166643371d2839",
-      "players": [
-        {
-          "id": "n0rb3r7",
-          "name": "",
-          "flag": "ru",
-          "role": "",
-          "igl": false,
-          "joindate": ""
-        },
-        {
-          "id": "kade0",
-          "name": "",
-          "flag": "kz",
-          "role": "",
-          "igl": false,
-          "joindate": ""
-        },
-        {
-          "id": "mizu",
-          "name": "",
-          "flag": "ru",
-          "role": "",
-          "igl": false,
-          "joindate": ""
-        },
-        {
-          "id": "dwushka",
-          "name": "",
-          "flag": "ru",
-          "role": "",
-          "igl": false,
-          "joindate": ""
-        },
-        {
-          "id": "frontales",
-          "name": "",
-          "flag": "ru",
-          "role": "",
-          "igl": false,
-          "joindate": ""
-        }
-      ]
-    },
-    {
-      "name": "5star",
-      "page": "https://www.hltv.org/team/13724/5star",
-      "location": "Mongolia",
-      "portalSection": "",
-      "infoboxRegion": "",
-      "logo": "https://img-cdn.hltv.org/teamlogo/DxfB_DH6Hhb1l1okhNQxxu.png?ixlib=java-2.1.0&w=50&s=4b5d0620de51193343d84d5247bc3fa5",
-      "players": [
-        {
-          "id": "NEUZ",
-          "name": "",
-          "flag": "mn",
-          "role": "",
-          "igl": false,
-          "joindate": ""
-        },
-        {
-          "id": "rate",
-          "name": "",
-          "flag": "mn",
-          "role": "",
-          "igl": false,
-          "joindate": ""
-        },
-        {
-          "id": "clouden",
-          "name": "",
-          "flag": "mn",
-          "role": "",
-          "igl": false,
-          "joindate": ""
-        },
-        {
-          "id": "ariucle",
-          "name": "",
-          "flag": "mn",
-          "role": "",
-          "igl": false,
-          "joindate": ""
-        },
-        {
-          "id": "hoolig4n",
-          "name": "",
-          "flag": "mn",
-          "role": "",
-          "igl": false,
-          "joindate": ""
-        }
-      ]
-    },
-    {
-      "name": "Ninjas in Pyjamas",
-      "page": "https://www.hltv.org/team/4411/ninjas-in-pyjamas",
-      "location": "Europe",
-      "portalSection": "",
-      "infoboxRegion": "",
-      "logo": "https://img-cdn.hltv.org/teamlogo/-ttGATBV_P_HcZazxNNtIb.png?ixlib=java-2.1.0&w=50&s=ba94f7812d1f47183a83f3f34ab959eb",
-      "players": [
-        {
-          "id": "stavn",
-          "name": "",
-          "flag": "dk",
-          "role": "",
-          "igl": false,
-          "joindate": ""
-        },
-        {
-          "id": "sjuush",
-          "name": "",
-          "flag": "dk",
-          "role": "",
-          "igl": false,
-          "joindate": ""
-        },
-        {
-          "id": "Krimbo",
-          "name": "",
-          "flag": "de",
-          "role": "",
-          "igl": false,
-          "joindate": ""
-        },
-        {
-          "id": "adamb",
-          "name": "",
-          "flag": "se",
-          "role": "",
-          "igl": false,
-          "joindate": ""
-        },
-        {
-          "id": "xKacpersky",
-          "name": "",
-          "flag": "pl",
-          "role": "",
-          "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/21969/graviti"
         }
       ]
     },
@@ -1819,7 +1174,8 @@
           "flag": "ru",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/19920/kair0n"
         },
         {
           "id": "Xant3r",
@@ -1827,7 +1183,8 @@
           "flag": "ru",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/20387/xant3r"
         },
         {
           "id": "robo",
@@ -1835,7 +1192,8 @@
           "flag": "ru",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/22864/robo"
         },
         {
           "id": "khaN",
@@ -1843,7 +1201,8 @@
           "flag": "kz",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/23317/khan"
         },
         {
           "id": "syph0",
@@ -1851,157 +1210,558 @@
           "flag": "kz",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/23319/syph0"
         }
       ]
     },
     {
-      "name": "K27",
-      "page": "https://www.hltv.org/team/12895/k27",
-      "location": "Russia",
+      "name": "Alliance",
+      "page": "https://www.hltv.org/team/12474/alliance",
+      "location": "Sweden",
       "portalSection": "",
       "infoboxRegion": "",
-      "logo": "https://img-cdn.hltv.org/teamlogo/7LmOZHYhlq-fIAm23aM2q1.png?ixlib=java-2.1.0&w=50&s=e194cf9c20b306723ae899eac0e8a356",
+      "logo": "https://img-cdn.hltv.org/teamlogo/xsWK0BtR26rN776qdnWFC1.png?ixlib=java-2.1.0&w=50&s=4aaf659c3855ebf08c78c157a0653352",
       "players": [
         {
-          "id": "clax",
+          "id": "twist",
           "name": "",
-          "flag": "ru",
+          "flag": "se",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/7443/twist"
         },
         {
-          "id": "X5G7V",
+          "id": "eraa",
           "name": "",
-          "flag": "ru",
+          "flag": "se",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/16487/eraa"
         },
         {
-          "id": "xeedo",
+          "id": "bobeksde",
           "name": "",
-          "flag": "by",
+          "flag": "se",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/21159/bobeksde"
         },
         {
-          "id": "kashl1d",
+          "id": "upE",
           "name": "",
-          "flag": "ru",
+          "flag": "se",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/22760/upe"
         },
         {
-          "id": "qw1nk1",
+          "id": "avid",
           "name": "",
-          "flag": "ru",
+          "flag": "se",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/22860/avid"
         }
       ]
     },
     {
-      "name": "DENDELE",
-      "page": "https://www.hltv.org/team/13926/dendele",
-      "location": "Brazil",
+      "name": "Luminosity",
+      "page": "https://www.hltv.org/team/6290/luminosity",
+      "location": "Europe",
       "portalSection": "",
       "infoboxRegion": "",
-      "logo": "https://img-cdn.hltv.org/teamlogo/xKB2zOMgkFKoD-MLU484IV.png?ixlib=java-2.1.0&w=50&s=ca11299f789fb7c48d83130b8396af9f",
+      "logo": "https://img-cdn.hltv.org/teamlogo/HRSwDY9X42P2TiJqy1oeEJ.png?ixlib=java-2.1.0&w=50&s=987bcf053f274f928cf18f57f50076a6",
       "players": [
         {
-          "id": "gafolo",
+          "id": "Rainwaker",
+          "name": "",
+          "flag": "bg",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/17145/rainwaker"
+        },
+        {
+          "id": "afro",
+          "name": "",
+          "flag": "fr",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/19926/afro"
+        },
+        {
+          "id": "lux",
           "name": "",
           "flag": "br",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/20563/lux"
         },
         {
-          "id": "koala",
+          "id": "yxngstxr",
           "name": "",
-          "flag": "br",
+          "flag": "se",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/22047/yxngstxr"
         },
         {
-          "id": "maxxkor",
+          "id": "AZUWU",
           "name": "",
-          "flag": "ar",
+          "flag": "gb",
           "role": "",
           "igl": false,
-          "joindate": ""
-        },
-        {
-          "id": "rdnzao",
-          "name": "",
-          "flag": "br",
-          "role": "",
-          "igl": false,
-          "joindate": ""
-        },
-        {
-          "id": "doc",
-          "name": "",
-          "flag": "br",
-          "role": "",
-          "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/22106/azuwu"
         }
       ]
     },
     {
-      "name": "Wildcard",
-      "page": "https://www.hltv.org/team/12257/wildcard",
+      "name": "Liquid",
+      "page": "https://www.hltv.org/team/5973/liquid",
       "location": "North America",
       "portalSection": "",
       "infoboxRegion": "",
-      "logo": "https://img-cdn.hltv.org/teamlogo/-46lJ-DcmPL_j_5R2WvLiS.png?ixlib=java-2.1.0&w=50&s=3bf750ca209fefcb665134fd61f43ffb",
+      "logo": "https://img-cdn.hltv.org/teamlogo/JMeLLbWKCIEJrmfPaqOz4O.svg?ixlib=java-2.1.0&s=c02caf90234d3a3ebac074c84ba1ea62",
       "players": [
         {
-          "id": "nEMANHA",
-          "name": "",
-          "flag": "rs",
-          "role": "",
-          "igl": false,
-          "joindate": ""
-        },
-        {
-          "id": "Cxzi",
-          "name": "",
-          "flag": "us",
-          "role": "",
-          "igl": false,
-          "joindate": ""
-        },
-        {
-          "id": "reck",
-          "name": "",
-          "flag": "us",
-          "role": "",
-          "igl": false,
-          "joindate": ""
-        },
-        {
-          "id": "HexT",
+          "id": "NAF",
           "name": "",
           "flag": "ca",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/8520/naf"
         },
         {
-          "id": "fr3nd",
+          "id": "EliGE",
+          "name": "",
+          "flag": "us",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/8738/elige"
+        },
+        {
+          "id": "malbsMd",
+          "name": "",
+          "flag": "gt",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/11617/malbsmd"
+        },
+        {
+          "id": "JT",
+          "name": "",
+          "flag": "za",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/11630/jt"
+        },
+        {
+          "id": "Jorko",
+          "name": "",
+          "flag": "bg",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/24203/jorko"
+        }
+      ]
+    },
+    {
+      "name": "Ninjas in Pyjamas",
+      "page": "https://www.hltv.org/team/4411/ninjas-in-pyjamas",
+      "location": "Europe",
+      "portalSection": "",
+      "infoboxRegion": "",
+      "logo": "https://img-cdn.hltv.org/teamlogo/-ttGATBV_P_HcZazxNNtIb.png?ixlib=java-2.1.0&w=50&s=ba94f7812d1f47183a83f3f34ab959eb",
+      "players": [
+        {
+          "id": "stavn",
+          "name": "",
+          "flag": "dk",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/10994/stavn"
+        },
+        {
+          "id": "sjuush",
+          "name": "",
+          "flag": "dk",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/14148/sjuush"
+        },
+        {
+          "id": "Krimbo",
+          "name": "",
+          "flag": "de",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/19899/krimbo"
+        },
+        {
+          "id": "adamb",
+          "name": "",
+          "flag": "se",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/20878/adamb"
+        },
+        {
+          "id": "xKacpersky",
           "name": "",
           "flag": "pl",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/23372/xkacpersky"
+        }
+      ]
+    },
+    {
+      "name": "M80",
+      "page": "https://www.hltv.org/team/12376/m80",
+      "location": "United States",
+      "portalSection": "",
+      "infoboxRegion": "",
+      "logo": "https://img-cdn.hltv.org/teamlogo/YsaWwP_VrkbHzuhszuANEK.png?ixlib=java-2.1.0&w=50&s=47a8cff375da8242af9137a2a592b97d",
+      "players": [
+        {
+          "id": "slaxz-",
+          "name": "",
+          "flag": "de",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/15370/slaxz"
+        },
+        {
+          "id": "Swisher",
+          "name": "",
+          "flag": "us",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/16599/swisher"
+        },
+        {
+          "id": "s1n",
+          "name": "",
+          "flag": "de",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/20104/s1n"
+        },
+        {
+          "id": "JBa",
+          "name": "",
+          "flag": "us",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/21665/jba"
+        },
+        {
+          "id": "Lake",
+          "name": "",
+          "flag": "us",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/22921/lake"
+        }
+      ]
+    },
+    {
+      "name": "Inner Circle",
+      "page": "https://www.hltv.org/team/13117/inner-circle",
+      "location": "Ukraine",
+      "portalSection": "",
+      "infoboxRegion": "",
+      "logo": "https://img-cdn.hltv.org/teamlogo/nzJhoae6HI3i1UORM-DBFD.png?ixlib=java-2.1.0&w=50&s=35faf966127b13f4cc4b7250a5aed454",
+      "players": [
+        {
+          "id": "cptkurtka023",
+          "name": "",
+          "flag": "ua",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/16147/cptkurtka023"
+        },
+        {
+          "id": "headtr1ck",
+          "name": "",
+          "flag": "ua",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/19592/headtr1ck"
+        },
+        {
+          "id": "zeRRoFIX",
+          "name": "",
+          "flag": "ua",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/23415/zerrofix"
+        },
+        {
+          "id": "onic",
+          "name": "",
+          "flag": "ua",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/24168/onic"
+        },
+        {
+          "id": "Dawy",
+          "name": "",
+          "flag": "ua",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/24282/dawy"
+        }
+      ]
+    },
+    {
+      "name": "HEROIC",
+      "page": "https://www.hltv.org/team/7175/heroic",
+      "location": "Sweden",
+      "portalSection": "",
+      "infoboxRegion": "",
+      "logo": "https://img-cdn.hltv.org/teamlogo/4S22uk_gnZTiQiI-hhH4yp.png?ixlib=java-2.1.0&w=50&s=3619ddf1d490573ab3dc261b8c2f3f6f",
+      "players": [
+        {
+          "id": "Brollan",
+          "name": "",
+          "flag": "se",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/13666/brollan"
+        },
+        {
+          "id": "nilo",
+          "name": "",
+          "flag": "se",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/20119/nilo"
+        },
+        {
+          "id": "susp",
+          "name": "",
+          "flag": "se",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/21163/susp"
+        },
+        {
+          "id": "MartinezSa",
+          "name": "",
+          "flag": "es",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/21239/martinezsa"
+        },
+        {
+          "id": "Chr1zN",
+          "name": "",
+          "flag": "dk",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/21983/chr1zn"
+        }
+      ]
+    },
+    {
+      "name": "NRG",
+      "page": "https://www.hltv.org/team/6673/nrg",
+      "location": "United States",
+      "portalSection": "",
+      "infoboxRegion": "",
+      "logo": "https://img-cdn.hltv.org/teamlogo/SJZaPBCyZssru-pUDS3aZe.png?ixlib=java-2.1.0&w=50&s=5f4ca255d90b4ea7092882834bbf1bdc",
+      "players": [
+        {
+          "id": "nitr0",
+          "name": "",
+          "flag": "us",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/7687/nitr0"
+        },
+        {
+          "id": "Sonic",
+          "name": "",
+          "flag": "za",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/8711/sonic"
+        },
+        {
+          "id": "hallzerk",
+          "name": "",
+          "flag": "no",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/12840/hallzerk"
+        },
+        {
+          "id": "Grim",
+          "name": "",
+          "flag": "us",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/13578/grim"
+        },
+        {
+          "id": "Jeorge",
+          "name": "",
+          "flag": "us",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/20333/jeorge"
+        }
+      ]
+    },
+    {
+      "name": "paiN",
+      "page": "https://www.hltv.org/team/4773/pain",
+      "location": "Brazil",
+      "portalSection": "",
+      "infoboxRegion": "",
+      "logo": "https://img-cdn.hltv.org/teamlogo/iUUCFwCOFmOrwhB8q8smMg.svg?ixlib=java-2.1.0&s=1446e1cf3d02deb8190fe6efd14e4ce4",
+      "players": [
+        {
+          "id": "biguzera",
+          "name": "",
+          "flag": "br",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/18141/biguzera"
+        },
+        {
+          "id": "saffee",
+          "name": "",
+          "flag": "br",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/18835/saffee"
+        },
+        {
+          "id": "snow",
+          "name": "",
+          "flag": "br",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/20171/snow"
+        },
+        {
+          "id": "Tatu",
+          "name": "",
+          "flag": "br",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/24089/tatu"
+        },
+        {
+          "id": "Rkzinho",
+          "name": "",
+          "flag": "br",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/25087/rkzinho"
+        }
+      ]
+    },
+    {
+      "name": "BIG",
+      "page": "https://www.hltv.org/team/7532/big",
+      "location": "Germany",
+      "portalSection": "",
+      "infoboxRegion": "",
+      "logo": "https://img-cdn.hltv.org/teamlogo/OgMRQA35hopXA8kDwMFHIY.svg?ixlib=java-2.1.0&s=ec7bc44165c7acf4224a22a1338ab7d7",
+      "players": [
+        {
+          "id": "tabseN",
+          "name": "",
+          "flag": "de",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/5794/tabsen"
+        },
+        {
+          "id": "JDC",
+          "name": "",
+          "flag": "de",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/14929/jdc"
+        },
+        {
+          "id": "faveN",
+          "name": "",
+          "flag": "de",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/14932/faven"
+        },
+        {
+          "id": "blameF",
+          "name": "",
+          "flag": "dk",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/15165/blamef"
+        },
+        {
+          "id": "gr1ks",
+          "name": "",
+          "flag": "by",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/22884/gr1ks"
         }
       ]
     },
@@ -2019,7 +1779,8 @@
           "flag": "ru",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/16555/ax1le"
         },
         {
           "id": "nafany",
@@ -2027,7 +1788,8 @@
           "flag": "ru",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/16921/nafany"
         },
         {
           "id": "BELCHONOKK",
@@ -2035,7 +1797,8 @@
           "flag": "ru",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/19235/belchonokk"
         },
         {
           "id": "fame",
@@ -2043,7 +1806,8 @@
           "flag": "ru",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/20101/fame"
         },
         {
           "id": "ArtFr0st",
@@ -2051,157 +1815,283 @@
           "flag": "ru",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/21348/artfr0st"
         }
       ]
     },
     {
-      "name": "Nemesis",
-      "page": "https://www.hltv.org/team/13355/nemesis",
-      "location": "Russia",
+      "name": "TYLOO",
+      "page": "https://www.hltv.org/team/4863/tyloo",
+      "location": "China",
       "portalSection": "",
       "infoboxRegion": "",
-      "logo": "https://img-cdn.hltv.org/teamlogo/elLVHPbX3OkW4t8CHjKnoY.png?ixlib=java-2.1.0&w=50&s=334764e4cfd4a3b805b21085a21a4c5b",
+      "logo": "https://img-cdn.hltv.org/teamlogo/hMPKtNMDxp07n3lrBEHCuq.svg?ixlib=java-2.1.0&s=6d22fc4af07d0cd9d31fcd7f3023af9a",
       "players": [
         {
-          "id": "SELLTER",
+          "id": "JamYoung",
           "name": "",
-          "flag": "ru",
+          "flag": "cn",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/19645/jamyoung"
         },
         {
-          "id": "r3salt",
+          "id": "Jee",
           "name": "",
-          "flag": "ru",
+          "flag": "cn",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/20702/jee"
         },
         {
-          "id": "mag1k3Y",
+          "id": "Mercury",
           "name": "",
-          "flag": "kz",
+          "flag": "cn",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/20895/mercury"
         },
         {
-          "id": "tex1y",
+          "id": "Moseyuh",
           "name": "",
-          "flag": "ru",
+          "flag": "cn",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/21621/moseyuh"
         },
         {
-          "id": "Sdaim",
+          "id": "Zero",
           "name": "",
-          "flag": "ru",
+          "flag": "cn",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/24857/zero"
         }
       ]
     },
     {
-      "name": "SINNERS",
-      "page": "https://www.hltv.org/team/10577/sinners",
-      "location": "Europe",
+      "name": "5star",
+      "page": "https://www.hltv.org/team/13724/5star",
+      "location": "Mongolia",
       "portalSection": "",
       "infoboxRegion": "",
-      "logo": "https://img-cdn.hltv.org/teamlogo/9l_WdQSU9JsNHzpK-pwOG2.svg?ixlib=java-2.1.0&s=af432c3ef61c0c843331cc0dc2fed1ed",
+      "logo": "https://img-cdn.hltv.org/teamlogo/DxfB_DH6Hhb1l1okhNQxxu.png?ixlib=java-2.1.0&w=50&s=4b5d0620de51193343d84d5247bc3fa5",
       "players": [
         {
-          "id": "beastik",
+          "id": "NEUZ",
           "name": "",
-          "flag": "cz",
+          "flag": "mn",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/15060/neuz"
         },
         {
-          "id": "SHOCK",
+          "id": "rate",
           "name": "",
-          "flag": "cz",
+          "flag": "mn",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/15861/rate"
         },
         {
-          "id": "MoDo",
+          "id": "clouden",
           "name": "",
-          "flag": "ro",
+          "flag": "mn",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/18150/clouden"
         },
         {
-          "id": "kisserek",
+          "id": "ariucle",
           "name": "",
-          "flag": "pl",
+          "flag": "mn",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/21396/ariucle"
         },
         {
-          "id": "stressarN",
+          "id": "hoolig4n",
+          "name": "",
+          "flag": "mn",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/24303/hoolig4n"
+        }
+      ]
+    },
+    {
+      "name": "Lynn Vision",
+      "page": "https://www.hltv.org/team/8840/lynn-vision",
+      "location": "China",
+      "portalSection": "",
+      "infoboxRegion": "",
+      "logo": "https://img-cdn.hltv.org/teamlogo/DPcHT21uWwK1hDD_3txlL9.png?ixlib=java-2.1.0&w=50&s=4b5d5a187f00caf9bbae2d0fcbca6ff6",
+      "players": [
+        {
+          "id": "Westmelon",
+          "name": "",
+          "flag": "cn",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/16551/westmelon"
+        },
+        {
+          "id": "z4KR",
+          "name": "",
+          "flag": "cn",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/18744/z4kr"
+        },
+        {
+          "id": "Starry",
+          "name": "",
+          "flag": "cn",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/20254/starry"
+        },
+        {
+          "id": "EmiliaQAQ",
+          "name": "",
+          "flag": "cn",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/22922/emiliaqaq"
+        },
+        {
+          "id": "C4LLM3SU3",
+          "name": "",
+          "flag": "cn",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/23100/c4llm3su3"
+        }
+      ]
+    },
+    {
+      "name": "JiJieHao",
+      "page": "https://www.hltv.org/team/10245/jijiehao",
+      "location": "Asia",
+      "portalSection": "",
+      "infoboxRegion": "",
+      "logo": "https://img-cdn.hltv.org/teamlogo/OmcJcjX0obWnKkP7ChpuFA.png?ixlib=java-2.1.0&w=50&s=8e3bd16625d6f62c95285c98080ded66",
+      "players": [
+        {
+          "id": "m1N1",
+          "name": "",
+          "flag": "lb",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/17675/m1n1"
+        },
+        {
+          "id": "sinnopsyy",
+          "name": "",
+          "flag": "xk",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/18120/sinnopsyy"
+        },
+        {
+          "id": "Bibu",
+          "name": "",
+          "flag": "iq",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/18163/bibu"
+        },
+        {
+          "id": "CacaNito",
           "name": "",
           "flag": "mk",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/18790/cacanito"
+        },
+        {
+          "id": "0SAMAS",
+          "name": "",
+          "flag": "ps",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/22419/0samas"
         }
       ]
     },
     {
-      "name": "EYEBALLERS",
-      "page": "https://www.hltv.org/team/11737/eyeballers",
-      "location": "Sweden",
+      "name": "100 Thieves",
+      "page": "https://www.hltv.org/team/8474/100-thieves",
+      "location": "Europe",
       "portalSection": "",
       "infoboxRegion": "",
-      "logo": "https://img-cdn.hltv.org/teamlogo/3-Mfc-yWBTls8MPSEFhma5.png?invert=true&ixlib=java-2.1.0&sat=-100&w=50&s=2ffde3e377d01663937bf08b74d2057b",
+      "logo": "https://img-cdn.hltv.org/teamlogo/QdpX-_6C2wHMgv98VAE6il.png?ixlib=java-2.1.0&w=50&s=5f34e763e5f7c7d0408a8814f42d7a87",
       "players": [
         {
-          "id": "JW",
+          "id": "device",
           "name": "",
-          "flag": "se",
+          "flag": "dk",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/7592/device"
         },
         {
-          "id": "KRIMZ",
+          "id": "rain",
           "name": "",
-          "flag": "se",
+          "flag": "no",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/8183/rain"
         },
         {
-          "id": "maxster",
+          "id": "Gizmy",
           "name": "",
-          "flag": "se",
+          "flag": "gb",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/21816/gizmy"
         },
         {
-          "id": "Ro1f",
+          "id": "sirah",
           "name": "",
-          "flag": "se",
+          "flag": "dk",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/22695/sirah"
         },
         {
-          "id": "dex",
+          "id": "poiii",
           "name": "",
           "flag": "se",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/23397/poiii"
         }
       ]
     },
@@ -2219,7 +2109,8 @@
           "flag": "za",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/16811/mistem"
         },
         {
           "id": "regali",
@@ -2227,7 +2118,8 @@
           "flag": "ro",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/20123/regali"
         },
         {
           "id": "soulfly",
@@ -2235,7 +2127,8 @@
           "flag": "tr",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/20968/soulfly"
         },
         {
           "id": "Kvem",
@@ -2243,7 +2136,8 @@
           "flag": "ua",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/21452/kvem"
         },
         {
           "id": "jottAAA",
@@ -2251,7 +2145,8 @@
           "flag": "tr",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/22361/jottaaa"
         }
       ]
     },
@@ -2269,7 +2164,8 @@
           "flag": "ua",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/17803/fear"
         },
         {
           "id": "jambo",
@@ -2277,7 +2173,8 @@
           "flag": "ua",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/23046/jambo"
         },
         {
           "id": "jackasmo",
@@ -2285,7 +2182,8 @@
           "flag": "ua",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/23414/jackasmo"
         },
         {
           "id": "cairne",
@@ -2293,7 +2191,8 @@
           "flag": "ua",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/24283/cairne"
         },
         {
           "id": "mazay",
@@ -2301,107 +2200,338 @@
           "flag": "ua",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/25228/mazay"
         }
       ]
     },
     {
-      "name": "FOKUS",
-      "page": "https://www.hltv.org/team/13679/fokus",
+      "name": "DENDELE",
+      "page": "https://www.hltv.org/team/13926/dendele",
+      "location": "Brazil",
+      "portalSection": "",
+      "infoboxRegion": "",
+      "logo": "https://img-cdn.hltv.org/teamlogo/xKB2zOMgkFKoD-MLU484IV.png?ixlib=java-2.1.0&w=50&s=ca11299f789fb7c48d83130b8396af9f",
+      "players": [
+        {
+          "id": "gafolo",
+          "name": "",
+          "flag": "br",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/20558/gafolo"
+        },
+        {
+          "id": "koala",
+          "name": "",
+          "flag": "br",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/21170/koala"
+        },
+        {
+          "id": "maxxkor",
+          "name": "",
+          "flag": "ar",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/21221/maxxkor"
+        },
+        {
+          "id": "rdnzao",
+          "name": "",
+          "flag": "br",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/21921/rdnzao"
+        },
+        {
+          "id": "doc",
+          "name": "",
+          "flag": "br",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/22911/doc"
+        }
+      ]
+    },
+    {
+      "name": "HOTU",
+      "page": "https://www.hltv.org/team/11581/hotu",
+      "location": "Russia",
+      "portalSection": "",
+      "infoboxRegion": "",
+      "logo": "https://img-cdn.hltv.org/teamlogo/UH5TD1Lyutr_JwKu2ldl-A.png?ixlib=java-2.1.0&w=50&s=6ff0544743996e6f3b166643371d2839",
+      "players": [
+        {
+          "id": "n0rb3r7",
+          "name": "",
+          "flag": "ru",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/16612/n0rb3r7"
+        },
+        {
+          "id": "kade0",
+          "name": "",
+          "flag": "kz",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/18752/kade0"
+        },
+        {
+          "id": "mizu",
+          "name": "",
+          "flag": "ru",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/21385/mizu"
+        },
+        {
+          "id": "dwushka",
+          "name": "",
+          "flag": "ru",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/22535/dwushka"
+        },
+        {
+          "id": "frontales",
+          "name": "",
+          "flag": "ru",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/24806/frontales"
+        }
+      ]
+    },
+    {
+      "name": "Nemesis",
+      "page": "https://www.hltv.org/team/13355/nemesis",
+      "location": "Russia",
+      "portalSection": "",
+      "infoboxRegion": "",
+      "logo": "https://img-cdn.hltv.org/teamlogo/elLVHPbX3OkW4t8CHjKnoY.png?ixlib=java-2.1.0&w=50&s=334764e4cfd4a3b805b21085a21a4c5b",
+      "players": [
+        {
+          "id": "SELLTER",
+          "name": "",
+          "flag": "ru",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/18670/sellter"
+        },
+        {
+          "id": "r3salt",
+          "name": "",
+          "flag": "ru",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/20709/r3salt"
+        },
+        {
+          "id": "mag1k3Y",
+          "name": "",
+          "flag": "kz",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/22536/mag1k3y"
+        },
+        {
+          "id": "tex1y",
+          "name": "",
+          "flag": "ru",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/22930/tex1y"
+        },
+        {
+          "id": "Sdaim",
+          "name": "",
+          "flag": "ru",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/23047/sdaim"
+        }
+      ]
+    },
+    {
+      "name": "K27",
+      "page": "https://www.hltv.org/team/12895/k27",
+      "location": "Russia",
+      "portalSection": "",
+      "infoboxRegion": "",
+      "logo": "https://img-cdn.hltv.org/teamlogo/7LmOZHYhlq-fIAm23aM2q1.png?ixlib=java-2.1.0&w=50&s=e194cf9c20b306723ae899eac0e8a356",
+      "players": [
+        {
+          "id": "clax",
+          "name": "",
+          "flag": "ru",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/12004/clax"
+        },
+        {
+          "id": "X5G7V",
+          "name": "",
+          "flag": "ru",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/19575/x5g7v"
+        },
+        {
+          "id": "xeedo",
+          "name": "",
+          "flag": "by",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/22886/xeedo"
+        },
+        {
+          "id": "kashl1d",
+          "name": "",
+          "flag": "ru",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/23686/kashl1d"
+        },
+        {
+          "id": "qw1nk1",
+          "name": "",
+          "flag": "ru",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/24725/qw1nk1"
+        }
+      ]
+    },
+    {
+      "name": "SINNERS",
+      "page": "https://www.hltv.org/team/10577/sinners",
       "location": "Europe",
       "portalSection": "",
       "infoboxRegion": "",
-      "logo": "https://img-cdn.hltv.org/teamlogo/VFmCLfAOw0WUmb_2fDDX3o.png?ixlib=java-2.1.0&w=50&s=e10aa35f917c5b05e6ed2a011da8d36a",
+      "logo": "https://img-cdn.hltv.org/teamlogo/9l_WdQSU9JsNHzpK-pwOG2.svg?ixlib=java-2.1.0&s=af432c3ef61c0c843331cc0dc2fed1ed",
       "players": [
         {
-          "id": "ztr",
+          "id": "beastik",
           "name": "",
-          "flag": "se",
+          "flag": "cz",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/11199/beastik"
         },
         {
-          "id": "Banjo",
+          "id": "SHOCK",
           "name": "",
-          "flag": "fi",
+          "flag": "cz",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/12810/shock"
         },
         {
-          "id": "podi",
+          "id": "MoDo",
           "name": "",
-          "flag": "fi",
+          "flag": "ro",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/21113/modo"
         },
         {
-          "id": "jocab",
+          "id": "kisserek",
           "name": "",
-          "flag": "se",
+          "flag": "pl",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/23295/kisserek"
         },
         {
-          "id": "Matheos",
+          "id": "stressarN",
           "name": "",
-          "flag": "hr",
+          "flag": "mk",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/23459/stressarn"
         }
       ]
     },
     {
-      "name": "Betclic",
-      "page": "https://www.hltv.org/team/12916/betclic",
-      "location": "Poland",
+      "name": "Wildcard",
+      "page": "https://www.hltv.org/team/12257/wildcard",
+      "location": "North America",
       "portalSection": "",
       "infoboxRegion": "",
-      "logo": "https://img-cdn.hltv.org/teamlogo/iX5wi-ZLkdHTARnXcMEvZF.png?ixlib=java-2.1.0&w=50&s=d543c7f38ede96ef911a66c407b6b6cd",
+      "logo": "https://img-cdn.hltv.org/teamlogo/-46lJ-DcmPL_j_5R2WvLiS.png?ixlib=java-2.1.0&w=50&s=3bf750ca209fefcb665134fd61f43ffb",
       "players": [
         {
-          "id": "Demho",
+          "id": "nEMANHA",
           "name": "",
-          "flag": "pl",
+          "flag": "rs",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/8311/nemanha"
         },
         {
-          "id": "Prism",
+          "id": "Cxzi",
           "name": "",
-          "flag": "pl",
+          "flag": "us",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/17353/cxzi"
         },
         {
-          "id": "ex1st",
+          "id": "reck",
           "name": "",
-          "flag": "pl",
+          "flag": "us",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/17378/reck"
         },
         {
-          "id": "ultimate",
+          "id": "HexT",
           "name": "",
-          "flag": "pl",
+          "flag": "ca",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/18838/hext"
         },
         {
-          "id": "Qlocuu",
+          "id": "fr3nd",
           "name": "",
           "flag": "pl",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/20018/fr3nd"
         }
       ]
     },
@@ -2419,7 +2549,8 @@
           "flag": "dk",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/16731/iceberg"
         },
         {
           "id": "salazar",
@@ -2427,7 +2558,8 @@
           "flag": "dk",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/21379/salazar"
         },
         {
           "id": "leakz",
@@ -2435,7 +2567,8 @@
           "flag": "dk",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/21571/leakz"
         },
         {
           "id": "Boye",
@@ -2443,7 +2576,8 @@
           "flag": "dk",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/21574/boye"
         },
         {
           "id": "NickyB",
@@ -2451,15 +2585,2786 @@
           "flag": "dk",
           "role": "",
           "igl": false,
-          "joindate": ""
+          "joindate": "",
+          "page": "/player/24104/nickyb"
+        }
+      ]
+    },
+    {
+      "name": "Sangal",
+      "page": "https://www.hltv.org/team/10333/sangal",
+      "location": "Europe",
+      "portalSection": "",
+      "infoboxRegion": "",
+      "logo": "https://img-cdn.hltv.org/teamlogo/zPv_FeMF8CANC10Jz32P9l.png?ixlib=java-2.1.0&w=50&s=741a13d27b484b39f24cdc76dbf80568",
+      "players": [
+        {
+          "id": "adamS",
+          "name": "",
+          "flag": "ro",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/19698/adams"
+        },
+        {
+          "id": "bnox",
+          "name": "",
+          "flag": "pl",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/20309/bnox"
+        },
+        {
+          "id": "puuha",
+          "name": "",
+          "flag": "fi",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/22144/puuha"
+        },
+        {
+          "id": "R4DYX",
+          "name": "",
+          "flag": "tr",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/25110/r4dyx"
+        },
+        {
+          "id": "Joey",
+          "name": "",
+          "flag": "es",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/25253/joey"
+        }
+      ]
+    },
+    {
+      "name": "FOKUS",
+      "page": "https://www.hltv.org/team/13679/fokus",
+      "location": "Europe",
+      "portalSection": "",
+      "infoboxRegion": "",
+      "logo": "https://img-cdn.hltv.org/teamlogo/VFmCLfAOw0WUmb_2fDDX3o.png?ixlib=java-2.1.0&w=50&s=e10aa35f917c5b05e6ed2a011da8d36a",
+      "players": [
+        {
+          "id": "ztr",
+          "name": "",
+          "flag": "se",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/16486/ztr"
+        },
+        {
+          "id": "Banjo",
+          "name": "",
+          "flag": "fi",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/20625/banjo"
+        },
+        {
+          "id": "podi",
+          "name": "",
+          "flag": "fi",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/21815/podi"
+        },
+        {
+          "id": "jocab",
+          "name": "",
+          "flag": "se",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/22759/jocab"
+        },
+        {
+          "id": "Matheos",
+          "name": "",
+          "flag": "hr",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/24332/matheos"
+        }
+      ]
+    },
+    {
+      "name": "EYEBALLERS",
+      "page": "https://www.hltv.org/team/11737/eyeballers",
+      "location": "Sweden",
+      "portalSection": "",
+      "infoboxRegion": "",
+      "logo": "https://img-cdn.hltv.org/teamlogo/3-Mfc-yWBTls8MPSEFhma5.png?invert=true&ixlib=java-2.1.0&sat=-100&w=50&s=2ffde3e377d01663937bf08b74d2057b",
+      "players": [
+        {
+          "id": "JW",
+          "name": "",
+          "flag": "se",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/3849/jw"
+        },
+        {
+          "id": "KRIMZ",
+          "name": "",
+          "flag": "se",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/7528/krimz"
+        },
+        {
+          "id": "maxster",
+          "name": "",
+          "flag": "se",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/20879/maxster"
+        },
+        {
+          "id": "Ro1f",
+          "name": "",
+          "flag": "se",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/21012/ro1f"
+        },
+        {
+          "id": "dex",
+          "name": "",
+          "flag": "se",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/22914/dex"
+        }
+      ]
+    },
+    {
+      "name": "Imperial",
+      "page": "https://www.hltv.org/team/9455/imperial",
+      "location": "Brazil",
+      "portalSection": "",
+      "infoboxRegion": "",
+      "logo": "https://img-cdn.hltv.org/teamlogo/bBDk6-rND06sAzn67b5RdP.png?ixlib=java-2.1.0&w=50&s=467e31ba123f509130d647fbf1e04ef2",
+      "players": [
+        {
+          "id": "chelo",
+          "name": "",
+          "flag": "br",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/10566/chelo"
+        },
+        {
+          "id": "VINI",
+          "name": "",
+          "flag": "br",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/12822/vini"
+        },
+        {
+          "id": "decenty",
+          "name": "",
+          "flag": "br",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/20183/decenty"
+        },
+        {
+          "id": "noway",
+          "name": "",
+          "flag": "br",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/22564/noway"
+        },
+        {
+          "id": "saadzin",
+          "name": "",
+          "flag": "br",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/22965/saadzin"
+        }
+      ]
+    },
+    {
+      "name": "Metizport",
+      "page": "https://www.hltv.org/team/11641/metizport",
+      "location": "Europe",
+      "portalSection": "",
+      "infoboxRegion": "",
+      "logo": "https://img-cdn.hltv.org/teamlogo/L6vT42LZaQh88EXiZ5FpHK.png?ixlib=java-2.1.0&w=50&s=85eeac10933db8bdbf17dfcc28972af2",
+      "players": [
+        {
+          "id": "stanislaw",
+          "name": "",
+          "flag": "ca",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/8507/stanislaw"
+        },
+        {
+          "id": "Plopski",
+          "name": "",
+          "flag": "se",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/14218/plopski"
+        },
+        {
+          "id": "F1KU",
+          "name": "",
+          "flag": "pl",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/19044/f1ku"
+        },
+        {
+          "id": "forsyy",
+          "name": "",
+          "flag": "cz",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/19069/forsyy"
+        },
+        {
+          "id": "MaiL09",
+          "name": "",
+          "flag": "se",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/24083/mail09"
+        }
+      ]
+    },
+    {
+      "name": "Virtus.pro",
+      "page": "https://www.hltv.org/team/5378/virtuspro",
+      "location": "Russia",
+      "portalSection": "",
+      "infoboxRegion": "",
+      "logo": "https://img-cdn.hltv.org/teamlogo/yZ6Bpuui1rW3jocXQ68XgZ.svg?ixlib=java-2.1.0&s=f39be1d3e7baf30a4e7f0b1216720875",
+      "players": [
+        {
+          "id": "mir",
+          "name": "",
+          "flag": "ru",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/8789/mir"
+        },
+        {
+          "id": "b1st",
+          "name": "",
+          "flag": "ru",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/23637/b1st"
+        },
+        {
+          "id": "F0R3VER",
+          "name": "",
+          "flag": "kz",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/24292/f0r3ver"
+        },
+        {
+          "id": "AquaRS",
+          "name": "",
+          "flag": "ru",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/24950/aquars"
+        },
+        {
+          "id": "tO0RO",
+          "name": "",
+          "flag": "ru",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/24952/to0ro"
+        }
+      ]
+    },
+    {
+      "name": "Nuclear TigeRES",
+      "page": "https://www.hltv.org/team/13027/nuclear-tigeres",
+      "location": "Russia",
+      "portalSection": "",
+      "infoboxRegion": "",
+      "logo": "https://img-cdn.hltv.org/teamlogo/GcO3SLh1j8cgiNGoEXNUVS.png?ixlib=java-2.1.0&w=50&s=856dc9f0ffdbeedbe76d9874fbcdb546",
+      "players": [
+        {
+          "id": "senka",
+          "name": "",
+          "flag": "by",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/22878/senka"
+        },
+        {
+          "id": "Djon8",
+          "name": "",
+          "flag": "ru",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/24171/djon8"
+        },
+        {
+          "id": "flouzer",
+          "name": "",
+          "flag": "ru",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/24568/flouzer"
+        },
+        {
+          "id": "ayuki",
+          "name": "",
+          "flag": "ru",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/25807/ayuki"
+        },
+        {
+          "id": "tronic",
+          "name": "",
+          "flag": "ru",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/26180/tronic"
+        }
+      ]
+    },
+    {
+      "name": "Color",
+      "page": "https://www.hltv.org/team/13973/color",
+      "location": "Russia",
+      "portalSection": "",
+      "infoboxRegion": "",
+      "logo": "/dynamic-svg/teamplaceholder?letter=C",
+      "players": [
+        {
+          "id": "reyoz",
+          "name": "",
+          "flag": "ru",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/23477/reyoz"
+        },
+        {
+          "id": "cronuss",
+          "name": "",
+          "flag": "ru",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/23770/cronuss"
+        },
+        {
+          "id": "oz1k",
+          "name": "",
+          "flag": "ru",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/23771/oz1k"
+        }
+      ]
+    },
+    {
+      "name": "ex-Zero Tenacity",
+      "page": "https://www.hltv.org/team/13573/ex-zero-tenacity",
+      "location": "Serbia",
+      "portalSection": "",
+      "infoboxRegion": "",
+      "logo": "/dynamic-svg/teamplaceholder?letter=e",
+      "players": [
+        {
+          "id": "Kind0",
+          "name": "",
+          "flag": "rs",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/20252/kind0"
+        },
+        {
+          "id": "Dragon",
+          "name": "",
+          "flag": "rs",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/20253/dragon"
+        },
+        {
+          "id": "VLDN",
+          "name": "",
+          "flag": "rs",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/20813/vldn"
+        },
+        {
+          "id": "Cjoffo",
+          "name": "",
+          "flag": "me",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/21302/cjoffo"
+        },
+        {
+          "id": "brutmonster",
+          "name": "",
+          "flag": "ba",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/21783/brutmonster"
+        }
+      ]
+    },
+    {
+      "name": "Iberian Soul",
+      "page": "https://www.hltv.org/team/13104/iberian-soul",
+      "location": "Spain",
+      "portalSection": "",
+      "infoboxRegion": "",
+      "logo": "https://img-cdn.hltv.org/teamlogo/HD2YseMU5u5fOtLMzN4o2i.png?ixlib=java-2.1.0&w=50&s=541c2792dc12ee0ab7c589bb741feed0",
+      "players": [
+        {
+          "id": "alex",
+          "name": "",
+          "flag": "es",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/8371/alex"
+        },
+        {
+          "id": "mopoz",
+          "name": "",
+          "flag": "es",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/9254/mopoz"
+        },
+        {
+          "id": "sausol",
+          "name": "",
+          "flag": "es",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/18749/sausol"
+        },
+        {
+          "id": "dav1g",
+          "name": "",
+          "flag": "es",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/19509/dav1g"
+        }
+      ]
+    },
+    {
+      "name": "Voca",
+      "page": "https://www.hltv.org/team/13499/voca",
+      "location": "United States",
+      "portalSection": "",
+      "infoboxRegion": "",
+      "logo": "https://img-cdn.hltv.org/teamlogo/1Z_CvAJE9Qb5h9WyIi1PoP.png?ixlib=java-2.1.0&w=50&s=fb5cc17a7e784c586e6adb2372583c34",
+      "players": [
+        {
+          "id": "MarKE",
+          "name": "",
+          "flag": "mx",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/10892/marke"
+        },
+        {
+          "id": "junior",
+          "name": "",
+          "flag": "us",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/14494/junior"
+        },
+        {
+          "id": "nosraC",
+          "name": "",
+          "flag": "us",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/17918/nosrac"
+        },
+        {
+          "id": "dare",
+          "name": "",
+          "flag": "us",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/19710/dare"
+        },
+        {
+          "id": "snav",
+          "name": "",
+          "flag": "us",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/19711/snav"
+        }
+      ]
+    },
+    {
+      "name": "Fluxo",
+      "page": "https://www.hltv.org/team/11837/fluxo",
+      "location": "Brazil",
+      "portalSection": "",
+      "infoboxRegion": "",
+      "logo": "https://img-cdn.hltv.org/teamlogo/zGveLNj821BCJGMu93qnj-.png?ixlib=java-2.1.0&w=50&s=f7d69ef82fdaf8d8b7f5a1a7fa8f13ed",
+      "players": [
+        {
+          "id": "exit",
+          "name": "",
+          "flag": "br",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/11154/exit"
+        },
+        {
+          "id": "dav1deuS",
+          "name": "",
+          "flag": "cl",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/18865/dav1deus"
+        },
+        {
+          "id": "zevy",
+          "name": "",
+          "flag": "br",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/19692/zevy"
+        },
+        {
+          "id": "kye",
+          "name": "",
+          "flag": "br",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/20385/kye"
+        },
+        {
+          "id": "Ltz",
+          "name": "",
+          "flag": "br",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/23587/ltz"
+        }
+      ]
+    },
+    {
+      "name": "ShindeN",
+      "page": "https://www.hltv.org/team/12959/shinden",
+      "location": "Argentina",
+      "portalSection": "",
+      "infoboxRegion": "",
+      "logo": "https://img-cdn.hltv.org/teamlogo/5tfhYrPKeLDzFW8X-vFExJ.png?ixlib=java-2.1.0&w=50&s=cfc4c6391157f58820f5108485a4f2a6",
+      "players": [
+        {
+          "id": "tom1jed",
+          "name": "",
+          "flag": "ar",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/18554/tom1jed"
+        },
+        {
+          "id": "abizz",
+          "name": "",
+          "flag": "ar",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/20451/abizz"
+        },
+        {
+          "id": "ivz",
+          "name": "",
+          "flag": "ar",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/20992/ivz"
+        },
+        {
+          "id": "naz",
+          "name": "",
+          "flag": "ar",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/21155/naz"
+        },
+        {
+          "id": "guty",
+          "name": "",
+          "flag": "ar",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/24749/guty"
+        }
+      ]
+    },
+    {
+      "name": "SAW",
+      "page": "https://www.hltv.org/team/10567/saw",
+      "location": "Portugal",
+      "portalSection": "",
+      "infoboxRegion": "",
+      "logo": "https://img-cdn.hltv.org/teamlogo/9vOlYp2U_z0vXPb9aLK-4r.png?ixlib=java-2.1.0&w=50&s=22abd048c4d198e504696f27e8ff68d1",
+      "players": [
+        {
+          "id": "MUTiRiS",
+          "name": "",
+          "flag": "pt",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/630/mutiris"
+        },
+        {
+          "id": "NOPEEj",
+          "name": "",
+          "flag": "pt",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/16102/nopeej"
+        },
+        {
+          "id": "story",
+          "name": "",
+          "flag": "pt",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/20462/story"
+        },
+        {
+          "id": "ewjerkz",
+          "name": "",
+          "flag": "pt",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/20464/ewjerkz"
+        },
+        {
+          "id": "krazy",
+          "name": "",
+          "flag": "pt",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/23140/krazy"
+        }
+      ]
+    },
+    {
+      "name": "BET-M",
+      "page": "https://www.hltv.org/team/13619/bet-m",
+      "location": "Russia",
+      "portalSection": "",
+      "infoboxRegion": "",
+      "logo": "https://img-cdn.hltv.org/teamlogo/V7kOhjpI4AiRCPnthLVvL6.png?ixlib=java-2.1.0&w=50&s=6ded0349cde3e1cc18b4b28c3d8cb91c",
+      "players": [
+        {
+          "id": "Raijin",
+          "name": "",
+          "flag": "ru",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/20207/raijin"
+        },
+        {
+          "id": "synyx",
+          "name": "",
+          "flag": "ua",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/20402/synyx"
+        },
+        {
+          "id": "z1Nny",
+          "name": "",
+          "flag": "ru",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/22040/z1nny"
+        },
+        {
+          "id": "executor",
+          "name": "",
+          "flag": "ru",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/22927/executor"
+        },
+        {
+          "id": "bluewh1te",
+          "name": "",
+          "flag": "ru",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/23302/bluewh1te"
+        }
+      ]
+    },
+    {
+      "name": "UPGRADE",
+      "page": "https://www.hltv.org/team/13989/upgrade",
+      "location": "Russia",
+      "portalSection": "",
+      "infoboxRegion": "",
+      "logo": "https://img-cdn.hltv.org/teamlogo/-vGUPCc5eof0EN06ySnwWM.png?ixlib=java-2.1.0&w=50&s=6dfc5349a1869edeeb026d7b956408b6",
+      "players": [
+        {
+          "id": "dezl3bio",
+          "name": "",
+          "flag": "ru",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/24920/dezl3bio"
+        },
+        {
+          "id": "SquEzxc",
+          "name": "",
+          "flag": "by",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/24924/squezxc"
+        },
+        {
+          "id": "pleynnn",
+          "name": "",
+          "flag": "ru",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/25710/pleynnn"
+        },
+        {
+          "id": "tw1sterzaza",
+          "name": "",
+          "flag": "by",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/25712/tw1sterzaza"
+        },
+        {
+          "id": "DAN9ARMATURA",
+          "name": "",
+          "flag": "ru",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/26073/dan9armatura"
+        }
+      ]
+    },
+    {
+      "name": "Black Phoenix",
+      "page": "https://www.hltv.org/team/13924/black-phoenix",
+      "location": "Russia",
+      "portalSection": "",
+      "infoboxRegion": "",
+      "logo": "https://img-cdn.hltv.org/teamlogo/FeWUb1K1oVk3xsrzBxaEz0.png?ixlib=java-2.1.0&w=50&s=2de1dbd4da9be1c044e1608eeb34ff6c",
+      "players": [
+        {
+          "id": "4X1s",
+          "name": "",
+          "flag": "lv",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/21513/4x1s"
+        },
+        {
+          "id": "karnez",
+          "name": "",
+          "flag": "ru",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/22676/karnez"
+        },
+        {
+          "id": "topo",
+          "name": "",
+          "flag": "ru",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/24326/topo"
+        },
+        {
+          "id": "MRcreed",
+          "name": "",
+          "flag": "ru",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/24824/mrcreed"
+        },
+        {
+          "id": "Salazar",
+          "name": "",
+          "flag": "ru",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/25349/salazar"
+        }
+      ]
+    },
+    {
+      "name": "Betclic",
+      "page": "https://www.hltv.org/team/12916/betclic",
+      "location": "Poland",
+      "portalSection": "",
+      "infoboxRegion": "",
+      "logo": "https://img-cdn.hltv.org/teamlogo/iX5wi-ZLkdHTARnXcMEvZF.png?ixlib=java-2.1.0&w=50&s=d543c7f38ede96ef911a66c407b6b6cd",
+      "players": [
+        {
+          "id": "Demho",
+          "name": "",
+          "flag": "pl",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/18070/demho"
+        },
+        {
+          "id": "Prism",
+          "name": "",
+          "flag": "pl",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/18979/prism"
+        },
+        {
+          "id": "ex1st",
+          "name": "",
+          "flag": "pl",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/20960/ex1st"
+        },
+        {
+          "id": "ultimate",
+          "name": "",
+          "flag": "pl",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/21763/ultimate"
+        },
+        {
+          "id": "Qlocuu",
+          "name": "",
+          "flag": "pl",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/22473/qlocuu"
+        }
+      ]
+    },
+    {
+      "name": "INOX Division",
+      "page": "https://www.hltv.org/team/13814/inox-division",
+      "location": "Russia",
+      "portalSection": "",
+      "infoboxRegion": "",
+      "logo": "https://img-cdn.hltv.org/teamlogo/5jcprHN8P8ylGZJxkC3ZHj.png?ixlib=java-2.1.0&w=50&s=69743986c06bd0249fb39aab058ecf88",
+      "players": [
+        {
+          "id": "k0s",
+          "name": "",
+          "flag": "ru",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/22430/k0s"
+        },
+        {
+          "id": "k1slll",
+          "name": "",
+          "flag": "by",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/22883/k1slll"
+        },
+        {
+          "id": "finW",
+          "name": "",
+          "flag": "ru",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/22961/finw"
+        },
+        {
+          "id": "gooddeph",
+          "name": "",
+          "flag": "ru",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/25423/gooddeph"
+        }
+      ]
+    },
+    {
+      "name": "Galorys",
+      "page": "https://www.hltv.org/team/12677/galorys",
+      "location": "Brazil",
+      "portalSection": "",
+      "infoboxRegion": "",
+      "logo": "https://img-cdn.hltv.org/teamlogo/GljsUhNlV1YdE2Z1ge-HzK.png?ixlib=java-2.1.0&w=50&s=fd7e8570af28b29e7dfa34eab2c506b1",
+      "players": [
+        {
+          "id": "PKL",
+          "name": "",
+          "flag": "br",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/6593/pkl"
+        },
+        {
+          "id": "destiny",
+          "name": "",
+          "flag": "br",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/9483/destiny"
+        },
+        {
+          "id": "detr0ittJ",
+          "name": "",
+          "flag": "br",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/18610/detr0ittj"
+        },
+        {
+          "id": "gbb",
+          "name": "",
+          "flag": "br",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/20522/gbb"
+        },
+        {
+          "id": "tomate",
+          "name": "",
+          "flag": "br",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/23551/tomate"
+        }
+      ]
+    },
+    {
+      "name": "BC.Game",
+      "page": "https://www.hltv.org/team/12878/bcgame",
+      "location": "Other",
+      "portalSection": "",
+      "infoboxRegion": "",
+      "logo": "https://img-cdn.hltv.org/teamlogo/Hwf-Y5nN-3qSvd0FZXOCh5.png?ixlib=java-2.1.0&w=50&s=a139a056665fc6d1534bd4d969ad2eaf",
+      "players": [
+        {
+          "id": "s1mple",
+          "name": "",
+          "flag": "ua",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/7998/s1mple"
+        },
+        {
+          "id": "Magisk",
+          "name": "",
+          "flag": "dk",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/9032/magisk"
+        },
+        {
+          "id": "asap",
+          "name": "",
+          "flag": "au",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/18545/asap"
+        },
+        {
+          "id": "Senzu",
+          "name": "",
+          "flag": "mn",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/20903/senzu"
+        },
+        {
+          "id": "mzinho",
+          "name": "",
+          "flag": "mn",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/21001/mzinho"
+        }
+      ]
+    },
+    {
+      "name": "SportsBetExpert",
+      "page": "https://www.hltv.org/team/13375/sportsbetexpert",
+      "location": "United States",
+      "portalSection": "",
+      "infoboxRegion": "",
+      "logo": "https://img-cdn.hltv.org/teamlogo/gk75xUsUSOXNvyT0A4UBS2.png?ixlib=java-2.1.0&w=50&s=e522fb3aa5ea928b95903bcc31adc39d",
+      "players": [
+        {
+          "id": "motm",
+          "name": "",
+          "flag": "us",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/13230/motm"
+        },
+        {
+          "id": "Infinite",
+          "name": "",
+          "flag": "us",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/14619/infinite"
+        },
+        {
+          "id": "consti",
+          "name": "",
+          "flag": "us",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/19177/consti"
+        },
+        {
+          "id": "shane",
+          "name": "",
+          "flag": "us",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/19709/shane"
+        },
+        {
+          "id": "Peeping",
+          "name": "",
+          "flag": "us",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/22135/peeping"
+        }
+      ]
+    },
+    {
+      "name": "FORZE Reload",
+      "page": "https://www.hltv.org/team/12857/forze-reload",
+      "location": "Russia",
+      "portalSection": "",
+      "infoboxRegion": "",
+      "logo": "https://img-cdn.hltv.org/teamlogo/YJnWBDwmRDJ9o2uOUrhNeQ.png?ixlib=java-2.1.0&w=50&s=83f5ce35b3f98833671987bc637c74b7",
+      "players": [
+        {
+          "id": "Lack1",
+          "name": "",
+          "flag": "kz",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/13240/lack1"
+        },
+        {
+          "id": "YumsaN",
+          "name": "",
+          "flag": "ru",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/20504/yumsan"
+        },
+        {
+          "id": "Kaide",
+          "name": "",
+          "flag": "ru",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/22326/kaide"
+        },
+        {
+          "id": "KusMe",
+          "name": "",
+          "flag": "ru",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/23628/kusme"
+        },
+        {
+          "id": "HeCkBNk",
+          "name": "",
+          "flag": "ru",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/25609/heckbnk"
+        }
+      ]
+    },
+    {
+      "name": "INFINITE",
+      "page": "https://www.hltv.org/team/10823/infinite",
+      "location": "Europe",
+      "portalSection": "",
+      "infoboxRegion": "",
+      "logo": "https://img-cdn.hltv.org/teamlogo/Bq4oCmwPwqkpV5XvHqmVhI.png?ixlib=java-2.1.0&w=50&s=16e18db9b1e19dc66aeed84ec4c6367e",
+      "players": [
+        {
+          "id": "kreaz",
+          "name": "",
+          "flag": "se",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/9911/kreaz"
+        },
+        {
+          "id": "Blytz",
+          "name": "",
+          "flag": "ro",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/12945/blytz"
+        },
+        {
+          "id": "volt",
+          "name": "",
+          "flag": "ro",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/20358/volt"
+        },
+        {
+          "id": "sl3nd",
+          "name": "",
+          "flag": "hu",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/20870/sl3nd"
+        }
+      ]
+    },
+    {
+      "name": "BESTIA",
+      "page": "https://www.hltv.org/team/12144/bestia",
+      "location": "Brazil",
+      "portalSection": "",
+      "infoboxRegion": "",
+      "logo": "https://img-cdn.hltv.org/teamlogo/Z_R5K__qrvHmPjF66iCay-.png?ixlib=java-2.1.0&w=50&s=7e2afd72c2b3cabf53244ed6bc5142e3",
+      "players": [
+        {
+          "id": "drop",
+          "name": "",
+          "flag": "br",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/19750/drop"
+        },
+        {
+          "id": "kauez",
+          "name": "",
+          "flag": "br",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/20085/kauez"
+        },
+        {
+          "id": "cass1n",
+          "name": "",
+          "flag": "br",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/20185/cass1n"
+        },
+        {
+          "id": "buda",
+          "name": "",
+          "flag": "ar",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/20607/buda"
+        },
+        {
+          "id": "timo",
+          "name": "",
+          "flag": "uy",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/24863/timo"
+        }
+      ]
+    },
+    {
+      "name": "Bounty Hunters",
+      "page": "https://www.hltv.org/team/12776/bounty-hunters",
+      "location": "Brazil",
+      "portalSection": "",
+      "infoboxRegion": "",
+      "logo": "https://img-cdn.hltv.org/teamlogo/gID-fM4ZxvO6B78-OIKipA.png?ixlib=java-2.1.0&w=50&s=f230dcaef9e8bda5e8be0e7daeed1c9f",
+      "players": [
+        {
+          "id": "ponter",
+          "name": "",
+          "flag": "br",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/16835/ponter"
+        },
+        {
+          "id": "KAISER",
+          "name": "",
+          "flag": "ar",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/18322/kaiser"
+        },
+        {
+          "id": "zock",
+          "name": "",
+          "flag": "uy",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/20690/zock"
+        },
+        {
+          "id": "urban0",
+          "name": "",
+          "flag": "br",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/22181/urban0"
+        },
+        {
+          "id": "pepe",
+          "name": "",
+          "flag": "br",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/23461/pepe"
+        }
+      ]
+    },
+    {
+      "name": "FlyQuest",
+      "page": "https://www.hltv.org/team/12774/flyquest",
+      "location": "Australia",
+      "portalSection": "",
+      "infoboxRegion": "",
+      "logo": "https://img-cdn.hltv.org/teamlogo/fmqTgF6Ziw0uied7MO3_ri.png?ixlib=java-2.1.0&w=50&s=255b5a4c460ad03161509ff7eb77b2dc",
+      "players": [
+        {
+          "id": "jks",
+          "name": "",
+          "flag": "au",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/4679/jks"
+        },
+        {
+          "id": "aliStair",
+          "name": "",
+          "flag": "au",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/11139/alistair"
+        },
+        {
+          "id": "INS",
+          "name": "",
+          "flag": "au",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/11140/ins"
+        },
+        {
+          "id": "Vexite",
+          "name": "",
+          "flag": "au",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/17384/vexite"
+        },
+        {
+          "id": "nettik",
+          "name": "",
+          "flag": "nz",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/18214/nettik"
+        }
+      ]
+    },
+    {
+      "name": "EAC",
+      "page": "https://www.hltv.org/team/13838/eac",
+      "location": "Denmark",
+      "portalSection": "",
+      "infoboxRegion": "",
+      "logo": "https://img-cdn.hltv.org/teamlogo/V8KU6EhQyVGQatWSgmYj0V.png?ixlib=java-2.1.0&w=50&s=2c6d80d65e0de648c25217065446c2f9",
+      "players": [
+        {
+          "id": "Fessor",
+          "name": "",
+          "flag": "dk",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/16718/fessor"
+        },
+        {
+          "id": "n1Xen",
+          "name": "",
+          "flag": "dk",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/16753/n1xen"
+        },
+        {
+          "id": "anber",
+          "name": "",
+          "flag": "dk",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/22948/anber"
+        },
+        {
+          "id": "sSen",
+          "name": "",
+          "flag": "dk",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/24113/ssen"
+        },
+        {
+          "id": "bekker",
+          "name": "",
+          "flag": "dk",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/24425/bekker"
+        }
+      ]
+    },
+    {
+      "name": "ex-RUSTEC",
+      "page": "https://www.hltv.org/team/13901/ex-rustec",
+      "location": "Russia",
+      "portalSection": "",
+      "infoboxRegion": "",
+      "logo": "/dynamic-svg/teamplaceholder?letter=e",
+      "players": [
+        {
+          "id": "shalfey",
+          "name": "",
+          "flag": "ru",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/17011/shalfey"
+        },
+        {
+          "id": "Brilliance",
+          "name": "",
+          "flag": "by",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/19297/brilliance"
+        },
+        {
+          "id": "youka",
+          "name": "",
+          "flag": "ru",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/24190/youka"
+        },
+        {
+          "id": "jakekeS",
+          "name": "",
+          "flag": "ru",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/24817/jakekes"
+        }
+      ]
+    },
+    {
+      "name": "UNiTY",
+      "page": "https://www.hltv.org/team/12267/unity",
+      "location": "Europe",
+      "portalSection": "",
+      "infoboxRegion": "",
+      "logo": "https://img-cdn.hltv.org/teamlogo/coucDlsynd0Ujutb5o2SC-.png?ixlib=java-2.1.0&w=50&s=a5d9a7be6bddda8b8c01ab037786a465",
+      "players": [
+        {
+          "id": "Dytor",
+          "name": "",
+          "flag": "cz",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/19815/dytor"
+        },
+        {
+          "id": "KWERTZZ",
+          "name": "",
+          "flag": "cz",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/20345/kwertzz"
+        },
+        {
+          "id": "2high",
+          "name": "",
+          "flag": "mk",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/20677/2high"
+        },
+        {
+          "id": "M1key",
+          "name": "",
+          "flag": "sk",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/21165/m1key"
+        },
+        {
+          "id": "Sn0w",
+          "name": "",
+          "flag": "se",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/24584/sn0w"
+        }
+      ]
+    },
+    {
+      "name": "Johnny Speeds",
+      "page": "https://www.hltv.org/team/12604/johnny-speeds",
+      "location": "Sweden",
+      "portalSection": "",
+      "infoboxRegion": "",
+      "logo": "https://img-cdn.hltv.org/teamlogo/Qmj_vOYob6-N4w0-MkiQhT.png?ixlib=java-2.1.0&w=50&s=1ac8b274e801c8c4b265b4fc3ea1900c",
+      "players": [
+        {
+          "id": "draken",
+          "name": "",
+          "flag": "se",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/9255/draken"
+        },
+        {
+          "id": "hampus",
+          "name": "",
+          "flag": "se",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/9766/hampus"
+        },
+        {
+          "id": "Svedjehed",
+          "name": "",
+          "flag": "se",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/20133/svedjehed"
+        },
+        {
+          "id": "bsover",
+          "name": "",
+          "flag": "se",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/22380/bsover"
+        },
+        {
+          "id": "Rack",
+          "name": "",
+          "flag": "se",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/22877/rack"
+        }
+      ]
+    },
+    {
+      "name": "Inner Circle Academy",
+      "page": "https://www.hltv.org/team/13681/inner-circle-academy",
+      "location": "Ukraine",
+      "portalSection": "",
+      "infoboxRegion": "",
+      "logo": "https://img-cdn.hltv.org/teamlogo/OSTRarXkAV-3YTtk0Thf5N.png?ixlib=java-2.1.0&w=50&s=236205a4f2cafd4fd8943e36d037ab21",
+      "players": [
+        {
+          "id": "Flierax",
+          "name": "",
+          "flag": "ua",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/23642/flierax"
+        },
+        {
+          "id": "3ippoch",
+          "name": "",
+          "flag": "ua",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/24245/3ippoch"
+        },
+        {
+          "id": "NaYz",
+          "name": "",
+          "flag": "ua",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/25129/nayz"
+        },
+        {
+          "id": "L1seYoung",
+          "name": "",
+          "flag": "ua",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/25503/l1seyoung"
+        },
+        {
+          "id": "Tamefear",
+          "name": "",
+          "flag": "ua",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/26197/tamefear"
+        }
+      ]
+    },
+    {
+      "name": "Without a Roof",
+      "page": "https://www.hltv.org/team/6914/without-a-roof",
+      "location": "United States",
+      "portalSection": "",
+      "infoboxRegion": "",
+      "logo": "https://img-cdn.hltv.org/teamlogo/hdZG8cLvx9zT18jobxu9Ga.svg?ixlib=java-2.1.0&s=224c98691ff7f19deb17625ede478be1",
+      "players": [
+        {
+          "id": "autimatic",
+          "name": "",
+          "flag": "us",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/8735/autimatic"
+        },
+        {
+          "id": "Stewie2K",
+          "name": "",
+          "flag": "us",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/8797/stewie2k"
+        },
+        {
+          "id": "Brehze",
+          "name": "",
+          "flag": "us",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/9136/brehze"
+        },
+        {
+          "id": "CeRq",
+          "name": "",
+          "flag": "bg",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/11219/cerq"
+        },
+        {
+          "id": "FaNg",
+          "name": "",
+          "flag": "ca",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/17372/fang"
+        }
+      ]
+    },
+    {
+      "name": "Marsborne",
+      "page": "https://www.hltv.org/team/13124/marsborne",
+      "location": "United States",
+      "portalSection": "",
+      "infoboxRegion": "",
+      "logo": "https://img-cdn.hltv.org/teamlogo/s1nvkP0GnHTlIHagb0vOOB.png?ixlib=java-2.1.0&w=50&s=c1ef7f949e3b96760192f1eae0b0d31a",
+      "players": [
+        {
+          "id": "freshie",
+          "name": "",
+          "flag": "ca",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/18706/freshie"
+        },
+        {
+          "id": "nicx",
+          "name": "",
+          "flag": "us",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/21620/nicx"
+        },
+        {
+          "id": "Grizz",
+          "name": "",
+          "flag": "us",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/22069/grizz"
+        },
+        {
+          "id": "ogwizard",
+          "name": "",
+          "flag": "us",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/22967/ogwizard"
+        },
+        {
+          "id": "WUMBO",
+          "name": "",
+          "flag": "us",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/25524/wumbo"
+        }
+      ]
+    },
+    {
+      "name": "PRIVATE",
+      "page": "https://www.hltv.org/team/14030/private",
+      "location": "Russia",
+      "portalSection": "",
+      "infoboxRegion": "",
+      "logo": "/dynamic-svg/teamplaceholder?letter=P",
+      "players": [
+        {
+          "id": "1eeR",
+          "name": "",
+          "flag": "by",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/21266/1eer"
+        },
+        {
+          "id": "H4SAN4TOR",
+          "name": "",
+          "flag": "ru",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/22189/h4san4tor"
+        },
+        {
+          "id": "sowalio",
+          "name": "",
+          "flag": "ru",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/22325/sowalio"
+        },
+        {
+          "id": "sh1nejezzz",
+          "name": "",
+          "flag": "ru",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/22459/sh1nejezzz"
+        },
+        {
+          "id": "z1k4",
+          "name": "",
+          "flag": "ru",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/23762/z1k4"
+        }
+      ]
+    },
+    {
+      "name": "BASEMENT BOYS",
+      "page": "https://www.hltv.org/team/13181/basement-boys",
+      "location": "Ukraine",
+      "portalSection": "",
+      "infoboxRegion": "",
+      "logo": "https://img-cdn.hltv.org/teamlogo/IAgnK7oXGijw4nomIKEVIw.png?ixlib=java-2.1.0&w=50&s=b4de8c1c642e9e648d878215fc8ac9ba",
+      "players": [
+        {
+          "id": "kr1vda",
+          "name": "",
+          "flag": "ua",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/20421/kr1vda"
+        },
+        {
+          "id": "OWNER",
+          "name": "",
+          "flag": "ua",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/20422/owner"
+        },
+        {
+          "id": "kAlash",
+          "name": "",
+          "flag": "kz",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/21692/kalash"
+        },
+        {
+          "id": "Tr0ublE",
+          "name": "",
+          "flag": "ua",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/22945/tr0uble"
+        },
+        {
+          "id": "maggent",
+          "name": "",
+          "flag": "ua",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/24246/maggent"
+        }
+      ]
+    },
+    {
+      "name": "aimclub",
+      "page": "https://www.hltv.org/team/6810/aimclub",
+      "location": "Romania",
+      "portalSection": "",
+      "infoboxRegion": "",
+      "logo": "https://img-cdn.hltv.org/teamlogo/PhNn8XgEQgZbp6ti-_IfFT.png?ixlib=java-2.1.0&w=50&s=846feccd98ac0b3b9cca3409929ed3e3",
+      "players": [
+        {
+          "id": "zewts",
+          "name": "",
+          "flag": "ro",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/16971/zewts"
+        },
+        {
+          "id": "ragga",
+          "name": "",
+          "flag": "ro",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/17116/ragga"
+        },
+        {
+          "id": "mhN1",
+          "name": "",
+          "flag": "ro",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/19171/mhn1"
+        },
+        {
+          "id": "waZz",
+          "name": "",
+          "flag": "ro",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/21716/wazz"
+        }
+      ]
+    },
+    {
+      "name": "9INE",
+      "page": "https://www.hltv.org/team/10278/9ine",
+      "location": "Europe",
+      "portalSection": "",
+      "infoboxRegion": "",
+      "logo": "https://img-cdn.hltv.org/teamlogo/BGC4LXlC8s4W0xWyelk2BI.png?ixlib=java-2.1.0&w=50&s=9b131e9589738e2c66ad28f1c1ed1d4b",
+      "players": [
+        {
+          "id": "raalz",
+          "name": "",
+          "flag": "dk",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/2898/raalz"
+        },
+        {
+          "id": "kraghen",
+          "name": "",
+          "flag": "dk",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/20300/kraghen"
+        },
+        {
+          "id": "b1elany",
+          "name": "",
+          "flag": "pl",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/20637/b1elany"
+        },
+        {
+          "id": "flayy",
+          "name": "",
+          "flag": "pl",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/21715/flayy"
+        },
+        {
+          "id": "rim3",
+          "name": "",
+          "flag": "tr",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/25076/rim3"
+        }
+      ]
+    },
+    {
+      "name": "Phantom",
+      "page": "https://www.hltv.org/team/13173/phantom",
+      "location": "Poland",
+      "portalSection": "",
+      "infoboxRegion": "",
+      "logo": "https://img-cdn.hltv.org/teamlogo/DzhUnKXRRy9yV2MILp29YH.png?ixlib=java-2.1.0&w=50&s=a856dc9cf0a2e9cb79c3166059885bed",
+      "players": [
+        {
+          "id": "TMB",
+          "name": "",
+          "flag": "dk",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/11995/tmb"
+        },
+        {
+          "id": "nicoodoz",
+          "name": "",
+          "flag": "dk",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/13602/nicoodoz"
+        },
+        {
+          "id": "KEi",
+          "name": "",
+          "flag": "pl",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/17504/kei"
+        },
+        {
+          "id": "Kylar",
+          "name": "",
+          "flag": "pl",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/19114/kylar"
+        },
+        {
+          "id": "cej0t",
+          "name": "",
+          "flag": "pl",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/22702/cej0t"
+        }
+      ]
+    },
+    {
+      "name": "NT",
+      "page": "https://www.hltv.org/team/14007/nt",
+      "location": "Ukraine",
+      "portalSection": "",
+      "infoboxRegion": "",
+      "logo": "https://img-cdn.hltv.org/teamlogo/jYTlrh5Dt5JG1YcDk4JmLq.png?ixlib=java-2.1.0&w=50&s=6b3e5ef356b375b5d4db309fc9812d8f",
+      "players": [
+        {
+          "id": "Woro2k",
+          "name": "",
+          "flag": "ua",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/16885/woro2k"
+        },
+        {
+          "id": "m4d4ra",
+          "name": "",
+          "flag": "ua",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/24836/m4d4ra"
+        },
+        {
+          "id": "ta9z",
+          "name": "",
+          "flag": "ua",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/25955/ta9z"
+        },
+        {
+          "id": "La1roN",
+          "name": "",
+          "flag": "ua",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/26001/la1ron"
+        },
+        {
+          "id": "Ryuzak1",
+          "name": "",
+          "flag": "ua",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/26688/ryuzak1"
+        }
+      ]
+    },
+    {
+      "name": "Leo",
+      "page": "https://www.hltv.org/team/11446/leo",
+      "location": "Europe",
+      "portalSection": "",
+      "infoboxRegion": "",
+      "logo": "https://img-cdn.hltv.org/teamlogo/8W-UeGbtwFEzEz0RiPxxLS.png?ixlib=java-2.1.0&w=50&s=8e4a2a65e1aed01c87c1f317a81366ce",
+      "players": [
+        {
+          "id": "drac",
+          "name": "",
+          "flag": "fr",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/19742/drac"
+        },
+        {
+          "id": "leen",
+          "name": "",
+          "flag": "ua",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/20794/leen"
+        },
+        {
+          "id": "next1me",
+          "name": "",
+          "flag": "pl",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/21780/next1me"
+        },
+        {
+          "id": "Tarkky",
+          "name": "",
+          "flag": "fr",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/21967/tarkky"
+        },
+        {
+          "id": "aimy",
+          "name": "",
+          "flag": "pl",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/24474/aimy"
+        }
+      ]
+    },
+    {
+      "name": "CYBERSHOKE",
+      "page": "https://www.hltv.org/team/12380/cybershoke",
+      "location": "Russia",
+      "portalSection": "",
+      "infoboxRegion": "",
+      "logo": "https://img-cdn.hltv.org/teamlogo/gzn14uIQ6ENslja9hMqnkj.png?ixlib=java-2.1.0&w=50&s=0bea5f061e9130561d93b89834624603",
+      "players": [
+        {
+          "id": "alpha",
+          "name": "",
+          "flag": "ru",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/20430/alpha"
+        },
+        {
+          "id": "nota",
+          "name": "",
+          "flag": "ru",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/22929/nota"
+        },
+        {
+          "id": "Alkaren",
+          "name": "",
+          "flag": "kz",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/23600/alkaren"
+        },
+        {
+          "id": "Mokuj1n",
+          "name": "",
+          "flag": "ru",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/24176/mokuj1n"
+        },
+        {
+          "id": "yiksrezo",
+          "name": "",
+          "flag": "ru",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/24485/yiksrezo"
+        }
+      ]
+    },
+    {
+      "name": "Turma do Pagode",
+      "page": "https://www.hltv.org/team/9686/turma-do-pagode",
+      "location": "Brazil",
+      "portalSection": "",
+      "infoboxRegion": "",
+      "logo": "https://img-cdn.hltv.org/teamlogo/pl_iLOTm1KzDRG3AAc2PZf.png?ixlib=java-2.1.0&w=50&s=03cce9ed68c407f5adcf04bdedcdc8ae",
+      "players": [
+        {
+          "id": "WOOD7",
+          "name": "",
+          "flag": "br",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/14390/wood7"
+        },
+        {
+          "id": "Tuurtle",
+          "name": "",
+          "flag": "br",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/14394/tuurtle"
+        },
+        {
+          "id": "naitte",
+          "name": "",
+          "flag": "br",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/17181/naitte"
+        }
+      ]
+    },
+    {
+      "name": "LAG",
+      "page": "https://www.hltv.org/team/11955/lag",
+      "location": "United States",
+      "portalSection": "",
+      "infoboxRegion": "",
+      "logo": "https://img-cdn.hltv.org/teamlogo/W30xfG1IVIUuOJnlsxtHMG.png?ixlib=java-2.1.0&w=50&s=7b86122252f70538d55be737b7e80c50",
+      "players": [
+        {
+          "id": "djay",
+          "name": "",
+          "flag": "ca",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/12102/djay"
+        },
+        {
+          "id": "Cryptic",
+          "name": "",
+          "flag": "us",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/15176/cryptic"
+        },
+        {
+          "id": "Bwills",
+          "name": "",
+          "flag": "us",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/16647/bwills"
+        },
+        {
+          "id": "SLIGHT",
+          "name": "",
+          "flag": "us",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/19128/slight"
+        },
+        {
+          "id": "Sandman",
+          "name": "",
+          "flag": "us",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/22552/sandman"
+        }
+      ]
+    },
+    {
+      "name": "RBLS",
+      "page": "https://www.hltv.org/team/12642/rbls",
+      "location": "Portugal",
+      "portalSection": "",
+      "infoboxRegion": "",
+      "logo": "https://img-cdn.hltv.org/teamlogo/vfupmnriFumqC8u48wFIdm.png?ixlib=java-2.1.0&w=50&s=f88ee3468bbd8661c4d9e40b2eddda29",
+      "players": [
+        {
+          "id": "stadodo",
+          "name": "",
+          "flag": "pt",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/11205/stadodo"
+        },
+        {
+          "id": "arrozdoce",
+          "name": "",
+          "flag": "pt",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/20465/arrozdoce"
+        },
+        {
+          "id": "Icarus",
+          "name": "",
+          "flag": "pt",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/20683/icarus"
+        },
+        {
+          "id": "Shr",
+          "name": "",
+          "flag": "pt",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/21136/shr"
+        },
+        {
+          "id": "aragornN",
+          "name": "",
+          "flag": "pt",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/22807/aragornn"
+        }
+      ]
+    },
+    {
+      "name": "Four Magic",
+      "page": "https://www.hltv.org/team/13520/four-magic",
+      "location": "Europe",
+      "portalSection": "",
+      "infoboxRegion": "",
+      "logo": "https://img-cdn.hltv.org/teamlogo/s48ySdUp5ztbflUVuGDth5.png?ixlib=java-2.1.0&w=50&s=05ab6291af72b9db0a8c521f1c5cb72d",
+      "players": [
+        {
+          "id": "REL",
+          "name": "",
+          "flag": "lt",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/23814/rel"
+        },
+        {
+          "id": "statikS",
+          "name": "",
+          "flag": "de",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/25068/statiks"
+        },
+        {
+          "id": "XADE",
+          "name": "",
+          "flag": "lt",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/25662/xade"
+        },
+        {
+          "id": "GeGo",
+          "name": "",
+          "flag": "bg",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/26320/gego"
+        },
+        {
+          "id": "sensey",
+          "name": "",
+          "flag": "ro",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/26812/sensey"
+        }
+      ]
+    },
+    {
+      "name": "6666",
+      "page": "https://www.hltv.org/team/13882/6666",
+      "location": "Ukraine",
+      "portalSection": "",
+      "infoboxRegion": "",
+      "logo": "https://img-cdn.hltv.org/teamlogo/dt87uFqACOFRSzmDKsHh_N.png?ixlib=java-2.1.0&w=50&s=4f91fca81f16fd1854f91bfafc6cf99e",
+      "players": [
+        {
+          "id": "amster",
+          "name": "",
+          "flag": "ua",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/19617/amster"
+        },
+        {
+          "id": "kL1o",
+          "name": "",
+          "flag": "ua",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/21651/kl1o"
+        },
+        {
+          "id": "rendysky",
+          "name": "",
+          "flag": "ua",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/22650/rendysky"
+        },
+        {
+          "id": "skcH",
+          "name": "",
+          "flag": "ua",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/24247/skch"
+        },
+        {
+          "id": "dENZY",
+          "name": "",
+          "flag": "md",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/24269/denzy"
+        }
+      ]
+    },
+    {
+      "name": "QUAZAR",
+      "page": "https://www.hltv.org/team/11312/quazar",
+      "location": "Russia",
+      "portalSection": "",
+      "infoboxRegion": "",
+      "logo": "https://img-cdn.hltv.org/teamlogo/YiIFGuv43P9_fALVOSLJHh.png?ixlib=java-2.1.0&w=50&s=fb7fb2d19c66e04b89e883b0948ca78a",
+      "players": [
+        {
+          "id": "Porya",
+          "name": "",
+          "flag": "ru",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/17293/porya"
+        },
+        {
+          "id": "gehji",
+          "name": "",
+          "flag": "ru",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/24319/gehji"
+        },
+        {
+          "id": "Ne1XXX",
+          "name": "",
+          "flag": "ru",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/24406/ne1xxx"
+        },
+        {
+          "id": "newt",
+          "name": "",
+          "flag": "ru",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/24900/newt"
+        },
+        {
+          "id": "kaiori",
+          "name": "",
+          "flag": "ru",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/25077/kaiori"
+        }
+      ]
+    },
+    {
+      "name": "ASTRAL",
+      "page": "https://www.hltv.org/team/13333/astral",
+      "location": "Europe",
+      "portalSection": "",
+      "infoboxRegion": "",
+      "logo": "https://img-cdn.hltv.org/teamlogo/cep1rsT1ueXzsovbqAxK76.png?ixlib=java-2.1.0&w=50&s=50638f4d39d33d5e6eff0005372b36b8",
+      "players": [
+        {
+          "id": "gxx-",
+          "name": "",
+          "flag": "xk",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/19725/gxx"
+        },
+        {
+          "id": "swiz",
+          "name": "",
+          "flag": "pl",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/22008/swiz"
+        },
+        {
+          "id": "RaY5ive",
+          "name": "",
+          "flag": "lt",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/23545/ray5ive"
+        },
+        {
+          "id": "Neqy",
+          "name": "",
+          "flag": "ee",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/24704/neqy"
+        },
+        {
+          "id": "meowpop",
+          "name": "",
+          "flag": "lv",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/24997/meowpop"
+        }
+      ]
+    },
+    {
+      "name": "GenOne",
+      "page": "https://www.hltv.org/team/11609/genone",
+      "location": "France",
+      "portalSection": "",
+      "infoboxRegion": "",
+      "logo": "https://img-cdn.hltv.org/teamlogo/DlMJrDmPA7qofO3HhP7Tbe.png?ixlib=java-2.1.0&w=50&s=5dedfb534782d2c3e00a5d476fc8fba9",
+      "players": [
+        {
+          "id": "Keoz",
+          "name": "",
+          "flag": "be",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/15117/keoz"
+        },
+        {
+          "id": "Djoko",
+          "name": "",
+          "flag": "fr",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/19738/djoko"
+        },
+        {
+          "id": "Brooxsy",
+          "name": "",
+          "flag": "fr",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/21971/brooxsy"
+        },
+        {
+          "id": "bL4SEZ",
+          "name": "",
+          "flag": "fr",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/25388/bl4sez"
+        }
+      ]
+    },
+    {
+      "name": "Glitch",
+      "page": "https://www.hltv.org/team/14077/glitch",
+      "location": "Europe",
+      "portalSection": "",
+      "infoboxRegion": "",
+      "logo": "https://img-cdn.hltv.org/teamlogo/WKfPjyDy1nBDjTIUbaKxk5.png?ixlib=java-2.1.0&w=50&s=8a58a1f1f05e83d5fefa300ff463b83b",
+      "players": [
+        {
+          "id": "szejn",
+          "name": "",
+          "flag": "pl",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/17113/szejn"
+        },
+        {
+          "id": "smekk",
+          "name": "",
+          "flag": "ro",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/19167/smekk"
+        },
+        {
+          "id": "shaiK",
+          "name": "",
+          "flag": "bg",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/20114/shaik"
+        },
+        {
+          "id": "Brillo",
+          "name": "",
+          "flag": "se",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/20437/brillo"
+        },
+        {
+          "id": "rud",
+          "name": "",
+          "flag": "lv",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/21512/rud"
+        }
+      ]
+    },
+    {
+      "name": "Prestige",
+      "page": "https://www.hltv.org/team/13159/prestige",
+      "location": "Europe",
+      "portalSection": "",
+      "infoboxRegion": "",
+      "logo": "https://img-cdn.hltv.org/teamlogo/LsfU1sYlLVaPls3d21lLuU.png?ixlib=java-2.1.0&w=50&s=35fa313eac1111bbbb40a8d028124525",
+      "players": [
+        {
+          "id": "fejtZ",
+          "name": "",
+          "flag": "ee",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/7910/fejtz"
+        },
+        {
+          "id": "oopee",
+          "name": "",
+          "flag": "fi",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/14236/oopee"
+        },
+        {
+          "id": "Jelo",
+          "name": "",
+          "flag": "fi",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/19996/jelo"
+        },
+        {
+          "id": "N4XX1S",
+          "name": "",
+          "flag": "dk",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/24276/n4xx1s"
+        },
+        {
+          "id": "qx",
+          "name": "",
+          "flag": "dk",
+          "role": "",
+          "igl": false,
+          "joindate": "",
+          "page": "/player/25066/qx"
         }
       ]
     }
   ],
   "emptyTeams": [
     {
-      "name": "3DMAX",
-      "page": "https://www.hltv.org/team/4914/3dmax"
+      "name": "Bushido Wildcats",
+      "page": "https://www.hltv.org/team/13281/bushido-wildcats"
     }
   ]
 }

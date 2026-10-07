@@ -3,6 +3,12 @@
  * ------------------------------------------------------------------
  *   node scripts/dev/e2e-check.mjs [url] [--headed]
  *
+ * 不传 url 时它会**自己起一个本项目的静态服务器**（端口 SITE_PORT），而不是
+ * 去连 5173 —— 5173 是 serve.mjs 的默认端口，本机上很可能已经有另一个进程
+ * 占着它（比如桌面那份副本，或者一个跑了很久的旧进程），于是这个检查会安静地
+ * 测到**别的目录、别的数据**，一路报绿而实际什么都没验到。这个坑真踩过：
+ * 数据集已经是 99 队 / 485 人，检查却还在报 41 个气泡。
+ *
  * 它做四件事：
  *   1. 用真实 Chrome 打开页面（走 CDP over TCP，不用命名管道）
  *   2. 收集所有 console.* 与未捕获异常
@@ -14,14 +20,43 @@
  */
 import fs from 'node:fs';
 import path from 'node:path';
+import { spawn } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 import { launchBrowser, sleep } from '../lib/browser.mjs';
 import { connect } from '../lib/cdp.mjs';
 
 const ROOT = path.resolve(fileURLToPath(new URL('../..', import.meta.url)));
-const url = process.argv[2] || 'http://127.0.0.1:5173/';
 const headed = process.argv.includes('--headed');
-const PORT = 9444;
+const PORT = 9444;          // Chrome 的调试端口
+const SITE_PORT = 9455;     // 没给 url 时自己起的静态服务器端口（刻意避开 5173）
+
+let url = process.argv[2];
+let siteServer = null;
+if (!url) {
+  url = `http://127.0.0.1:${SITE_PORT}/`;
+  siteServer = spawn(process.execPath, ['scripts/serve.mjs', String(SITE_PORT), '--no-open'], {
+    cwd: ROOT, stdio: 'ignore', windowsHide: true,
+  });
+  // serve.mjs 端口被占时会自动 +1，所以这里要确认拿到的确实是 SITE_PORT，
+  // 否则又变成"测到了别人"。探测失败就直接退出，不要带着假绿往下跑。
+  let up = false;
+  for (let i = 0; i < 40; i++) {
+    try {
+      const r = await fetch(`${url}data/dataset.json`, { cache: 'no-store' });
+      if (r.ok) { up = true; break; }
+    } catch { /* 还没起来 */ }
+    await sleep(250);
+  }
+  if (!up) {
+    console.log(`✗ 起不来静态服务器（${url}）——端口可能被别的进程占了，换一个再试`);
+    siteServer.kill();
+    process.exit(2);
+  }
+  // 确认真的是**这个目录**在回应，而不是碰巧也监听该端口的别的副本
+  const probeMeta = await (await fetch(`${url}data/dataset.json`, { cache: 'no-store' })).json();
+  console.log(`自起服务器 : ${url}`);
+  console.log(`  meta     : ${probeMeta.meta.teamCount} 队 / ${probeMeta.meta.playerCount} 人 / ${probeMeta.meta.countryCount} 地区`);
+}
 
 const PROBE = `(() => {
   const q = (s) => document.querySelector(s);
@@ -70,7 +105,7 @@ const PROBE = `(() => {
     loadingEl: vis(q('#view-loading')),
     crashEl: vis(q('#crash')),
     crashText: (q('#crash')?.innerText || '').slice(0, 1000),
-    metaBadge: (q('.meta-badge') || q('.meta') || {}).textContent?.trim().slice(0, 200) ?? null,
+    metaBadge: (q('#meta-badge') || q('.meta-badge') || q('.meta') || {}).textContent?.trim().slice(0, 200) ?? null,
     bodyText: document.body.innerText.replace(/\\s+/g, ' ').slice(0, 600),
   };
 })()`;
@@ -119,6 +154,19 @@ try {
   await sleep(4000);   // 等数据 fetch + 首帧渲染 + 入场动画
 
   const probe = await cdp.eval(PROBE);
+
+  // 页面上的数据必须和工作区磁盘上的一致。哪怕显式传了 url，这一步也能挡住
+  // "连着别的副本/旧进程"这类假绿——它的表现是数据对不上而不是报错。
+  const localMeta = JSON.parse(
+    fs.readFileSync(path.join(ROOT, 'public', 'data', 'dataset.json'), 'utf8'),
+  ).meta;
+  if (!probe.metaBadge || !probe.metaBadge.includes(String(localMeta.teamCount))) {
+    errors.push(
+      `页面数据与工作区不一致：页面显示「${probe.metaBadge || '(空)'}」，`
+      + `磁盘上是 ${localMeta.teamCount} 队 / ${localMeta.playerCount} 人`
+      + `——多半连到了别的服务器上的旧副本`,
+    );
+  }
 
   console.log('\n=== 页面基本 ===');
   console.log('title      :', probe.title);
@@ -193,12 +241,51 @@ try {
   console.log(JSON.stringify(probeDetail, null, 1));
   await shoot('e2e-detail');
 
+  // 选手卡片：头像是否真的解码出来了、冠军列表渲染了几条
+  // （头像走 <img>，文件 404 或格式不对时布局照样在，只有 naturalWidth 会变 0）
+  console.log('\n=== 点一名选手 ===');
+  const clicked = await cdp.eval(`(() => {
+    const row = document.querySelector('#detail .player.clickable');
+    if (!row) return null;
+    row.click();
+    return row.innerText.replace(/\\s+/g, ' ').trim().slice(0, 60);
+  })()`);
+  console.log('点中的行 :', clicked || '(详情里没有可点的选手行)');
+  if (clicked) {
+    await sleep(700);
+    const probePlayer = await cdp.eval(`(() => {
+      const d = document.querySelector('#detail');
+      const img = d?.querySelector('.pavatar:not(.ph)');
+      const trophies = [...(d?.querySelectorAll('.trophy-item') || [])];
+      return {
+        title: d?.querySelector('h2, .title')?.textContent?.replace(/\\s+/g,' ').trim(),
+        avatar: img ? { src: img.getAttribute('src'), w: img.naturalWidth, h: img.naturalHeight,
+                        complete: img.complete } : null,
+        avatarPlaceholder: !!d?.querySelector('.pavatar.ph'),
+        trophies: trophies.length,
+        firstTrophy: trophies[0]?.innerText?.replace(/\\s+/g,' ').trim().slice(0, 60),
+        trophyLinksOk: trophies.every((a) => (a.getAttribute('href') || '').startsWith('https://www.hltv.org/events/')),
+        backButton: !!d?.querySelector('button, .back'),
+        crash: getComputedStyle(document.querySelector('#crash')).display,
+      };
+    })()`);
+    console.log(JSON.stringify(probePlayer, null, 1));
+    if (probePlayer.avatar && probePlayer.avatar.complete && probePlayer.avatar.w === 0) {
+      errors.push(`选手头像加载失败: ${probePlayer.avatar.src}`);
+    }
+    if (probePlayer.trophies > 0 && !probePlayer.trophyLinksOk) {
+      errors.push('冠军列表里有链接不是指向 hltv.org/events/');
+    }
+    await shoot('e2e-player');
+  }
+
   cdp.close();
 } catch (e) {
   console.log('✗ 检查过程出错 :', e.message);
   errors.push('检查脚本自身: ' + e.message);
 } finally {
   await browser.close().catch(() => {});
+  if (siteServer) siteServer.kill();
 }
 
 console.log('\n=== 页面 console 输出 ===');

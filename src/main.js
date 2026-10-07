@@ -73,6 +73,7 @@ const state = {
   mode: store.get('cs2pm.mode') === '2d' ? '2d' : '3d',
   selected: null,        // 选中的国家码
   selectedTeam: null,    // 选中的战队（详情页）
+  selectedPlayer: null,  // 选中的选手（详情页，头像 + 冠军荣誉）
   views: {},
 };
 
@@ -119,7 +120,7 @@ async function boot() {
   renderLeftList();
   // 启动时那句占位文案（"数据来源：…"）是在数据到位之前渲染的，这里带上真实
   // meta 重画一次，否则来源永远显示成"未知来源"。有选中项时不要覆盖它。
-  if (!state.selected && !state.selectedTeam) renderEmptyDetail();
+  if (!state.selected && !state.selectedTeam && !state.selectedPlayer) renderEmptyDetail();
   switchMode(state.mode, { silent: true });
   if (loading.isConnected) loading.remove();
 }
@@ -213,6 +214,7 @@ function markLeftSelection() {
  * ------------------------------------------------------------------ */
 function selectCountry(code) {
   state.selectedTeam = null;
+  state.selectedPlayer = null;
   state.selected = code;
   markLeftSelection();
   for (const v of Object.values(state.views)) {
@@ -318,6 +320,7 @@ function selectTeam(teamName) {
   const t = state.data.teams.find((x) => x.name === teamName);
   if (!t) return;
   state.selectedTeam = teamName;
+  state.selectedPlayer = null;
 
   const back = el('button', 'back', '‹ 返回国家视图');
   back.addEventListener('click', () => {
@@ -357,21 +360,125 @@ function selectTeam(teamName) {
   detail.replaceChildren(back, head, body);
 }
 
+/* ------------------------------------------------------------------ *
+ * 选手小头像
+ * ------------------------------------------------------------------ */
+const HLTV_ORIGIN = 'https://www.hltv.org';
+
+/**
+ * dataset 里的 avatar 形如 `avatars/11893.webp`（站点根相对路径），
+ * 头像文件由 `npm run scrape:players` 抓下来缩成 120×120 的 WebP（约 4 KB）。
+ * 没有图就退化成「首字母圆片」，不要留一个破图占位。
+ */
+function avatarImg(p, size) {
+  if (!p.avatar) {
+    const ph = el('span', 'pavatar ph', (p.id || '?').slice(0, 1).toUpperCase());
+    ph.style.width = `${size}px`;
+    ph.style.height = `${size}px`;
+    ph.style.fontSize = `${Math.max(10, Math.round(size * 0.42))}px`;
+    return ph;
+  }
+  const img = document.createElement('img');
+  img.className = 'pavatar';
+  img.src = `/${p.avatar}`;
+  img.alt = p.id;
+  img.loading = 'lazy';
+  img.decoding = 'async';
+  img.width = size;
+  img.height = size;
+  return img;
+}
+
 function playerRow(p, { showTeam }) {
-  const row = el('div', 'player');
+  const row = el('div', 'player clickable');
+  row.title = `查看 ${p.id} 的头像与冠军荣誉`;
+  row.append(avatarImg(p, 28));
   row.append(el('span', 'flag', flagEmoji(p.country)));
   const who = el('div');
   const idLine = el('div', 'pid', p.id);
   if (p.igl) idLine.append(el('span', 'tag', 'IGL'));
+  // 有冠军才挂奖杯角标 —— 一眼扫过去就知道谁的履历厚
+  if (p.trophies?.length) idLine.append(el('span', 'tag gold', `🏆${p.trophies.length}`));
   who.append(idLine, el('div', 'pname', p.name || ''));
   row.append(who);
   if (showTeam) {
     const t = el('div', 'team', p.team);
     t.title = `${p.team} 全员`;
-    t.addEventListener('click', () => selectTeam(p.team));
+    // 别让「点战队名」冒泡成「点选手」
+    t.addEventListener('click', (e) => { e.stopPropagation(); selectTeam(p.team); });
     row.append(t);
   }
+  row.addEventListener('click', () => selectPlayer(p.id));
   return row;
+}
+
+/* ------------------------------------------------------------------ *
+ * 选中：选手（大头像 + 冠军荣誉）
+ * ------------------------------------------------------------------ */
+function selectPlayer(id) {
+  const p = state.data.players.find((x) => x.id === id);
+  if (!p) return;
+  state.selectedPlayer = id;
+  renderPlayerDetail(p);
+}
+
+function renderPlayerDetail(p) {
+  const back = el('button', 'back', '‹ 返回');
+  back.addEventListener('click', () => {
+    state.selectedPlayer = null;
+    if (state.selectedTeam) selectTeam(state.selectedTeam);
+    else if (state.selected) renderCountryDetail(state.selected);
+    else renderEmptyDetail();
+  });
+
+  const head = el('div', 'detail-head');
+  const title = el('div', 'title');
+  title.append(avatarImg(p, 72));
+  const names = el('div');
+  names.append(el('h2', null, p.id));
+  if (p.name) names.append(el('div', 'en', p.name));
+  names.append(el('div', 'en', [
+    flagEmoji(p.country), p.countryName, p.role || '', p.igl ? '队内指挥' : '',
+  ].filter(Boolean).join(' · ')));
+  const teamLink = el('button', 'link', p.team);
+  teamLink.addEventListener('click', () => selectTeam(p.team));
+  names.append(teamLink);
+  title.append(names);
+  head.append(title);
+
+  const trophies = Array.isArray(p.trophies) ? p.trophies : [];
+  const stats = el('div', 'stats');
+  // 只留「冠军数」和「现役战队」。加入日期对看分布图没什么用，占地方。
+  for (const [k, v] of [['冠军', trophies.length], ['现役战队', p.team]]) {
+    const s = el('div', 'stat');
+    s.append(el('div', 'v', String(v)), el('div', 'k', k));
+    stats.append(s);
+  }
+  head.append(stats);
+
+  const body = el('div', 'detail-body');
+  const g = el('div', 'group');
+  g.append(el('h3', null, `冠军荣誉 · ${trophies.length} 个`));
+  if (!trophies.length) {
+    g.append(el('p', 'tiny', 'HLTV 上没有这位选手的赛事冠军记录（可能刚出道，或者还没拿过有记录的比赛）。'));
+  } else {
+    const list = el('div', 'trophy-list');
+    for (const t of trophies) {
+      const a = el('a', 'trophy-item');
+      if (t.href) {
+        a.href = /^https?:/.test(t.href) ? t.href : HLTV_ORIGIN + t.href;
+        a.target = '_blank';
+        a.rel = 'noreferrer noopener';
+      }
+      a.append(el('span', 'tname', t.name));
+      a.append(el('span', 'tarrow', '↗'));
+      list.append(a);
+    }
+    g.append(list);
+  }
+  body.append(g);
+
+  detail.replaceChildren(back, head, body);
 }
 
 function teamCard(t, { open = false } = {}) {
@@ -485,7 +592,8 @@ function applyHit(h) {
   else if (h.kind === 'team') selectTeam(h.key);
   else {
     const p = state.data.players.find((x) => x.id === h.key);
-    if (p) { selectCountry(p.country); selectTeam(p.team); }
+    // 先定位到国家（地图会高亮、左侧列表也会滚过去），再打开选手详情
+    if (p) { selectCountry(p.country); selectPlayer(p.id); }
   }
 }
 

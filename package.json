@@ -11,6 +11,7 @@
     "vendor": "node scripts/vendor.mjs",
     "scrape": "node scripts/scrape-liquipedia.mjs",
     "scrape:hltv": "node scripts/scrape-hltv.mjs",
+    "scrape:players": "node scripts/scrape-players.mjs",
     "dataset": "node scripts/build-dataset.mjs",
     "dataset:hltv": "node scripts/build-dataset.mjs hltv",
     "dataset:liquipedia": "node scripts/build-dataset.mjs liquipedia",

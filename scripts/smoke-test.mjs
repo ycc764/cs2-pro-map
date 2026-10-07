@@ -198,6 +198,35 @@ ok(drifted.length === 0, '布尔减没有波及邻国（首都归属不变）',
 
 ok(nineDash.length === 1, '底图里有南海诸岛九段线要素', `kind="nine-dash" × ${nineDash.length}`);
 
+/* ---------------- 8. 选手头像与冠军荣誉 ----------------
+ * 这两样是 scrape-players.mjs 单独补的，允许缺失（数据集是"可降级"的：
+ * 没有就退化成首字母圆片、不显示荣誉列表）。但只要 dataset 里写了头像路径，
+ * 文件就必须真的在 —— 否则前端会出现一堆 404 的破图。
+ */
+group('选手头像与冠军荣誉');
+const withAvatar = ds.players.filter((p) => p.avatar);
+const missingAvatar = withAvatar.filter((p) => !existsSync(join(ROOT, 'public', p.avatar)));
+ok(missingAvatar.length === 0,
+  withAvatar.length ? 'dataset 里的头像文件都存在' : '（本次数据不含头像）',
+  withAvatar.length ? `${withAvatar.length}/${ds.players.length} 张` : `可跑 npm run scrape:players 补上`);
+ok(withAvatar.every((p) => /^avatars\/\d+\.webp$/.test(p.avatar)),
+  '头像路径形如 avatars/<数字id>.webp', withAvatar.length ? '' : '（跳过）');
+
+const withTrophy = ds.players.filter((p) => p.trophies?.length);
+const badTrophy = withTrophy.flatMap((p) => p.trophies.filter((t) => !t.name || typeof t.name !== 'string'));
+ok(badTrophy.length === 0,
+  withTrophy.length ? '冠军条目都有赛事名' : '（本次数据不含冠军荣誉）',
+  withTrophy.length ? `${withTrophy.length} 人有冠军，共 ${withTrophy.reduce((n, p) => n + p.trophies.length, 0)} 条` : '');
+// 冠军链接必须指向 HLTV 的赛事页；MVP / 年度最佳 / FPL 那些块当初就是靠 href 前缀滤掉的
+const badHref = withTrophy.flatMap((p) => p.trophies.filter((t) => t.href && !t.href.startsWith('/events/')));
+ok(badHref.length === 0, '冠军链接都指向 /events/（没混进 MVP / 年度奖项）',
+  badHref.length ? badHref.slice(0, 3).map((t) => t.name).join(' ') : '');
+// 每支战队的阵容也带着头像字段，两处要一致
+const teamAvatarMismatch = ds.teams.flatMap((t) => t.players
+  .filter((p) => (p.avatar || '') !== (ds.players.find((x) => x.id === p.id)?.avatar || '')));
+ok(teamAvatarMismatch.length === 0, '战队阵容里的头像字段与选手表一致',
+  teamAvatarMismatch.length ? teamAvatarMismatch.slice(0, 3).map((p) => p.id).join(' ') : '');
+
 console.log(`\n结果：${pass} 通过 / ${fail} 失败`);
 if (fail) {
   console.log('失败项：\n  - ' + failures.join('\n  - '));

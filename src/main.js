@@ -10,7 +10,9 @@
  */
 import { createGlobe3D } from './globe3d.js';
 import { createGlobe2D } from './globe2d.js';
-import { flagEmoji, debounce, el } from './util.js';
+import {
+  flagEmoji, debounce, el, RAMP_COLORS, colorFor, radiusFor, countT,
+} from './util.js';
 
 const $ = (s) => document.querySelector(s);
 
@@ -118,6 +120,7 @@ async function boot() {
   buildSearchIndex();
   buildViews();
   renderLeftList();
+  renderLegend();
   // 启动时那句占位文案（"数据来源：…"）是在数据到位之前渲染的，这里带上真实
   // meta 重画一次，否则来源永远显示成"未知来源"。有选中项时不要覆盖它。
   if (!state.selected && !state.selectedTeam && !state.selectedPlayer) renderEmptyDetail();
@@ -207,6 +210,50 @@ function markLeftSelection() {
   for (const r of leftList.querySelectorAll('.row')) {
     r.classList.toggle('selected', r.dataset.code === state.selected);
   }
+}
+
+/**
+ * 图例：渐变条 + 刻度 + 尺寸参照圆
+ *
+ * 三样东西都从 util.js 的同一套函数现算，不在这里抄第二份：
+ *   - 渐变条直接由 RAMP_COLORS 拼 linear-gradient，色标只有一处定义
+ *   - 刻度的位置用 countT() 换算，所以刻度间距本身就说明了"颜色是按
+ *     平方根铺开的"——等距的刻度配不等距的读数，读者一眼能看出来
+ *   - 参照圆用和 2D 视图**同一个** radiusFor(base=2.5, scale=15)，
+ *     这样它才是能拿去和地图上气泡直接比大小的尺子；用别的参数画
+ *     出来的图例比没有图例更糟
+ */
+function renderLegend() {
+  const max = state.data?.meta?.maxCountry ?? 1;
+
+  $('#legend-bar').style.background =
+    `linear-gradient(90deg, ${RAMP_COLORS.join(', ')})`;
+  $('#legend-hint').textContent = `最多 ${max}`;
+
+  const tickCounts = [...new Set([1, 5, 20, 50, max])]
+    .filter((n) => n <= max)
+    .sort((a, b) => a - b);
+  $('#legend-ticks').replaceChildren(
+    ...tickCounts.map((n) => {
+      const s = el('span', null, String(n));
+      s.style.left = `${(countT(n, max) * 100).toFixed(1)}%`;
+      return s;
+    }),
+  );
+
+  // 只有三个参照圆，挑能覆盖量级的：最少 / 中段 / 最多
+  const dots = [...new Set([1, Math.max(1, Math.round(max / 8)), max])];
+  $('#legend-dots').replaceChildren(
+    ...dots.map((n) => {
+      const d = radiusFor(n, max, 2.5, 15) * 2;
+      const i = el('i');
+      i.style.width = `${d.toFixed(1)}px`;
+      i.style.height = `${d.toFixed(1)}px`;
+      i.style.background = colorFor(n, max);
+      const s = el('span', null, i, el('b', null, String(n)));
+      return s;
+    }),
+  );
 }
 
 /* ------------------------------------------------------------------ *

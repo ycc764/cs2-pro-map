@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark" />
+    <title>历届世界排名 · CS2 现役职业选手全球分布</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body class="doc-body">
+    <div id="app">
+      <header class="topbar">
+        <div class="brand">
+          <span class="dot"></span>
+          <h1>HLTV 历届世界排名</h1>
+          <span class="badge" id="meta-badge">加载中…</span>
+        </div>
+
+        <nav class="nav">
+          <a href="./">地图</a>
+          <a href="players.html">选手榜</a>
+          <a href="rankings.html" class="on">历届排名</a>
+        </nav>
+
+        <div class="grow" style="flex: 1"></div>
+        <span class="badge">鼠标划动看图 · 点图例选队</span>
+      </header>
+
+      <div class="doc">
+        <div class="toolbar">
+          <span class="chips" id="range-chips">
+            <button type="button" class="chip on" data-range="all">全部</button>
+            <button type="button" class="chip" data-range="10">近 10 年</button>
+            <button type="button" class="chip" data-range="5">近 5 年</button>
+            <button type="button" class="chip" data-range="2">近 2 年</button>
+          </span>
+          <span class="grow"></span>
+          <span class="count" id="range-hint"></span>
+        </div>
+
+        <div class="rank-stage">
+          <section class="rank-chart" id="chart">
+            <div class="rank-legend" id="legend"></div>
+          </section>
+
+          <aside class="rank-side">
+            <div class="side-head">
+              <h2 id="snap-date">—</h2>
+              <div class="sub" id="snap-sub"></div>
+            </div>
+            <div class="rank-list" id="snap-list"></div>
+          </aside>
+        </div>
+      </div>
+    </div>
+
+    <div id="crash" class="crash" hidden>
+      <div class="crash-box">
+        <h2 id="crash-title">页面出错了</h2>
+        <p id="crash-msg"></p>
+        <pre id="crash-detail"></pre>
+        <div class="crash-actions">
+          <button id="crash-reload" type="button">重新加载</button>
+          <button id="crash-copy" type="button">复制错误信息</button>
+        </div>
+      </div>
+    </div>
+
+    <noscript>
+      <div class="crash"><div class="crash-box">
+        <h2>需要开启 JavaScript</h2>
+        <p>本页用 ES Module 画排名曲线，请允许 JavaScript 后刷新。</p>
+      </div></div>
+    </noscript>
+
+    <script type="module" src="/src/rankings.js" onerror="window.__cs2ModuleFailed && window.__cs2ModuleFailed()"></script>
+
+    <script>
+      (function () {
+        function showCrash(title, msg) {
+          var crash = document.getElementById('crash');
+          var t = document.getElementById('crash-title');
+          var m = document.getElementById('crash-msg');
+          if (!crash || !m) return;
+          if (t && title) t.textContent = title;
+          m.textContent = msg;
+          crash.hidden = false;
+          var reload = document.getElementById('crash-reload');
+          if (reload) reload.onclick = function () { location.reload(); };
+          var copy = document.getElementById('crash-copy');
+          if (copy) { copy.textContent = '关闭提示'; copy.onclick = function () { crash.hidden = true; }; }
+        }
+        window.__cs2ShowCrash = showCrash;
+        window.__cs2ModuleFailed = function () {
+          showCrash('脚本没能加载', 'src/rankings.js 加载失败（通常是 404 或路径不对）。'
+            + '请确认地址是 http://127.0.0.1:5173/rankings.html 而不是 file://，然后 Ctrl+F5 强刷。');
+        };
+        if (location.protocol === 'file:') {
+          document.body.setAttribute('style', 'margin:0;background:#0b1220;color:#e6edf6');
+          document.body.innerHTML =
+            '<div style="max-width:720px;margin:11vh auto;padding:0 24px;'
+            + 'font:16px/1.75 system-ui,\'Microsoft YaHei\',sans-serif">'
+            + '<h1 style="font-size:26px;margin:0 0 8px">打开方式不对</h1>'
+            + '<p style="color:#8fa6c4;margin:0 0 26px">'
+            + '不要直接双击这个 html —— 它需要一个小型本地服务器。</p>'
+            + '<div style="background:#131b2c;border:1px solid #22314d;border-radius:12px;padding:20px 22px">'
+            + '<p style="margin:0 0 10px"><b>正确做法</b></p>'
+            + '<ol style="margin:0;padding-left:22px">'
+            + '<li>回到项目文件夹，双击 <b style="color:#ffd166">启动.bat</b></li>'
+            + '<li>浏览器会自动打开 <b style="color:#7ee0d4">http://127.0.0.1:5173/</b></li>'
+            + '</ol></div>'
+            + '<p style="margin:22px 0 8px;color:#8fa6c4">或者在本文件夹里用命令行启动：</p>'
+            + '<pre style="background:#0d1420;border:1px solid #22314d;border-radius:8px;'
+            + 'padding:12px 14px;color:#9fe8c0;overflow:auto">node scripts/serve.mjs</pre>'
+            + '</div>';
+          return;
+        }
+        setTimeout(function () {
+          if (window.__CS2_BOOTED__) return;
+          var badge = document.getElementById('meta-badge');
+          if (badge && badge.textContent.indexOf('加载中') === -1) return;
+          showCrash('页面没能启动',
+            '等了 15 秒还没启动完成，通常是脚本或数据没加载到。请确认：'
+            + '① 地址栏是 http://127.0.0.1:5173/rankings.html（不是 file://）；'
+            + '② 启动窗口里没有红色的 404 报错；'
+            + '③ 跑过 npm run scrape:rankings 与 npm run dataset:hltv（没有 data/rankings.json 就没有这一页）；'
+            + '④ 第一次抓历届排名要二十多分钟，别在它还没写完时就打开；'
+            + '⑤ 按 Ctrl+F5 强制刷新一次。');
+        }, 15000);
+      })();
+    </script>
+  </body>
+</html>

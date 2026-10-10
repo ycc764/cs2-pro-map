@@ -371,8 +371,153 @@ body {
 }
 .crash-actions button:hover { background: rgba(63, 167, 160, 0.32); }
 
+/* ================================================================
+ * 三个页面共用的导航（地图 / 选手榜 / 历届排名）
+ * 做成真正的三个静态页而不是 hash 路由：URL 可分享，而且排名页
+ * 不需要 three.js，各页只加载自己要的东西。
+ * ================================================================ */
+.nav {
+  display: flex; gap: 2px; padding: 3px;
+  border: 1px solid var(--line); border-radius: 999px;
+  margin-left: 4px; flex: none;
+}
+.nav a {
+  padding: 5px 13px; border-radius: 999px; white-space: nowrap;
+  font-size: 12px; color: var(--muted); text-decoration: none;
+  transition: background 0.14s, color 0.14s;
+}
+.nav a:hover { color: var(--text); background: rgba(120, 160, 220, 0.1); }
+.nav a.on { color: #0b1122; background: var(--accent); font-weight: 600; }
+.nav a.on:hover { background: var(--accent); }
+
+/* 选手榜 / 排名页是文档流页面，不像地图页那样锁死一屏 */
+.doc-body { overflow: hidden; }
+.doc { flex: 1; display: flex; flex-direction: column; min-height: 0; }
+.doc-pad { padding: 16px 20px 28px; overflow-y: auto; }
+
+/* ---------------- 工具条（筛选 + 计数） ---------------- */
+.toolbar {
+  display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
+  padding: 10px 20px; border-bottom: 1px solid var(--line);
+  background: rgba(10, 16, 32, 0.6);
+}
+.chips { display: flex; gap: 6px; }
+.chip {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 5px 12px; border-radius: 999px; cursor: pointer;
+  font-size: 12px; font-family: inherit;
+  border: 1px solid var(--line); background: rgba(120, 160, 220, 0.06); color: var(--muted);
+  transition: background 0.14s, color 0.14s, border-color 0.14s;
+}
+.chip:hover { color: var(--text); background: rgba(120, 160, 220, 0.14); }
+.chip.on { color: #0b1122; background: var(--accent-2); border-color: var(--accent-2); font-weight: 600; }
+.chip b { font-variant-numeric: tabular-nums; opacity: 0.85; font-weight: 600; }
+.toolbar label { font-size: 12px; color: var(--muted); display: inline-flex; align-items: center; gap: 6px; }
+.toolbar select, .toolbar input[type='number'], .toolbar input[type='search'] {
+  padding: 5px 10px; border-radius: 8px; font-family: inherit; font-size: 12px;
+  border: 1px solid var(--line); background: rgba(4, 8, 18, 0.75); color: var(--text); outline: none;
+}
+.toolbar input[type='number'] { width: 78px; }
+.toolbar input[type='search'] { width: 190px; }
+.toolbar input[type='search']::placeholder { color: #5d7096; }
+.toolbar select:focus, .toolbar input:focus { border-color: rgba(255, 209, 102, 0.5); }
+.toolbar .grow { flex: 1; }
+.toolbar .count { font-size: 12px; color: var(--muted); white-space: nowrap; }
+.toolbar .count b { color: var(--text); font-variant-numeric: tabular-nums; }
+
+/* ---------------- 选手榜表格 ---------------- */
+.tablewrap { flex: 1; overflow: auto; }
+.ptable { width: 100%; border-collapse: collapse; font-size: 13px; }
+.ptable thead th {
+  position: sticky; top: 0; z-index: 2;
+  text-align: left; font-weight: 600; font-size: 11px; letter-spacing: 0.4px;
+  color: var(--muted); text-transform: none; white-space: nowrap;
+  padding: 9px 12px; background: #0c1324;
+  border-bottom: 1px solid var(--line);
+  cursor: pointer; user-select: none;
+}
+.ptable thead th:hover { color: var(--text); }
+.ptable thead th.num, .ptable td.num { text-align: right; font-variant-numeric: tabular-nums; }
+.ptable thead th .caret { opacity: 0; margin-left: 4px; font-size: 9px; }
+.ptable thead th.sorted { color: var(--accent); }
+.ptable thead th.sorted .caret { opacity: 1; }
+.ptable td { padding: 6px 12px; border-bottom: 1px solid var(--line-soft); white-space: nowrap; }
+.ptable tbody tr:hover { background: rgba(120, 160, 220, 0.07); }
+.ptable .rank { color: var(--muted); font-variant-numeric: tabular-nums; width: 52px; }
+.ptable .who { display: flex; align-items: center; gap: 9px; min-width: 190px; }
+.ptable .pav {
+  width: 28px; height: 28px; border-radius: 7px; flex: none;
+  background: rgba(120, 160, 220, 0.1); object-fit: cover; object-position: center 12%;
+}
+.ptable .pav-fallback {
+  width: 28px; height: 28px; border-radius: 7px; flex: none; display: grid; place-items: center;
+  background: rgba(120, 160, 220, 0.12); color: var(--muted); font-size: 12px; font-weight: 600;
+}
+.ptable .nick { font-weight: 600; }
+.ptable .nick a { color: inherit; text-decoration: none; border-bottom: 1px dotted rgba(120, 160, 220, 0.4); }
+.ptable .nick a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+.ptable .cur-tag {
+  font-size: 9px; padding: 1px 6px; border-radius: 999px; margin-left: 2px;
+  background: rgba(63, 167, 160, 0.2); color: #7fd8d0; border: 1px solid rgba(63, 167, 160, 0.35);
+}
+.ptable .rating { font-weight: 700; font-size: 14px; font-variant-numeric: tabular-nums; }
+.ptable .muted { color: var(--muted); }
+.spark { display: block; overflow: visible; }
+.spark polyline { fill: none; stroke-width: 1.5; stroke-linejoin: round; stroke-linecap: round; }
+.spark circle { stroke: none; }
+.spark .axis { stroke: var(--line-soft); stroke-width: 1; }
+#more { padding: 14px; text-align: center; }
+#more button {
+  padding: 8px 20px; border-radius: 999px; cursor: pointer; font-family: inherit; font-size: 12px;
+  border: 1px solid var(--line); background: rgba(120, 160, 220, 0.1); color: var(--text);
+}
+#more button:hover { background: rgba(120, 160, 220, 0.2); }
+
+/* ---------------- 历届排名 ---------------- */
+.rank-stage { flex: 1; display: flex; min-height: 0; }
+.rank-chart { flex: 1; min-width: 0; position: relative; display: flex; flex-direction: column; }
+.rank-chart svg { flex: 1; min-height: 0; display: block; }
+.rank-side {
+  width: 330px; flex-basis: 330px; border-left: 1px solid var(--line);
+  overflow-y: auto; display: flex; flex-direction: column;
+}
+.rank-side .side-head {
+  position: sticky; top: 0; z-index: 2; background: #0c1324;
+  padding: 12px 16px 10px; border-bottom: 1px solid var(--line);
+}
+.rank-side .side-head h2 { margin: 0; font-size: 15px; font-weight: 650; }
+.rank-side .side-head .sub { font-size: 11px; color: var(--muted); margin-top: 3px; }
+.rank-list { padding: 6px 8px 20px; }
+.rank-row {
+  display: flex; align-items: center; gap: 9px; padding: 5px 8px;
+  border-radius: 8px; cursor: pointer; font-size: 13px;
+}
+.rank-row:hover { background: rgba(120, 160, 220, 0.1); }
+.rank-row .pos { width: 26px; text-align: right; color: var(--muted); font-variant-numeric: tabular-nums; font-size: 12px; }
+.rank-row .nm { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.rank-row .pts { color: var(--muted); font-variant-numeric: tabular-nums; font-size: 11px; }
+.rank-row .chg { width: 30px; text-align: right; font-size: 10px; font-variant-numeric: tabular-nums; }
+.rank-row .chg.up { color: #7fd8a0; }
+.rank-row .chg.down { color: #ff9a9a; }
+.rank-row .swatch { width: 8px; height: 8px; border-radius: 2px; flex: none; }
+.line-chart .team-line { fill: none; stroke-width: 1.6; stroke-linejoin: round; stroke-linecap: round; }
+.line-chart .grid { stroke: var(--line-soft); stroke-width: 1; }
+.line-chart .axis-txt { fill: var(--muted); font-size: 10px; font-variant-numeric: tabular-nums; }
+.line-chart .cursor { stroke: rgba(255, 209, 102, 0.6); stroke-width: 1; stroke-dasharray: 3 3; }
+.rank-legend { display: flex; flex-wrap: wrap; gap: 4px 10px; padding: 8px 20px 12px; }
+.rank-legend button {
+  display: inline-flex; align-items: center; gap: 5px; cursor: pointer;
+  background: none; border: 0; font-family: inherit; font-size: 11px; color: var(--text);
+  padding: 2px 4px; border-radius: 6px; opacity: 0.9;
+}
+.rank-legend button:hover { background: rgba(120, 160, 220, 0.12); }
+.rank-legend button.off { opacity: 0.32; }
+.rank-legend i { width: 9px; height: 3px; border-radius: 2px; }
+
 @media (max-width: 1180px) {
   .panel { width: 240px; flex-basis: 240px; }
   .panel-right { width: 312px; flex-basis: 312px; }
   .brand h1 { font-size: 14px; }
+  .rank-side { width: 264px; flex-basis: 264px; }
+  .nav a { padding: 5px 9px; font-size: 11px; }
 }

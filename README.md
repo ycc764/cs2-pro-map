@@ -1,10 +1,18 @@
 # CS2 现役职业选手全球分布
 
-一个可交互的 CS2 现役职业选手分布可视化：3D 地球 / 2D 世界地图双视图，
-可以按战队、选手 ID、国家名搜索，也可以直接点地图上的国家查看该地区全部现役选手。
+一个可交互的 CS2 现役职业选手分布可视化。三个**互相独立**的页面，共用同一套数据：
+
+| 页面 | 内容 |
+| --- | --- |
+| `index.html`（**地图**） | 3D 地球 / 2D 世界地图双视图，按战队、选手 ID、国家名搜索，也可直接点国家看该地区全部现役选手 |
+| `players.html`（**选手榜**） | 1703 名选手的生涯 Rating 3.0 排行，可排序、可按国家/战队/最少地图数筛选，每人一条逐年 Rating 迷你折线 |
+| `rankings.html`（**历届排名**） | HLTV 世界排名的历史曲线（bump chart），576 期 2015–2026，可切时间窗口、鼠标划动切换期次、点图例高亮战队 |
 
 **当前数据：99 支战队 · 485 名现役选手 · 48 个国家和地区**（来源：HLTV.org 世界排名前 100；
 其中 473 人有头像、115 人共 777 条冠军记录）
+
+**排名页另有两份数据**：1703 名选手的生涯 Rating 3.0（2012–2026 逐年）、
+HLTV 世界排名 576 期快照（2015-10-01 → 2026-10-05，251 支队上过榜）。
 
 ---
 
@@ -35,6 +43,11 @@ node scripts/serve.mjs
 ---
 
 ## 二、怎么用
+
+顶部有 **地图 / 选手榜 / 历届排名** 三个入口，点一下就切页 —— 它们是真的三个
+独立页面（各自的 URL 可以直接分享），不是同一页里的标签切换。
+
+### 地图（`index.html`）
 
 | 操作 | 效果 |
 | --- | --- |
@@ -70,6 +83,37 @@ node scripts/serve.mjs
 如果显卡/驱动不支持 WebGL，3D 视图会**自动降级到 2D**，并且「3D 地球」按钮会变灰
 （鼠标悬停有说明）。
 
+### 选手榜（`players.html`）
+
+| 操作 | 效果 |
+| --- | --- |
+| 点表头 | 按该列排序，再点一次反向。八列都可排：选手 / 国家 / 战队 / Rating / K/D / 地图数 / K-D 差 / 逐年 Rating |
+| 「前 100 队现役」 | 只留数据集里的 485 名现役选手（带「前 100 队」角标），从 1703 人收窄到 424 人 |
+| 搜索框 | 匹配选手 ID、战队名、中文国名、两字母国家码（`donk` / `Spirit` / `丹麦` / `dk` 都行） |
+| 「国家」下拉 | 70 个有选手的国家/地区 |
+| 「最少地图数」 | 过滤掉样本太少的选手（HLTV 自己已经卡在 294 图以上，所以往低调没意义） |
+| 逐年 Rating 那列 | 每人一条迷你折线，横轴固定 2012–2026、纵轴固定 0.85–1.55（**所有行同一把尺子**，可以直接横着比），中间那道淡线是 1.00；悬停能看到峰值那年 |
+
+> Rating 是 HLTV 的 **Rating 3.0**，取的是**生涯总计**（`/stats/players?startDate=2012-01-01`），
+> 不是"最近三个月"那个窗口 —— 后者在选手页上，样本只有 50 图，噪声大得多。
+
+### 历届排名（`rankings.html`）
+
+| 操作 | 效果 |
+| --- | --- |
+| 左上角**全部 / 近 10 年 / 近 5 年 / 近 2 年** | 切时间窗口，只画这一段（选中的队不会被重置） |
+| 在曲线上左右移动鼠标 | 切换选中的期次，右侧榜单跟着变，日期显示在右上 |
+| 点底部图例 | 高亮/取消高亮某支战队（默认高亮积分最高的一批） |
+| 左右方向键 | 上一期 / 下一期，省得一直用鼠标划 |
+| 曲线 | 纵轴是名次（#1 在最上面、#30 在最下面），一条线一支队；只画每期前 30 名 |
+
+> 榜单是**每期只存前 30 名**，不是完整 250 队 —— 全量 576 期 × 250 队约 5.7 MB，
+> 太大。现在的做法约 253 KB。
+>
+> **为什么要有时间窗口**：576 期铺在 1100px 上，每期不到 2px，名次一跳线就是一根
+> 竖条，十支队叠起来糊成一片毛球。这是**真实数据**（NaVi 和 G2 各自在榜 574/576 期），
+> 不是画错了。窗口是往回切一段，而不是把点抽稀 —— 抽稀等于假装排名没波动过。
+
 ---
 
 ## 三、数据是怎么来的
@@ -77,10 +121,14 @@ node scripts/serve.mjs
 ### 当前数据源：HLTV（已抓好，可直接用）
 
 ```
-data/hltv.json                   # 抓取原始结果（世界排名前 100 → 有现役阵容的队伍）
-data/players.json                # 选手头像与冠军荣誉（由 scrape:players 补）
-public/data/dataset.json         # 前端实际读的数据（构建产物）
-public/data/countries-110m.json  # 世界底图（GeoJSON，含中国标准口径与九段线）
+data/hltv.json                    # 抓取原始结果（世界排名前 100 → 有现役阵容的队伍）
+data/players.json                 # 选手头像与冠军荣誉（由 scrape:players 补）
+data/ratings.json                 # 选手 Rating 3.0，生涯 + 逐年（由 scrape:ratings 抓）
+data/rankings.json                # 历届世界排名快照（由 scrape:rankings 抓）
+public/data/dataset.json          # 地图页读的数据（构建产物）
+public/data/ratings.json          # 选手榜读的数据（构建产物，按 hlId 和选手表对齐）
+public/data/rankings.json         # 历届排名页读的数据（构建产物，队名已去重成下标表）
+public/data/countries-110m.json   # 世界底图（GeoJSON，含中国标准口径与九段线）
 public/avatars/<数字id>.webp      # 选手头像，120×120，约 4 KB 一张
 ```
 
@@ -89,11 +137,15 @@ public/avatars/<数字id>.webp      # 选手头像，120×120，约 4 KB 一张
 ```bash
 npm run scrape:hltv -- --limit 100   # 抓 HLTV 世界排名前 100 队（默认只抓前 30）
 npm run scrape:players               # 补每个选手的头像 + 冠军荣誉（可中断，重跑自动续）
-npm run dataset:hltv                 # 加工成前端数据
+npm run scrape:ratings               # 抓 1703 名选手的生涯 + 逐年 Rating 3.0
+npm run scrape:rankings -- --top 30  # 顺着一期期的「上一期」链接回溯到 2015 年
+npm run dataset:hltv                 # 加工成前端数据（三份产物一起重建）
 npm run test                         # 冒烟测试：验证 数据 → 地图 这条链路
 ```
 
 `--limit 100` 大约 30–35 分钟，`scrape:players` 再 30 分钟左右，都建议放着跑。
+`scrape:ratings` 16 个区间约 1 分钟；`scrape:rankings` 实测 **576 期**、每期约 3–4 秒，
+要跑 35–40 分钟（**支持断点续抓**，中断了重跑会从已存的最早一期接着往回走）。
 
 > **为什么是 100 而不是 50**：排名页一页就列出 250 支队。早先只抓前 50，
 > 结果澳洲的 FlyQuest（第 75）怎么搜都搜不到 —— 数据集里根本没抓它。
@@ -126,7 +178,30 @@ npm run test                         # 冒烟测试：验证 数据 → 地图 �
 - **少数选手没有头像**：485 人里有 12 人拿不到（HLTV 上就没有可用的大图，
   或 CDN 请求失败）。这些人在页面上会退化成首字母圆片，不是 bug。
 
-#### 为什么抓 HLTV 必须开窗口（踩过的坑）
+#### 选手 Rating 与历届排名
+
+选手榜和排名页的数据来自 HLTV 另外两个页面，各有各的坑：
+
+- **`/stats/players` 一页就是全量，没有分页。** 加 `?startDate=&endDate=` 就能按区间
+  取，实测 990 行、`table.player-ratings-table` 里一个分页控件都没有，所以
+  「生涯 + 2012–2026 逐年」16 个区间只要 16 次请求。
+- **数字选手 id 是同一套。** `/stats/players/11893/zywoo` 和 `/player/11893/zywoo`
+  里的 `11893` 是同一个 id，所以选手榜能和地图页的选手表按 `hlId` 直接对齐
+  （485 人里命中 448 人；没命中的多半是统计窗口内地图数太少，被 HLTV 自己排除了）。
+- **别用选手页上那个 Rating。** 选手页的 `Rating 3.0` 标着「Past 3 months • 50 maps」，
+  样本太小、噪声大；按自定义区间从统计表取才干净。
+- **历届排名没有归档索引页。** `/ranking/archive` 会 302 回首页，页面上也没有日期
+  下拉。但每期页面头部有 `a.pagination-prev` **指向上一期的确切日期** ——
+  顺着它一路回溯即可，不重不漏，也不用猜"下周一是哪天"、不受节假日跳期影响。
+- **最新一期的地址不带日期**（就是 `/ranking/teams`），只从 URL 解析日期会让第一期
+  变成空字符串、把时间轴排乱。脚本里加了从头部文字
+  （`Counter-Strike World ranking on January 8th, 2024`）兜底解析的路径，解析不出来
+  的期次直接跳过并告警。
+- **产物瘦身**：构建时会把队名去重成一张 `teams[]` 表，快照里只存下标
+  （`t: [[队下标, 名次, 积分, 名次变化], …]`），并把逐年数据按 `[年, rating, maps]`
+  折叠 —— 不这么做，`ratings.json` 会从 391 KB 涨到 1.6 MB。
+
+#### 为什么抓 HLTV 必须开窗口——还要绕开系统代理（踩过的坑）
 
 HLTV 前面挂着 Cloudflare 的托管挑战，直接请求只会拿到 403 和一个
 `<title>Just a moment...</title>` 页面。要过它必须满足两个条件，缺一不可：
@@ -140,6 +215,14 @@ HLTV 前面挂着 Cloudflare 的托管挑战，直接请求只会拿到 403 和�
    也会被指纹识别，已从 `scripts/lib/browser.mjs` 里去掉。
 
 实测对照：**覆写 UA → 卡 90 秒超时；不覆写 + 有窗口 → 约 38 秒自动通过。**
+
+3. **浏览器必须绕过系统代理**（`--no-proxy-server`，已写进
+   `scripts/lib/browser.mjs` 的默认参数）。这一条是后来才发现的：同一台机器、
+   同一个 profile，只差一个 flag —— 走系统代理（`127.0.0.1:7897`）**75 秒仍卡在
+   `Just a moment...`**，加 `--no-proxy-server` 直连 **3 秒就过**。原因是代理是共享
+   出口 IP，信誉分被拉低，Cloudflare 直接判机器人。
+   ⚠ 不能靠"把系统代理关掉"来绕过：代理软件启动时会把 `ProxyEnable` 写回 1
+   （已复现过），所以必须在浏览器侧绕开。
 
 HLTV 的页面结构偶尔会变。如果脚本报"没解析出选手"，它会把页面原始 HTML
 存到 `data/raw/hltv-sample.html`，照着改脚本里的 `EXTRACT_TEAM` 选择器即可。
@@ -186,38 +269,50 @@ npm run basemap     # 重新生成底图（会联网拉 DataV GeoAtlas，缓存�
 ## 四、目录结构
 
 ```
-index.html                  页面骨架 + import map（依赖映射）
+index.html                  地图页骨架 + import map（依赖映射）
+players.html                选手榜页（不加载 three.js）
+rankings.html               历届排名页（不加载 three.js）
 启动.bat                    Windows 一键启动
 src/
-  main.js                   应用入口：状态、搜索、详情面板、视图切换
+  main.js                   地图页入口：状态、搜索、详情面板、视图切换
+  players.js                选手榜页入口：排序、筛选、分页渲染、迷你折线
+  rankings.js               排名页入口：bump chart、期次游标、右侧榜单
   globe3d.js                three.js 地球：程序化生成球体贴图、Sprite 气泡、解析解拾取
   globe2d.js                D3 自然地球投影的 2D 地图（事件委托 + 自实现缩放平移）
   util.js                   国旗 emoji、颜色刻度、经纬度 ↔ 三维坐标
-  style.css                 深色主题样式
+  style.css                 深色主题样式（三页共用）
 scripts/
   serve.mjs                 零依赖静态服务器（替代 vite dev）
   vendor.mjs                把 node_modules 里的 ESM 入口复制到 public/vendor/
   scrape-hltv.mjs           HLTV 抓取器（当前数据源，会弹窗口过 Cloudflare）
   scrape-players.mjs        补每个选手的头像 + 冠军荣誉（头像走 CDP 取字节，见「三」）
+  scrape-ratings.mjs        抓 Rating 3.0（生涯 + 逐年，见「三」）
+  scrape-rankings.mjs       抓历届世界排名（顺 pagination-prev 回溯）
   scrape-liquipedia.mjs     Liquipedia 抓取器（备选数据源）
-  build-dataset.mjs         抓取结果 → dataset.json
+  build-dataset.mjs         抓取结果 → dataset / ratings / rankings
   build-basemap.mjs         世界底图 → countries-110m.json（含中国标准地图口径修正）
   smoke-test.mjs            不开浏览器的链路自检
-  lib/browser.mjs           起一个可远程调试的 Chrome
+  lib/browser.mjs           起一个可远程调试的 Chrome（含 --no-proxy-server）
   lib/cdp.mjs               极简 CDP 客户端（Node 自带 WebSocket）
   lib/countries.mjs         国名 → ISO 两字母码
-  dev/                      开发用检查（check:imports / check:boot / check:3d / check:e2e）
+  dev/                      开发用检查（check:imports / check:boot / check:3d / check:e2e / check:pages）
 public/
-  data/                     dataset.json + 底图 countries-110m.json
+  data/                     dataset.json + ratings.json + rankings.json + 底图
   avatars/                  选手头像，120×120 WebP，约 4 KB 一张
   vendor/                   预先放好的前端依赖（three / d3-geo / d3-array / internmap；
                             topojson-client 现在只有构建脚本用，前端不再加载）
 data/
   hltv.json                 当前默认数据源的抓取原始结果
   players.json              选手头像文件名与冠军荣誉列表
+  ratings.json              Rating 3.0 原始结果（生涯 + 逐年）
+  rankings.json             历届排名原始结果
   liquipedia.json           备选数据源的抓取原始结果
   countries.raw.json        国家元数据缓存（world-countries）
 ```
+
+> ⚠ `data/ratings.json`（抓取原始）和 `public/data/ratings.json`（构建产物）**同名**，
+> 这就是 `scripts/serve.mjs` 必须先找 `public/`、再回退到项目根的原因。
+> 顺序反了的话页面会拿到结构不对的 JSON，报「没有任何选手记录」而不是 404。
 
 ### 为什么不用 Vite
 
@@ -247,17 +342,19 @@ npm run test
 会验证：结构自洽（战队阵容人数合计 = 选手总数）、国家码能和世界地图的
 GeoJSON 要素对上、每个国家的气泡坐标确实落在本国境内、
 搜索能命中战队/选手/国家、**地图口径**（藏南/台湾/钓鱼岛属于中国，且布尔减没有
-误伤邻国），以及前端模块解析（相对 import 是否存在、
+误伤邻国）、选手头像与冠军荣誉的引用自洽，以及**选手榜/排名页数据的内部一致性**
+（rating 区间、`hlId` 对齐、排名快照的队伍下标不越界），以及前端模块解析（相对 import 是否存在、
 裸模块名是否都在 import map 里、`public/vendor/` 是否齐备）。
-当前 **32 项全部通过**。
+当前 **42 项全部通过**。
 
-`scripts/dev/` 下还有四个开发用检查，前三个**不用开浏览器**：
+`scripts/dev/` 下还有五个开发用检查，前三个**不用开浏览器**：
 
 ```bash
 npm run check:imports   # 扫 src/ + public/vendor/ 共 138 个 js，确认模块图自洽
 npm run check:boot      # 用 linkedom 造一个假 DOM，把 src/main.js 真跑一遍，抓运行时报错
 npm run check:3d        # 用一个假 WebGLRenderer 把 src/globe3d.js 真跑一遍，验证拾取链路
-npm run check:e2e       # 真的拉起 Chrome，量真实布局 + 截图（需要 Node 之外的权限，见下）
+npm run check:e2e       # 真的拉起 Chrome，量地图页真实布局 + 截图（需要 Node 之外的权限，见下）
+npm run check:pages     # 同样拉真 Chrome，量选手榜与排名页的行高/折线/曲线/交互
 ```
 
 `check:boot` 和 `check:3d` 需要一次性装个 linkedom（故意不写进 `package.json`）：
@@ -267,7 +364,7 @@ npm install linkedom --no-save --ignore-scripts
 ```
 
 **没装也不会报错**——这两项会打印一行「跳过」并正常退出，因为它们只是开发期辅助，
-真正必需的是 `npm test`（32 项）。
+真正必需的是 `npm test`（42 项）。
 
 它会打印启动后各视图的元素数量、点击左侧首行和搜索的结果，以及任何未捕获异常。
 `check:3d` 还会遍历假渲染器收到的场景，报告气泡/星空/贴图是否真的建出来，
@@ -308,6 +405,19 @@ npm run check:e2e -- http://127.0.0.1:5180/
   只会显示气泡、不会被填色，元数据在 `scripts/build-dataset.mjs` 的 `MANUAL` 表里手工补的。
 - **110m 地图精度**有限，以色列这类细长国家的边界被简化过，
   所以构建时会自动把气泡吸附到国土几何内部（`snapInside`）。
+- **选手榜里的头像只有一部分人**：头像来自地图页的前 100 队名单（473 张），
+  而榜单里有 1703 人 —— 不属于前 100 队的人自然没有头像，会退化成首字母方块。
+  这是数据覆盖范围决定的，不是渲染失败。想全员带头像得把 `scrape:players`
+  的输入从"前 100 队阵容"换成"榜单里所有选手页面"，那是 1700 次抓取。
+- **历届排名每期只存前 30 名**，不是完整 250 队。全量 576 期 × 250 队约 5.7 MB，
+  现在的做法 253 KB（队名去重成下标表）。
+- **排名页默认那张图很密**：576 期铺在 1100px 上每期不到 2px，长盛战队（NaVi、G2
+  各自在榜 574 期）的线会把画面填满。这是数据的真实形状，不是渲染 bug ——
+  用左上角的时间窗口往回切一段，或者点图例只留两三个队，就看得清了。
+- **逐年 Rating 只是"那一年的平均值"**，不是 HLTV 官方的年度榜单。2012–2015 年
+  样本很少（105–400 人），越早的年份越不可比。
+- **排名页和选手榜不共享地图页的选中状态** —— 它们是三个独立页面，各有各的 URL。
+  这是有意的：可以直接把 `players.html` 发给别人，不用解释"先点哪儿"。
 
 ---
 
@@ -330,7 +440,9 @@ npm run check:e2e -- http://127.0.0.1:5180/
 | 详情标题或搜索里出现 `[object Object]` | 已修（2026-10）。`world-countries` 的 `name` 字段是 `{ common, official, native }` 对象而不是字符串，构建数据集时现在取 `name.common`；前端另有 `enName()` 兼容两种形态。 |
 | 选手头像显示成首字母圆片 | 这是**有意的降级**，不是破图：说明该选手没有头像数据。跑一次 `npm run scrape:players` 再 `npm run dataset:hltv` 即可。 |
 | 选手卡片里「暂无冠军记录」 | 两种情况：要么确实没抓过（同上），要么这名选手真的没拿过冠军。HLTV 上的 MVP 次数、`#N best player`、年度最佳、ESL Grand Slam、FPL 都不算冠军，会被主动滤掉。 |
-| 抓取脚本卡在 `Just a moment...` | Cloudflare 又拦住了。确认**没有加 `--headless`**、也没有手动传 `--user-agent`（详见「三 → 为什么抓 HLTV 必须开窗口」）。 |
+| 抓取脚本卡在 `Just a moment...` | Cloudflare 又拦住了。确认**没有加 `--headless`**、也没有手动传 `--user-agent`（详见「三 → 为什么抓 HLTV 必须开窗口」）。如果已经满足了还是过不去，多半是**系统代理**在捣鬼 —— 浏览器默认参数里已经加了 `--no-proxy-server`，如果你自己改了 `scripts/lib/browser.mjs` 把它去掉了，加回来。 |
+| 选手榜/排名页弹「没有任何选手记录」或 `s.t is not iterable` | **不是 404**，是 `scripts/serve.mjs` 的目录解析顺序被改反了：`/data/ratings.json` 命中了项目根目录下那份**抓取原始产物**（形状是 `{ranges:{...}}`）而不是 `public/data/` 下的成品。正确顺序是 `[public, ROOT]`，别调换。 |
+| 选手榜里大部分人没有头像 | 正常。头像只覆盖前 100 队的 473 人，榜单有 1703 人，其余退化成首字母方块。 |
 
 > **一条教训**：`.crash` 那个坑之所以能活下来，是因为三个无浏览器检查全绿。
 > 假 DOM 把 `getBoundingClientRect()` 写死、也没有真实 CSS 级联，
@@ -351,14 +463,15 @@ npm run check:e2e -- http://127.0.0.1:5180/
 ### HLTV（当前默认数据源）
 
 - 抓的是 HLTV.org 的公开页面：世界排名页 + 各战队页面的现役阵容 + 各选手页面的
-  头像与冠军荣誉。
+  头像与冠军荣誉 + `/stats/players` 的 Rating 3.0 + 历届 `/ranking/teams` 快照。
 - **仅供个人学习与研究使用，请勿再分发、勿用于商业用途。** 这条声明同时写在
   `data/hltv.json` 的 `license` 字段里，页面上也会照原样展示。
 - `public/avatars/` 里的选手头像下载自 `img-cdn.hltv.org`，版权归 HLTV.org 与
   摄影师所有，同样**只在本仓库内作演示用途**。不想要这些图可以整个目录删掉，
   前端会自动退化成首字母圆片。
 - `scripts/scrape-hltv.mjs` 默认串行执行、每次请求间隔 2.6 秒。请不要把它调快，
-  也不要高频重复抓取。
+  也不要高频重复抓取。（`scrape-ratings.mjs` 间隔 1.6 秒、`scrape-rankings.mjs`
+  间隔 1.5 秒，同理。）
 - 本项目与 HLTV.org 没有任何隶属关系。若你是权利方并希望删除相关内容，开个 issue 即可。
 
 ### Liquipedia（备选数据源）

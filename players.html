@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark" />
+    <title>选手榜 · CS2 现役职业选手全球分布</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body class="doc-body">
+    <div id="app">
+      <header class="topbar">
+        <div class="brand">
+          <span class="dot"></span>
+          <h1>CS2 选手 Rating 榜</h1>
+          <span class="badge" id="meta-badge">加载中…</span>
+        </div>
+
+        <nav class="nav">
+          <a href="./">地图</a>
+          <a href="players.html" class="on">选手榜</a>
+          <a href="rankings.html">历届排名</a>
+        </nav>
+
+        <div class="grow" style="flex: 1"></div>
+        <span class="badge">Rating 3.0 · 来自 HLTV 统计页</span>
+      </header>
+
+      <div class="doc">
+        <div class="toolbar">
+          <div class="chips" id="chips">
+            <button class="chip on" data-f="all">全部 <b id="n-all">—</b></button>
+            <button class="chip" data-f="cur">前 100 队现役 <b id="n-cur">—</b></button>
+          </div>
+          <input id="q" type="search" autocomplete="off" placeholder="搜索选手 / 战队 / 国家" />
+          <label>国家
+            <select id="cc"><option value="">全部</option></select>
+          </label>
+          <label>最少地图数 <input id="minmaps" type="number" min="0" step="10" value="0" /></label>
+          <button class="chip" id="reset">重置</button>
+          <div class="grow"></div>
+          <span class="count">共 <b id="count">0</b> 人</span>
+        </div>
+
+        <div class="tablewrap" id="tablewrap">
+          <table class="ptable">
+            <thead>
+              <tr id="thead">
+                <th data-k="rank" style="width: 52px">#</th>
+                <th data-k="nick">选手</th>
+                <th data-k="cn">国家 / 地区</th>
+                <th data-k="team">现役战队</th>
+                <th data-k="rating" class="num sorted">Rating 3.0<span class="caret">▼</span></th>
+                <th data-k="kd" class="num">K/D<span class="caret">▼</span></th>
+                <th data-k="maps" class="num">地图数<span class="caret">▼</span></th>
+                <th data-k="kdDiff" class="num">K-D 差<span class="caret">▼</span></th>
+                <th style="width: 130px">逐年 Rating</th>
+              </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+          </table>
+          <div id="more" hidden><button type="button" id="more-btn">显示更多</button></div>
+          <div class="empty-state" id="empty" hidden>没有符合条件的选手。</div>
+        </div>
+      </div>
+    </div>
+
+    <div id="crash" class="crash" hidden>
+      <div class="crash-box">
+        <h2 id="crash-title">页面出错了</h2>
+        <p id="crash-msg"></p>
+        <pre id="crash-detail"></pre>
+        <div class="crash-actions">
+          <button id="crash-reload" type="button">重新加载</button>
+          <button id="crash-copy" type="button">复制错误信息</button>
+        </div>
+      </div>
+    </div>
+
+    <noscript>
+      <div class="crash"><div class="crash-box">
+        <h2>需要开启 JavaScript</h2>
+        <p>本页用 ES Module 渲染表格，请允许 JavaScript 后刷新。</p>
+      </div></div>
+    </noscript>
+
+    <script type="module" src="/src/players.js" onerror="window.__cs2ModuleFailed && window.__cs2ModuleFailed()"></script>
+
+    <!-- 和 index.html 里那段同一个道理：file:// 下模块根本不会被加载，
+         所以求救脚本必须是普通内联脚本，不能是 module。 -->
+    <script>
+      (function () {
+        function showCrash(title, msg) {
+          var crash = document.getElementById('crash');
+          var t = document.getElementById('crash-title');
+          var m = document.getElementById('crash-msg');
+          if (!crash || !m) return;
+          if (t && title) t.textContent = title;
+          m.textContent = msg;
+          crash.hidden = false;
+          var reload = document.getElementById('crash-reload');
+          if (reload) reload.onclick = function () { location.reload(); };
+          var copy = document.getElementById('crash-copy');
+          if (copy) { copy.textContent = '关闭提示'; copy.onclick = function () { crash.hidden = true; }; }
+        }
+        window.__cs2ShowCrash = showCrash;
+        window.__cs2ModuleFailed = function () {
+          showCrash('脚本没能加载', 'src/players.js 加载失败（通常是 404 或路径不对）。'
+            + '请确认地址是 http://127.0.0.1:5173/players.html 而不是 file://，然后 Ctrl+F5 强刷。');
+        };
+        if (location.protocol === 'file:') {
+          document.body.setAttribute('style', 'margin:0;background:#0b1220;color:#e6edf6');
+          document.body.innerHTML =
+            '<div style="max-width:720px;margin:11vh auto;padding:0 24px;'
+            + 'font:16px/1.75 system-ui,\'Microsoft YaHei\',sans-serif">'
+            + '<h1 style="font-size:26px;margin:0 0 8px">打开方式不对</h1>'
+            + '<p style="color:#8fa6c4;margin:0 0 26px">'
+            + '不要直接双击这个 html —— 它需要一个小型本地服务器。</p>'
+            + '<div style="background:#131b2c;border:1px solid #22314d;border-radius:12px;padding:20px 22px">'
+            + '<p style="margin:0 0 10px"><b>正确做法</b></p>'
+            + '<ol style="margin:0;padding-left:22px">'
+            + '<li>回到项目文件夹，双击 <b style="color:#ffd166">启动.bat</b></li>'
+            + '<li>浏览器会自动打开 <b style="color:#7ee0d4">http://127.0.0.1:5173/</b></li>'
+            + '</ol></div>'
+            + '<p style="margin:22px 0 8px;color:#8fa6c4">或者在本文件夹里用命令行启动：</p>'
+            + '<pre style="background:#0d1420;border:1px solid #22314d;border-radius:8px;'
+            + 'padding:12px 14px;color:#9fe8c0;overflow:auto">node scripts/serve.mjs</pre>'
+            + '</div>';
+          return;
+        }
+        setTimeout(function () {
+          if (window.__CS2_BOOTED__) return;
+          var badge = document.getElementById('meta-badge');
+          if (badge && badge.textContent.indexOf('加载中') === -1) return;
+          showCrash('页面没能启动',
+            '等了 15 秒还没启动完成，通常是脚本或数据没加载到。请确认：'
+            + '① 地址栏是 http://127.0.0.1:5173/players.html（不是 file://）；'
+            + '② 启动窗口里没有红色的 404 报错；'
+            + '③ 跑过 npm run scrape:ratings 与 npm run dataset:hltv（没有 data/ratings.json 就没有这个榜单）；'
+            + '④ 按 Ctrl+F5 强制刷新一次。');
+        }, 15000);
+      })();
+    </script>
+  </body>
+</html>

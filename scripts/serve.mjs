@@ -4,7 +4,7 @@
  * 为什么不用 vite dev：本机沙箱禁止管道 stdio 起子进程，vite 内部
  *   exec('net use') 会抛 spawn EPERM。这个服务器只用 node:http。
  *
- * 解析规则（模仿 vite）：先找项目根，再回退到 public/。
+ * 解析规则（模仿 vite）：先找 public/，再回退到项目根。
  *   /src/main.js        → <root>/src/main.js
  *   /vendor/three.module.js → <root>/public/vendor/three.module.js
  *   /data/dataset.json  → <root>/public/data/dataset.json
@@ -47,7 +47,13 @@ const MIME = {
 function resolve(urlPath) {
   const clean = decodeURIComponent(urlPath.split('?')[0].split('#')[0]);
   const rel = clean === '/' ? 'index.html' : clean.replace(/^\/+/, '');
-  for (const base of [ROOT, path.join(ROOT, 'public')]) {
+  // ⚠ 顺序是 public/ 优先，**不能反过来**。
+  //
+  // public/ 才是这个站的根（vendor、data、avatars 都在里面），根目录只是额外
+  // 提供 src/*.js、*.html 这些源文件。反过来的话，/data/ratings.json 会先命中
+  // 根目录下那份**抓取原始产物**（形状完全不同：是 {ranges:{...}}），页面拿到
+  // 一个结构不对的 JSON，报"没有任何选手记录"而不是 404 —— 这个坑真踩过。
+  for (const base of [path.join(ROOT, 'public'), ROOT]) {
     const full = path.resolve(base, rel);
     // 目录穿越保护
     if (!full.startsWith(base)) continue;

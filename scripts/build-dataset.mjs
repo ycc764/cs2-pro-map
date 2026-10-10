@@ -88,6 +88,9 @@ for (const t of raw.teams) {
     const info = countryOf(p.flag);
     const rec = {
       id: p.id,
+      // HLTV 的数字选手 id（从 /player/11893/zywoo 里取）。选手榜的 rating 数据
+      // 是按这个 id 对齐的 —— `/stats/players/<id>` 和 `/player/<id>` 用的是同一套 id。
+      hlId: Number(String(p.page || '').match(/\/player\/(\d+)/)?.[1]) || 0,
       name: p.name,
       flag: p.flag,
       country: info.code,
@@ -266,3 +269,119 @@ console.log(
     .map((c) => `${c.nameZh}(${c.count})`)
     .join(' '),
 );
+
+/* ==================================================================
+ * 选手 Rating 榜（由 `npm run scrape:ratings` 产出 data/ratings.json）
+ * ------------------------------------------------------------------
+ * 只认生涯总计那一档作为排序依据；逐年数据折成每人一条 [年, rating, maps]
+ * 的小数组，给前端画趋势用。逐年全量塞进去会让产物从 200KB 涨到 1.6MB，
+ * 而页面只需要"这个人每年什么水平"这一条线。
+ * ================================================================== */
+const RATINGS_FILE = 'data/ratings.json';
+if (fs.existsSync(RATINGS_FILE)) {
+  const rk = JSON.parse(fs.readFileSync(RATINGS_FILE, 'utf8'));
+  const career = rk.ranges?.career?.players ?? [];
+
+  const byYear = new Map();
+  for (const [key, range] of Object.entries(rk.ranges ?? {})) {
+    if (!/^\d{4}$/.test(key)) continue;
+    const y = Number(key);
+    for (const p of range.players ?? []) {
+      if (!byYear.has(p.id)) byYear.set(p.id, []);
+      byYear.get(p.id).push([y, p.rating, p.maps]);
+    }
+  }
+  for (const arr of byYear.values()) arr.sort((a, b) => a[0] - b[0]);
+
+  // 我们地图上那 485 人（前 100 队）标出来，页面上可以只看"现役"
+  const inMap = new Set(players.map((p) => p.hlId).filter(Boolean));
+  // 顺带把头像带上：选手榜里有一张脸比一行文字好认得多（只有前 100 队的人有）
+  const avatarByHlId = new Map(players.filter((p) => p.hlId && p.avatar).map((p) => [p.hlId, p.avatar]));
+
+  const rows = career.map((p) => {
+    const info = countryOf(String(p.countryCode || '').toLowerCase());
+    const o = {
+      id: p.id,
+      nick: p.nick,
+      cc: info.code,
+      cn: info.nameZh,
+      flag: info.flag,
+      team: p.team,
+      maps: p.maps,
+      rounds: p.rounds,
+      kd: p.kd,
+      kdDiff: p.kdDiff,
+      rating: p.rating,
+    };
+    if (inMap.has(p.id)) o.cur = 1;
+    const av = avatarByHlId.get(p.id);
+    if (av) o.av = av;
+    const y = byYear.get(p.id);
+    if (y && y.length) o.y = y;
+    return o;
+  });
+
+  const years = Object.keys(rk.ranges ?? {}).filter((k) => /^\d{4}$/.test(k)).map(Number).sort((a, b) => a - b);
+  const ratings = {
+    source: 'hltv',
+    sourceUrl: rk.sourceUrl,
+    license: rk.license,
+    fetchedAt: rk.fetchedAt,
+    generatedAt: new Date().toISOString(),
+    careerFrom: rk.ranges?.career?.startDate || '',
+    careerTo: rk.ranges?.career?.endDate || '',
+    years,
+    inMapCount: rows.filter((r) => r.cur).length,
+    players: rows,
+  };
+  fs.writeFileSync(path.join(OUT_DIR, 'ratings.json'), JSON.stringify(ratings));
+  console.log(
+    `ratings.json: ${rows.length} 名选手有生涯 rating（其中 ${ratings.inMapCount} 人在前 100 队里），`
+    + `${rows.filter((r) => r.y).length} 人有逐年数据，覆盖 ${years[0]}–${years[years.length - 1]}`
+    + `（${(fs.statSync(path.join(OUT_DIR, 'ratings.json')).size / 1024).toFixed(0)} KB）`,
+  );
+} else {
+  console.log(`（没有 ${RATINGS_FILE}，本次不生成选手榜数据；想补就跑 npm run scrape:ratings）`);
+}
+
+/* ==================================================================
+ * 历届世界排名（由 `npm run scrape:rankings` 产出 data/rankings.json）
+ * ------------------------------------------------------------------
+ * 队名会重复出现在几百期里，所以列一张 teams 表，快照里只存下标。
+ * 每项是 [队下标, 名次, 积分, 名次变化]，570 期 × 前 30 名 ≈ 240 KB。
+ * ================================================================== */
+const RANKINGS_FILE = 'data/rankings.json';
+if (fs.existsSync(RANKINGS_FILE)) {
+  const rk = JSON.parse(fs.readFileSync(RANKINGS_FILE, 'utf8'));
+  const snaps = [...(rk.snapshots ?? [])].sort((a, b) => (a.date < b.date ? -1 : 1)); // 旧 → 新
+  const teamIndex = new Map();
+  const teamNames = [];
+  const idx = (name) => {
+    let i = teamIndex.get(name);
+    if (i === undefined) { i = teamNames.length; teamIndex.set(name, i); teamNames.push(name); }
+    return i;
+  };
+  const out = snaps.map((s) => ({
+    d: s.date,
+    n: s.total || 0,
+    t: (s.teams ?? []).map((t) => [idx(t.name), t.rank, t.points, t.change || 0]),
+  }));
+  const payload = {
+    source: 'hltv',
+    sourceUrl: rk.sourceUrl,
+    license: rk.license,
+    fetchedAt: rk.fetchedAt,
+    generatedAt: new Date().toISOString(),
+    top: rk.top || 0,
+    teams: teamNames,
+    snapshots: out,
+  };
+  fs.writeFileSync(path.join(OUT_DIR, 'rankings.json'), JSON.stringify(payload));
+  const span = out.length ? `${out[0].d} → ${out[out.length - 1].d}` : '(空)';
+  console.log(
+    `rankings.json: ${out.length} 期（${span}）、${teamNames.length} 支出现过的战队`
+    + `（${(fs.statSync(path.join(OUT_DIR, 'rankings.json')).size / 1024).toFixed(0)} KB）`,
+  );
+} else {
+  console.log(`（没有 ${RANKINGS_FILE}，本次不生成历届排名数据；想补就跑 npm run scrape:rankings）`);
+}

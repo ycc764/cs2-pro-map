@@ -227,6 +227,64 @@ const teamAvatarMismatch = ds.teams.flatMap((t) => t.players
 ok(teamAvatarMismatch.length === 0, '战队阵容里的头像字段与选手表一致',
   teamAvatarMismatch.length ? teamAvatarMismatch.slice(0, 3).map((p) => p.id).join(' ') : '');
 
+/* ---------------- 9. 选手榜与排名页的数据 ----------------
+ * 这两份产物是 build-dataset.mjs 从 data/ratings.json、data/rankings.json 折出来的，
+ * 同样允许缺失（对应的页面会提示你先跑哪条命令）。但只要文件在，内部引用就必须自洽 ——
+ * 排名快照只存队伍下标，下标一旦越界，前端渲染曲线时会整页崩掉。
+ */
+group('选手榜与排名页的数据');
+const ratingsPath = join(ROOT, 'public', 'data', 'ratings.json');
+const rankingsPath = join(ROOT, 'public', 'data', 'rankings.json');
+
+if (!existsSync(ratingsPath)) {
+  ok(true, '（本次没有 ratings.json）', '可跑 npm run scrape:ratings 再 npm run dataset:hltv');
+} else {
+  const rk = JSON.parse(readFileSync(ratingsPath, 'utf8'));
+  const rp = rk.players || [];
+  ok(rp.length > 0, '选手榜有选手记录', `${rp.length} 人（其中 ${rk.inMapCount ?? 0} 人在前 100 队）`);
+  const badRating = rp.filter((p) => !Number.isFinite(p.rating) || p.rating < 0.5 || p.rating > 2);
+  ok(badRating.length === 0, 'rating 都在合理区间（0.5–2）',
+    badRating.length ? badRating.slice(0, 3).map((p) => `${p.nick}=${p.rating}`).join(' ') : '');
+  // 榜单要能按 id 和选手表对齐，对齐靠的是 dataset 里的 hlId
+  const hlIds = new Set(ds.players.map((p) => p.hlId).filter(Boolean));
+  const curIds = rp.filter((p) => p.cur).map((p) => p.id);
+  const unmatched = curIds.filter((id) => !hlIds.has(id));
+  ok(unmatched.length === 0, '标了「前 100 队」的选手都能在 dataset 里找到 hlId',
+    `${curIds.length} 人对齐 / ${hlIds.size} 个 hlId`);
+  // 头像路径同样必须真的存在
+  const rAvatars = rp.filter((p) => p.av);
+  const missingRAvatar = rAvatars.filter((p) => !existsSync(join(ROOT, 'public', p.av)));
+  ok(missingRAvatar.length === 0, '选手榜引用的头像文件都存在',
+    rAvatars.length ? `${rAvatars.length} 张` : '（本次无头像）');
+  // 逐年数据：必须是 [年, rating, maps] 三元组，且年份递增
+  const withYears = rp.filter((p) => p.y?.length);
+  const badYear = withYears.filter((p) => p.y.some((e) => !Array.isArray(e) || e.length !== 3
+    || !Number.isFinite(e[0]) || !Number.isFinite(e[1]) || !Number.isFinite(e[2]))
+    || p.y.some((e, i) => i > 0 && e[0] <= p.y[i - 1][0]));
+  ok(badYear.length === 0, '逐年折线的年份是递增的 [年, rating, 地图数] 三元组',
+    `${withYears.length}/${rp.length} 人有逐年数据`);
+}
+
+if (!existsSync(rankingsPath)) {
+  ok(true, '（本次没有 rankings.json）', '可跑 npm run scrape:rankings 再 npm run dataset:hltv');
+} else {
+  const kn = JSON.parse(readFileSync(rankingsPath, 'utf8'));
+  const teams = kn.teams || [];
+  const snaps = kn.snapshots || [];
+  ok(snaps.length > 0, '排名页有期次快照', `${snaps.length} 期 · ${teams.length} 支队 · 每期前 ${kn.top}`);
+  const badDate = snaps.filter((s) => !/^\d{4}-\d{2}-\d{2}$/.test(s.d || ''));
+  ok(badDate.length === 0, '每期都有合法日期', badDate.length ? `坏日期 ${badDate.length} 个` : '');
+  const notSorted = snaps.filter((s, i) => i > 0 && s.d <= snaps[i - 1].d);
+  ok(notSorted.length === 0, '期次按日期从旧到新排列',
+    notSorted.length ? `乱序 ${notSorted.length} 处，首个 ${notSorted[0].d}` : `${snaps[0]?.d} → ${snaps.at(-1)?.d}`);
+  const badIdx = snaps.flatMap((s) => (s.t || []).filter((e) => !Number.isInteger(e[0]) || e[0] < 0 || e[0] >= teams.length));
+  ok(badIdx.length === 0, '快照里的队伍下标都没越界',
+    badIdx.length ? `越界 ${badIdx.length} 个（最大下标 ${teams.length - 1}）` : '');
+  const badRank = snaps.flatMap((s) => (s.t || []).filter((e) => e[1] < 1 || e[1] > (kn.top || 30)));
+  ok(badRank.length === 0, '名次都在 1..top 之间',
+    badRank.length ? `异常名次 ${badRank.length} 个` : '');
+}
+
 console.log(`\n结果：${pass} 通过 / ${fail} 失败`);
 if (fail) {
   console.log('失败项：\n  - ' + failures.join('\n  - '));

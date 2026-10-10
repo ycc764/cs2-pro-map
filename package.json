@@ -12,6 +12,8 @@
     "scrape": "node scripts/scrape-liquipedia.mjs",
     "scrape:hltv": "node scripts/scrape-hltv.mjs",
     "scrape:players": "node scripts/scrape-players.mjs",
+    "scrape:ratings": "node scripts/scrape-ratings.mjs",
+    "scrape:rankings": "node scripts/scrape-rankings.mjs",
     "dataset": "node scripts/build-dataset.mjs",
     "dataset:hltv": "node scripts/build-dataset.mjs hltv",
     "dataset:liquipedia": "node scripts/build-dataset.mjs liquipedia",
@@ -23,6 +25,7 @@
     "check:boot": "node --import ./scripts/dev/register.mjs scripts/dev/boot-check.mjs",
     "check:3d": "node --import ./scripts/dev/register-stub.mjs scripts/dev/globe3d-check.mjs",
     "check:e2e": "node scripts/dev/e2e-check.mjs",
+    "check:pages": "node scripts/dev/e2e-pages.mjs",
     "shots": "node scripts/dev/e2e-check.mjs"
   },
   "dependencies": {

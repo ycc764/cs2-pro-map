@@ -16,6 +16,17 @@
  *   `--disable-background-networking` 这类"自动化常用开关"也会被指纹识别，已一并去掉。
  *   实测对照：覆写 UA → 卡 `Just a moment...` 90s 超时；不覆写 + 有窗口 → 38s 自动通过。
  *   （无头模式仍然过不去，因为 UA 里就写着 HeadlessChrome，抓 HLTV 必须开窗口。）
+ *
+ * ⚠ 系统代理教训（2026-10-10 实测，同一台机器）：
+ *   Chrome 默认跟随 Windows 的系统代理。本机 `ProxyEnable=1`、`ProxyServer=127.0.0.1:7897`
+ *   （clash / v2ray 那一类）。**走代理时 Cloudflare 的 managed challenge 永远过不去**
+ *   （75s 仍是 "Just a moment..."），而同一个 Chrome、同一个 profile 加上
+ *   `--no-proxy-server` 直连 —— **3 秒就过**。
+ *   原因：代理是共享出口 IP，信誉分被拉低，Cloudflare 直接判成 bot。
+ *   所以这里固定带上 `--no-proxy-server`。这不只是"能过挑战"的问题：直连时
+ *   浏览器和 Node 的出口一致，抓下来的数据和 `fetch` 探测的结果才是同一个来源。
+ *   要临时走代理调试，就用 `extraArgs` 覆盖不掉（它在后面追加，同名后者生效）——
+ *   直接传 `extraArgs: ['--proxy-server=...']` 即可。
  */
 import { spawn } from 'node:child_process';
 import fs from 'node:fs';
@@ -42,7 +53,7 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 /**
  * 拉起一个可远程调试的 Chrome，返回 { cdpUrl, close() }。
  */
-export async function launchBrowser({ port = 9333, profileDir, headless = true } = {}) {
+export async function launchBrowser({ port = 9333, profileDir, headless = true, extraArgs = [] } = {}) {
   const exe = findBrowser();
   const dir = profileDir || path.join(process.cwd(), '.tmp-profile', `p${port}`);
   fs.mkdirSync(dir, { recursive: true });
@@ -60,6 +71,10 @@ export async function launchBrowser({ port = 9333, profileDir, headless = true }
     '--mute-audio',
     '--window-size=1440,900',
     '--lang=en-US',
+    // 必须绕过系统代理：走代理时 HLTV 的 Cloudflare 挑战永远过不去（实测 75s 超时），
+    // 直连 3s 就过。详见文件头部的教训注释。
+    '--no-proxy-server',
+    ...extraArgs,
     'about:blank',
   ];
   if (headless) args.unshift('--headless=new');

@@ -212,6 +212,97 @@ try {
   await cdp.goto(`${base}rankings.html`);
   await sleep(3500);
 
+  // 默认视图是「选手 TOP20」，先量它；战队排名那张曲线图要切过去才会建（隐藏时宽高是 0）
+  console.log('\n--- 选手 TOP20（默认视图）---');
+  const t20 = await cdp.eval(`(() => {
+    const q = (s) => document.querySelector(s);
+    const cards = [...document.querySelectorAll('#top20-grid .pcard')];
+    const board = [...document.querySelectorAll('#t20-board .rank-row')];
+    const years = [...document.querySelectorAll('#year-chips .chip')];
+    const img = cards[0]?.querySelector('img.pav');
+    return {
+      viewOn: q('#view-chips .chip.on')?.textContent?.trim() || null,
+      stageHidden: q('#top20-stage')?.hidden,
+      teamsHidden: q('#teams-stage')?.hidden,
+      yearChips: years.length,
+      yearOn: years.find((c) => c.classList.contains('on'))?.textContent?.trim() || null,
+      yearHint: q('#year-hint')?.textContent?.trim() || null,
+      viewHint: q('#view-hint')?.textContent?.trim() || null,
+      cards: cards.length,
+      cardH: cards[0] ? Math.round(cards[0].getBoundingClientRect().height) : 0,
+      firstCard: cards[0]?.textContent?.replace(/\\s+/g, ' ').trim() || null,
+      ranks: cards.map((c) => c.querySelector('.pc-rank')?.textContent?.trim()),
+      avatars: document.querySelectorAll('#top20-grid img.pav').length,
+      avatarOk: img ? (img.complete ? img.naturalWidth : 0) : 0,
+      board: board.length,
+      boardFirst: board[0]?.textContent?.trim() || null,
+      sideTitle: q('#t20-side-title')?.textContent?.trim() || null,
+    };
+  })()`);
+  console.log('视图高亮     :', t20.viewOn, '| top20 hidden =', t20.stageHidden, '| teams hidden =', t20.teamsHidden);
+  console.log('范围提示     :', t20.viewHint);
+  console.log('年份 chips   :', t20.yearChips, '个，选中的是', t20.yearOn, '|', t20.yearHint);
+  console.log('卡片         :', t20.cards, '张，高', t20.cardH, 'px | 头像', t20.avatars, '张，首张已解码宽度', t20.avatarOk);
+  console.log('第 1 张      :', t20.firstCard);
+  console.log('名次序列     :', (t20.ranks || []).join(' '));
+  console.log('右侧排行     :', t20.board, '行 | 首', t20.boardFirst, '| 标题', t20.sideTitle);
+
+  ok(t20.viewOn === '选手 TOP20', '默认视图是「选手 TOP20」', `实际 ${t20.viewOn}`);
+  ok(t20.stageHidden === false && t20.teamsHidden === true, 'TOP20 舞台显示、战队舞台隐藏', `${t20.stageHidden} / ${t20.teamsHidden}`);
+  ok(t20.yearChips >= 10, '年份 chips 有 13 届', `${t20.yearChips} 个`);
+  ok(/^\d{4}$/.test(t20.yearOn || ''), '默认停在最近一届', `选中 ${t20.yearOn}`);
+  ok(t20.cards === 20, '一年正好 20 张卡片', `${t20.cards} 张`);
+  ok(t20.cardH >= 50, '卡片没塌成一条线', `高 ${t20.cardH}px`);
+  ok(t20.ranks?.[0] === '#1' && t20.ranks?.[19] === '#20', '卡片按名次从 #1 排到 #20', `${t20.ranks?.[0]} … ${t20.ranks?.[19]}`);
+  ok(t20.avatars >= 18 && t20.avatarOk > 0, '卡片头像都加载出来了', `${t20.avatars} 张，首张 ${t20.avatarOk}px`);
+  ok(t20.board >= 50, '右侧上榜次数排行有内容', `${t20.board} 行`);
+
+  await shoot('pages-top20');
+
+  // 换一年：卡片内容要跟着变（2025 有 ZywOo/donk，2018 是 s1imple 那年）
+  console.log('\n--- 切到 2013 年 ---');
+  await cdp.eval(`[...document.querySelectorAll('#year-chips .chip')].find((c) => c.textContent.trim() === '2013')?.click()`);
+  await sleep(500);
+  const y13 = await cdp.eval(`(() => {
+    const cards = [...document.querySelectorAll('#top20-grid .pcard')];
+    return {
+      yearOn: document.querySelector('#year-chips .chip.on')?.textContent?.trim() || null,
+      first: cards[0]?.textContent?.replace(/\\s+/g, ' ').trim() || null,
+      hint: document.querySelector('#year-hint')?.textContent?.trim() || null,
+      cards: cards.length,
+    };
+  })()`);
+  console.log(`2013 : ${y13.hint} | 第 1 张 ${y13.first}`);
+  ok(y13.yearOn === '2013', '切年份后高亮跟上了', `选中 ${y13.yearOn}`);
+  ok(y13.cards === 20 && y13.first && y13.first !== t20.firstCard, '换年后卡片内容是新的', y13.first);
+
+  // 点右侧排行里的一行：应跳到那人最近一次上榜的年份并高亮卡片
+  console.log('\n--- 点右侧排行第 1 行 ---');
+  await cdp.eval(`document.querySelector('#t20-board .rank-row')?.click()`);
+  await sleep(500);
+  const foc = await cdp.eval(`(() => ({
+    on: document.querySelectorAll('#top20-grid .pcard.on').length,
+    year: document.querySelector('#year-chips .chip.on')?.textContent?.trim() || null,
+    title: document.querySelector('#t20-side-title')?.textContent?.trim() || null,
+    sub: document.querySelector('#t20-side-sub')?.textContent?.trim() || null,
+  }))()`);
+  console.log(`高亮 ${foc.on} 张卡片 | 跳到 ${foc.year} 年 | 侧栏 ${foc.title} — ${foc.sub}`);
+  ok(foc.on === 1, '点了排行里的名字后只高亮一张卡片', `${foc.on} 张`);
+  ok(foc.title && foc.sub && /上榜 \d+ 次/.test(foc.sub), '侧栏写清了这人的上榜记录', `${foc.title} — ${foc.sub}`);
+
+  // 切到战队排名视图，后面那套曲线断言照旧
+  console.log('\n--- 切到「战队世界排名」---');
+  await cdp.eval(`[...document.querySelectorAll('#view-chips .chip')].find((c) => c.dataset.view === 'teams')?.click()`);
+  await sleep(900);
+  const afterSwitch = await cdp.eval(`(() => ({
+    viewOn: document.querySelector('#view-chips .chip.on')?.textContent?.trim() || null,
+    stageHidden: document.querySelector('#teams-stage')?.hidden,
+    t20Hidden: document.querySelector('#top20-stage')?.hidden,
+  }))()`);
+  console.log('切换后       :', afterSwitch.viewOn, '| teams hidden =', afterSwitch.stageHidden, '| top20 hidden =', afterSwitch.t20Hidden);
+  ok(afterSwitch.viewOn === '战队世界排名' && afterSwitch.stageHidden === false && afterSwitch.t20Hidden === true,
+    '切到战队排名后舞台对调了', `${afterSwitch.viewOn} / ${afterSwitch.stageHidden} / ${afterSwitch.t20Hidden}`);
+
   const r = await cdp.eval(`(() => {
     const q = (s) => document.querySelector(s);
     const crash = q('#crash');

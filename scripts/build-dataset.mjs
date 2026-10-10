@@ -278,6 +278,12 @@ console.log(
  * 而页面只需要"这个人每年什么水平"这一条线。
  * ================================================================== */
 const RATINGS_FILE = 'data/ratings.json';
+/**
+ * 小写昵称 → 选手榜那一行。TOP20 抓下来的是新闻页链接（`/news/<id>/top-20-...`），
+ * 拿不到数字选手 id，只能靠昵称反查 —— 有了它才能给出 `/stats/players/<id>` 链接
+ * 和本地头像。地图上那 485 人先登记，保证同名时优先命中现役的那位。
+ */
+const ratingsByNick = new Map();
 if (fs.existsSync(RATINGS_FILE)) {
   const rk = JSON.parse(fs.readFileSync(RATINGS_FILE, 'utf8'));
   const career = rk.ranges?.career?.players ?? [];
@@ -322,6 +328,13 @@ if (fs.existsSync(RATINGS_FILE)) {
   });
 
   const years = Object.keys(rk.ranges ?? {}).filter((k) => /^\d{4}$/.test(k)).map(Number).sort((a, b) => a - b);
+  // 先登记地图上那 485 人（他们一定有头像），再补生涯榜里的其他人（多半只有 id）
+  for (const p of players) if (p.nick) ratingsByNick.set(p.nick.toLowerCase(), { id: p.hlId || 0, av: p.avatar || '' });
+  for (const r of rows) {
+    const key = r.nick.toLowerCase();
+    const prev = ratingsByNick.get(key);
+    ratingsByNick.set(key, { id: r.id, av: prev?.av || r.av || '' });
+  }
   const ratings = {
     source: 'hltv',
     sourceUrl: rk.sourceUrl,
@@ -384,4 +397,72 @@ if (fs.existsSync(RANKINGS_FILE)) {
   );
 } else {
   console.log(`（没有 ${RANKINGS_FILE}，本次不生成历届排名数据；想补就跑 npm run scrape:rankings）`);
+}
+
+/* ==================================================================
+ * 年度 TOP20 选手（由 `npm run scrape:top20` 产出 data/top20.json）
+ * ------------------------------------------------------------------
+ * 同一个人会跨好几届出现（13 届共 260 个位置，实际只有 99 位选手），
+ * 所以列一张 people 表，每年的条目只存 [人下标, 名次, 战队, 战队链接, 新闻链接]。
+ * 头像和数字 id 靠昵称从选手榜反查 —— 查不到就退回首字母方块，
+ * 2013 年前后退役的老将大多查不到，这是数据覆盖范围决定的。
+ * ================================================================== */
+const TOP20_FILE = 'data/top20.json';
+if (fs.existsSync(TOP20_FILE)) {
+  const t = JSON.parse(fs.readFileSync(TOP20_FILE, 'utf8'));
+  const srcYears = [...(t.years ?? [])].sort((a, b) => b.year - a.year);
+  const peopleIdx = new Map();
+  const people = [];
+  /**
+   * 选手榜里没有的老将（多半是 2013–2020 退役的）另外补过一批头像，
+   * 落在 `public/avatars/top20-<昵称>.webp`（由 `_grab-top20-avatars.mjs`
+   * 一次性下好）。昵称里的非字母数字会被压成 `-`，所以 `NBK-` → `nbk`、
+   * `GeT_RiGhT` → `get-right`。
+   */
+  const slug = (s) => String(s).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') || 'x';
+  const top20Avatar = (nick) => {
+    const rel = `avatars/top20-${slug(nick)}.webp`;
+    // 注意路径基准：`av` 存的是相对 public/ 的路径（和选手榜的 avatars/<id>.webp
+    // 一样），而 OUT_DIR 是 public/data —— 所以这里要拼 'public'，不是 OUT_DIR。
+    return fs.existsSync(path.join('public', rel)) ? rel : '';
+  };
+  const idxOf = (e) => {
+    const key = String(e.nick || '').toLowerCase();
+    if (!key) return -1;
+    const hit = peopleIdx.get(key);
+    if (hit !== undefined) return hit;
+    const info = countryOf(e.cc || '');
+    const r = ratingsByNick.get(key);
+    const o = { nick: e.nick, real: e.real || '', cc: info.code, cn: info.nameZh, flag: info.flag };
+    if (r?.id) o.id = r.id;
+    const av = r?.av || top20Avatar(e.nick);
+    if (av) o.av = av;
+    people.push(o);
+    peopleIdx.set(key, people.length - 1);
+    return people.length - 1;
+  };
+  const out = srcYears.map((y) => ({
+    y: y.year,
+    e: (y.entries ?? []).map((e) => [idxOf(e), e.rank, e.team || '', e.teamHref || '', e.news || '']),
+  }));
+  const payload = {
+    source: 'hltv',
+    sourceUrl: t.sourceUrl,
+    license: t.license,
+    fetchedAt: t.fetchedAt,
+    generatedAt: new Date().toISOString(),
+    people,
+    years: out,
+  };
+  const file = path.join(OUT_DIR, 'top20.json');
+  fs.writeFileSync(file, JSON.stringify(payload));
+  const withAv = people.filter((p) => p.av).length;
+  const span = out.length ? `${out[out.length - 1].y}–${out[0].y}` : '(空)';
+  console.log(
+    `top20.json: ${out.length} 届（${span}）、${people.length} 位选手、${out.reduce((n, y) => n + y.e.length, 0)} 个位置；`
+    + `${withAv} 位能对上本地头像`
+    + `（${(fs.statSync(file).size / 1024).toFixed(0)} KB）`,
+  );
+} else {
+  console.log(`（没有 ${TOP20_FILE}，本次不生成年度 TOP20 数据；想补就跑 npm run scrape:top20）`);
 }

@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="color-scheme" content="dark" />
-    <title>历届世界排名 · CS2 现役职业选手全球分布</title>
+    <title>历届 TOP20 与世界排名 · CS2 现役职业选手全球分布</title>
     <link rel="stylesheet" href="/src/style.css" />
   </head>
   <body class="doc-body">
@@ -12,7 +12,7 @@
       <header class="topbar">
         <div class="brand">
           <span class="dot"></span>
-          <h1>HLTV 历届世界排名</h1>
+          <h1>HLTV 历届榜单</h1>
           <span class="badge" id="meta-badge">加载中…</span>
         </div>
 
@@ -23,11 +23,26 @@
         </nav>
 
         <div class="grow" style="flex: 1"></div>
-        <span class="badge">鼠标划动看图 · 点图例选队</span>
+        <span class="badge">点年份看 TOP20 · 划动看图例</span>
       </header>
 
       <div class="doc">
         <div class="toolbar">
+          <span class="chips" id="view-chips">
+            <button type="button" class="chip on" data-view="top20">选手 TOP20</button>
+            <button type="button" class="chip" data-view="teams">战队世界排名</button>
+          </span>
+          <span class="grow"></span>
+          <span class="count" id="view-hint"></span>
+        </div>
+
+        <div class="toolbar" id="year-bar" hidden>
+          <span class="chips" id="year-chips"></span>
+          <span class="grow"></span>
+          <span class="count" id="year-hint"></span>
+        </div>
+
+        <div class="toolbar" id="range-bar" hidden>
           <span class="chips" id="range-chips">
             <button type="button" class="chip on" data-range="all">全部</button>
             <button type="button" class="chip" data-range="10">近 10 年</button>
@@ -38,7 +53,19 @@
           <span class="count" id="range-hint"></span>
         </div>
 
-        <div class="rank-stage">
+        <div class="top20-stage" id="top20-stage">
+          <div class="top20-grid" id="top20-grid"></div>
+
+          <aside class="rank-side">
+            <div class="side-head">
+              <h2 id="t20-side-title">上榜次数排行</h2>
+              <div class="sub" id="t20-side-sub"></div>
+            </div>
+            <div class="rank-list" id="t20-board"></div>
+          </aside>
+        </div>
+
+        <div class="rank-stage" id="teams-stage" hidden>
           <section class="rank-chart" id="chart">
             <div class="rank-legend" id="legend"></div>
           </section>
@@ -94,8 +121,7 @@
         window.__cs2ModuleFailed = function () {
           showCrash('脚本没能加载', 'src/rankings.js 加载失败（通常是 404 或路径不对）。'
             + '请确认地址是 http://127.0.0.1:5173/rankings.html 而不是 file://，然后 Ctrl+F5 强刷。');
-        };
-        if (location.protocol === 'file:') {
+        };        if (location.protocol === 'file:') {
           document.body.setAttribute('style', 'margin:0;background:#0b1220;color:#e6edf6');
           document.body.innerHTML =
             '<div style="max-width:720px;margin:11vh auto;padding:0 24px;'
@@ -123,7 +149,8 @@
             '等了 15 秒还没启动完成，通常是脚本或数据没加载到。请确认：'
             + '① 地址栏是 http://127.0.0.1:5173/rankings.html（不是 file://）；'
             + '② 启动窗口里没有红色的 404 报错；'
-            + '③ 跑过 npm run scrape:rankings 与 npm run dataset:hltv（没有 data/rankings.json 就没有这一页）；'
+            + '③ 跑过 npm run scrape:top20 / npm run scrape:rankings 与 npm run dataset:hltv'
+            + '（没有 data/top20.json 与 data/rankings.json 就没有这一页）；'
             + '④ 第一次抓历届排名要二十多分钟，别在它还没写完时就打开；'
             + '⑤ 按 Ctrl+F5 强制刷新一次。');
         }, 15000);

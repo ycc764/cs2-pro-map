@@ -1,14 +1,22 @@
 /**
- * 历届世界排名：一张「名次 × 时间」的曲线图 + 右侧某一期的前 30 名。
+ * 历届榜单：两个互相独立的视图，左边一排 chip 切换。
  *
- * 数据来自 `npm run scrape:rankings`（→ data/rankings.json）经 `npm run dataset:hltv`
- * 压出来的 public/data/rankings.json：
- *   { teams: [队名…], snapshots: [{ d: '2026-10-05', n: 250, t: [[队下标, 名次, 积分, 名次变化], …] }] }
- * 队名单独列表、快照里只存下标，是因为同一支队会在几百期里反复出现。
+ *  1. 「选手 TOP20」（默认）—— HLTV 每年评的年度 TOP20 选手，一年 20 张卡片，
+ *     右边是跨年的上榜次数排行。数据来自 `npm run scrape:top20`（→ data/top20.json）
+ *     经 `npm run dataset:hltv` 压出来的 public/data/top20.json：
+ *       { people: [{ nick, real, cc, cn, flag, id?, av? }…],
+ *         years:  [{ y, e: [[人下标, 名次, 战队, 战队链接, 新闻链接], …] }…] }
+ *     同一个人跨届复用，所以人单独列表、每年只存下标。
+ *
+ *  2. 「战队世界排名」—— 一张「名次 × 时间」的曲线图 + 右侧某一期的前 30 名。
+ *     数据来自 `npm run scrape:rankings`（→ data/rankings.json）：
+ *       { teams: [队名…], snapshots: [{ d: '2026-10-05', n: 250, t: [[队下标, 名次, 积分, 名次变化], …] }] }
+ *     队名单独列表、快照里只存下标，是因为同一支队会在几百期里反复出现。
  */
 import { el } from './util.js';
 
 const DATA_URL = '/data/rankings.json';
+const TOP20_URL = '/data/top20.json';
 const DEFAULT_LINES = 10;
 
 /**
@@ -36,6 +44,7 @@ const RANGES = [
 ];
 
 const state = {
+  view: 'top20',
   teams: [],
   all: [],             // 全部期次，切范围时从这里切片
   snaps: [],           // 当前窗口内的期次（图、光标、右侧面板都只看它）
@@ -44,6 +53,9 @@ const state = {
   sel: new Set(),
   idx: 0,
   maxRank: 30,
+  t20: null,           // public/data/top20.json 的原文
+  year: 0,             // 当前看的年份
+  focus: -1,           // 在右侧排行里点中的人下标（左侧卡片会高亮）
 };
 
 const $ = (s) => document.querySelector(s);
@@ -338,6 +350,176 @@ function renderLegend() {
   }
 }
 
+/* ---------------- 选手 TOP20 ---------------- */
+
+const slug = (s) => String(s || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+
+/**
+ * 头像：有就加载，失败或没有就退化成首字母方片。
+ * TOP20 的 99 位全部有本地头像（老将那批是另外补下来的），所以兜底基本走不到。
+ */
+function avatarNode(p, cls) {
+  const fallback = () => el('span', `pav-fallback${cls ? ` ${cls}` : ''}`, (p.nick || '?').slice(0, 1).toUpperCase());
+  if (!p.av) return fallback();
+  const img = el('img', `pav${cls ? ` ${cls}` : ''}`);
+  img.src = `/${p.av}`;
+  img.alt = '';
+  img.loading = 'lazy';
+  img.decoding = 'async';
+  img.addEventListener('error', () => { img.replaceWith(fallback()); }, { once: true });
+  return img;
+}
+
+/** 每人上榜几次、最好名次、上过哪些年 —— 右侧排行和「点一下跳到最近一次」都用它 */
+function buildBoard() {
+  const t = state.t20;
+  const rec = t.people.map((p) => ({ p, times: 0, best: 99, years: [] }));
+  for (const y of t.years) {
+    for (const [pi, rank] of y.e) {
+      const r = rec[pi];
+      if (!r) continue;
+      r.times++;
+      if (rank < r.best) r.best = rank;
+      r.years.push([y.y, rank]);
+    }
+  }
+  for (const r of rec) r.years.sort((a, b) => a[0] - b[0]);
+  // 上榜次数 → 最好名次 → 昵称，名次越小越靠前
+  rec.sort((a, b) => (b.times - a.times) || (a.best - b.best) || String(a.p.nick).localeCompare(String(b.p.nick)));
+  return rec;
+}
+
+function renderYearChips() {
+  const box = $('#year-chips');
+  box.replaceChildren();
+  const frag = document.createDocumentFragment();
+  // 从新到旧：默认想看的是最近一届
+  for (const y of [...state.t20.years].sort((a, b) => b.y - a.y)) {
+    const b = el('button', `chip${y.y === state.year ? ' on' : ''}`, String(y.y));
+    b.type = 'button';
+    b.addEventListener('click', () => { state.year = y.y; state.focus = -1; renderTop20(); });
+    frag.append(b);
+  }
+  box.append(frag);
+}
+
+function renderTop20() {
+  const t = state.t20;
+  const y = t.years.find((v) => v.y === state.year) || t.years[0];
+  state.year = y.y;
+  renderYearChips();
+
+  const grid = $('#top20-grid');
+  grid.replaceChildren();
+  const frag = document.createDocumentFragment();
+  let first = '';
+  for (const [pi, rank, team, teamHref, news] of y.e) {
+    const p = t.people[pi] || {};
+    if (!first) first = p.nick || '';
+    // 前三名单独配色，其余走普通卡片
+    const card = el('article', `pcard${rank <= 3 ? ` r${rank}` : ''}${pi === state.focus ? ' on' : ''}`);
+    card.dataset.person = String(pi);
+    card.append(el('span', 'pc-rank', `#${rank}`));
+    card.append(avatarNode(p));
+
+    const mid = el('div', 'pc-mid');
+    const nick = el('div', 'pc-nick');
+    // 有数字 id 就链到 HLTV 的选手数据页，没有就退回那一届的战报（2013 那批老将多半是前者）
+    const href = p.id
+      ? `https://www.hltv.org/stats/players/${p.id}/${slug(p.nick)}`
+      : (news ? `https://www.hltv.org${news}` : '');
+    if (href) {
+      const a = el('a', '', p.nick || '?');
+      a.href = href;
+      a.target = '_blank';
+      a.rel = 'noopener noreferrer';
+      nick.append(a);
+    } else nick.append(p.nick || '?');
+    mid.append(nick);
+    mid.append(el('div', 'pc-real', p.real || ''));
+
+    const meta = el('div', 'pc-meta');
+    meta.append(el('span', 'pc-country', `${p.flag || ''} ${p.cn || p.cc || ''}`.trim()));
+    if (team) {
+      meta.append(el('span', 'pc-sep', '·'));
+      const tn = el('span', 'pc-team', team);
+      if (teamHref) tn.title = team;
+      meta.append(tn);
+    }
+    mid.append(meta);
+    card.append(mid);
+
+    if (news) {
+      const n = el('a', 'pc-news', '战报 ↗');
+      n.href = `https://www.hltv.org${news}`;
+      n.target = '_blank';
+      n.rel = 'noopener noreferrer';
+      n.title = 'HLTV 那一届的评选文章';
+      card.append(n);
+    }
+    frag.append(card);
+  }
+  grid.append(frag);
+
+  const hint = $('#year-hint');
+  if (hint) hint.textContent = `${y.y} 年 · ${y.e.length} 人 · 第 1 名 ${first}`;
+
+  const focused = state.focus >= 0 ? t.people[state.focus] : null;
+  if (focused) {
+    const rec = state.board.find((r) => r.p === focused);
+    const list = (rec?.years || []).map(([yy, rk]) => `${yy} #${rk}`).join(' · ');
+    $('#t20-side-title').textContent = `${focused.flag || ''} ${focused.nick}`.trim();
+    $('#t20-side-sub').textContent = `上榜 ${rec?.times || 0} 次 · ${list}`;
+  } else {
+    $('#t20-side-title').textContent = '上榜次数排行';
+    $('#t20-side-sub').textContent = `${t.people.length} 位选手上过榜 · 点名字跳到最近一次`;
+  }
+  renderBoard();
+  if (state.focus >= 0) {
+    grid.querySelector(`.pcard[data-person="${state.focus}"]`)?.scrollIntoView({ block: 'nearest' });
+  }
+}
+
+function renderBoard() {
+  const list = $('#t20-board');
+  list.replaceChildren();
+  const frag = document.createDocumentFragment();
+  for (const r of state.board) {
+    const row = el('div', `rank-row${r.p === state.t20.people[state.focus] ? ' on' : ''}`);
+    row.append(el('span', 'pos', `${r.times} 次`));
+    row.append(avatarNode(r.p, 'sm'));
+    row.append(el('span', 'nm', `${r.p.flag || ''} ${r.p.nick}`.trim()));
+    row.append(el('span', 'pts', `最好 #${r.best}`));
+    row.title = `${r.years.map(([yy, rk]) => `${yy} #${rk}`).join('\n')}`;
+    row.addEventListener('click', () => {
+      const pi = state.t20.people.indexOf(r.p);
+      if (pi === state.focus) { state.focus = -1; renderTop20(); return; }
+      state.focus = pi;
+      // 跳到这人最近一次上榜的年份（点的是旧榜单里的人时，光高亮看不见）
+      const last = r.years[r.years.length - 1];
+      if (last && last[0] !== state.year) state.year = last[0];
+      renderTop20();
+    });
+    frag.append(row);
+  }
+  list.append(frag);
+}
+
+/* ---------------- 视图切换 ---------------- */
+
+function setView(v) {
+  state.view = v;
+  for (const c of document.querySelectorAll('#view-chips .chip')) {
+    c.classList.toggle('on', c.dataset.view === v);
+  }
+  $('#top20-stage').hidden = v !== 'top20';
+  $('#year-bar').hidden = v !== 'top20';
+  $('#teams-stage').hidden = v !== 'teams';
+  $('#range-bar').hidden = v !== 'teams';
+  if (v === 'teams') applyRange(state.range);
+  else renderTop20();
+}
+
 /* ---------------- 启动 ---------------- */
 
 function fail(err) {
@@ -354,9 +536,13 @@ function fail(err) {
 async function boot() {
   window.__CS2_BOOTED__ = true;
 
-  const res = await fetch(DATA_URL, { cache: 'no-store' });
-  if (!res.ok) throw new Error(`GET ${DATA_URL} → HTTP ${res.status}`);
-  const data = await res.json();
+  // 两份数据并行取。TOP20 允许缺席（那就只剩战队排名一个视图），战队排名是必须的。
+  const [rRes, tRes] = await Promise.all([
+    fetch(DATA_URL, { cache: 'no-store' }),
+    fetch(TOP20_URL, { cache: 'no-store' }).catch(() => null),
+  ]);
+  if (!rRes.ok) throw new Error(`GET ${DATA_URL} → HTTP ${rRes.status}`);
+  const data = await rRes.json();
 
   state.teams = data.teams || [];
   state.all = data.snapshots || [];
@@ -368,20 +554,47 @@ async function boot() {
   const touched = buildSeries();
   pickDefaultTeams();
 
-  $('#meta-badge').textContent = [
+  const teamBadge = [
     `${state.all.length} 期`,
     `${state.all[0].d} → ${state.all[state.all.length - 1].d}`,
-    `每期前 ${data.top || state.maxRank} 名`,
     `${touched.size} 支队上过榜`,
-  ].filter(Boolean).join(' · ');
+  ].join(' · ');
 
+  if (tRes && tRes.ok) {
+    const t = await tRes.json();
+    if (t.people?.length && t.years?.length) {
+      state.t20 = t;
+      state.board = buildBoard();
+      // 年份按新的在前，默认停最近一届
+      state.year = [...t.years].sort((a, b) => b.y - a.y)[0].y;
+    }
+  }
+
+  const positions = state.t20 ? state.t20.years.reduce((n, y) => n + y.e.length, 0) : 0;
+  $('#meta-badge').textContent = state.t20
+    ? `选手 TOP20 ${state.t20.years.length} 届 · 战队排名 ${teamBadge}`
+    : `战队排名 ${teamBadge}`;
+  $('#view-hint').textContent = state.t20
+    ? `${state.t20.years.map((y) => y.y).sort((a, b) => a - b)[0]}–${state.year} 共 ${state.t20.years.length} 届 · `
+      + `${state.t20.people.length} 位选手 · ${positions} 个名次`
+    : '没有 public/data/top20.json，只能看战队排名（跑 npm run scrape:top20 再 npm run dataset:hltv）';
+  if (!state.t20) {
+    for (const c of document.querySelectorAll('#view-chips .chip')) {
+      if (c.dataset.view === 'top20') c.disabled = true;
+    }
+  }
+
+  for (const c of document.querySelectorAll('#view-chips .chip')) {
+    c.addEventListener('click', () => { if (!c.disabled) setView(c.dataset.view); });
+  }
   for (const c of document.querySelectorAll('#range-chips .chip')) {
     c.addEventListener('click', () => applyRange(c.dataset.range));
   }
 
-  applyRange('all');
+  setView(state.t20 ? 'top20' : 'teams');
 
   const redraw = () => {
+    if (state.view !== 'teams') return;
     const box = $('#chart').getBoundingClientRect();
     const legendH = $('#legend').getBoundingClientRect().height || 40;
     const W = Math.max(320, Math.round(box.width));
@@ -392,8 +605,9 @@ async function boot() {
   };
   window.addEventListener('resize', redraw);
 
-  // 左右方向键翻期次，省得一直用鼠标划
+  // 左右方向键翻期次，省得一直用鼠标划（战队视图专用）
   window.addEventListener('keydown', (e) => {
+    if (state.view !== 'teams') return;
     if (e.key === 'ArrowLeft') { setIdx(Math.max(0, state.idx - 1)); e.preventDefault(); }
     if (e.key === 'ArrowRight') { setIdx(Math.min(state.snaps.length - 1, state.idx + 1)); e.preventDefault(); }
   });

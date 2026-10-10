@@ -14,6 +14,7 @@
     "scrape:players": "node scripts/scrape-players.mjs",
     "scrape:ratings": "node scripts/scrape-ratings.mjs",
     "scrape:rankings": "node scripts/scrape-rankings.mjs",
+    "scrape:top20": "node scripts/scrape-top20.mjs",
     "dataset": "node scripts/build-dataset.mjs",
     "dataset:hltv": "node scripts/build-dataset.mjs hltv",
     "dataset:liquipedia": "node scripts/build-dataset.mjs liquipedia",

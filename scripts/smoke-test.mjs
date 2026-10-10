@@ -285,8 +285,53 @@ if (!existsSync(rankingsPath)) {
     badRank.length ? `异常名次 ${badRank.length} 个` : '');
 }
 
-console.log(`\n结果：${pass} 通过 / ${fail} 失败`);
-if (fail) {
+const top20Path = join(ROOT, 'public', 'data', 'top20.json');
+if (!existsSync(top20Path)) {
+  ok(true, '（本次没有 top20.json）', '可跑 npm run scrape:top20 再 npm run dataset:hltv');
+} else {
+  const t20 = JSON.parse(readFileSync(top20Path, 'utf8'));
+  const people = t20.people || [];
+  const yrs = t20.years || [];
+  ok(yrs.length > 0 && people.length > 0, '年度 TOP20 有数据',
+    `${yrs.length} 届（${yrs.at(-1)?.y}–${yrs[0]?.y}）、${people.length} 位选手`);
+
+  // 每届必须正好 20 条，名次是 1..20 且不重复 —— 抓漏一行就会在这里露出来
+  const badLen = yrs.filter((y) => (y.e || []).length !== 20);
+  ok(badLen.length === 0, '每一届都是 20 个名次',
+    badLen.length ? `${badLen.map((y) => `${y.y}:${y.e.length}`).join(' ')}` : `${yrs.length} 届 × 20`);
+
+  const badRankSet = yrs.filter((y) => {
+    const rs = (y.e || []).map((e) => e[1]).sort((a, b) => a - b);
+    return rs.join(',') !== Array.from({ length: 20 }, (_, i) => i + 1).join(',');
+  });
+  ok(badRankSet.length === 0, '每届的 1–20 名不重不漏',
+    badRankSet.length ? `异常的届：${badRankSet.map((y) => y.y).join(' ')}` : '');
+
+  const yearsSorted = yrs.filter((y, i) => i > 0 && y.y >= yrs[i - 1].y);
+  ok(yearsSorted.length === 0, '届次按年份从新到旧排列',
+    yearsSorted.length ? `乱序 ${yearsSorted.length} 处` : `${yrs[0]?.y} → ${yrs.at(-1)?.y}`);
+
+  const badPerson = yrs.flatMap((y) => (y.e || []).filter((e) => !Number.isInteger(e[0]) || e[0] < 0 || e[0] >= people.length));
+  ok(badPerson.length === 0, '每届引用的人下标都没越界',
+    badPerson.length ? `越界 ${badPerson.length} 个（最大 ${people.length - 1}）` : '');
+
+  // 头像必须真的在磁盘上（老将那批是单独补下来的，路径写错就会在这里断）
+  const t20Av = people.filter((p) => p.av);
+  const missingT20 = t20Av.filter((p) => !existsSync(join(ROOT, 'public', p.av)));
+  ok(missingT20.length === 0, 'TOP20 引用的头像文件都存在',
+    t20Av.length ? `${t20Av.length}/${people.length} 位有头像` : '（本次无头像）');
+
+  // 数字 id 有的话必须能和选手榜对上（前端拿它去拼 /stats/players/<id> 链接）
+  const rkIds = new Set((existsSync(ratingsPath)
+    ? (JSON.parse(readFileSync(ratingsPath, 'utf8')).players || [])
+    : []).map((p) => p.id));
+  const badId = people.filter((p) => p.id && !rkIds.has(p.id));
+  ok(rkIds.size === 0 || badId.length === 0, 'TOP20 里的数字 id 都能在选手榜找到',
+    rkIds.size === 0 ? '（本次没有 ratings.json，跳过）'
+      : `${people.filter((p) => p.id).length}/${people.length} 位有 id`);
+}
+
+console.log(`\n结果：${pass} 通过 / ${fail} 失败`);if (fail) {
   console.log('失败项：\n  - ' + failures.join('\n  - '));
   process.exit(1);
 }

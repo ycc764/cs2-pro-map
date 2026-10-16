@@ -105,6 +105,34 @@ body {
   border-radius: 999px; padding: 1px 7px; margin-left: auto; white-space: nowrap;
 }
 
+/* 搜索记录：头上一条「搜索记录 / 清空」，每行右边一个 × 只删这一条。
+   注意 .suggest button 那条规则是 width:100%，所以这里凡是并排的按钮都要显式改宽度。 */
+.suggest .s-head {
+  position: sticky; top: 0; z-index: 1; background: #0d1428;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 7px 10px 6px 14px; font-size: 10px; letter-spacing: 0.04em;
+  color: var(--muted); border-bottom: 1px solid var(--line);
+}
+.suggest .s-clear {
+  width: auto; padding: 2px 9px; margin: 0; border: 1px solid var(--line);
+  border-radius: 999px; font-size: 10px; color: var(--muted); background: none;
+  line-height: 1.5;
+}
+.suggest .s-clear:hover {
+  color: var(--text); border-color: rgba(255, 209, 102, 0.45);
+  background: rgba(255, 209, 102, 0.1);
+}
+.suggest .s-row { display: flex; align-items: stretch; }
+.suggest .s-row:hover { background: rgba(63, 167, 160, 0.16); }
+/* 行已经高亮了，内容区就不要再叠一层，否则左边比右边深一块 */
+.suggest .s-row .s-pick:hover { background: none; }
+.suggest .s-pick { flex: 1; min-width: 0; }
+.suggest .s-del {
+  width: 34px; flex: 0 0 34px; padding: 0; margin: 0; justify-content: center;
+  font-size: 15px; line-height: 1; color: #5d7096; background: none; border: 0;
+}
+.suggest .s-del:hover { color: #ff9a8b; background: rgba(255, 120, 100, 0.14); }
+
 .modes { display: flex; gap: 6px; padding: 3px; border: 1px solid var(--line); border-radius: 999px; }
 .mode {
   padding: 6px 14px; border-radius: 999px; border: 0; cursor: pointer;

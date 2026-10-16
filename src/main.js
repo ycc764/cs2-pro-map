@@ -596,9 +596,113 @@ function buildSearchIndex() {
   index = [...countries, ...teams, ...players];
 }
 
+/* ------------------------------------------------------------------ *
+ * 搜索记录
+ * ------------------------------------------------------------------
+ * 存在 localStorage 里，**记的是「点开过的那一条」而不是每次敲的字符串** ——
+ * 敲到一半的 "zy" 没有留存价值，而「ZywOo」这条记录点一下就能直接跳回去。
+ * 同一个人/战队/国家只留一条，再搜一次就顶到最前。
+ * ------------------------------------------------------------------ */
+const RECENT_KEY = 'cs2pm.recent';
+const RECENT_MAX = 8;
+const KIND_ICON = { country: null, team: '🛡️', player: '🎯' };
+const KIND_TEXT = { country: '国家', team: '战队', player: '选手' };
+
+/** 读出来的东西可能是任何形态（手改过 localStorage、旧版本写坏的），一律做形状校验 */
+function loadRecent() {
+  try {
+    const raw = JSON.parse(localStorage.getItem(RECENT_KEY) || '[]');
+    if (!Array.isArray(raw)) return [];
+    return raw.filter((r) => r && typeof r.label === 'string'
+      && Object.hasOwn(KIND_TEXT, r.kind)
+      && (typeof r.key === 'string' || typeof r.key === 'number'));
+  } catch {
+    return [];
+  }
+}
+
+let recent = loadRecent();
+
+function saveRecent() {
+  try {
+    localStorage.setItem(RECENT_KEY, JSON.stringify(recent));
+  } catch {
+    // 隐私模式 / 配额满：存不下就算了，不能因此让搜索挂掉
+  }
+}
+
+function rememberHit(h) {
+  const id = `${h.kind}:${h.key}`;
+  recent = [{ kind: h.kind, key: h.key, label: h.label, sub: h.sub || '' },
+    ...recent.filter((r) => `${r.kind}:${r.key}` !== id)].slice(0, RECENT_MAX);
+  saveRecent();
+}
+
+function forgetHit(entry) {
+  const id = `${entry.kind}:${entry.key}`;
+  recent = recent.filter((r) => `${r.kind}:${r.key}` !== id);
+  saveRecent();
+}
+
+function iconFor(kind, key) {
+  return kind === 'country' ? flagEmoji(key) : KIND_ICON[kind] || '•';
+}
+
+/** 每条右边一个 ×：只删这一条，删完浮层不关，方便连着删几条 */
+function renderRecent() {
+  if (!recent.length) return hideSuggest();
+  suggest.hidden = false;
+
+  const head = el('div', 's-head');
+  const clear = el('button', 's-clear', '清空');
+  clear.type = 'button';
+  clear.title = '删除全部搜索记录';
+  clear.addEventListener('click', (e) => {
+    e.stopPropagation();
+    recent = [];
+    saveRecent();
+    hideSuggest();
+  });
+  head.append(el('span', null, '搜索记录'), clear);
+
+  const rows = recent.map((r) => {
+    const pick = el('button', 's-pick');
+    pick.type = 'button';
+    const mid = el('span');
+    mid.append(el('div', null, r.label), el('div', 'sub', r.sub));
+    pick.append(el('span', null, iconFor(r.kind, r.key)), mid, el('span', 's-kind', KIND_TEXT[r.kind]));
+    pick.addEventListener('click', () => applyHit(r));
+
+    const del = el('button', 's-del', '×');
+    del.type = 'button';
+    del.title = `删除「${r.label}」这条记录`;
+    del.setAttribute('aria-label', `删除「${r.label}」这条记录`);
+    del.addEventListener('click', (e) => {
+      // 不 stopPropagation 的话，冒泡到 document 上那个「点外面就收起」的监听也还好，
+      // 但要挡住它落到 .s-pick 上 —— 行和 × 是兄弟节点，其实不会误触，这里只为稳妥。
+      e.stopPropagation();
+      forgetHit(r);
+      if (recent.length) renderRecent();
+      else hideSuggest();
+    });
+
+    const row = el('div', 's-row');
+    row.append(pick, del);
+    return row;
+  });
+
+  suggest.replaceChildren(head, ...rows);
+}
+
+/** 输入框空着的时候：有记录就列出来，没有就收起浮层（不占地方也不吵） */
+function showRecentOrHide() {
+  if (document.activeElement === searchInput && recent.length) renderRecent();
+  else hideSuggest();
+}
+
 function runSearch(q) {
   const s = String(q ?? '').trim().toLowerCase();
-  if (!s) return hideSuggest();
+  if (!s) return showRecentOrHide();
   const hits = index.filter((i) => i.search.includes(s));
   hits.sort((a, b) => {
     const ra = a.label.toLowerCase().startsWith(s) ? 0 : 1;
@@ -611,7 +715,12 @@ function runSearch(q) {
 }
 
 function renderSuggest(hits) {
-  if (!hits.length) return hideSuggest();
+  if (!hits.length) {
+    // 搜不到东西的时候，把搜索记录递上来比直接收起浮层有用
+    // （也顺便让「有搜索记录」这件事被发现）
+    if (recent.length) return renderRecent();
+    return hideSuggest();
+  }
   suggest.hidden = false;
   suggest.replaceChildren(
     ...hits.map((h) => {
@@ -633,6 +742,7 @@ function renderSuggest(hits) {
 function hideSuggest() { suggest.hidden = true; suggest.replaceChildren(); }
 
 function applyHit(h) {
+  rememberHit(h);
   searchInput.value = h.label;
   hideSuggest();
   if (h.kind === 'country') selectCountry(h.key);
@@ -654,11 +764,17 @@ for (const b of document.querySelectorAll('.mode')) {
   });
 }
 searchInput.addEventListener('input', debounce(() => runSearch(searchInput.value), 120));
-searchInput.addEventListener('focus', () => { if (searchInput.value) runSearch(searchInput.value); });
+searchInput.addEventListener('focus', () => {
+  // 空着就把搜索记录列出来；有字（比如选完一条又点回来）就照常搜
+  if (searchInput.value) runSearch(searchInput.value);
+  else showRecentOrHide();
+});
 searchInput.addEventListener('keydown', (e) => {
   if (e.key === 'Escape') { hideSuggest(); searchInput.blur(); return; }
   if (e.key === 'Enter') {
-    const first = suggest.querySelector('button');
+    // 只认「一条真正的结果」：筛掉记录面板头上的「清空」和每行右侧的 ×，
+    // 否则空输入框里按回车会把搜索记录清光。
+    const first = suggest.querySelector('.s-pick') || suggest.querySelector(':scope > button');
     if (first) first.click();
   }
 });

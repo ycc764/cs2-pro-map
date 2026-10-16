@@ -325,6 +325,139 @@ try {
     await shoot('e2e-player');
   }
 
+  // ---- 搜索记录 ----------------------------------------------------
+  // 这段必须在真浏览器里跑：localStorage 与 focus/blur 在 linkedom 里都没有。
+  console.log('\n=== 搜索记录 ===');
+  const RECENT_KEY = 'cs2pm.recent';
+  const readRecent = () => cdp.eval(`(() => {
+    try { return JSON.parse(localStorage.getItem('${RECENT_KEY}') || 'null'); } catch { return 'PARSE_ERROR'; }
+  })()`);
+  const probeSuggest = () => cdp.eval(`(() => {
+    const s = document.querySelector('#suggest');
+    const rows = [...s.querySelectorAll('.s-row')];
+    return {
+      hidden: s.hidden,
+      head: s.querySelector('.s-head')?.innerText?.replace(/\\s+/g, ' ').trim() || null,
+      rows: rows.length,
+      first: rows[0]?.querySelector('.s-pick')?.innerText?.replace(/\\s+/g, ' ').trim().slice(0, 50) || null,
+      dels: s.querySelectorAll('.s-del').length,
+      hasClear: !!s.querySelector('.s-clear'),
+      clearLabel: s.querySelector('.s-clear')?.innerText?.trim() || null,
+    };
+  })()`);
+  // 用真鼠标点输入框。`cdp.goto()` 之后页面没有焦点，`el.focus()` 不会让
+  // document.activeElement 变成它，focus 事件也就不触发 —— 而「空输入框时弹出
+  // 搜索记录」正是挂在 focus 上的，所以这里必须走真实输入事件。
+  const clickSearch = async () => {
+    const box = await cdp.eval(`(() => {
+      const r = document.querySelector('#search').getBoundingClientRect();
+      return { x: Math.round(r.left + r.width / 2), y: Math.round(r.top + r.height / 2) };
+    })()`);
+    const at = { x: box.x, y: box.y };
+    await cdp.send('Input.dispatchMouseEvent', { type: 'mouseMoved', x: at.x, y: at.y, button: 'none', clickCount: 0 });
+    await cdp.send('Input.dispatchMouseEvent', { type: 'mousePressed', x: at.x, y: at.y, button: 'left', clickCount: 1 });
+    await cdp.send('Input.dispatchMouseEvent', { type: 'mouseReleased', x: at.x, y: at.y, button: 'left', clickCount: 1 });
+    await sleep(400);
+  };
+  // 敲字 → 等 debounce（120ms）→ 点第一条结果
+  const pickFirst = async (word) => {
+    await clickSearch();
+    await cdp.eval(`(() => {
+      const i = document.querySelector('#search');
+      i.value = ${JSON.stringify(word)};
+      i.dispatchEvent(new Event('input', { bubbles: true }));
+    })()`);
+    await sleep(650);
+    return cdp.eval(`(() => {
+      const b = document.querySelector('#suggest > button');
+      if (!b) return null;
+      const t = b.innerText.replace(/\\s+/g, ' ').trim().slice(0, 50);
+      b.click();
+      return t;
+    })()`);
+  };
+  // 清空输入框：模拟 type="search" 那个原生 ×（它也是派发一个 input 事件）
+  const clearBox = async () => {
+    await clickSearch();
+    await cdp.eval(`(() => {
+      const i = document.querySelector('#search');
+      i.value = '';
+      i.dispatchEvent(new Event('input', { bubbles: true }));
+    })()`);
+    await sleep(450);
+  };
+
+  await cdp.eval(`localStorage.removeItem('${RECENT_KEY}')`);
+  const picked1 = await pickFirst('zywoo');
+  console.log('点中的搜索结果 :', picked1 || '(没有结果)');
+  const rec1 = await readRecent();
+  console.log('记录（第 1 条） :', JSON.stringify(rec1));
+  if (!Array.isArray(rec1) || rec1.length !== 1 || rec1[0].label !== 'ZywOo') {
+    errors.push(`点开一条搜索结果后 localStorage 里应该有 1 条记录 "ZywOo"，实际是 ${JSON.stringify(rec1)}`);
+  }
+
+  await clearBox();
+  const panel1 = await probeSuggest();
+  console.log('清空后的浮层 :', JSON.stringify(panel1));
+  if (panel1.hidden || panel1.rows !== 1 || !panel1.hasClear || panel1.dels !== 1) {
+    errors.push(`输入框清空后浮层应显示 1 条搜索记录（带「清空」和 1 个 ×），实际是 ${JSON.stringify(panel1)}`);
+  }
+  if (panel1.head && !panel1.head.includes('搜索记录')) {
+    errors.push(`记录面板的表头应该是「搜索记录」，实际是「${panel1.head}」`);
+  }
+  await shoot('e2e-recent');
+
+  // 再记两条：连续的应该排在最前，且同一条不会重复
+  await pickFirst('s1mple');
+  await pickFirst('zywoo');           // 再搜一次 ZywOo —— 应该顶到最前而不是变成两条
+  const rec2 = await readRecent();
+  console.log('记录（3 次之后）:', JSON.stringify((rec2 || []).map((r) => r.label)));
+  if (!Array.isArray(rec2) || rec2.length !== 2 || rec2[0].label !== 'ZywOo') {
+    errors.push(`重复搜索不该产生重复记录，且最近的一条要排最前；实际是 ${JSON.stringify((rec2 || []).map((r) => r.label))}`);
+  }
+
+  await clearBox();
+  const panel2 = await probeSuggest();
+  // 点第一条的 ×：只删这一条，浮层不关（方便连着删）
+  await cdp.eval(`document.querySelector('#suggest .s-row .s-del')?.click()`);
+  await sleep(400);
+  const afterDel = await readRecent();
+  const panel3 = await probeSuggest();
+  console.log('删一条之后 :', JSON.stringify((afterDel || []).map((r) => r.label)), '浮层', JSON.stringify(panel3));
+  if (!Array.isArray(afterDel) || afterDel.length !== 1 || afterDel[0].label !== 's1mple') {
+    errors.push(`点 × 应该只删掉那一条（剩 s1mple），实际剩 ${JSON.stringify((afterDel || []).map((r) => r.label))}`);
+  }
+  if (panel3.hidden || panel3.rows !== 1) {
+    errors.push(`删掉一条后浮层应该还开着并剩 1 行，实际是 ${JSON.stringify(panel3)}`);
+  }
+  if (panel2.rows !== 2) errors.push(`删之前应该有 2 行记录，实际 ${panel2.rows}`);
+
+  // 刷新页面：记录应该还在（这才叫「保留」）
+  await cdp.goto(url);
+  await sleep(3200);
+  await cdp.send('Page.bringToFront').catch(() => {});
+  const rec3 = await readRecent();
+  await clickSearch();
+  const panel4 = await probeSuggest();
+  console.log('刷新之后 :', JSON.stringify((rec3 || []).map((r) => r.label)), '浮层', JSON.stringify(panel4));
+  if (!Array.isArray(rec3) || rec3.length !== 1 || rec3[0].label !== 's1mple') {
+    errors.push(`刷新页面后搜索记录应该还在（s1mple），实际是 ${JSON.stringify(rec3)}`);
+  }
+  if (panel4.hidden || panel4.rows !== 1) {
+    errors.push(`刷新后点进输入框应该还能看到记录，实际是 ${JSON.stringify(panel4)}`);
+  }
+
+  // 「清空」按钮：一次删光
+  await cdp.eval(`document.querySelector('#suggest .s-clear')?.click()`);
+  await sleep(350);
+  const rec4 = await readRecent();
+  const panel5 = await probeSuggest();
+  console.log('清空之后 :', JSON.stringify(rec4), '浮层 hidden =', panel5.hidden);
+  if (!Array.isArray(rec4) || rec4.length !== 0) {
+    errors.push(`点「清空」后应该一条不剩，实际是 ${JSON.stringify(rec4)}`);
+  }
+  if (!panel5.hidden) errors.push('点「清空」后浮层应该收起来');
+
   cdp.close();
 } catch (e) {
   console.log('✗ 检查过程出错 :', e.message);

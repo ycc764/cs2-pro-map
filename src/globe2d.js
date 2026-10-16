@@ -225,6 +225,18 @@ export function createGlobe2D(container, { onSelect, onHover } = {}) {
   let lx = 0;
   let ly = 0;
   let moved = 0;
+  /**
+   * pointerdown 那一刻真正被点中的元素。
+   *
+   * 为什么需要它：下面调了 `svg.setPointerCapture()`，而按 Pointer Events 规范，
+   * `click` 的 target 是 pointerdown / pointerup 两个目标的**最近公共祖先** ——
+   * 被捕获之后这两个事件的目标都成了 `<svg>` 自己，于是 `click` 的 `e.target`
+   * 永远是 svg，`e.target.dataset.code` 永远是空的。
+   * 表现就是「在 2D 地图上点国家没反应」（详情面板反而被清空成空状态）。
+   * 合成事件（`el.dispatchEvent(new MouseEvent('click'))`）不经过 pointer 链路，
+   * 所以 `check:e2e` / `check:boot` 一直是绿的 —— 这个坑只有真鼠标点得出来。
+   */
+  let downTarget = null;
 
   function localPoint(e) {
     const r = svg.getBoundingClientRect();
@@ -237,6 +249,7 @@ export function createGlobe2D(container, { onSelect, onHover } = {}) {
     moved = 0;
     lx = e.clientX;
     ly = e.clientY;
+    downTarget = e.target;          // 必须在 setPointerCapture 之前记下来
     stopAnim();
     svg.setPointerCapture?.(e.pointerId);
     svg.classList.add('grabbing');
@@ -305,9 +318,11 @@ export function createGlobe2D(container, { onSelect, onHover } = {}) {
   });
 
   svg.addEventListener('click', (e) => {
-    if (moved > 6) { moved = 0; return; }
-    const t = e.target;
+    if (moved > 6) { moved = 0; downTarget = null; return; }
+    // 指针被捕获过的话 e.target 是 svg，退回用 pointerdown 记下的那个元素
+    const t = e.target === svg && downTarget ? downTarget : e.target;
     const code = t?.dataset?.code || '';
+    downTarget = null;
     onSelect?.(code || null);
   });
 

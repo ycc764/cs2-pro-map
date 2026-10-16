@@ -229,6 +229,52 @@ try {
   console.log(JSON.stringify(probe2d, null, 1));
   await shoot('e2e-2d');
 
+  // ★ 真·鼠标点国家：这条是专门补的回归防线。
+  // 之前所有检查都用 element.click()（合成事件），合成事件不经过 pointerdown/pointerup
+  // 那条链路，所以「2D 里点国家没反应」这个 bug 从头到尾没被任何测试挡住。
+  // 根因：globe2d.js 在 pointerdown 里调了 svg.setPointerCapture()，按 Pointer Events
+  // 规范，click 的 target 会变成 pointerdown/pointerup 目标的「最近公共祖先」
+  // —— 也就是 svg 自己，于是 e.target.dataset.code 永远是空的。
+  console.log('\n=== 真·鼠标点国家（2D）===');
+  const hit = await cdp.eval(`(() => {
+    const ps = [...document.querySelectorAll('#view2d svg path.country.has-data')];
+    // 挑面积最大的那个，小国会小到找不到落点
+    ps.sort((a, b) => { const x = a.getBoundingClientRect(), y = b.getBoundingClientRect();
+      return (y.width * y.height) - (x.width * x.height); });
+    for (const p of ps) {
+      const b = p.getBoundingClientRect();
+      for (let gy = 1; gy < 24; gy++) for (let gx = 1; gx < 24; gx++) {
+        const x = b.left + (b.width * gx) / 24, y = b.top + (b.height * gy) / 24;
+        if (x < 8 || y < 8 || x > innerWidth - 8 || y > innerHeight - 8) continue;
+        if (document.elementFromPoint(x, y) === p) return { code: p.dataset.code, x: Math.round(x), y: Math.round(y) };
+      }
+    }
+    return null;
+  })()`);
+  console.log('目标像素 :', JSON.stringify(hit));
+  if (!hit) {
+    errors.push('2D 里找不到可点的大国家 —— 底图可能根本没画出来');
+  } else {
+    // 先清空详情面板：只有清空了，「点完还是空的」才能证明真的没反应
+    await cdp.eval(`document.querySelector('#detail').innerHTML = ''`);
+    await cdp.send('Input.dispatchMouseEvent', { type: 'mouseMoved', x: hit.x, y: hit.y, button: 'none', buttons: 0 });
+    await cdp.send('Input.dispatchMouseEvent', { type: 'mousePressed', x: hit.x, y: hit.y, button: 'left', buttons: 1, clickCount: 1 });
+    await cdp.send('Input.dispatchMouseEvent', { type: 'mouseReleased', x: hit.x, y: hit.y, button: 'left', buttons: 0, clickCount: 1 });
+    await sleep(1000);
+    const clickedText = await cdp.eval(
+      `(document.querySelector('#detail')?.innerText || '').replace(/\\s+/g,' ').trim().slice(0, 90)`,
+    );
+    console.log('点后详情 :', clickedText || '(空)');
+    if (clickedText.includes('现役选手')) {
+      console.log(`✓ 真鼠标点国家能出选手   ${hit.code}`);
+    } else {
+      console.log(`✗ 真鼠标点国家没反应   ${hit.code}`);
+      errors.push(`2D 里用真鼠标点「${hit.code}」后详情面板没渲染出该国选手（详情="${clickedText}"）`
+        + '—— 多半是 globe2d.js 的 click 事件又被 setPointerCapture 重定向到 svg 了');
+    }
+    await shoot('e2e-2d-click');
+  }
+
   // 点左侧第一行，看详情面板是否真的渲染
   console.log('\n=== 点左侧第一行 ===');
   await cdp.eval(`document.querySelector('#left-list .row')?.click()`);

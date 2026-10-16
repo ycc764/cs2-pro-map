@@ -426,11 +426,36 @@ npm run check:e2e -- http://127.0.0.1:5180/
 
 - 收集页面里所有 `console.*` 与未捕获异常；
 - 量真实布局：`#viewport` 尺寸、canvas 尺寸、SVG 的 path/气泡/标签数量、遮罩是否可见；
+- **用真·鼠标事件点一个国家**（`Input.dispatchMouseEvent`），确认详情面板真的渲染出该国选手；
 - 依次切到 2D、点开一个国家，各截一张图到 `.tmp-shots/`。
 
 注意两点：它会**每次重建 `.tmp-profile/e2e`**（视图模式存在 `localStorage` 里，
 不重建的话你会截到上一轮的视图）；另外它需要能真正启动浏览器进程，
 在受限沙箱里要给足权限，普通终端直接跑即可。
+
+### 为什么点国家那条断言必须用真鼠标事件
+
+其它地方一律用 `element.click()` / `dispatchEvent(new MouseEvent('click'))`，
+**但合成事件不经过 `pointerdown` / `pointerup` 那条链路**，所以有一整类 bug 它验不出来。
+
+2026-10 就踩了一次：2D 地图上**点国家完全没反应**，而所有检查全绿。根因是
+`src/globe2d.js` 在 `pointerdown` 里调了 `svg.setPointerCapture()` —— 按 Pointer Events
+规范，`click` 的 `target` 会变成 `pointerdown` / `pointerup` 目标的**最近公共祖先**，
+被捕获后两者都是 `<svg>`，于是 `e.target.dataset.code` 永远是空的，一路走到
+`onSelect(null)` 把详情面板清成空状态。
+
+修法是记住 `pointerdown` 时的目标（`downTarget`），`click` 里发现 `e.target === svg`
+就退回用它。**只有真鼠标事件能复现这个差异**：合成点击的 target 就是那个 path 本身，
+一路畅通，所以它永远是绿的。A/B 实测（`git checkout HEAD -- src/globe2d.js` 前后各跑一次）：
+
+```
+带修复 : ✓ 真鼠标点国家能出选手   ru          → exit 0
+无修复 : ✗ 真鼠标点国家没反应   ru          → exit 1
+```
+
+顺带一个教训：写复现脚本时，**每个用例前都要重新载入页面**。选中一个国家会触发
+镜头动画（`view.k/x/y` 变化），上一个用例点完再点，坐标早就不是原来那块地方了 ——
+第一次写这个脚本就是这么被自己坑的，把「点到海面」误判成了 bug。
 
 ---
 
@@ -491,10 +516,16 @@ npm run check:e2e -- http://127.0.0.1:5180/
 | 排名页只剩「战队世界排名」、TOP20 那个按钮点不动 | 没有 `data/top20.json`。跑 `npm run scrape:top20` 再 `npm run dataset:hltv`。 |
 | TOP20 卡片里有人是首字母方块 | 只上过 TOP20、没进过前 100 队的老将（GeT_RiGhT、f0rest 这一批），头像靠昵称落到 `public/avatars/top20-<昵称>.webp`。文件在却不显示，多半是重建时路径拼错了（详见「三 → 历届年度 TOP20」最后一条）。 |
 | 选手榜里大部分人没有头像 | 正常。头像只覆盖前 100 队的 473 人，榜单有 1703 人，其余退化成首字母方块。 |
+| 2D 地图上点国家没反应（3D 正常） | 已修（2026-10）。`src/globe2d.js` 在 `pointerdown` 里调的 `setPointerCapture()` 会把 `click` 的 target 重定向成 `<svg>` 自己，于是 `e.target.dataset.code` 恒为空。**合成点击验不出来**，只有真鼠标事件能复现（详见「五 → 为什么点国家那条断言必须用真鼠标事件」）。 |
 
-> **一条教训**：`.crash` 那个坑之所以能活下来，是因为三个无浏览器检查全绿。
-> 假 DOM 把 `getBoundingClientRect()` 写死、也没有真实 CSS 级联，
-> 所以「元素存在、代码没报错」≠「用户看得见」。改完样式务必跑一次 `npm run check:e2e`。
+> **两条教训**：
+> 1. `.crash` 那个坑之所以能活下来，是因为三个无浏览器检查全绿。假 DOM 把
+>    `getBoundingClientRect()` 写死、也没有真实 CSS 级联，所以「元素存在、代码没报错」
+>    ≠「用户看得见」。改完样式务必跑一次 `npm run check:e2e`。
+> 2. 「点国家没反应」那个坑能活下来，是因为**所有**检查用的都是合成事件
+>    （`element.click()`），而合成事件不经过 `pointerdown` / `pointerup`，
+>    拿到 path 当 target 一路畅通。**凡是交互逻辑，断言必须走真实输入事件**
+>    （`Input.dispatchMouseEvent`），别用 `.click()` 图省事。
 
 还有一个容易被忽略的坑：**同时开着多个服务器实例**。
 如果之前有一个旧的 `node scripts/serve.mjs` 没关掉，它可能占着 5173 并在提供旧副本，
